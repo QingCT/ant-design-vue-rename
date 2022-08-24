@@ -15,57 +15,57 @@ title:
 Demonstration of validation configuration for form controls which are not shown in the demos above.
 </docs>
 <template>
-  <a-form
+  <bma-form
     :model="formState"
     name="validate_other"
     v-bind="formItemLayout"
     @finishFailed="onFinishFailed"
     @finish="onFinish"
   >
-    <a-form-item label="Plain Text">
+    <bma-form-item label="Plain Text">
       <span class="ant-form-text">China</span>
-    </a-form-item>
-    <a-form-item
+    </bma-form-item>
+    <bma-form-item
       name="select"
       label="Select"
       has-feedback
       :rules="[{ required: true, message: 'Please select your country!' }]"
     >
-      <a-select v-model:value="formState.select" placeholder="Please select a country">
-        <a-select-option value="china">China</a-select-option>
-        <a-select-option value="usa">U.S.A</a-select-option>
-      </a-select>
-    </a-form-item>
+      <bma-select v-model:value="formState.select" placeholder="Please select a country">
+        <bma-select-option value="china">China</bma-select-option>
+        <bma-select-option value="usa">U.S.A</bma-select-option>
+      </bma-select>
+    </bma-form-item>
 
-    <a-form-item
+    <bma-form-item
       name="select-multiple"
       label="Select[multiple]"
       :rules="[{ required: true, message: 'Please select your favourite colors!', type: 'array' }]"
     >
-      <a-select
+      <bma-select
         v-model:value="formState['select-multiple']"
         mode="multiple"
         placeholder="Please select favourite colors"
       >
-        <a-select-option value="red">Red</a-select-option>
-        <a-select-option value="green">Green</a-select-option>
-        <a-select-option value="blue">Blue</a-select-option>
-      </a-select>
-    </a-form-item>
+        <bma-select-option value="red">Red</bma-select-option>
+        <bma-select-option value="green">Green</bma-select-option>
+        <bma-select-option value="blue">Blue</bma-select-option>
+      </bma-select>
+    </bma-form-item>
 
-    <a-form-item label="InputNumber">
-      <a-form-item name="input-number" no-style>
-        <a-input-number v-model:value="formState['input-number']" :min="1" :max="10" />
-      </a-form-item>
+    <bma-form-item label="InputNumber">
+      <bma-form-item name="input-number" no-style>
+        <bma-input-number v-model:value="formState['input-number']" :min="1" :max="10" />
+      </bma-form-item>
       <span class="ant-form-text">machines</span>
-    </a-form-item>
+    </bma-form-item>
 
-    <a-form-item name="switch" label="Switch">
-      <a-switch v-model:checked="formState.switch" />
-    </a-form-item>
+    <bma-form-item name="switch" label="Switch">
+      <bma-switch v-model:checked="formState.switch" />
+    </bma-form-item>
 
-    <a-form-item name="slider" label="Slider">
-      <a-slider
+    <bma-form-item name="slider" label="Slider">
+      <bma-slider
         v-model:value="formState.slider"
         :marks="{
           0: 'A',
@@ -76,87 +76,87 @@ Demonstration of validation configuration for form controls which are not shown 
           100: 'F',
         }"
       />
-    </a-form-item>
+    </bma-form-item>
 
-    <a-form-item name="radio-group" label="Radio.Group">
-      <a-radio-group v-model:value="formState['radio-group']">
-        <a-radio value="a">item 1</a-radio>
-        <a-radio value="b">item 2</a-radio>
-        <a-radio value="c">item 3</a-radio>
-      </a-radio-group>
-    </a-form-item>
+    <bma-form-item name="radio-group" label="Radio.Group">
+      <bma-radio-group v-model:value="formState['radio-group']">
+        <bma-radio value="a">item 1</bma-radio>
+        <bma-radio value="b">item 2</bma-radio>
+        <bma-radio value="c">item 3</bma-radio>
+      </bma-radio-group>
+    </bma-form-item>
 
-    <a-form-item
+    <bma-form-item
       name="radio-button"
       label="Radio.Button"
       :rules="[{ required: true, message: 'Please pick an item!' }]"
     >
-      <a-radio-group v-model:value="formState['radio-button']">
-        <a-radio-button value="a">item 1</a-radio-button>
-        <a-radio-button value="b">item 2</a-radio-button>
-        <a-radio-button value="c">item 3</a-radio-button>
-      </a-radio-group>
-    </a-form-item>
+      <bma-radio-group v-model:value="formState['radio-button']">
+        <bma-radio-button value="a">item 1</bma-radio-button>
+        <bma-radio-button value="b">item 2</bma-radio-button>
+        <bma-radio-button value="c">item 3</bma-radio-button>
+      </bma-radio-group>
+    </bma-form-item>
 
-    <a-form-item name="checkbox-group" label="Checkbox.Group">
-      <a-checkbox-group v-model:value="formState['checkbox-group']">
-        <a-row>
-          <a-col :span="8">
-            <a-checkbox value="A" style="line-height: 32px">A</a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="B" style="line-height: 32px" disabled>B</a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="C" style="line-height: 32px">C</a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="D" style="line-height: 32px">D</a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="E" style="line-height: 32px">E</a-checkbox>
-          </a-col>
-          <a-col :span="8">
-            <a-checkbox value="F" style="line-height: 32px">F</a-checkbox>
-          </a-col>
-        </a-row>
-      </a-checkbox-group>
-    </a-form-item>
+    <bma-form-item name="checkbox-group" label="Checkbox.Group">
+      <bma-checkbox-group v-model:value="formState['checkbox-group']">
+        <bma-row>
+          <bma-col :span="8">
+            <bma-checkbox value="A" style="line-height: 32px">A</bma-checkbox>
+          </bma-col>
+          <bma-col :span="8">
+            <bma-checkbox value="B" style="line-height: 32px" disabled>B</bma-checkbox>
+          </bma-col>
+          <bma-col :span="8">
+            <bma-checkbox value="C" style="line-height: 32px">C</bma-checkbox>
+          </bma-col>
+          <bma-col :span="8">
+            <bma-checkbox value="D" style="line-height: 32px">D</bma-checkbox>
+          </bma-col>
+          <bma-col :span="8">
+            <bma-checkbox value="E" style="line-height: 32px">E</bma-checkbox>
+          </bma-col>
+          <bma-col :span="8">
+            <bma-checkbox value="F" style="line-height: 32px">F</bma-checkbox>
+          </bma-col>
+        </bma-row>
+      </bma-checkbox-group>
+    </bma-form-item>
 
-    <a-form-item name="rate" label="Rate">
-      <a-rate v-model:value="formState.rate" allow-half />
-    </a-form-item>
+    <bma-form-item name="rate" label="Rate">
+      <bma-rate v-model:value="formState.rate" allow-half />
+    </bma-form-item>
 
-    <a-form-item name="upload" label="Upload" extra="longgggggggggggggggggggggggggggggggggg">
-      <a-upload
+    <bma-form-item name="upload" label="Upload" extra="longgggggggggggggggggggggggggggggggggg">
+      <bma-upload
         v-model:fileList="formState.upload"
         name="logo"
         action="/upload.do"
         list-type="picture"
       >
-        <a-button>
+        <bma-button>
           <template #icon><UploadOutlined /></template>
           Click to upload
-        </a-button>
-      </a-upload>
-    </a-form-item>
+        </bma-button>
+      </bma-upload>
+    </bma-form-item>
 
-    <a-form-item label="Dragger">
-      <a-form-item name="dragger" no-style>
-        <a-upload-dragger v-model:fileList="formState.dragger" name="files" action="/upload.do">
+    <bma-form-item label="Dragger">
+      <bma-form-item name="dragger" no-style>
+        <bma-upload-dragger v-model:fileList="formState.dragger" name="files" action="/upload.do">
           <p class="ant-upload-drag-icon">
             <InboxOutlined />
           </p>
           <p class="ant-upload-text">Click or drag file to this area to upload</p>
           <p class="ant-upload-hint">Support for a single or bulk upload.</p>
-        </a-upload-dragger>
-      </a-form-item>
-    </a-form-item>
+        </bma-upload-dragger>
+      </bma-form-item>
+    </bma-form-item>
 
-    <a-form-item :wrapper-col="{ span: 12, offset: 6 }">
-      <a-button type="primary" html-type="submit">Submit</a-button>
-    </a-form-item>
-  </a-form>
+    <bma-form-item :wrapper-col="{ span: 12, offset: 6 }">
+      <bma-button type="primary" html-type="submit">Submit</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';

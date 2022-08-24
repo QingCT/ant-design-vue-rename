@@ -95,7 +95,7 @@ export default defineComponent<ConfirmDialogProps>({
         wrapClassName,
       } = props;
       const okType = props.okType || 'primary';
-      const prefixCls = props.prefixCls || 'ant-modal';
+      const prefixCls = props.prefixCls || 'bmant-modal';
       const contentPrefixCls = `${prefixCls}-confirm`;
       const style = attrs.style || {};
       const okText =

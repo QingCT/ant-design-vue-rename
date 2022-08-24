@@ -16,24 +16,24 @@ The default trigger mode is `hover`, you can change it to `click`.
 </docs>
 
 <template>
-  <a-dropdown :trigger="['click']">
+  <bma-dropdown :trigger="['click']">
     <a class="ant-dropdown-link" @click.prevent>
       Click me
       <DownOutlined />
     </a>
     <template #overlay>
-      <a-menu>
-        <a-menu-item key="0">
+      <bma-menu>
+        <bma-menu-item key="0">
           <a href="http://www.alipay.com/">1st menu item</a>
-        </a-menu-item>
-        <a-menu-item key="1">
+        </bma-menu-item>
+        <bma-menu-item key="1">
           <a href="http://www.taobao.com/">2nd menu item</a>
-        </a-menu-item>
-        <a-menu-divider />
-        <a-menu-item key="3">3rd menu item</a-menu-item>
-      </a-menu>
+        </bma-menu-item>
+        <bma-menu-divider />
+        <bma-menu-item key="3">3rd menu item</bma-menu-item>
+      </bma-menu>
     </template>
-  </a-dropdown>
+  </bma-dropdown>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

@@ -16,7 +16,7 @@ When `tooltipVisible` is `true`, ToolTip will show always, or ToolTip will not s
 </docs>
 
 <template>
-  <a-slider v-model:value="value" :tooltip-visible="true" />
+  <bma-slider v-model:value="value" :tooltip-visible="true" />
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

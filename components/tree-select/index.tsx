@@ -70,7 +70,7 @@ export function treeSelectProps<
 export type TreeSelectProps = Partial<ExtractPropTypes<ReturnType<typeof treeSelectProps>>>;
 
 const TreeSelect = defineComponent({
-  name: 'ATreeSelect',
+  name: 'BmaTreeSelect',
   inheritAttrs: false,
   props: initDefaultProps(treeSelectProps(), {
     choiceTransitionName: '',

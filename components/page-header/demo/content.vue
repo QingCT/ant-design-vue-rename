@@ -18,7 +18,7 @@ Show all props provided by PageHeader.
 
 <template>
   <div class="components-page-header-demo-content">
-    <a-page-header
+    <bma-page-header
       title="Title"
       class="site-page-header"
       sub-title="This is a subtitle"
@@ -26,38 +26,38 @@ Show all props provided by PageHeader.
       :breadcrumb="{ routes }"
     >
       <template #tags>
-        <a-tag color="blue">Running</a-tag>
+        <bma-tag color="blue">Running</bma-tag>
       </template>
       <template #extra>
-        <a-button key="3">Operation</a-button>
-        <a-button key="2">Operation</a-button>
-        <a-button key="1" type="primary">Primary</a-button>
-        <a-dropdown key="more">
-          <a-button :style="{ border: 'none', padding: 0 }">
+        <bma-button key="3">Operation</bma-button>
+        <bma-button key="2">Operation</bma-button>
+        <bma-button key="1" type="primary">Primary</bma-button>
+        <bma-dropdown key="more">
+          <bma-button :style="{ border: 'none', padding: 0 }">
             <EllipsisOutlined :style="{ fontSize: '20px', verticalAlign: 'top' }" />
-          </a-button>
+          </bma-button>
           <template #overlay>
-            <a-menu>
-              <a-menu-item>
+            <bma-menu>
+              <bma-menu-item>
                 <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
                   1st menu item
                 </a>
-              </a-menu-item>
-              <a-menu-item>
+              </bma-menu-item>
+              <bma-menu-item>
                 <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
                   2nd menu item
                 </a>
-              </a-menu-item>
-              <a-menu-item>
+              </bma-menu-item>
+              <bma-menu-item>
                 <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
                   3rd menu item
                 </a>
-              </a-menu-item>
-            </a-menu>
+              </bma-menu-item>
+            </bma-menu>
           </template>
-        </a-dropdown>
+        </bma-dropdown>
       </template>
-      <a-row class="content">
+      <bma-row class="content">
         <div style="flex: 1">
           <p>
             Ant Design interprets the color system into two levels: a system-level color system and
@@ -84,8 +84,8 @@ Show all props provided by PageHeader.
             style="width: 100%"
           />
         </div>
-      </a-row>
-    </a-page-header>
+      </bma-row>
+    </bma-page-header>
   </div>
 </template>
 
@@ -146,7 +146,7 @@ export default defineComponent({
   align-items: center;
 }
 
-#components-page-header-demo-content .ant-page-header-rtl .image {
+#components-page-header-demo-content .bmant-page-header-rtl .image {
   margin: 0 60px 0 0;
 }
 
@@ -166,12 +166,12 @@ export default defineComponent({
   height: 20px;
 }
 
-#components-page-header-demo-content .ant-page-header-rtl .example-link {
+#components-page-header-demo-content .bmant-page-header-rtl .example-link {
   float: right;
   margin-right: 0;
   margin-left: 16px;
 }
-#components-page-header-demo-content .ant-page-header-rtl .example-link-icon {
+#components-page-header-demo-content .bmant-page-header-rtl .example-link-icon {
   margin-right: 0;
   margin-left: 8px;
 }

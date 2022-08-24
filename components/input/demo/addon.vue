@@ -16,36 +16,36 @@ Using pre & post tabs example.
 
 </docs>
 <template>
-  <a-space direction="vertical">
-    <a-input v-model:value="value1" addon-before="Http://" addon-after=".com" />
-    <a-input v-model:value="value2">
+  <bma-space direction="vertical">
+    <bma-input v-model:value="value1" addon-before="Http://" addon-after=".com" />
+    <bma-input v-model:value="value2">
       <template #addonBefore>
-        <a-select v-model:value="value3" style="width: 90px">
-          <a-select-option value="Http://">Http://</a-select-option>
-          <a-select-option value="Https://">Https://</a-select-option>
-        </a-select>
+        <bma-select v-model:value="value3" style="width: 90px">
+          <bma-select-option value="Http://">Http://</bma-select-option>
+          <bma-select-option value="Https://">Https://</bma-select-option>
+        </bma-select>
       </template>
       <template #addonAfter>
-        <a-select v-model:value="value4" style="width: 80px">
-          <a-select-option value=".com">.com</a-select-option>
-          <a-select-option value=".jp">.jp</a-select-option>
-          <a-select-option value=".cn">.cn</a-select-option>
-          <a-select-option value=".org">.org</a-select-option>
-        </a-select>
+        <bma-select v-model:value="value4" style="width: 80px">
+          <bma-select-option value=".com">.com</bma-select-option>
+          <bma-select-option value=".jp">.jp</bma-select-option>
+          <bma-select-option value=".cn">.cn</bma-select-option>
+          <bma-select-option value=".org">.org</bma-select-option>
+        </bma-select>
       </template>
-    </a-input>
-    <a-input v-model:value="value5">
+    </bma-input>
+    <bma-input v-model:value="value5">
       <template #addonAfter>
         <setting-outlined />
       </template>
-    </a-input>
+    </bma-input>
 
-    <a-input v-model:value="value6">
+    <bma-input v-model:value="value6">
       <template #addonBefore>
-        <a-cascader placeholder="cascader" style="width: 150px" />
+        <bma-cascader placeholder="cascader" style="width: 150px" />
       </template>
-    </a-input>
-  </a-space>
+    </bma-input>
+  </bma-space>
 </template>
 
 <script lang="ts">

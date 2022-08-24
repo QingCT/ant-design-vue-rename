@@ -16,8 +16,8 @@ Except [less customize theme](/docs/react/customize-theme), We also provide CSS 
 Replace your import style file with CSS Variable version:
 
 ```diff
--- import 'ant-design-vue/dist/antd.min.css';
-++ import 'ant-design-vue/dist/antd.variable.min.css';
+-- import 'bmant-design-vue/dist/antd.min.css';
+++ import 'bmant-design-vue/dist/antd.variable.min.css';
 ```
 
 Note: You need remove `babel-plugin-import` for the dynamic theme.
@@ -27,7 +27,7 @@ Note: You need remove `babel-plugin-import` for the dynamic theme.
 Call ConfigProvider static function to modify theme color:
 
 ```ts
-import { ConfigProvider } from 'ant-design-vue';
+import { ConfigProvider } from 'bmant-design-vue';
 
 ConfigProvider.config({
   theme: {
@@ -46,16 +46,16 @@ Modify `prefixCls` on the root of ConfigProvider:
 
 ```html
 <template>
-  <a-config-provider prefix-cls="custom">
+  <bma-config-provider prefix-cls="custom">
     <my-app />
-  </a-config-provider>
+  </bma-config-provider>
 </template>
 ```
 
 Also need call the static function to modify `prefixCls`:
 
 ```ts
-import { ConfigProvider } from 'ant-design-vue';
+import { ConfigProvider } from 'bmant-design-vue';
 ConfigProvider.config({
   prefixCls: 'custom',
   theme: {
@@ -69,7 +69,7 @@ ConfigProvider.config({
 Since prefix modified. Origin `antd.variable.css` should also be replaced:
 
 ```bash
-lessc --js --modify-var="ant-prefix=custom" ant-design-vue/dist/antd.variable.less modified.css
+lessc --js --modify-var="bmant-prefix=custom" ant-design-vue/dist/antd.variable.less modified.css
 ```
 
 ### Related changes

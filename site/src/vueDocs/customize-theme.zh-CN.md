@@ -130,7 +130,7 @@ module.exports = {
 注意样式必须加载 less 格式，一个常见的问题就是引入了多份样式，less 的样式被 css 的样式覆盖了。
 
 - 如果你在使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 的 `style` 配置来引入样式，需要将配置值从 `'css'` 改为 `true`，这样会引入 less 文件。
-- 如果你是通过 `'ant-design-vue/dist/antd.css'` 引入样式的，改为 `ant-design-vue/dist/antd.less`。
+- 如果你是通过 `'bmant-design-vue/dist/antd.css'` 引入样式的，改为 `ant-design-vue/dist/antd.less`。
 
 ## 使用暗黑主题
 
@@ -151,7 +151,7 @@ module.exports = {
 方式二：是用在 `webpack.config.js` 使用 [less-loader](https://github.com/webpack-contrib/less-loader) 按需引入：
 
 ```diff
-const { getThemeVariables } = require('ant-design-vue/dist/theme');
+const { getThemeVariables } = require('bmant-design-vue/dist/theme');
 
 // webpack.config.js
 module.exports = {

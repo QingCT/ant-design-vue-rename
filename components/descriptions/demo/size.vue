@@ -18,24 +18,24 @@ Custom sizes to fit in a variety of containers.
 
 <template>
   <div>
-    <a-radio-group v-model:value="size" @change="onChange">
-      <a-radio value="default">default</a-radio>
-      <a-radio value="middle">middle</a-radio>
-      <a-radio value="small">small</a-radio>
-    </a-radio-group>
+    <bma-radio-group v-model:value="size" @change="onChange">
+      <bma-radio value="default">default</bma-radio>
+      <bma-radio value="middle">middle</bma-radio>
+      <bma-radio value="small">small</bma-radio>
+    </bma-radio-group>
     <br />
     <br />
-    <a-descriptions bordered title="Custom Size" :size="size">
+    <bma-descriptions bordered title="Custom Size" :size="size">
       <template #extra>
-        <a-button type="primary">Edit</a-button>
+        <bma-button type="primary">Edit</bma-button>
       </template>
-      <a-descriptions-item label="Product">Cloud Database</a-descriptions-item>
-      <a-descriptions-item label="Billing">Prepaid</a-descriptions-item>
-      <a-descriptions-item label="Time">18:00:00</a-descriptions-item>
-      <a-descriptions-item label="Amount">$80.00</a-descriptions-item>
-      <a-descriptions-item label="Discount">$20.00</a-descriptions-item>
-      <a-descriptions-item label="Official">$60.00</a-descriptions-item>
-      <a-descriptions-item label="Config Info">
+      <bma-descriptions-item label="Product">Cloud Database</bma-descriptions-item>
+      <bma-descriptions-item label="Billing">Prepaid</bma-descriptions-item>
+      <bma-descriptions-item label="Time">18:00:00</bma-descriptions-item>
+      <bma-descriptions-item label="Amount">$80.00</bma-descriptions-item>
+      <bma-descriptions-item label="Discount">$20.00</bma-descriptions-item>
+      <bma-descriptions-item label="Official">$60.00</bma-descriptions-item>
+      <bma-descriptions-item label="Config Info">
         Data disk type: MongoDB
         <br />
         Database version: 3.4
@@ -48,26 +48,26 @@ Custom sizes to fit in a variety of containers.
         <br />
         Region: East China 1
         <br />
-      </a-descriptions-item>
-    </a-descriptions>
+      </bma-descriptions-item>
+    </bma-descriptions>
     <br />
     <br />
-    <a-descriptions title="Custom Size" :size="size">
+    <bma-descriptions title="Custom Size" :size="size">
       <template #extra>
-        <a-button type="primary">Edit</a-button>
+        <bma-button type="primary">Edit</bma-button>
       </template>
-      <a-descriptions-item label="Product">Cloud Database</a-descriptions-item>
-      <a-descriptions-item label="Billing">Prepaid</a-descriptions-item>
-      <a-descriptions-item label="Time">18:00:00</a-descriptions-item>
-      <a-descriptions-item label="Amount">$80.00</a-descriptions-item>
-      <a-descriptions-item label="Discount">$20.00</a-descriptions-item>
-      <a-descriptions-item label="Official">$60.00</a-descriptions-item>
-    </a-descriptions>
+      <bma-descriptions-item label="Product">Cloud Database</bma-descriptions-item>
+      <bma-descriptions-item label="Billing">Prepaid</bma-descriptions-item>
+      <bma-descriptions-item label="Time">18:00:00</bma-descriptions-item>
+      <bma-descriptions-item label="Amount">$80.00</bma-descriptions-item>
+      <bma-descriptions-item label="Discount">$20.00</bma-descriptions-item>
+      <bma-descriptions-item label="Official">$60.00</bma-descriptions-item>
+    </bma-descriptions>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { DescriptionsProps } from 'ant-design-vue';
+import type { DescriptionsProps } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const size = ref<DescriptionsProps['size']>('default');

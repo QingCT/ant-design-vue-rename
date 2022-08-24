@@ -18,23 +18,23 @@ In order to fit in more tabs, they can slide left and right (or up and down).
 
 <template>
   <div>
-    <a-radio-group v-model:value="mode" :style="{ marginBottom: '8px' }">
-      <a-radio-button value="top">Horizontal</a-radio-button>
-      <a-radio-button value="left">Vertical</a-radio-button>
-    </a-radio-group>
-    <a-tabs
+    <bma-radio-group v-model:value="mode" :style="{ marginBottom: '8px' }">
+      <bma-radio-button value="top">Horizontal</bma-radio-button>
+      <bma-radio-button value="left">Vertical</bma-radio-button>
+    </bma-radio-group>
+    <bma-tabs
       v-model:activeKey="activeKey"
       :tab-position="mode"
       :style="{ height: '200px' }"
       @tabScroll="callback"
     >
-      <a-tab-pane v-for="i in 30" :key="i" :tab="`Tab-${i}`">Content of tab {{ i }}</a-tab-pane>
-    </a-tabs>
+      <bma-tab-pane v-for="i in 30" :key="i" :tab="`Tab-${i}`">Content of tab {{ i }}</bma-tab-pane>
+    </bma-tabs>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { TabsProps } from 'ant-design-vue';
+import type { TabsProps } from 'bmant-design-vue';
 
 export default defineComponent({
   setup() {

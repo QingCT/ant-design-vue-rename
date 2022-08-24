@@ -22,11 +22,11 @@ You can use `filterMode` to change default filter interface, options: `menu`(def
 </docs>
 
 <template>
-  <a-table :columns="columns" :data-source="data" @change="onChange"></a-table>
+  <bma-table :columns="columns" :data-source="data" @change="onChange"></bma-table>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import type { TableProps } from 'ant-design-vue';
+import type { TableProps } from 'bmant-design-vue';
 
 export default defineComponent({
   setup() {

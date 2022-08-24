@@ -18,30 +18,30 @@ If you want specific control over the positioning and placement of the `Icon`, t
 </docs>
 
 <template>
-  <a-tag color="#55acee">
+  <bma-tag color="#55acee">
     <template #icon>
       <twitter-outlined />
     </template>
     Twitter
-  </a-tag>
-  <a-tag color="#cd201f">
+  </bma-tag>
+  <bma-tag color="#cd201f">
     <template #icon>
       <youtube-outlined />
     </template>
     Youtube
-  </a-tag>
-  <a-tag color="#3b5999">
+  </bma-tag>
+  <bma-tag color="#3b5999">
     <template #icon>
       <facebook-outlined />
     </template>
     Facebook
-  </a-tag>
-  <a-tag color="#55acee">
+  </bma-tag>
+  <bma-tag color="#55acee">
     <template #icon>
       <linkedin-outlined />
     </template>
     LinkedIn
-  </a-tag>
+  </bma-tag>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

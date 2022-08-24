@@ -18,26 +18,26 @@ Components which support rtl direction are listed here, you can toggle the direc
 
 <template>
   <span style="margin-right: 16px">Change direction of components:</span>
-  <a-radio-group v-model:value="state.direction">
-    <a-radio-button value="ltr">LTR</a-radio-button>
-    <a-radio-button value="rtl">RTL</a-radio-button>
-  </a-radio-group>
-  <a-divider />
-  <a-config-provider :direction="state.direction">
+  <bma-radio-group v-model:value="state.direction">
+    <bma-radio-button value="ltr">LTR</bma-radio-button>
+    <bma-radio-button value="rtl">RTL</bma-radio-button>
+  </bma-radio-group>
+  <bma-divider />
+  <bma-config-provider :direction="state.direction">
     <div class="direction-components">
-      <a-row>
-        <a-col :span="24">
-          <a-divider orientation="left">Cascader example</a-divider>
-          <a-cascader
+      <bma-row>
+        <bma-col :span="24">
+          <bma-divider orientation="left">Cascader example</bma-divider>
+          <bma-cascader
             :options="cascaderOptions"
             placeholder="یک مورد انتخاب کنید"
             :placement="state.popupPlacement"
             @change="onCascaderChange"
           >
             <template #suffixIcon><SearchIcon /></template>
-          </a-cascader>
+          </bma-cascader>
           &nbsp;&nbsp;&nbsp;&nbsp; With search:
-          <a-cascader
+          <bma-cascader
             :options="cascaderOptions"
             placeholder="Select an item"
             :placement="state.popupPlacement"
@@ -45,71 +45,71 @@ Components which support rtl direction are listed here, you can toggle the direc
             @change="onCascaderChange"
           >
             <template #suffixIcon><SmileOutlined /></template>
-          </a-cascader>
-        </a-col>
-      </a-row>
+          </bma-cascader>
+        </bma-col>
+      </bma-row>
       <br />
-      <a-row>
-        <a-col :span="12">
-          <a-divider orientation="left">Switch example</a-divider>
+      <bma-row>
+        <bma-col :span="12">
+          <bma-divider orientation="left">Switch example</bma-divider>
           &nbsp;&nbsp;
-          <a-switch default-checked />
+          <bma-switch default-checked />
           &nbsp;&nbsp;
-          <a-switch loading default-checked />
+          <bma-switch loading default-checked />
           &nbsp;&nbsp;
-          <a-switch size="small" loading />
-        </a-col>
-        <a-col :span="12">
-          <a-divider orientation="left">Radio Group example</a-divider>
+          <bma-switch size="small" loading />
+        </bma-col>
+        <bma-col :span="12">
+          <bma-divider orientation="left">Radio Group example</bma-divider>
 
-          <a-radio-group default-value="c" button-style="solid">
-            <a-radio-button value="a">تهران</a-radio-button>
-            <a-radio-button value="b" disabled>اصفهان</a-radio-button>
-            <a-radio-button value="c">فارس</a-radio-button>
-            <a-radio-button value="d">خوزستان</a-radio-button>
-          </a-radio-group>
-        </a-col>
-      </a-row>
+          <bma-radio-group default-value="c" button-style="solid">
+            <bma-radio-button value="a">تهران</bma-radio-button>
+            <bma-radio-button value="b" disabled>اصفهان</bma-radio-button>
+            <bma-radio-button value="c">فارس</bma-radio-button>
+            <bma-radio-button value="d">خوزستان</bma-radio-button>
+          </bma-radio-group>
+        </bma-col>
+      </bma-row>
       <br />
-      <a-row>
-        <a-col :span="12">
-          <a-divider orientation="left">Button example</a-divider>
+      <bma-row>
+        <bma-col :span="12">
+          <bma-divider orientation="left">Button example</bma-divider>
           <div class="button-demo">
-            <a-button type="primary">
+            <bma-button type="primary">
               <template #icon><DownloadOutlined /></template>
-            </a-button>
-            <a-button type="primary" shape="circle">
+            </bma-button>
+            <bma-button type="primary" shape="circle">
               <template #icon><DownloadOutlined /></template>
-            </a-button>
-            <a-button type="primary" shape="round">
+            </bma-button>
+            <bma-button type="primary" shape="round">
               <template #icon><DownloadOutlined /></template>
-            </a-button>
-            <a-button type="primary" shape="round">
-              <template #icon><DownloadOutlined /></template>
-              Download
-            </a-button>
-            <a-button type="primary">
+            </bma-button>
+            <bma-button type="primary" shape="round">
               <template #icon><DownloadOutlined /></template>
               Download
-            </a-button>
+            </bma-button>
+            <bma-button type="primary">
+              <template #icon><DownloadOutlined /></template>
+              Download
+            </bma-button>
             <br />
-            <a-button-group>
-              <a-button type="primary">
+            <bma-button-group>
+              <bma-button type="primary">
                 <LeftOutlined />
                 Backward
-              </a-button>
-              <a-button type="primary">
+              </bma-button>
+              <bma-button type="primary">
                 Forward
                 <RightOutlined />
-              </a-button>
-            </a-button-group>
-            <a-button type="primary" loading>Loading</a-button>
-            <a-button type="primary" size="small" loading>Loading</a-button>
+              </bma-button>
+            </bma-button-group>
+            <bma-button type="primary" loading>Loading</bma-button>
+            <bma-button type="primary" size="small" loading>Loading</bma-button>
           </div>
-        </a-col>
-        <a-col :span="12">
-          <a-divider orientation="left">Tree example</a-divider>
-          <a-tree
+        </bma-col>
+        <bma-col :span="12">
+          <bma-divider orientation="left">Tree example</bma-divider>
+          <bma-tree
             v-model:expandedKeys="expandedKeys"
             v-model:selectedKeys="selectedKeys"
             v-model:checkedKeys="checkedKeys"
@@ -121,76 +121,76 @@ Components which support rtl direction are listed here, you can toggle the direc
               <span v-if="key === '0-0-1-0'" style="color: #1890ff">{{ title }}</span>
               <template v-else>{{ title }}</template>
             </template>
-          </a-tree>
-        </a-col>
-      </a-row>
+          </bma-tree>
+        </bma-col>
+      </bma-row>
       <br />
-      <a-row>
-        <a-col :span="24">
-          <a-divider orientation="left">Input (Input Group) example</a-divider>
-          <a-input-group size="large">
-            <a-row :gutter="8">
-              <a-col :span="5">
-                <a-input default-value="0571" />
-              </a-col>
-              <a-col :span="8">
-                <a-input default-value="26888888" />
-              </a-col>
-            </a-row>
-          </a-input-group>
+      <bma-row>
+        <bma-col :span="24">
+          <bma-divider orientation="left">Input (Input Group) example</bma-divider>
+          <bma-input-group size="large">
+            <bma-row :gutter="8">
+              <bma-col :span="5">
+                <bma-input default-value="0571" />
+              </bma-col>
+              <bma-col :span="8">
+                <bma-input default-value="26888888" />
+              </bma-col>
+            </bma-row>
+          </bma-input-group>
           <br />
-          <a-input-group compact>
-            <a-input style="width: 20%" default-value="0571" />
-            <a-input style="width: 30%" default-value="26888888" />
-          </a-input-group>
+          <bma-input-group compact>
+            <bma-input style="width: 20%" default-value="0571" />
+            <bma-input style="width: 30%" default-value="26888888" />
+          </bma-input-group>
           <br />
-          <a-input-group compact>
-            <a-select default-value="Option1">
-              <a-select-option value="Option1">Option1</a-select-option>
-              <a-select-option value="Option2">Option2</a-select-option>
-            </a-select>
-            <a-input style="width: 50%" default-value="input content" />
-            <a-inputNumber />
-          </a-input-group>
+          <bma-input-group compact>
+            <bma-select default-value="Option1">
+              <bma-select-option value="Option1">Option1</bma-select-option>
+              <bma-select-option value="Option2">Option2</bma-select-option>
+            </bma-select>
+            <bma-input style="width: 50%" default-value="input content" />
+            <bma-inputNumber />
+          </bma-input-group>
           <br />
-          <a-input-search placeholder="input search text" enter-button="Search" size="large" />
+          <bma-input-search placeholder="input search text" enter-button="Search" size="large" />
           <br />
           <br />
           <div style="margin-bottom: 16px">
-            <a-input default-value="mysite">
+            <bma-input default-value="mysite">
               <template #selectBefore>
-                <a-select default-value="Http://" style="width: 90px">
-                  <a-select-option value="Http://">Http://</a-select-option>
-                  <a-select-option value="Https://">Https://</a-select-option>
-                </a-select>
+                <bma-select default-value="Http://" style="width: 90px">
+                  <bma-select-option value="Http://">Http://</bma-select-option>
+                  <bma-select-option value="Https://">Https://</bma-select-option>
+                </bma-select>
               </template>
               <template #selectAfter>
-                <a-select default-value=".com" style="width: 80px">
-                  <a-select-option value=".com">.com</a-select-option>
-                  <a-select-option value=".jp">.jp</a-select-option>
-                  <a-select-option value=".cn">.cn</a-select-option>
-                  <a-select-option value=".org">.org</a-select-option>
-                </a-select>
+                <bma-select default-value=".com" style="width: 80px">
+                  <bma-select-option value=".com">.com</bma-select-option>
+                  <bma-select-option value=".jp">.jp</bma-select-option>
+                  <bma-select-option value=".cn">.cn</bma-select-option>
+                  <bma-select-option value=".org">.org</bma-select-option>
+                </bma-select>
               </template>
-            </a-input>
+            </bma-input>
           </div>
           <br />
-          <a-row>
-            <a-col :span="12">
-              <a-divider orientation="left">Select example</a-divider>
-              <a-select mode="multiple" default-value="مورچه" style="width: 120px">
-                <a-select-option value="jack">Jack</a-select-option>
-                <a-select-option value="مورچه">مورچه</a-select-option>
-                <a-select-option value="disabled" disabled>Disabled</a-select-option>
-                <a-select-option value="Yiminghe">yiminghe</a-select-option>
-              </a-select>
-              <a-select default-value="مورچه" style="width: 120px" disabled>
-                <a-select-option value="مورچه">مورچه</a-select-option>
-              </a-select>
-              <a-select default-value="مورچه" style="width: 120px" loading>
-                <a-select-option value="مورچه">مورچه</a-select-option>
-              </a-select>
-              <a-select
+          <bma-row>
+            <bma-col :span="12">
+              <bma-divider orientation="left">Select example</bma-divider>
+              <bma-select mode="multiple" default-value="مورچه" style="width: 120px">
+                <bma-select-option value="jack">Jack</bma-select-option>
+                <bma-select-option value="مورچه">مورچه</bma-select-option>
+                <bma-select-option value="disabled" disabled>Disabled</bma-select-option>
+                <bma-select-option value="Yiminghe">yiminghe</bma-select-option>
+              </bma-select>
+              <bma-select default-value="مورچه" style="width: 120px" disabled>
+                <bma-select-option value="مورچه">مورچه</bma-select-option>
+              </bma-select>
+              <bma-select default-value="مورچه" style="width: 120px" loading>
+                <bma-select-option value="مورچه">مورچه</bma-select-option>
+              </bma-select>
+              <bma-select
                 show-search
                 style="width: 200px"
                 placeholder="Select a person"
@@ -200,15 +200,15 @@ Components which support rtl direction are listed here, you can toggle the direc
                     option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
                 "
               >
-                <a-select-option value="jack">Jack</a-select-option>
-                <a-select-option value="سعید">سعید</a-select-option>
-                <a-select-option value="tom">Tom</a-select-option>
-              </a-select>
-            </a-col>
-            <a-col :span="12">
-              <a-divider orientation="left">TreeSelect example</a-divider>
+                <bma-select-option value="jack">Jack</bma-select-option>
+                <bma-select-option value="سعید">سعید</bma-select-option>
+                <bma-select-option value="tom">Tom</bma-select-option>
+              </bma-select>
+            </bma-col>
+            <bma-col :span="12">
+              <bma-divider orientation="left">TreeSelect example</bma-divider>
               <div>
-                <a-tree-select
+                <bma-tree-select
                   show-search
                   style="width: 100%"
                   :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
@@ -216,121 +216,121 @@ Components which support rtl direction are listed here, you can toggle the direc
                   allow-clear
                   tree-default-expand-all
                   :tree-data="treeSelectData"
-                ></a-tree-select>
+                ></bma-tree-select>
               </div>
-            </a-col>
-          </a-row>
+            </bma-col>
+          </bma-row>
           <br />
-          <a-row>
-            <a-col :span="24">
-              <a-divider orientation="left">Modal example</a-divider>
+          <bma-row>
+            <bma-col :span="24">
+              <bma-divider orientation="left">Modal example</bma-divider>
               <div>
-                <a-button type="primary" @click="showModal">Open Modal</a-button>
-                <a-modal v-model:visible="state.modalVisible" title="پنچره ساده">
+                <bma-button type="primary" @click="showModal">Open Modal</bma-button>
+                <bma-modal v-model:visible="state.modalVisible" title="پنچره ساده">
                   <p>نگاشته‌های خود را اینجا قراردهید</p>
                   <p>نگاشته‌های خود را اینجا قراردهید</p>
                   <p>نگاشته‌های خود را اینجا قراردهید</p>
-                </a-modal>
+                </bma-modal>
               </div>
-            </a-col>
-          </a-row>
+            </bma-col>
+          </bma-row>
           <br />
-          <a-row>
-            <a-col :span="24">
-              <a-divider orientation="left">Steps example</a-divider>
+          <bma-row>
+            <bma-col :span="24">
+              <bma-divider orientation="left">Steps example</bma-divider>
               <div>
-                <a-steps progress-dot :current="state.currentStep">
-                  <a-step title="Finished" description="This is a description." />
-                  <a-step title="In Progress" description="This is a description." />
-                  <a-step title="Waiting" description="This is a description." />
-                </a-steps>
+                <bma-steps progress-dot :current="state.currentStep">
+                  <bma-step title="Finished" description="This is a description." />
+                  <bma-step title="In Progress" description="This is a description." />
+                  <bma-step title="Waiting" description="This is a description." />
+                </bma-steps>
                 <br />
-                <a-steps :current="state.currentStep" @change="onStepsChange">
-                  <a-step title="Step 1" description="This is a description." />
-                  <a-step title="Step 2" description="This is a description." />
-                  <a-step title="Step 3" description="This is a description." />
-                </a-steps>
+                <bma-steps :current="state.currentStep" @change="onStepsChange">
+                  <bma-step title="Step 1" description="This is a description." />
+                  <bma-step title="Step 2" description="This is a description." />
+                  <bma-step title="Step 3" description="This is a description." />
+                </bma-steps>
               </div>
-            </a-col>
-          </a-row>
+            </bma-col>
+          </bma-row>
           <br />
-          <a-row>
-            <a-col :span="12">
-              <a-divider orientation="left">Rate example</a-divider>
+          <bma-row>
+            <bma-col :span="12">
+              <bma-divider orientation="left">Rate example</bma-divider>
               <div>
-                <a-rate v-model:value="rateValue" />
+                <bma-rate v-model:value="rateValue" />
                 <br />
                 <strong>* Note:</strong>
                 Half star not implemented in RTL direction.
               </div>
-            </a-col>
-            <a-col :span="12">
-              <a-divider orientation="left">Badge example</a-divider>
+            </bma-col>
+            <bma-col :span="12">
+              <bma-divider orientation="left">Badge example</bma-divider>
               <div>
                 <div>
-                  <a-badge :count="state.badgeCount">
+                  <bma-badge :count="state.badgeCount">
                     <a href="#" class="head-example" />
-                  </a-badge>
-                  <a-button-group>
-                    <a-button @click="declineBadge">
+                  </bma-badge>
+                  <bma-button-group>
+                    <bma-button @click="declineBadge">
                       <MinusOutlined />
-                    </a-button>
-                    <a-button @click="increaseBadge">
+                    </bma-button>
+                    <bma-button @click="increaseBadge">
                       <PlusOutlined />
-                    </a-button>
-                  </a-button-group>
+                    </bma-button>
+                  </bma-button-group>
                 </div>
                 <div style="margin-top: 10px">
-                  <a-badge :dot="state.showBadge">
+                  <bma-badge :dot="state.showBadge">
                     <a href="#" class="head-example" />
-                  </a-badge>
-                  <a-switch :checked="state.showBadge" @change="onChangeBadge" />
+                  </bma-badge>
+                  <bma-switch :checked="state.showBadge" @change="onChangeBadge" />
                 </div>
               </div>
-            </a-col>
-          </a-row>
-        </a-col>
-      </a-row>
+            </bma-col>
+          </bma-row>
+        </bma-col>
+      </bma-row>
 
       <br />
       <br />
-      <a-row>
-        <a-col :span="24">
-          <a-divider orientation="left">Pagination example</a-divider>
-          <a-pagination show-size-changer :default-current="3" :total="500" />
-        </a-col>
-      </a-row>
+      <bma-row>
+        <bma-col :span="24">
+          <bma-divider orientation="left">Pagination example</bma-divider>
+          <bma-pagination show-size-changer :default-current="3" :total="500" />
+        </bma-col>
+      </bma-row>
       <br />
-      <a-row>
-        <a-col :span="24">
-          <a-divider orientation="left">Grid System example</a-divider>
+      <bma-row>
+        <bma-col :span="24">
+          <bma-divider orientation="left">Grid System example</bma-divider>
           <div class="grid-demo">
             <div class="code-box-demo">
               <p>
                 <strong>* Note:</strong>
                 Every calculation in RTL grid system is from right side (offset, push, etc.)
               </p>
-              <a-row>
-                <a-col :span="8">col-8</a-col>
-                <a-col :span="8" :offset="8">col-8</a-col>
-              </a-row>
-              <a-row>
-                <a-col :span="6" :offset="6">col-6 col-offset-6</a-col>
-                <a-col :span="6" :offset="6">col-6 col-offset-6</a-col>
-              </a-row>
-              <a-row>
-                <a-col :span="12" :offset="6">col-12 col-offset-6</a-col>
-              </a-row>
-              <a-row>
-                <a-col :span="18" :push="6">col-18 col-push-6</a-col>
-                <a-col :span="6" :pull="18">col-6 col-pull-18</a-col>
-              </a-row>
+              <bma-row>
+                <bma-col :span="8">col-8</bma-col>
+                <bma-col :span="8" :offset="8">col-8</bma-col>
+              </bma-row>
+              <bma-row>
+                <bma-col :span="6" :offset="6">col-6 col-offset-6</bma-col>
+                <bma-col :span="6" :offset="6">col-6 col-offset-6</bma-col>
+              </bma-row>
+              <bma-row>
+                <bma-col :span="12" :offset="6">col-12 col-offset-6</bma-col>
+              </bma-row>
+              <bma-row>
+                <bma-col :span="18" :push="6">col-18 col-push-6</bma-col>
+                <bma-col :span="6" :pull="18">col-6 col-pull-18</bma-col>
+              </bma-row>
             </div>
           </div>
-        </a-col>
-      </a-row>
+        </bma-col>
+      </bma-row>
     </div>
-  </a-config-provider>
+  </bma-config-provider>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, watch, ref } from 'vue';
@@ -344,7 +344,7 @@ import {
   MinusOutlined,
   PlusOutlined,
 } from '@ant-design/icons-vue';
-import type { TreeProps, TreeSelectProps, CascaderProps } from 'ant-design-vue';
+import type { TreeProps, TreeSelectProps, CascaderProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {
@@ -541,13 +541,13 @@ export default defineComponent({
 </script>
 <style lang="less">
 .direction-components {
-  .button-demo .ant-btn,
-  .button-demo .ant-btn-group {
+  .button-demo .bmant-btn,
+  .button-demo .bmant-btn-group {
     margin-right: 8px;
     margin-bottom: 12px;
   }
-  .button-demo .ant-btn-group > .ant-btn,
-  .button-demo .ant-btn-group > span > .ant-btn {
+  .button-demo .bmant-btn-group > .bmant-btn,
+  .button-demo .bmant-btn-group > span > .bmant-btn {
     margin-right: 0;
     margin-left: 0;
   }
@@ -561,10 +561,10 @@ export default defineComponent({
     border-radius: 4px;
   }
 
-  .ant-badge:not(.ant-badge-not-a-wrapper) {
+  .bmant-badge:not(.bmant-badge-not-a-wrapper) {
     margin-right: 20px;
   }
-  .ant-badge-rtl:not(.ant-badge-not-a-wrapper) {
+  .bmant-badge-rtl:not(.bmant-badge-not-a-wrapper) {
     margin-right: 0;
     margin-left: 20px;
   }

@@ -16,7 +16,7 @@ Multiple and checkable.
 
 </docs>
 <template>
-  <a-tree-select
+  <bma-tree-select
     v-model:value="value"
     style="width: 100%"
     :tree-data="treeData"
@@ -27,9 +27,9 @@ Multiple and checkable.
   />
 </template>
 <script lang="ts">
-import type { TreeSelectProps } from 'ant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
-import { TreeSelect } from 'ant-design-vue';
+import { TreeSelect } from 'bmant-design-vue';
 const SHOW_PARENT = TreeSelect.SHOW_PARENT;
 
 const treeData: TreeSelectProps['treeData'] = [

@@ -17,7 +17,7 @@ Search with remote data.
 </docs>
 
 <template>
-  <a-select
+  <bma-select
     v-model:value="value"
     show-search
     placeholder="input search text"
@@ -29,7 +29,7 @@ Search with remote data.
     :options="data"
     @search="handleSearch"
     @change="handleChange"
-  ></a-select>
+  ></bma-select>
 </template>
 <script lang="ts">
 import jsonp from 'fetch-jsonp';

@@ -16,22 +16,22 @@ This example demonstrates the case that a form contains multiple form controls.
 
 </docs>
 <template>
-  <a-form
+  <bma-form
     ref="formRef"
     name="dynamic_form_nest_item"
     :model="dynamicValidateForm"
     @finish="onFinish"
   >
-    <a-form-item name="area" label="Area" :rules="[{ required: true, message: 'Missing area' }]">
-      <a-select v-model:value="dynamicValidateForm.area" :options="areas" />
-    </a-form-item>
-    <a-space
+    <bma-form-item name="area" label="Area" :rules="[{ required: true, message: 'Missing area' }]">
+      <bma-select v-model:value="dynamicValidateForm.area" :options="areas" />
+    </bma-form-item>
+    <bma-space
       v-for="(sight, index) in dynamicValidateForm.sights"
       :key="sight.id"
       style="display: flex; margin-bottom: 8px"
       align="baseline"
     >
-      <a-form-item
+      <bma-form-item
         :name="['sights', index, 'value']"
         label="Sight"
         :rules="{
@@ -39,14 +39,14 @@ This example demonstrates the case that a form contains multiple form controls.
           message: 'Missing sight',
         }"
       >
-        <a-select
+        <bma-select
           v-model:value="sight.value"
           :disabled="!dynamicValidateForm.area"
           :options="(sights[dynamicValidateForm.area] || []).map(a => ({ value: a }))"
           style="width: 130px"
-        ></a-select>
-      </a-form-item>
-      <a-form-item
+        ></bma-select>
+      </bma-form-item>
+      <bma-form-item
         label="Price"
         :name="['sights', index, 'price']"
         :rules="{
@@ -54,26 +54,26 @@ This example demonstrates the case that a form contains multiple form controls.
           message: 'Missing price',
         }"
       >
-        <a-input v-model:value="sight.price" />
-      </a-form-item>
+        <bma-input v-model:value="sight.price" />
+      </bma-form-item>
       <MinusCircleOutlined @click="removeSight(sight)" />
-    </a-space>
-    <a-form-item>
-      <a-button type="dashed" block @click="addSight">
+    </bma-space>
+    <bma-form-item>
+      <bma-button type="dashed" block @click="addSight">
         <PlusOutlined />
         Add sights
-      </a-button>
-    </a-form-item>
-    <a-form-item>
-      <a-button type="primary" html-type="submit">Submit</a-button>
-    </a-form-item>
-  </a-form>
+      </bma-button>
+    </bma-form-item>
+    <bma-form-item>
+      <bma-button type="primary" html-type="submit">Submit</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 
 <script lang="ts">
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons-vue';
 import { defineComponent, reactive, ref, watch } from 'vue';
-import type { FormInstance } from 'ant-design-vue';
+import type { FormInstance } from 'bmant-design-vue';
 
 interface Sights {
   value: string;

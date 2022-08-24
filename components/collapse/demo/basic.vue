@@ -17,17 +17,17 @@ By default, any number of panels can be expanded at a time. The first panel is e
 </docs>
 
 <template>
-  <a-collapse v-model:activeKey="activeKey">
-    <a-collapse-panel key="1" header="This is panel header 1">
+  <bma-collapse v-model:activeKey="activeKey">
+    <bma-collapse-panel key="1" header="This is panel header 1">
       <p>{{ text }}</p>
-    </a-collapse-panel>
-    <a-collapse-panel key="2" header="This is panel header 2">
+    </bma-collapse-panel>
+    <bma-collapse-panel key="2" header="This is panel header 2">
       <p>{{ text }}</p>
-    </a-collapse-panel>
-    <a-collapse-panel key="3" header="This is panel header 3" collapsible="disabled">
+    </bma-collapse-panel>
+    <bma-collapse-panel key="3" header="This is panel header 3" collapsible="disabled">
       <p>{{ text }}</p>
-    </a-collapse-panel>
-  </a-collapse>
+    </bma-collapse-panel>
+  </bma-collapse>
 </template>
 <script lang="ts">
 import { defineComponent, ref, watch } from 'vue';

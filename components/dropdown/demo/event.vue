@@ -17,24 +17,24 @@ An event will be triggered when you click menu items, in which you can make diff
 </docs>
 
 <template>
-  <a-dropdown>
+  <bma-dropdown>
     <a class="ant-dropdown-link" @click.prevent>
       Hover me, Click menu item
       <DownOutlined />
     </a>
     <template #overlay>
-      <a-menu @click="onClick">
-        <a-menu-item key="1">1st menu item</a-menu-item>
-        <a-menu-item key="2">2nd menu item</a-menu-item>
-        <a-menu-item key="3">3rd menu item</a-menu-item>
-      </a-menu>
+      <bma-menu @click="onClick">
+        <bma-menu-item key="1">1st menu item</bma-menu-item>
+        <bma-menu-item key="2">2nd menu item</bma-menu-item>
+        <bma-menu-item key="3">3rd menu item</bma-menu-item>
+      </bma-menu>
     </template>
-  </a-dropdown>
+  </bma-dropdown>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { DownOutlined } from '@ant-design/icons-vue';
-import type { MenuProps } from 'ant-design-vue';
+import type { MenuProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

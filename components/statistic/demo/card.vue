@@ -18,10 +18,10 @@ Display statistic data in Card.
 
 <template>
   <div style="background: #ececec; padding: 30px">
-    <a-row :gutter="16">
-      <a-col :span="12">
-        <a-card>
-          <a-statistic
+    <bma-row :gutter="16">
+      <bma-col :span="12">
+        <bma-card>
+          <bma-statistic
             title="Feedback"
             :value="11.28"
             :precision="2"
@@ -32,12 +32,12 @@ Display statistic data in Card.
             <template #prefix>
               <arrow-up-outlined />
             </template>
-          </a-statistic>
-        </a-card>
-      </a-col>
-      <a-col :span="12">
-        <a-card>
-          <a-statistic
+          </bma-statistic>
+        </bma-card>
+      </bma-col>
+      <bma-col :span="12">
+        <bma-card>
+          <bma-statistic
             title="Idle"
             :value="9.3"
             :precision="2"
@@ -48,10 +48,10 @@ Display statistic data in Card.
             <template #prefix>
               <arrow-down-outlined />
             </template>
-          </a-statistic>
-        </a-card>
-      </a-col>
-    </a-row>
+          </bma-statistic>
+        </bma-card>
+      </bma-col>
+    </bma-row>
   </div>
 </template>
 <script lang="ts">

@@ -17,30 +17,30 @@ For long table，need to scroll to view the header and scroll bar，then you can
 </docs>
 
 <template>
-  <a-table sticky :columns="columns" :data-source="data" :scroll="{ x: 1500 }">
+  <bma-table sticky :columns="columns" :data-source="data" :scroll="{ x: 1500 }">
     <template #bodyCell="{ column }">
       <template v-if="column.key === 'operation'"><a>action</a></template>
     </template>
     <template #summary>
-      <a-table-summary :fixed="fixedTop ? 'top' : 'bottom'">
-        <a-table-summary-row>
-          <a-table-summary-cell :index="0" :col-span="2">
-            <a-switch
+      <bma-table-summary :fixed="fixedTop ? 'top' : 'bottom'">
+        <bma-table-summary-row>
+          <bma-table-summary-cell :index="0" :col-span="2">
+            <bma-switch
               v-model:checked="fixedTop"
               checked-children="Fixed Top"
               un-checked-children="Fixed Top"
-            ></a-switch>
-          </a-table-summary-cell>
-          <a-table-summary-cell :index="2" :col-span="8">Scroll Context</a-table-summary-cell>
-          <a-table-summary-cell :index="10">Fix Right</a-table-summary-cell>
-        </a-table-summary-row>
-      </a-table-summary>
+            ></bma-switch>
+          </bma-table-summary-cell>
+          <bma-table-summary-cell :index="2" :col-span="8">Scroll Context</bma-table-summary-cell>
+          <bma-table-summary-cell :index="10">Fix Right</bma-table-summary-cell>
+        </bma-table-summary-row>
+      </bma-table-summary>
     </template>
-  </a-table>
+  </bma-table>
 </template>
 
 <script lang="ts">
-import type { TableColumnsType } from 'ant-design-vue';
+import type { TableColumnsType } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({

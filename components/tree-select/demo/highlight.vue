@@ -17,7 +17,7 @@ Search Value Hightlight
 </docs>
 
 <template>
-  <a-tree-select
+  <bma-tree-select
     v-model:value="value"
     v-model:searchValue="searchValue"
     show-search
@@ -47,10 +47,10 @@ Search Value Hightlight
         </template>
       </template>
     </template>
-  </a-tree-select>
+  </bma-tree-select>
 </template>
 <script lang="ts">
-import type { TreeSelectProps } from 'ant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
 export default defineComponent({
   setup() {

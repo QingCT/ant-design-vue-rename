@@ -59,7 +59,7 @@ function getPoint(point: TargetType) {
 }
 
 export default defineComponent({
-  name: 'Align',
+  name: 'Bmalign',
   props: alignProps,
   emits: ['align'],
   setup(props, { expose, slots }) {

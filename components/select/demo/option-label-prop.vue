@@ -20,33 +20,33 @@ or use `tagRender` slot for custom rendering of tags.
 </docs>
 
 <template>
-  <a-space direction="vertical" style="width: 100%">
-    <a-select
+  <bma-space direction="vertical" style="width: 100%">
+    <bma-select
       v-model:value="value"
       mode="multiple"
       style="width: 100%"
       placeholder="select one country"
       option-label-prop="children"
     >
-      <a-select-option value="china" label="China">
+      <bma-select-option value="china" label="China">
         <span role="img" aria-label="China">🇨🇳</span>
         &nbsp;&nbsp;China (中国)
-      </a-select-option>
-      <a-select-option value="usa" label="USA">
+      </bma-select-option>
+      <bma-select-option value="usa" label="USA">
         <span role="img" aria-label="USA">🇺🇸</span>
         &nbsp;&nbsp;USA (美国)
-      </a-select-option>
-      <a-select-option value="japan" label="Japan">
+      </bma-select-option>
+      <bma-select-option value="japan" label="Japan">
         <span role="img" aria-label="Japan">🇯🇵</span>
         &nbsp;&nbsp;Japan (日本)
-      </a-select-option>
-      <a-select-option value="korea" label="Korea">
+      </bma-select-option>
+      <bma-select-option value="korea" label="Korea">
         <span role="img" aria-label="Korea">🇰🇷</span>
         &nbsp;&nbsp;Korea (韩国)
-      </a-select-option>
-    </a-select>
+      </bma-select-option>
+    </bma-select>
 
-    <a-select
+    <bma-select
       v-model:value="value"
       mode="multiple"
       style="width: 100%"
@@ -58,13 +58,13 @@ or use `tagRender` slot for custom rendering of tags.
         <span role="img" :aria-label="val">{{ icon }}</span>
         &nbsp;&nbsp;{{ label }}
       </template>
-    </a-select>
+    </bma-select>
     <span>Note: v-slot:option support from v2.2.5</span>
-  </a-space>
+  </bma-space>
   <br />
   <br />
-  <a-space direction="vertical" style="width: 100%">
-    <a-select
+  <bma-space direction="vertical" style="width: 100%">
+    <bma-select
       v-model:value="value"
       mode="multiple"
       style="width: 100%"
@@ -76,14 +76,14 @@ or use `tagRender` slot for custom rendering of tags.
         &nbsp;&nbsp;{{ label }}
       </template>
       <template #tagRender="{ value: val, label, closable, onClose, option }">
-        <a-tag :closable="closable" style="margin-right: 3px" @close="onClose">
+        <bma-tag :closable="closable" style="margin-right: 3px" @close="onClose">
           {{ label }}&nbsp;&nbsp;
           <span role="img" :aria-label="val">{{ option.icon }}</span>
-        </a-tag>
+        </bma-tag>
       </template>
-    </a-select>
+    </bma-select>
     <span>Note: v-slot:tagRender support from v3.0</span>
-  </a-space>
+  </bma-space>
 </template>
 <script lang="ts">
 import { defineComponent, ref, watch } from 'vue';

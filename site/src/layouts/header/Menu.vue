@@ -4,27 +4,29 @@
     <Ecosystem />
   </template>
   <template v-else>
-    <a-select
+    <bma-select
       key="version"
       class="version"
       size="small"
       :dropdown-match-select-width="false"
-      :default-value="antdVersion"
+      :default-value="bmantdVersion"
     >
-      <a-select-option :value="antdVersion">{{ antdVersion }}</a-select-option>
-      <a-select-option value="2.x" @click="changeVersion('2x')">
+      <bma-select-option :value="bmantdVersion">{{ antdVersion }}</bma-select-option>
+      <bma-select-option value="2.x" @click="changeVersion('2x')">
         2.x (Not Recommended)
-      </a-select-option>
-      <a-select-option value="1.x" @click="changeVersion('1x')">1.x (For Vue 2)</a-select-option>
-    </a-select>
-    <a-button
+      </bma-select-option>
+      <bma-select-option value="1.x" @click="changeVersion('1x')">
+        1.x (For Vue 2)
+      </bma-select-option>
+    </bma-select>
+    <bma-button
       key="lang-button"
       size="small"
       class="header-button header-lang-button"
       @click="onLangChange"
     >
       {{ $t('app.header.lang') }}
-    </a-button>
+    </bma-button>
     <More />
     <Github />
   </template>
@@ -35,7 +37,7 @@ import Github from './Github.vue';
 import More from './More.vue';
 import Navigation from './Navigation.vue';
 import Ecosystem from './Ecosystem.vue';
-import { version } from 'ant-design-vue';
+import { version } from 'bmant-design-vue';
 import { isZhCN, isLocalStorageNameSupported, getLocalizedPathname } from '../../utils/util';
 import { useRoute } from 'vue-router';
 export default defineComponent({

@@ -28,7 +28,7 @@
 
       <CloseOutlined class="close-icon" @click="visibleAlertBanner = false" />
     </div>
-    <a-popover
+    <bma-popover
       v-model:visible="menuVisible"
       overlay-class-name="popover-menu"
       placement="bottomRight"
@@ -39,12 +39,12 @@
       <template #content>
         <Menu :is-mobile="isMobile" />
       </template>
-    </a-popover>
-    <a-row :style="{ flexFlow: 'nowrap', height: 64 }">
-      <a-col v-bind="colProps[0]">
+    </bma-popover>
+    <bma-row :style="{ flexFlow: 'nowrap', height: 64 }">
+      <bma-col v-bind="colProps[0]">
         <Logo />
-      </a-col>
-      <a-col v-bind="colProps[1]" class="menu-row">
+      </bma-col>
+      <bma-col v-bind="colProps[1]" class="menu-row">
         <SearchBox
           key="search"
           :is-zh-c-n="isZhCN"
@@ -52,8 +52,8 @@
           @triggerFocus="onTriggerSearching"
         />
         <Menu v-if="!isMobile" />
-      </a-col>
-    </a-row>
+      </bma-col>
+    </bma-row>
   </header>
 </template>
 <script lang="ts">
@@ -66,7 +66,7 @@ import Logo from './Logo.vue';
 import Menu from './Menu.vue';
 import { UnorderedListOutlined, CloseOutlined } from '@ant-design/icons-vue';
 import SearchBox from './SearchBox.vue';
-import { version } from 'ant-design-vue';
+import { version } from 'bmant-design-vue';
 export default defineComponent({
   components: {
     Logo,
@@ -112,7 +112,7 @@ export default defineComponent({
     const initDocSearch = () => {
       window.docsearch({
         apiKey: '92003c1d1d07beef165b08446f4224a3',
-        indexName: 'antdv',
+        indexName: 'bmantdv',
         inputSelector: '#search-box input',
         algoliaOptions: { facetFilters: [`tags:${globalConfig.isZhCN.value ? 'cn' : 'en'}`] },
         transformData(hits: any[]) {

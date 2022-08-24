@@ -41,12 +41,14 @@ describe('Select', () => {
       },
     );
     await asyncExpect(() => {
-      wrapper.findAll('.ant-select-selector')[0].element.dispatchEvent(new MouseEvent('mousedown'));
+      wrapper
+        .findAll('.bmant-select-selector')[0]
+        .element.dispatchEvent(new MouseEvent('mousedown'));
     });
 
     await asyncExpect(() => {
-      expect($$('.ant-select-item-option').length).toBe(0);
-      expect($$('.ant-empty-description')[0].innerHTML).toBe('No Data');
+      expect($$('.bmant-select-item-option').length).toBe(0);
+      expect($$('.bmant-empty-description')[0].innerHTML).toBe('No Data');
     }, 100);
   });
 
@@ -63,11 +65,13 @@ describe('Select', () => {
       },
     );
     await asyncExpect(() => {
-      wrapper.findAll('.ant-select-selector')[0].element.dispatchEvent(new MouseEvent('mousedown'));
+      wrapper
+        .findAll('.bmant-select-selector')[0]
+        .element.dispatchEvent(new MouseEvent('mousedown'));
     });
 
     await asyncExpect(() => {
-      expect($$('.ant-select-item-option').length).toBe(0);
+      expect($$('.bmant-select-item-option').length).toBe(0);
     });
   });
 
@@ -84,11 +88,13 @@ describe('Select', () => {
       },
     );
     await asyncExpect(() => {
-      wrapper.findAll('.ant-select-selector')[0].element.dispatchEvent(new MouseEvent('mousedown'));
+      wrapper
+        .findAll('.bmant-select-selector')[0]
+        .element.dispatchEvent(new MouseEvent('mousedown'));
     });
 
     await asyncExpect(() => {
-      expect($$('.ant-select-item-option').length).toBe(0);
+      expect($$('.bmant-select-item-option').length).toBe(0);
     });
   });
 
@@ -106,13 +112,15 @@ describe('Select', () => {
       },
     );
     await asyncExpect(() => {
-      wrapper.findAll('.ant-select-selector')[0].element.dispatchEvent(new MouseEvent('mousedown'));
+      wrapper
+        .findAll('.bmant-select-selector')[0]
+        .element.dispatchEvent(new MouseEvent('mousedown'));
     });
 
     await asyncExpect(() => {
-      expect($$('.ant-select-item-option').length).toBe(0);
-      expect($$('.ant-select-item-empty').length).toBe(1);
-      // expect($$('.ant-select-item-option')[0].innerHTML).toMatchSnapshot();
+      expect($$('.bmant-select-item-option').length).toBe(0);
+      expect($$('.bmant-select-item-empty').length).toBe(1);
+      // expect($$('.bmant-select-item-option')[0].innerHTML).toMatchSnapshot();
     }, 100);
   });
 
@@ -138,24 +146,28 @@ describe('Select', () => {
     );
 
     await asyncExpect(() => {
-      expect(getStyle($$('.ant-select-dropdown')[0], 'display')).toBe('block');
+      expect(getStyle($$('.bmant-select-dropdown')[0], 'display')).toBe('block');
     }, 100);
     await asyncExpect(() => {
-      wrapper.findAll('.ant-select-selector')[0].element.dispatchEvent(new MouseEvent('mousedown'));
+      wrapper
+        .findAll('.bmant-select-selector')[0]
+        .element.dispatchEvent(new MouseEvent('mousedown'));
     });
     await asyncExpect(() => {
       expect(onDropdownVisibleChange).toHaveBeenLastCalledWith(false);
     });
     await asyncExpect(() => {
-      expect(getStyle($$('.ant-select-dropdown')[0], 'display')).toBe('block');
+      expect(getStyle($$('.bmant-select-dropdown')[0], 'display')).toBe('block');
       wrapper.setProps({ open: false });
     });
 
     await asyncExpect(() => {
-      expect(getStyle($$('.ant-select-dropdown')[0], 'display')).toBe('none');
-      wrapper.findAll('.ant-select-selector')[0].element.dispatchEvent(new MouseEvent('mousedown'));
+      expect(getStyle($$('.bmant-select-dropdown')[0], 'display')).toBe('none');
+      wrapper
+        .findAll('.bmant-select-selector')[0]
+        .element.dispatchEvent(new MouseEvent('mousedown'));
       expect(onDropdownVisibleChange).toHaveBeenLastCalledWith(true);
-      expect(getStyle($$('.ant-select-dropdown')[0], 'display')).toBe('none');
+      expect(getStyle($$('.bmant-select-dropdown')[0], 'display')).toBe('none');
     }, 500);
   });
 

@@ -17,36 +17,36 @@ If uploaded file is a picture, the thumbnail can be shown.
 
 <template>
   <div>
-    <a-upload
+    <bma-upload
       v-model:file-list="fileList"
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       list-type="picture"
     >
-      <a-button>
+      <bma-button>
         <upload-outlined></upload-outlined>
         upload
-      </a-button>
-    </a-upload>
+      </bma-button>
+    </bma-upload>
     <br />
     <br />
-    <a-upload
+    <bma-upload
       v-model:file-list="fileList1"
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       list-type="picture"
       class="upload-list-inline"
     >
-      <a-button>
+      <bma-button>
         <upload-outlined></upload-outlined>
         upload
-      </a-button>
-    </a-upload>
+      </bma-button>
+    </bma-upload>
   </div>
 </template>
 
 <script lang="ts">
 import { UploadOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadProps } from 'ant-design-vue';
+import type { UploadProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {
@@ -94,12 +94,12 @@ export default defineComponent({
 </script>
 <style scoped>
 /* tile uploaded pictures */
-.upload-list-inline :deep(.ant-upload-list-item) {
+.upload-list-inline :deep(.bmant-upload-list-item) {
   float: left;
   width: 200px;
   margin-right: 8px;
 }
-.upload-list-inline [class*='-upload-list-rtl'] :deep(.ant-upload-list-item) {
+.upload-list-inline [class*='-upload-list-rtl'] :deep(.bmant-upload-list-item) {
   float: right;
 }
 </style>

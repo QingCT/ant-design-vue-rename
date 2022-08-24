@@ -27,7 +27,7 @@ export const groupProps = () => ({
 export type AvatarGroupProps = Partial<ExtractPropTypes<ReturnType<typeof groupProps>>>;
 
 const Group = defineComponent({
-  name: 'AAvatarGroup',
+  name: 'BmaAvatarGroup',
   inheritAttrs: false,
   props: groupProps(),
   setup(props, { slots, attrs }) {

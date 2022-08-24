@@ -16,28 +16,28 @@ use [`Form.useForm`](#useForm) custom trigger to validation logic and status.
 </docs>
 
 <template>
-  <a-form :label-col="labelCol" :wrapper-col="wrapperCol">
-    <a-form-item label="Activity name" v-bind="validateInfos.name">
-      <a-input
+  <bma-form :label-col="labelCol" :wrapper-col="wrapperCol">
+    <bma-form-item label="Activity name" v-bind="validateInfos.name">
+      <bma-input
         v-model:value="modelRef.name"
         @blur="validate('name', { trigger: 'blur' }).catch(() => {})"
       />
-    </a-form-item>
-    <a-form-item label="Activity zone" v-bind="validateInfos.region">
-      <a-select v-model:value="modelRef.region" placeholder="please select your zone">
-        <a-select-option value="shanghai">Zone one</a-select-option>
-        <a-select-option value="beijing">Zone two</a-select-option>
-      </a-select>
-    </a-form-item>
-    <a-form-item :wrapper-col="{ span: 14, offset: 4 }">
-      <a-button type="primary" @click.prevent="onSubmit">Create</a-button>
-      <a-button style="margin-left: 10px" @click="resetFields">Reset</a-button>
-    </a-form-item>
-  </a-form>
+    </bma-form-item>
+    <bma-form-item label="Activity zone" v-bind="validateInfos.region">
+      <bma-select v-model:value="modelRef.region" placeholder="please select your zone">
+        <bma-select-option value="shanghai">Zone one</bma-select-option>
+        <bma-select-option value="beijing">Zone two</bma-select-option>
+      </bma-select>
+    </bma-form-item>
+    <bma-form-item :wrapper-col="{ span: 14, offset: 4 }">
+      <bma-button type="primary" @click.prevent="onSubmit">Create</bma-button>
+      <bma-button style="margin-left: 10px" @click="resetFields">Reset</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, toRaw } from 'vue';
-import { Form } from 'ant-design-vue';
+import { Form } from 'bmant-design-vue';
 
 const useForm = Form.useForm;
 export default defineComponent({

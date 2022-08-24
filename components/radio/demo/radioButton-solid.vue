@@ -18,20 +18,20 @@ Solid radio button style.
 <template>
   <div>
     <div>
-      <a-radio-group v-model:value="value1" button-style="solid">
-        <a-radio-button value="a">Hangzhou</a-radio-button>
-        <a-radio-button value="b">Shanghai</a-radio-button>
-        <a-radio-button value="c">Beijing</a-radio-button>
-        <a-radio-button value="d">Chengdu</a-radio-button>
-      </a-radio-group>
+      <bma-radio-group v-model:value="value1" button-style="solid">
+        <bma-radio-button value="a">Hangzhou</bma-radio-button>
+        <bma-radio-button value="b">Shanghai</bma-radio-button>
+        <bma-radio-button value="c">Beijing</bma-radio-button>
+        <bma-radio-button value="d">Chengdu</bma-radio-button>
+      </bma-radio-group>
     </div>
     <div :style="{ marginTop: '16px' }">
-      <a-radio-group v-model:value="value2" button-style="solid">
-        <a-radio-button value="a">Hangzhou</a-radio-button>
-        <a-radio-button value="b" disabled>Shanghai</a-radio-button>
-        <a-radio-button value="c">Beijing</a-radio-button>
-        <a-radio-button value="d">Chengdu</a-radio-button>
-      </a-radio-group>
+      <bma-radio-group v-model:value="value2" button-style="solid">
+        <bma-radio-button value="a">Hangzhou</bma-radio-button>
+        <bma-radio-button value="b" disabled>Shanghai</bma-radio-button>
+        <bma-radio-button value="c">Beijing</bma-radio-button>
+        <bma-radio-button value="d">Chengdu</bma-radio-button>
+      </bma-radio-group>
     </div>
   </div>
 </template>

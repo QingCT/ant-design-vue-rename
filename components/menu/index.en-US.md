@@ -24,12 +24,12 @@ More layouts with navigation: [Layout](/components/layout).
 
 ```html
 <template>
-  <a-menu>
-    <a-menu-item>Menu</a-menu-item>
-    <a-sub-menu key="sub1" title="SubMenu">
-      <a-menu-item>SubMenuItem</a-menu-item>
-    </a-sub-menu>
-  </a-menu>
+  <bma-menu>
+    <bma-menu-item>Menu</bma-menu-item>
+    <bma-sub-menu key="sub1" title="SubMenu">
+      <bma-menu-item>SubMenuItem</bma-menu-item>
+    </bma-sub-menu>
+  </bma-menu>
 </template>
 ```
 

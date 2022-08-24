@@ -17,14 +17,14 @@ Extra actions should be placed at corner of drawer in Ant Design, you can using 
 </docs>
 
 <template>
-  <a-radio-group v-model:value="placement" style="margin-right: 8px">
-    <a-radio value="top">top</a-radio>
-    <a-radio value="right">right</a-radio>
-    <a-radio value="bottom">bottom</a-radio>
-    <a-radio value="left">left</a-radio>
-  </a-radio-group>
-  <a-button type="primary" @click="showDrawer">Open</a-button>
-  <a-drawer
+  <bma-radio-group v-model:value="placement" style="margin-right: 8px">
+    <bma-radio value="top">top</bma-radio>
+    <bma-radio value="right">right</bma-radio>
+    <bma-radio value="bottom">bottom</bma-radio>
+    <bma-radio value="left">left</bma-radio>
+  </bma-radio-group>
+  <bma-button type="primary" @click="showDrawer">Open</bma-button>
+  <bma-drawer
     :width="500"
     title="Basic Drawer"
     :placement="placement"
@@ -32,17 +32,17 @@ Extra actions should be placed at corner of drawer in Ant Design, you can using 
     @close="onClose"
   >
     <template #extra>
-      <a-button style="margin-right: 8px" @click="onClose">Cancel</a-button>
-      <a-button type="primary" @click="onClose">Submit</a-button>
+      <bma-button style="margin-right: 8px" @click="onClose">Cancel</bma-button>
+      <bma-button type="primary" @click="onClose">Submit</bma-button>
     </template>
     <p>Some contents...</p>
     <p>Some contents...</p>
     <p>Some contents...</p>
-  </a-drawer>
+  </bma-drawer>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { DrawerProps } from 'ant-design-vue';
+import type { DrawerProps } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const placement = ref<DrawerProps['placement']>('left');

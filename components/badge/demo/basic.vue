@@ -16,18 +16,18 @@ Simplest Usage. Badge will be hidden when `count` is `0`, but we can use `showZe
 
 </docs>
 <template>
-  <a-badge count="5">
-    <a-avatar shape="square" size="large" />
-  </a-badge>
-  <a-badge count="0" show-zero>
-    <a-avatar shape="square" size="large" />
-  </a-badge>
-  <a-badge>
+  <bma-badge count="5">
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
+  <bma-badge count="0" show-zero>
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
+  <bma-badge>
     <template #count>
       <clock-circle-outlined style="color: #f5222d" />
     </template>
-    <a-avatar shape="square" size="large" />
-  </a-badge>
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
 </template>
 
 <script lang="ts">

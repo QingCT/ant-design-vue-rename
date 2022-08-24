@@ -1,13 +1,13 @@
 <template>
   <div v-if="show">
     <template v-if="ads.length">
-      <a-carousel autoplay>
+      <bma-carousel autoplay>
         <template v-for="ad in ads" :key="ad.href">
           <a :href="ad.href" target="_blank">
             <img style="width: 100%; max-width: 1200px" :alt="ad.alt || ''" :src="ad.img" />
           </a>
         </template>
-      </a-carousel>
+      </bma-carousel>
     </template>
     <template v-else-if="showGoogleAd">
       <template v-if="isCN">
@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       show: false,
-      showGoogleAd: location.host.indexOf('antdv.com') > -1,
+      showGoogleAd: location.host.indexOf('bmantdv.com') > -1,
       cnAds: [
         {
           img: `https://yidengfe.com/launches/01/yd.png?v=${Date.now()}`,

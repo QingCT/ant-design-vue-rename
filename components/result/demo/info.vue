@@ -17,9 +17,9 @@ Show processing results.
 </docs>
 
 <template>
-  <a-result title="Your operation has been executed">
+  <bma-result title="Your operation has been executed">
     <template #extra>
-      <a-button key="console" type="primary">Go Console</a-button>
+      <bma-button key="console" type="primary">Go Console</bma-button>
     </template>
-  </a-result>
+  </bma-result>
 </template>

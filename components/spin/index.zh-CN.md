@@ -30,6 +30,6 @@ cover: https://gw.alipayobjects.com/zos/alicdn/8emPa3fjl/Alert.svg
   ```jsx
   import { h } from 'vue';
   Spin.setDefaultIndicator({
-    indicator: h('i', { class: 'anticon anticon-loading anticon-spin ant-spin-dot' }),
+    indicator: h('i', { class: 'bmanticon anticon-loading anticon-spin ant-spin-dot' }),
   });
   ```

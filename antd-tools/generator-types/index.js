@@ -6,12 +6,12 @@ const rootPath = path.resolve(__dirname, '../../');
 try {
   parseAndWrite({
     version: pkg.version,
-    name: 'ant-design-vue',
+    name: 'bmant-design-vue',
     path: path.resolve(rootPath, './components'),
     // default match lang
     test: /en-US\.md/,
     outputDir: path.resolve(rootPath, './vetur'),
-    tagPrefix: 'a-',
+    tagPrefix: 'bma-',
   });
   // eslint-disable-next-line no-console
   console.log('generator types success');

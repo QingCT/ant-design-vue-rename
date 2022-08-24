@@ -20,7 +20,7 @@ import Overflow from '../../vc-overflow';
 import devWarning from '../../vc-util/devWarning';
 import isValid from '../../_util/isValid';
 import type { MouseEventHandler } from '../../_util/EventInterface';
-import type { Key } from 'ant-design-vue/es/_util/type';
+import type { Key } from 'bmant-design-vue/es/_util/type';
 
 let indexGuid = 0;
 
@@ -42,7 +42,7 @@ export const subMenuProps = () => ({
 export type SubMenuProps = Partial<ExtractPropTypes<ReturnType<typeof subMenuProps>>>;
 
 export default defineComponent({
-  name: 'ASubMenu',
+  name: 'BmaSubMenu',
   inheritAttrs: false,
   props: subMenuProps(),
   slots: ['icon', 'title', 'expandIcon'],

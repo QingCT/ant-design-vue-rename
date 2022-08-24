@@ -99,7 +99,7 @@ function isEqualName(name1: NamePath, name2: NamePath) {
 }
 
 const Form = defineComponent({
-  name: 'AForm',
+  name: 'BmaForm',
   inheritAttrs: false,
   props: initDefaultProps(formProps(), {
     layout: 'horizontal',

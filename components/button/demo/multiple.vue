@@ -16,25 +16,25 @@ If you need several buttons, we recommend that you use 1 primary button + n seco
 </docs>
 
 <template>
-  <a-button type="primary">Primary</a-button>
-  <a-button>secondary</a-button>
-  <a-dropdown>
+  <bma-button type="primary">Primary</bma-button>
+  <bma-button>secondary</bma-button>
+  <bma-dropdown>
     <template #overlay>
-      <a-menu @click="handleMenuClick">
-        <a-menu-item key="1">1st item</a-menu-item>
-        <a-menu-item key="2">2nd item</a-menu-item>
-        <a-menu-item key="3">3rd item</a-menu-item>
-      </a-menu>
+      <bma-menu @click="handleMenuClick">
+        <bma-menu-item key="1">1st item</bma-menu-item>
+        <bma-menu-item key="2">2nd item</bma-menu-item>
+        <bma-menu-item key="3">3rd item</bma-menu-item>
+      </bma-menu>
     </template>
-    <a-button>
+    <bma-button>
       Actions
       <DownOutlined />
-    </a-button>
-  </a-dropdown>
+    </bma-button>
+  </bma-dropdown>
 </template>
 <script lang="ts">
 import { DownOutlined } from '@ant-design/icons-vue';
-import type { MenuProps } from 'ant-design-vue';
+import type { MenuProps } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   components: {

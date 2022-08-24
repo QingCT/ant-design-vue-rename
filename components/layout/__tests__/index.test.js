@@ -24,7 +24,7 @@ describe('Layout', () => {
       { sync: false },
     );
     await sleep();
-    expect(wrapper.find('.ant-layout').classes()).toContain('ant-layout-has-sider');
+    expect(wrapper.find('.bmant-layout').classes()).toContain('bmant-layout-has-sider');
   });
 
   it('detect the sider inside the children', async () => {
@@ -44,7 +44,7 @@ describe('Layout', () => {
       { sync: false },
     );
     await sleep();
-    expect(wrapper.find('.ant-layout').classes()).toContain('ant-layout-has-sider');
+    expect(wrapper.find('.bmant-layout').classes()).toContain('bmant-layout-has-sider');
   });
 
   it('detect ant-layout-sider-has-trigger class in sider when ant-layout-sider-trigger div tag exists', async () => {
@@ -64,6 +64,8 @@ describe('Layout', () => {
       { sync: false },
     );
     await sleep();
-    expect(wrapper.find('.ant-layout-sider').classes()).toContain('ant-layout-sider-has-trigger');
+    expect(wrapper.find('.bmant-layout-sider').classes()).toContain(
+      'bmant-layout-sider-has-trigger',
+    );
   });
 });

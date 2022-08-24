@@ -16,7 +16,7 @@ export default (close?: boolean) => {
   }
 
   // https://github.com/ant-design/ant-design/issues/19729
-  const scrollingEffectClassName = 'ant-scrolling-effect';
+  const scrollingEffectClassName = 'bmant-scrolling-effect';
   const scrollingEffectClassNameReg = new RegExp(`${scrollingEffectClassName}`, 'g');
   const bodyClassName = document.body.className;
 

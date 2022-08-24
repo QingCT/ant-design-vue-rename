@@ -18,17 +18,17 @@ We preset a series of colorful Tooltip styles for use in different situations.
 
 <template>
   <div id="components-a-tooltip-demo-color">
-    <a-divider orientation="left">Presets</a-divider>
+    <bma-divider orientation="left">Presets</bma-divider>
     <div>
-      <a-tooltip v-for="color in colors" :key="color" title="prompt text" :color="color">
-        <a-button>{{ color }}</a-button>
-      </a-tooltip>
+      <bma-tooltip v-for="color in colors" :key="color" title="prompt text" :color="color">
+        <bma-button>{{ color }}</bma-button>
+      </bma-tooltip>
     </div>
-    <a-divider orientation="left">Custom</a-divider>
+    <bma-divider orientation="left">Custom</bma-divider>
     <div>
-      <a-tooltip v-for="color in customColors" :key="color" title="prompt text" :color="color">
-        <a-button>{{ color }}</a-button>
-      </a-tooltip>
+      <bma-tooltip v-for="color in customColors" :key="color" title="prompt text" :color="color">
+        <bma-button>{{ color }}</bma-button>
+      </bma-tooltip>
     </div>
   </div>
 </template>
@@ -62,7 +62,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-#components-a-tooltip-demo-color .ant-btn {
+#components-a-tooltip-demo-color .bmant-btn {
   margin-right: 8px;
   margin-bottom: 8px;
 }

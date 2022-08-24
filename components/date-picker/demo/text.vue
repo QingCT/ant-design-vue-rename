@@ -17,16 +17,16 @@ Added custom rendering function, in the default `slot`, you can set any componen
 </docs>
 
 <template>
-  <a-space direction="vertical" :size="12">
-    <a-date-picker v-model:value="time1" placeholder="Select Time" @ok="onOk">
+  <bma-space direction="vertical" :size="12">
+    <bma-date-picker v-model:value="time1" placeholder="Select Time" @ok="onOk">
       <span>{{ time1 ? time1.toString() : 'SelectTime' }}</span>
-    </a-date-picker>
-    <a-range-picker v-model:value="time2">
+    </bma-date-picker>
+    <bma-range-picker v-model:value="time2">
       <span>
         {{ time2 ? time2.toString() : '请选择' }}
       </span>
-    </a-range-picker>
-  </a-space>
+    </bma-range-picker>
+  </bma-space>
 </template>
 <script lang="ts">
 import { Dayjs } from 'dayjs';

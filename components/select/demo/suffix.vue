@@ -17,23 +17,23 @@ Basic Usage
 </docs>
 
 <template>
-  <a-space>
-    <a-select
+  <bma-space>
+    <bma-select
       v-model:value="value1"
       style="width: 120px"
       :options="options1"
       @change="handleChange"
     >
-      <template #suffixIcon><smile-outlined class="ant-select-suffix" /></template>
-    </a-select>
-    <a-select v-model:value="value2" style="width: 120px" disabled :options="options2">
-      <template #suffixIcon><meh-outlined class="ant-select-suffix" /></template>
-    </a-select>
-  </a-space>
+      <template #suffixIcon><smile-outlined class="bmant-select-suffix" /></template>
+    </bma-select>
+    <bma-select v-model:value="value2" style="width: 120px" disabled :options="options2">
+      <template #suffixIcon><meh-outlined class="bmant-select-suffix" /></template>
+    </bma-select>
+  </bma-space>
 </template>
 <script lang="ts">
 import { SmileOutlined, MehOutlined } from '@ant-design/icons-vue';
-import type { SelectProps } from 'ant-design-vue';
+import type { SelectProps } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({

@@ -18,8 +18,8 @@ Full screen by custom style.
 
 <template>
   <div>
-    <a-button type="primary" @click="showModal">Open Modal</a-button>
-    <a-modal
+    <bma-button type="primary" @click="showModal">Open Modal</bma-button>
+    <bma-modal
       v-model:visible="visible"
       title="Basic Modal"
       width="100%"
@@ -29,7 +29,7 @@ Full screen by custom style.
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
-    </a-modal>
+    </bma-modal>
   </div>
 </template>
 <script lang="ts">
@@ -56,18 +56,18 @@ export default defineComponent({
 </script>
 <style lang="less">
 .full-modal {
-  .ant-modal {
+  .bmant-modal {
     max-width: 100%;
     top: 0;
     padding-bottom: 0;
     margin: 0;
   }
-  .ant-modal-content {
+  .bmant-modal-content {
     display: flex;
     flex-direction: column;
     height: calc(100vh);
   }
-  .ant-modal-body {
+  .bmant-modal-body {
     flex: 1;
   }
 }

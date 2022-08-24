@@ -1,21 +1,21 @@
 <template>
   <div>
-    <a-menu
+    <bma-menu
       v-model:selected-keys="selectedKeys"
       :open-keys="openKeys"
       style="width: 256px"
       mode="inline"
     >
-      <a-sub-menu key="sub1">
+      <bma-sub-menu key="sub1">
         <template #icon>
           <MailOutlined />
         </template>
         <template #title>Navigation One</template>
-        <a-menu-item key="3">Option 3</a-menu-item>
-        <a-menu-item key="4">Option 4</a-menu-item>
-      </a-sub-menu>
-    </a-menu>
-    <a-button @click="open">展开</a-button>
+        <bma-menu-item key="3">Option 3</bma-menu-item>
+        <bma-menu-item key="4">Option 4</bma-menu-item>
+      </bma-sub-menu>
+    </bma-menu>
+    <bma-button @click="open">展开</bma-button>
   </div>
 </template>
 <script>

@@ -18,7 +18,7 @@ describe('BackTop', () => {
     window.scrollTo(0, 400);
     expect(document.documentElement.scrollTop).toBe(400);
     await sleep(100);
-    wrapper.find('.ant-back-top').trigger('click');
+    wrapper.find('.bmant-back-top').trigger('click');
     await sleep(500);
     expect(document.documentElement.scrollTop).toBe(0);
     scrollToSpy.mockRestore();
@@ -39,7 +39,7 @@ describe('BackTop', () => {
     document.dispatchEvent(new Event('scroll'));
     window.scrollTo(0, 400);
     await sleep(10);
-    wrapper.find('.ant-back-top').trigger('click');
+    wrapper.find('.bmant-back-top').trigger('click');
     expect(onClick).toHaveBeenCalled();
     scrollToSpy.mockRestore();
   });

@@ -17,17 +17,17 @@ To use `confirm()` to show a confirmation modal dialog.
 </docs>
 
 <template>
-  <a-space wrap>
-    <a-button @click="showConfirm">Confirm</a-button>
-    <a-button @click="showPromiseConfirm">With promise</a-button>
-    <a-button type="dashed" @click="showDeleteConfirm">Delete</a-button>
-    <a-button type="dashed" @click="showPropsConfirm">With extra props</a-button>
-  </a-space>
+  <bma-space wrap>
+    <bma-button @click="showConfirm">Confirm</bma-button>
+    <bma-button @click="showPromiseConfirm">With promise</bma-button>
+    <bma-button type="dashed" @click="showDeleteConfirm">Delete</bma-button>
+    <bma-button type="dashed" @click="showPropsConfirm">With extra props</bma-button>
+  </bma-space>
 </template>
 <script lang="ts">
 import { ExclamationCircleOutlined } from '@ant-design/icons-vue';
 import { createVNode, defineComponent } from 'vue';
-import { Modal } from 'ant-design-vue';
+import { Modal } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const showConfirm = () => {

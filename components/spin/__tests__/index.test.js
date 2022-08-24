@@ -14,8 +14,8 @@ describe('Spin', () => {
       },
     });
     expect(wrapper.html()).toMatchSnapshot();
-    // expect(wrapper.findAll('.ant-spin-nested-loading').at(0).prop('style')).toBe(null)
-    // expect(wrapper.findAll('.ant-spin').at(0).prop('style').background).toBe('red')
+    // expect(wrapper.findAll('.bmant-spin-nested-loading').at(0).prop('style')).toBe(null)
+    // expect(wrapper.findAll('.bmant-spin').at(0).prop('style').background).toBe('red')
   });
 
   it("should render custom indicator when it's set", () => {

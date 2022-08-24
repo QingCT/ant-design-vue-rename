@@ -19,13 +19,13 @@
       </div>
       <div class="code-box-description" v-html="docHtml"></div>
       <div class="code-box-actions">
-        <a-tooltip :title="$t('app.demo.codesandbox')">
+        <bma-tooltip :title="$t('app.demo.codesandbox')">
           <CodeSandboxOutlined
             class="code-box-code-copy code-box-code-action"
             @click="handleCodeSandbox"
           />
-        </a-tooltip>
-        <a-tooltip :title="$t(`app.demo.type.${type === 'JS' ? 'js' : 'ts'}`)">
+        </bma-tooltip>
+        <bma-tooltip :title="$t(`app.demo.type.${type === 'JS' ? 'js' : 'ts'}`)">
           <span
             class="code-expand-icon code-box-code-action"
             style="width: auto"
@@ -33,8 +33,8 @@
           >
             {{ type }}
           </span>
-        </a-tooltip>
-        <a-tooltip
+        </bma-tooltip>
+        <bma-tooltip
           v-if="!blocked"
           :title="$t(`app.demo.${copied ? 'copied' : 'copy'}`)"
           :visible="copyTooltipVisible"
@@ -47,11 +47,11 @@
             v-clipboard:success="handleCodeCopied"
             class="code-box-code-copy code-box-code-action"
           />
-        </a-tooltip>
-        <a-tooltip v-else :title="$t('app.demo.copy')">
+        </bma-tooltip>
+        <bma-tooltip v-else :title="$t('app.demo.copy')">
           <SnippetsOutlined class="code-box-code-copy code-box-code-action" @click="warning" />
-        </a-tooltip>
-        <a-tooltip :title="$t(`app.demo.code.${codeExpand ? 'hide' : 'show'}`)">
+        </bma-tooltip>
+        <bma-tooltip :title="$t(`app.demo.code.${codeExpand ? 'hide' : 'show'}`)">
           <span class="code-expand-icon code-box-code-action">
             <img
               alt="expand code"
@@ -74,7 +74,7 @@
               @click="handleCodeExpand"
             />
           </span>
-        </a-tooltip>
+        </bma-tooltip>
       </div>
     </section>
     <section :class="highlightClass">
@@ -94,7 +94,7 @@ import { CheckOutlined, SnippetsOutlined, CodeSandboxOutlined } from '@ant-desig
 import { getCodeSandboxParams } from '../utils/generateOnlineDemo';
 import packageInfo from '../../../package.json';
 
-// import { Modal } from 'ant-design-vue';
+// import { Modal } from 'bmant-design-vue';
 export default defineComponent({
   name: 'DemoBox',
   components: {

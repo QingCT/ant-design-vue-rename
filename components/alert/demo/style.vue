@@ -17,8 +17,8 @@ There are 4 types of Alert: `success`, `info`, `warning`, `error`.
 </docs>
 
 <template>
-  <a-alert message="Success Text" type="success" />
-  <a-alert message="Info Text" type="info" />
-  <a-alert message="Warning Text" type="warning" />
-  <a-alert message="Error Text" type="error" />
+  <bma-alert message="Success Text" type="success" />
+  <bma-alert message="Info Text" type="info" />
+  <bma-alert message="Warning Text" type="warning" />
+  <bma-alert message="Error Text" type="error" />
 </template>

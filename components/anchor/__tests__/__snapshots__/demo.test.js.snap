@@ -3,23 +3,23 @@
 exports[`renders ./components/anchor/demo/basic.vue correctly 1`] = `
 <div>
   <div class="">
-    <div class="ant-anchor-wrapper" style="max-height: 100vh;">
-      <div class="ant-anchor">
-        <div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div>
-        <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
+    <div class="bmant-anchor-wrapper" style="max-height: 100vh;">
+      <div class="bmant-anchor">
+        <div class="bmant-anchor-ink"><span class="bmant-anchor-ink-ball"></span></div>
+        <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
           <!---->
         </div>
-        <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
+        <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
           <!---->
         </div>
-        <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo with Target" target="_blank">Basic demo with Target</a>
+        <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo with Target" target="_blank">Basic demo with Target</a>
           <!---->
         </div>
-        <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#API" title="API">API</a>
-          <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
+        <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#API" title="API">API</a>
+          <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
             <!---->
           </div>
-          <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
+          <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
             <!---->
           </div>
         </div>
@@ -30,20 +30,20 @@ exports[`renders ./components/anchor/demo/basic.vue correctly 1`] = `
 `;
 
 exports[`renders ./components/anchor/demo/customizeHighlight.vue correctly 1`] = `
-<div class="ant-anchor-wrapper" style="max-height: 100vh;">
-  <div class="ant-anchor ant-anchor-fixed">
-    <div class="ant-anchor-ink"><span class="ant-anchor-ink-ball visible" style="top: -4.5px;"></span></div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
+<div class="bmant-anchor-wrapper" style="max-height: 100vh;">
+  <div class="bmant-anchor ant-anchor-fixed">
+    <div class="bmant-anchor-ink"><span class="bmant-anchor-ink-ball visible" style="top: -4.5px;"></span></div>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link ant-anchor-link-active"><a class="ant-anchor-link-title ant-anchor-link-title-active" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
+    <div class="bmant-anchor-link ant-anchor-link-active"><a class="bmant-anchor-link-title ant-anchor-link-title-active" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#API" title="API">API</a>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#API" title="API">API</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
         <!---->
       </div>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
         <!---->
       </div>
     </div>
@@ -52,20 +52,20 @@ exports[`renders ./components/anchor/demo/customizeHighlight.vue correctly 1`] =
 `;
 
 exports[`renders ./components/anchor/demo/onChange.vue correctly 1`] = `
-<div class="ant-anchor-wrapper" style="max-height: 100vh;">
-  <div class="ant-anchor ant-anchor-fixed">
-    <div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
+<div class="bmant-anchor-wrapper" style="max-height: 100vh;">
+  <div class="bmant-anchor ant-anchor-fixed">
+    <div class="bmant-anchor-ink"><span class="bmant-anchor-ink-ball"></span></div>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#API" title="API">API</a>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#API" title="API">API</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
         <!---->
       </div>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
         <!---->
       </div>
     </div>
@@ -74,20 +74,20 @@ exports[`renders ./components/anchor/demo/onChange.vue correctly 1`] = `
 `;
 
 exports[`renders ./components/anchor/demo/onClick.vue correctly 1`] = `
-<div class="ant-anchor-wrapper" style="max-height: 100vh;">
-  <div class="ant-anchor ant-anchor-fixed">
-    <div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
+<div class="bmant-anchor-wrapper" style="max-height: 100vh;">
+  <div class="bmant-anchor ant-anchor-fixed">
+    <div class="bmant-anchor-ink"><span class="bmant-anchor-ink-ball"></span></div>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#API" title="API">API</a>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#API" title="API">API</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
         <!---->
       </div>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
         <!---->
       </div>
     </div>
@@ -96,20 +96,20 @@ exports[`renders ./components/anchor/demo/onClick.vue correctly 1`] = `
 `;
 
 exports[`renders ./components/anchor/demo/static.vue correctly 1`] = `
-<div class="ant-anchor-wrapper" style="max-height: 100vh;">
-  <div class="ant-anchor ant-anchor-fixed">
-    <div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
+<div class="bmant-anchor-wrapper" style="max-height: 100vh;">
+  <div class="bmant-anchor ant-anchor-fixed">
+    <div class="bmant-anchor-ink"><span class="bmant-anchor-ink-ball"></span></div>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
       <!---->
     </div>
-    <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#API" title="API">API</a>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
+    <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#API" title="API">API</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
         <!---->
       </div>
-      <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
+      <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
         <!---->
       </div>
     </div>
@@ -120,20 +120,20 @@ exports[`renders ./components/anchor/demo/static.vue correctly 1`] = `
 exports[`renders ./components/anchor/demo/targetOffset.vue correctly 1`] = `
 <div>
   <div class="">
-    <div class="ant-anchor-wrapper" style="max-height: 100vh;">
-      <div class="ant-anchor">
-        <div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div>
-        <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
+    <div class="bmant-anchor-wrapper" style="max-height: 100vh;">
+      <div class="bmant-anchor">
+        <div class="bmant-anchor-ink"><span class="bmant-anchor-ink-ball"></span></div>
+        <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-basic" title="Basic demo">Basic demo</a>
           <!---->
         </div>
-        <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
+        <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#components-anchor-demo-static" title="Static demo">Static demo</a>
           <!---->
         </div>
-        <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#API" title="API">API</a>
-          <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
+        <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#API" title="API">API</a>
+          <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Anchor-Props" title="Anchor Props">Anchor Props</a>
             <!---->
           </div>
-          <div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
+          <div class="bmant-anchor-link"><a class="bmant-anchor-link-title" href="#Link-Props" title="Link Props">Link Props</a>
             <!---->
           </div>
         </div>

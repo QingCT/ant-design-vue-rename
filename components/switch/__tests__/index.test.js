@@ -24,7 +24,7 @@ describe('Switch', () => {
         };
       },
     });
-    wrapper.find('.ant-switch').trigger('click');
+    wrapper.find('.bmant-switch').trigger('click');
     await new Promise(resolve => setTimeout(resolve, 0));
     expect(wrapper.html()).toMatchSnapshot();
   });
@@ -93,12 +93,12 @@ describe('Switch', () => {
       wrapper.find('button').trigger('click');
     });
     expect(checked.value).toBe(2);
-    expect(wrapper.find('.ant-switch-inner').text()).toBe('on');
+    expect(wrapper.find('.bmant-switch-inner').text()).toBe('on');
 
     await asyncExpect(() => {
       wrapper.find('button').trigger('click');
     });
     expect(checked.value).toBe(1);
-    expect(wrapper.find('.ant-switch-inner').text()).toBe('off');
+    expect(wrapper.find('.bmant-switch-inner').text()).toBe('off');
   });
 });

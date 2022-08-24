@@ -26,7 +26,7 @@ function isThenable(thing?: PromiseLike<any>): boolean {
 }
 
 export default defineComponent({
-  name: 'ActionButton',
+  name: 'BmactionButton',
   props: actionButtonProps,
   setup(props, { slots }) {
     const clickedRef = ref<boolean>(false);

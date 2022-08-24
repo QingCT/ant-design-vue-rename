@@ -17,7 +17,7 @@ Multiple selection usage.
 </docs>
 
 <template>
-  <a-tree-select
+  <bma-tree-select
     v-model:value="value"
     show-search
     style="width: 100%"
@@ -32,10 +32,10 @@ Multiple selection usage.
       <b v-if="val === 'parent 1-1'" style="color: #08c">{{ val }}</b>
       <template v-else>{{ title }}</template>
     </template>
-  </a-tree-select>
+  </bma-tree-select>
 </template>
 <script lang="ts">
-import type { TreeSelectProps } from 'ant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
 
 export default defineComponent({

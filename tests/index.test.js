@@ -2,7 +2,7 @@ import pkg from '../package.json';
 
 const testDist = process.env.LIB_DIR === 'dist';
 
-describe('antd dist files', () => {
+describe('bmantd dist files', () => {
   // https://github.com/ant-design/ant-design/issues/1638
   // https://github.com/ant-design/ant-design/issues/1968
   it('exports modules correctly', () => {

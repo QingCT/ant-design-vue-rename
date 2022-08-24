@@ -5,16 +5,16 @@
     :class="justCopied === type ? 'copied' : ''"
   >
     <component :is="allIcons[name]"></component>
-    <span class="anticon-class">
-      <a-badge :dot="isNew">
+    <span class="bmanticon-class">
+      <bma-badge :dot="isNew">
         {{ kebabCasedType }}
-      </a-badge>
+      </bma-badge>
     </span>
   </li>
 </template>
 <script>
 import * as AntdIcons from '@ant-design/icons-vue';
-import { Badge } from 'ant-design-vue';
+import { Badge } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 
 const allIcons = AntdIcons;

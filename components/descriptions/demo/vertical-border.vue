@@ -1,7 +1,7 @@
 <docs>
 ---
 order: 5
-title: 
+title:
   zh-CN: 垂直带边框的
   en-US: Vertical Border
 ---
@@ -17,19 +17,19 @@ Descriptions with border and background color.
 </docs>
 
 <template>
-  <a-descriptions title="User Info" layout="vertical" bordered>
-    <a-descriptions-item label="Product">Cloud Database</a-descriptions-item>
-    <a-descriptions-item label="Billing Mode">Prepaid</a-descriptions-item>
-    <a-descriptions-item label="Automatic Renewal">YES</a-descriptions-item>
-    <a-descriptions-item label="Order time">2018-04-24 18:00:00</a-descriptions-item>
-    <a-descriptions-item label="Usage Time" :span="2">2019-04-24 18:00:00</a-descriptions-item>
-    <a-descriptions-item label="Status" :span="3">
-      <a-badge status="processing" text="Running" />
-    </a-descriptions-item>
-    <a-descriptions-item label="Negotiated Amount">$80.00</a-descriptions-item>
-    <a-descriptions-item label="Discount">$20.00</a-descriptions-item>
-    <a-descriptions-item label="Official Receipts">$60.00</a-descriptions-item>
-    <a-descriptions-item label="Config Info">
+  <bma-descriptions title="User Info" layout="vertical" bordered>
+    <bma-descriptions-item label="Product">Cloud Database</bma-descriptions-item>
+    <bma-descriptions-item label="Billing Mode">Prepaid</bma-descriptions-item>
+    <bma-descriptions-item label="Automatic Renewal">YES</bma-descriptions-item>
+    <bma-descriptions-item label="Order time">2018-04-24 18:00:00</bma-descriptions-item>
+    <bma-descriptions-item label="Usage Time" :span="2">2019-04-24 18:00:00</bma-descriptions-item>
+    <bma-descriptions-item label="Status" :span="3">
+      <bma-badge status="processing" text="Running" />
+    </bma-descriptions-item>
+    <bma-descriptions-item label="Negotiated Amount">$80.00</bma-descriptions-item>
+    <bma-descriptions-item label="Discount">$20.00</bma-descriptions-item>
+    <bma-descriptions-item label="Official Receipts">$60.00</bma-descriptions-item>
+    <bma-descriptions-item label="Config Info">
       Data disk type: MongoDB
       <br />
       Database version: 3.4
@@ -42,6 +42,6 @@ Descriptions with border and background color.
       <br />
       Region: East China 1
       <br />
-    </a-descriptions-item>
-  </a-descriptions>
+    </bma-descriptions-item>
+  </bma-descriptions>
 </template>

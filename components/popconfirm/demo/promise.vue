@@ -18,13 +18,13 @@ Asynchronously close a popconfirm when the OK button is pressed. For example, yo
 </docs>
 
 <template>
-  <a-popconfirm title="Title" @confirm="confirm" @cancel="cancel">
-    <a-button type="primary">Open Popconfirm with Promise</a-button>
-  </a-popconfirm>
+  <bma-popconfirm title="Title" @confirm="confirm" @cancel="cancel">
+    <bma-button type="primary">Open Popconfirm with Promise</bma-button>
+  </bma-popconfirm>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const confirm = (e: MouseEvent) => {

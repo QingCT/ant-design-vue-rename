@@ -104,11 +104,11 @@ describe('Comment', () => {
       wrapper.find('textarea').trigger('input');
     });
     await asyncExpect(() => {
-      wrapper.find('.ant-btn').trigger('click');
+      wrapper.find('.bmant-btn').trigger('click');
     });
 
     await asyncExpect(() => {
-      expect(wrapper.findAll('.ant-list-header')[0].element.innerHTML).toBe('1 reply');
+      expect(wrapper.findAll('.bmant-list-header')[0].element.innerHTML).toBe('1 reply');
       expect(wrapper.html()).toMatchSnapshot();
     }, 2000);
   });

@@ -7,7 +7,7 @@ import { createApp, Transition, TransitionGroup, version as vueVersion } from 'v
 import i18n from './i18n';
 import NProgress from 'nprogress';
 import router from './router';
-import Antd from 'ant-design-vue';
+import Antd from 'bmant-design-vue';
 import demoBox from './components/DemoBox.vue';
 import demoContainer from './components/demoContainer.vue';
 import demoSort from './components/demoSort.jsx';
@@ -15,7 +15,7 @@ import store from './store/index.js';
 import clipboard from './directives/clipboard';
 import App from './App.vue';
 console.log('vue version: ', vueVersion);
-console.log('ant design vue version: ', Antd.version);
+console.log('bmant design vue version: ', Antd.version);
 const app = createApp(App);
 
 app.use(Antd);

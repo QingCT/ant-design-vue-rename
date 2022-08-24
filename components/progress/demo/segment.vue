@@ -18,14 +18,14 @@ A standard progress bar.
 
 <template>
   <div>
-    <a-tooltip title="3 done / 3 in progress / 4 to do">
-      <a-progress :percent="60" :success="{ percent: 30 }" />
-    </a-tooltip>
-    <a-tooltip title="3 done / 3 in progress / 4 to do">
-      <a-progress :percent="60" :success="{ percent: 30 }" type="circle" />
-    </a-tooltip>
-    <a-tooltip title="3 done / 3 in progress / 4 to do">
-      <a-progress :percent="60" :success="{ percent: 30 }" type="dashboard" />
-    </a-tooltip>
+    <bma-tooltip title="3 done / 3 in progress / 4 to do">
+      <bma-progress :percent="60" :success="{ percent: 30 }" />
+    </bma-tooltip>
+    <bma-tooltip title="3 done / 3 in progress / 4 to do">
+      <bma-progress :percent="60" :success="{ percent: 30 }" type="circle" />
+    </bma-tooltip>
+    <bma-tooltip title="3 done / 3 in progress / 4 to do">
+      <bma-progress :percent="60" :success="{ percent: 30 }" type="dashboard" />
+    </bma-tooltip>
   </div>
 </template>

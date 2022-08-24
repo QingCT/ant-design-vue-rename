@@ -18,8 +18,8 @@ Searchable Tree.
 
 <template>
   <div>
-    <a-input-search v-model:value="searchValue" style="margin-bottom: 8px" placeholder="Search" />
-    <a-tree
+    <bma-input-search v-model:value="searchValue" style="margin-bottom: 8px" placeholder="Search" />
+    <bma-tree
       :expanded-keys="expandedKeys"
       :auto-expand-parent="autoExpandParent"
       :tree-data="gData"
@@ -33,13 +33,13 @@ Searchable Tree.
         </span>
         <span v-else>{{ title }}</span>
       </template>
-    </a-tree>
+    </bma-tree>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, watch } from 'vue';
-import type { TreeProps } from 'ant-design-vue';
+import type { TreeProps } from 'bmant-design-vue';
 
 const x = 3;
 const y = 2;

@@ -1,7 +1,7 @@
 <template>
-  <a-tab-pane v-bind="$props">
+  <bma-tab-pane v-bind="$props">
     <slot />
-  </a-tab-pane>
+  </bma-tab-pane>
 </template>
 <script>
 const generateId = (() => {

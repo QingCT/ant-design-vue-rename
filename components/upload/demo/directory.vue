@@ -16,12 +16,12 @@ You can select and upload a whole directory.
 </docs>
 
 <template>
-  <a-upload action="https://www.mocky.io/v2/5cc8019d300000980a055e76" directory>
-    <a-button>
+  <bma-upload action="https://www.mocky.io/v2/5cc8019d300000980a055e76" directory>
+    <bma-button>
       <upload-outlined></upload-outlined>
       Upload Directory
-    </a-button>
-  </a-upload>
+    </bma-button>
+  </bma-upload>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

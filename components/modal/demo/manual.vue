@@ -17,10 +17,10 @@ Manually updating and destroying a modal from `Modal.method`.
 </docs>
 
 <template>
-  <a-button @click="countDown">Open modal to close in 5s</a-button>
+  <bma-button @click="countDown">Open modal to close in 5s</bma-button>
 </template>
 <script lang="ts">
-import { Modal } from 'ant-design-vue';
+import { Modal } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {

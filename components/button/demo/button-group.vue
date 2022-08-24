@@ -19,41 +19,41 @@ Debug usage
 <template>
   <div id="components-button-demo-button-group">
     <h4>Basic</h4>
-    <a-button-group>
-      <a-button>Cancel</a-button>
-      <a-button type="primary">OK</a-button>
-    </a-button-group>
-    <a-button-group>
-      <a-button disabled>L</a-button>
-      <a-button disabled>M</a-button>
-      <a-button disabled>R</a-button>
-    </a-button-group>
-    <a-button-group>
-      <a-button type="primary">L</a-button>
-      <a-button>M</a-button>
-      <a-button>M</a-button>
-      <a-button type="dashed">R</a-button>
-    </a-button-group>
+    <bma-button-group>
+      <bma-button>Cancel</bma-button>
+      <bma-button type="primary">OK</bma-button>
+    </bma-button-group>
+    <bma-button-group>
+      <bma-button disabled>L</bma-button>
+      <bma-button disabled>M</bma-button>
+      <bma-button disabled>R</bma-button>
+    </bma-button-group>
+    <bma-button-group>
+      <bma-button type="primary">L</bma-button>
+      <bma-button>M</bma-button>
+      <bma-button>M</bma-button>
+      <bma-button type="dashed">R</bma-button>
+    </bma-button-group>
 
     <h4>With Icon</h4>
-    <a-button-group>
-      <a-button type="primary">
+    <bma-button-group>
+      <bma-button type="primary">
         <LeftOutlined />
         Go back
-      </a-button>
-      <a-button type="primary">
+      </bma-button>
+      <bma-button type="primary">
         Go forward
         <RightOutlined />
-      </a-button>
-    </a-button-group>
-    <a-button-group>
-      <a-button type="primary">
+      </bma-button>
+    </bma-button-group>
+    <bma-button-group>
+      <bma-button type="primary">
         <template #icon><CloudOutlined /></template>
-      </a-button>
-      <a-button type="primary">
+      </bma-button>
+      <bma-button type="primary">
         <template #icon><CloudDownloadOutlined /></template>
-      </a-button>
-    </a-button-group>
+      </bma-button>
+    </bma-button-group>
   </div>
 </template>
 <script lang="ts">
@@ -82,7 +82,7 @@ export default {
 #components-button-demo-button-group > h4:first-child {
   margin-top: 0;
 }
-#components-button-demo-button-group .ant-btn-group {
+#components-button-demo-button-group .bmant-btn-group {
   margin-right: 8px;
 }
 </style>

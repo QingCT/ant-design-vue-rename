@@ -1,4 +1,4 @@
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 import CopyableIcon from './CopyableIcon.vue';
 
@@ -42,7 +42,7 @@ const Category = defineComponent({
         <h3 style="margin: 1.6em 0 .6em;">
           {this.$t(`app.docs.components.icon.category.${title}`)}
         </h3>
-        <ul class={'anticons-list'}>{items}</ul>
+        <ul class={'bmanticons-list'}>{items}</ul>
       </div>
     );
   },

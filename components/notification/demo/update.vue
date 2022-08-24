@@ -17,17 +17,17 @@ Update content with unique key, or use reactive data.
 </docs>
 
 <template>
-  <a-button type="primary" @click="openNotification">
+  <bma-button type="primary" @click="openNotification">
     Open the notification box (update by key)
-  </a-button>
+  </bma-button>
   <br />
   <br />
-  <a-button type="primary" @click="openNotification2">
+  <bma-button type="primary" @click="openNotification2">
     Open the notification box (update by reactive)
-  </a-button>
+  </bma-button>
 </template>
 <script lang="ts">
-import { notification } from 'ant-design-vue';
+import { notification } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 const key = 'updatable';
 export default defineComponent({

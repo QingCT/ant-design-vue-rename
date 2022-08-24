@@ -62,8 +62,8 @@ $ yarn add ant-design-vue
 
 ```jsx
 import Vue from 'vue';
-import Button from 'ant-design-vue/lib/button';
-import 'ant-design-vue/dist/antd.css';
+import Button from 'bmant-design-vue/lib/button';
+import 'bmant-design-vue/dist/antd.css';
 import App from './App';
 
 const app = createApp(App);
@@ -78,7 +78,7 @@ app.use(Button).mount('#app');
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <a-button type="primary">Button></a-button>
+    <bma-button type="primary">Button></bma-button>
   </div>
 </template>
 ...
@@ -119,7 +119,7 @@ $ yarn add babel-plugin-import --dev
 +   "plugins": [
 +     "transform-vue-jsx",
 +     "transform-runtime",
-+     ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }]
++     ["import", { "libraryName": "bmant-design-vue", "libraryDirectory": "es", "style": "css" }]
 +   ]
   }
 ```
@@ -134,20 +134,20 @@ $ yarn add babel-plugin-import --dev
 +  plugins: [
 +    [
 +      "import",
-+      { libraryName: "ant-design-vue", libraryDirectory: "es", style: true }
++      { libraryName: "bmant-design-vue", libraryDirectory: "es", style: true }
 +    ]
 +  ]
 };
 ```
 
-然后移除前面在 `src/main.js` 里全量添加的 `import 'ant-design-vue/dist/antd.css';` 样式代码，并且按下面的格式引入模块。
+然后移除前面在 `src/main.js` 里全量添加的 `import 'bmant-design-vue/dist/antd.css';` 样式代码，并且按下面的格式引入模块。
 
 ```diff
   // src/main.js
   import Vue from 'vue'
-- import Button from 'ant-design-vue/lib/button';
-+ import { Button } from 'ant-design-vue';
-- import 'ant-design-vue/dist/antd.css'
+- import Button from 'bmant-design-vue/lib/button';
++ import { Button } from 'bmant-design-vue';
+- import 'bmant-design-vue/dist/antd.css'
   import App from './App'
 
   Vue.component(Button.name, Button)

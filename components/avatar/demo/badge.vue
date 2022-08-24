@@ -17,18 +17,18 @@ Usually used for reminders and notifications.
 
 <template>
   <span style="margin-right: 24px">
-    <a-badge :count="1">
-      <a-avatar shape="square">
+    <bma-badge :count="1">
+      <bma-avatar shape="square">
         <template #icon><UserOutlined /></template>
-      </a-avatar>
-    </a-badge>
+      </bma-avatar>
+    </bma-badge>
   </span>
   <span>
-    <a-badge dot>
-      <a-avatar shape="square">
+    <bma-badge dot>
+      <bma-avatar shape="square">
         <template #icon><UserOutlined /></template>
-      </a-avatar>
-    </a-badge>
+      </bma-avatar>
+    </bma-badge>
   </span>
 </template>
 
@@ -43,7 +43,7 @@ export default defineComponent({
 </script>
 
 <style>
-#components-avatar-demo-badge .ant-avatar {
+#components-avatar-demo-badge .bmant-avatar {
   margin-top: 0;
   margin-right: 0;
 }

@@ -15,32 +15,36 @@ title:
 `name` prop support nest data structure. Customize validate message template with `validateMessages` or `message`. Ref [here](https://github.com/vueComponent/ant-design-vue/blob/main/components/form/utils/messages.ts) about message template.
 </docs>
 <template>
-  <a-form
+  <bma-form
     :model="formState"
     v-bind="layout"
     name="nest-messages"
     :validate-messages="validateMessages"
     @finish="onFinish"
   >
-    <a-form-item :name="['user', 'name']" label="Name" :rules="[{ required: true }]">
-      <a-input v-model:value="formState.user.name" />
-    </a-form-item>
-    <a-form-item :name="['user', 'email']" label="Email" :rules="[{ type: 'email' }]">
-      <a-input v-model:value="formState.user.email" />
-    </a-form-item>
-    <a-form-item :name="['user', 'age']" label="Age" :rules="[{ type: 'number', min: 0, max: 99 }]">
-      <a-input-number v-model:value="formState.user.age" />
-    </a-form-item>
-    <a-form-item :name="['user', 'website']" label="Website">
-      <a-input v-model:value="formState.user.website" />
-    </a-form-item>
-    <a-form-item :name="['user', 'introduction']" label="Introduction">
-      <a-textarea v-model:value="formState.user.introduction" />
-    </a-form-item>
-    <a-form-item :wrapper-col="{ ...layout.wrapperCol, offset: 8 }">
-      <a-button type="primary" html-type="submit">Submit</a-button>
-    </a-form-item>
-  </a-form>
+    <bma-form-item :name="['user', 'name']" label="Name" :rules="[{ required: true }]">
+      <bma-input v-model:value="formState.user.name" />
+    </bma-form-item>
+    <bma-form-item :name="['user', 'email']" label="Email" :rules="[{ type: 'email' }]">
+      <bma-input v-model:value="formState.user.email" />
+    </bma-form-item>
+    <bma-form-item
+      :name="['user', 'age']"
+      label="Age"
+      :rules="[{ type: 'number', min: 0, max: 99 }]"
+    >
+      <bma-input-number v-model:value="formState.user.age" />
+    </bma-form-item>
+    <bma-form-item :name="['user', 'website']" label="Website">
+      <bma-input v-model:value="formState.user.website" />
+    </bma-form-item>
+    <bma-form-item :name="['user', 'introduction']" label="Introduction">
+      <bma-textarea v-model:value="formState.user.introduction" />
+    </bma-form-item>
+    <bma-form-item :wrapper-col="{ ...layout.wrapperCol, offset: 8 }">
+      <bma-button type="primary" html-type="submit">Submit</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';

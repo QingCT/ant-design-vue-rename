@@ -17,7 +17,7 @@ To load data asynchronously when click to expand a treeNode.
 </docs>
 
 <template>
-  <a-tree
+  <bma-tree
     v-model:expandedKeys="expandedKeys"
     v-model:selectedKeys="selectedKeys"
     :load-data="onLoadData"
@@ -27,7 +27,7 @@ To load data asynchronously when click to expand a treeNode.
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { TreeProps } from 'ant-design-vue';
+import type { TreeProps } from 'bmant-design-vue';
 
 export default defineComponent({
   setup() {

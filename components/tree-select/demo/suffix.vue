@@ -17,8 +17,8 @@ The most basic usage.
 </docs>
 
 <template>
-  <a-space direction="vertical" style="width: 100%">
-    <a-tree-select
+  <bma-space direction="vertical" style="width: 100%">
+    <bma-tree-select
       v-model:value="value"
       show-search
       style="width: 100%"
@@ -29,9 +29,9 @@ The most basic usage.
       :tree-data="treeData"
     >
       <template #suffixIcon><SmileOutlined /></template>
-    </a-tree-select>
+    </bma-tree-select>
 
-    <a-tree-select
+    <bma-tree-select
       v-model:value="value1"
       show-search
       style="width: 100%"
@@ -44,12 +44,12 @@ The most basic usage.
       :tree-data="treeData"
     >
       <template #suffixIcon><SmileOutlined /></template>
-    </a-tree-select>
-  </a-space>
+    </bma-tree-select>
+  </bma-space>
 </template>
 <script lang="ts">
 import { SmileOutlined } from '@ant-design/icons-vue';
-import type { TreeSelectProps } from 'ant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
 
 export default defineComponent({

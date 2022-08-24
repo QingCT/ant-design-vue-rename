@@ -17,16 +17,16 @@ This property provide an additional time selection. When `showTime` is an Object
 </docs>
 
 <template>
-  <a-space direction="vertical" :size="12">
-    <a-date-picker show-time placeholder="Select Time" @change="onChange" @ok="onOk" />
-    <a-range-picker
+  <bma-space direction="vertical" :size="12">
+    <bma-date-picker show-time placeholder="Select Time" @change="onChange" @ok="onOk" />
+    <bma-range-picker
       :show-time="{ format: 'HH:mm' }"
       format="YYYY-MM-DD HH:mm"
       :placeholder="['Start Time', 'End Time']"
       @change="onRangeChange"
       @ok="onRangeOk"
     />
-  </a-space>
+  </bma-space>
 </template>
 <script lang="ts">
 import { Dayjs } from 'dayjs';

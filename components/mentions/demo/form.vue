@@ -16,45 +16,45 @@ to work with `Form`.
 </docs>
 
 <template>
-  <a-form layout="horizontal">
-    <a-form-item
+  <bma-form layout="horizontal">
+    <bma-form-item
       label="Top coders"
       :label-col="{ span: 6 }"
       :wrapper-col="{ span: 18 }"
       name="coders"
       v-bind="validateInfos.coders"
     >
-      <a-mentions v-model:value="modelRef.coders" rows="1">
-        <a-mentions-option value="afc163">afc163</a-mentions-option>
-        <a-mentions-option value="zombieJ">zombieJ</a-mentions-option>
-        <a-mentions-option value="yesmeck">yesmeck</a-mentions-option>
-      </a-mentions>
-    </a-form-item>
-    <a-form-item
+      <bma-mentions v-model:value="modelRef.coders" rows="1">
+        <bma-mentions-option value="afc163">afc163</bma-mentions-option>
+        <bma-mentions-option value="zombieJ">zombieJ</bma-mentions-option>
+        <bma-mentions-option value="yesmeck">yesmeck</bma-mentions-option>
+      </bma-mentions>
+    </bma-form-item>
+    <bma-form-item
       label="Bio"
       :label-col="{ span: 6 }"
       :wrapper-col="{ span: 18 }"
       name="bio"
       v-bind="validateInfos.bio"
     >
-      <a-mentions
+      <bma-mentions
         v-model:value="modelRef.bio"
         rows="3"
         placeholder="You can use @ to ref user here"
       >
-        <a-mentions-option value="afc163">afc163</a-mentions-option>
-        <a-mentions-option value="zombieJ">zombieJ</a-mentions-option>
-        <a-mentions-option value="yesmeck">yesmeck</a-mentions-option>
-      </a-mentions>
-    </a-form-item>
-    <a-form-item :wrapper-col="{ span: 12, offset: 5 }">
-      <a-button type="primary" @click="handleSubmit">Submit</a-button>
-      <a-button style="margin-left: 8px" @click="resetFields">Reset</a-button>
-    </a-form-item>
-  </a-form>
+        <bma-mentions-option value="afc163">afc163</bma-mentions-option>
+        <bma-mentions-option value="zombieJ">zombieJ</bma-mentions-option>
+        <bma-mentions-option value="yesmeck">yesmeck</bma-mentions-option>
+      </bma-mentions>
+    </bma-form-item>
+    <bma-form-item :wrapper-col="{ span: 12, offset: 5 }">
+      <bma-button type="primary" @click="handleSubmit">Submit</bma-button>
+      <bma-button style="margin-left: 8px" @click="resetFields">Reset</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script>
-import { Mentions, Form } from 'ant-design-vue';
+import { Mentions, Form } from 'bmant-design-vue';
 import { defineComponent, reactive } from 'vue';
 
 const useForm = Form.useForm;

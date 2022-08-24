@@ -16,11 +16,11 @@ Table with editable rows.
 </docs>
 
 <template>
-  <a-table :columns="columns" :data-source="dataSource" bordered>
+  <bma-table :columns="columns" :data-source="dataSource" bordered>
     <template #bodyCell="{ column, text, record }">
       <template v-if="['name', 'age', 'address'].includes(column.dataIndex)">
         <div>
-          <a-input
+          <bma-input
             v-if="editableData[record.key]"
             v-model:value="editableData[record.key][column.dataIndex]"
             style="margin: -5px 0"
@@ -33,10 +33,10 @@ Table with editable rows.
       <template v-else-if="column.dataIndex === 'operation'">
         <div class="editable-row-operations">
           <span v-if="editableData[record.key]">
-            <a-typography-link @click="save(record.key)">Save</a-typography-link>
-            <a-popconfirm title="Sure to cancel?" @confirm="cancel(record.key)">
+            <bma-typography-link @click="save(record.key)">Save</bma-typography-link>
+            <bma-popconfirm title="Sure to cancel?" @confirm="cancel(record.key)">
               <a>Cancel</a>
-            </a-popconfirm>
+            </bma-popconfirm>
           </span>
           <span v-else>
             <a @click="edit(record.key)">Edit</a>
@@ -44,7 +44,7 @@ Table with editable rows.
         </div>
       </template>
     </template>
-  </a-table>
+  </bma-table>
 </template>
 <script lang="ts">
 import { cloneDeep } from 'lodash-es';

@@ -17,7 +17,7 @@ Replace the title,key and children fields in treeNode with the corresponding fie
 </docs>
 
 <template>
-  <a-tree
+  <bma-tree
     v-model:expandedKeys="expandedKeys"
     v-model:selectedKeys="selectedKeys"
     v-model:checkedKeys="checkedKeys"
@@ -29,11 +29,11 @@ Replace the title,key and children fields in treeNode with the corresponding fie
       <span v-if="key === '0-0-1'" style="color: #1890ff">{{ name }}</span>
       <template v-else>{{ name }}</template>
     </template>
-  </a-tree>
+  </bma-tree>
 </template>
 <script lang="ts">
 import { defineComponent, ref, watch } from 'vue';
-import type { TreeProps } from 'ant-design-vue';
+import type { TreeProps } from 'bmant-design-vue';
 
 export default defineComponent({
   setup() {

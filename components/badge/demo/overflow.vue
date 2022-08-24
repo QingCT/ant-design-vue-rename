@@ -17,16 +17,16 @@ title:
 </docs>
 
 <template>
-  <a-badge :count="99">
-    <a-avatar shape="square" size="large" />
-  </a-badge>
-  <a-badge :count="100">
-    <a-avatar shape="square" size="large" />
-  </a-badge>
-  <a-badge :count="99" :overflow-count="10">
-    <a-avatar shape="square" size="large" />
-  </a-badge>
-  <a-badge :count="1000" :overflow-count="999">
-    <a-avatar shape="square" size="large" />
-  </a-badge>
+  <bma-badge :count="99">
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
+  <bma-badge :count="100">
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
+  <bma-badge :count="99" :overflow-count="10">
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
+  <bma-badge :count="1000" :overflow-count="999">
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
 </template>

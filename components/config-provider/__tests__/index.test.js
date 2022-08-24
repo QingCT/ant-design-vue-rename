@@ -47,9 +47,9 @@ describe('ConfigProvider', () => {
       },
     });
 
-    expect(wrapper.find('.ant-btn').text()).toBe('确定');
+    expect(wrapper.find('.bmant-btn').text()).toBe('确定');
     wrapper.vm.autoInsertSpaceInButton = true;
     await sleep();
-    expect(wrapper.find('.ant-btn').text()).toBe('确 定');
+    expect(wrapper.find('.bmant-btn').text()).toBe('确 定');
   });
 });

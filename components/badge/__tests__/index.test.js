@@ -10,7 +10,7 @@ describe('Badge', () => {
         return <Badge count={10} dot />;
       },
     });
-    expect(badge.findAll('.ant-card-multiple-words').length).toBe(0);
+    expect(badge.findAll('.bmant-card-multiple-words').length).toBe(0);
   });
   it('badge should support float number', () => {
     let wrapper = mount({
@@ -32,7 +32,7 @@ describe('Badge', () => {
         return <Badge count={0} dot />;
       },
     });
-    expect(badge.findAll('.ant-badge-dot').length).toBe(0);
+    expect(badge.findAll('.bmant-badge-dot').length).toBe(0);
   });
 
   it('should have an overriden title attribute', () => {
@@ -41,9 +41,9 @@ describe('Badge', () => {
         return <Badge count={10} title="Custom title" />;
       },
     });
-    expect(badge.find('.ant-scroll-number').element.attributes.getNamedItem('title').value).toEqual(
-      'Custom title',
-    );
+    expect(
+      badge.find('.bmant-scroll-number').element.attributes.getNamedItem('title').value,
+    ).toEqual('Custom title');
   });
 
   // https://github.com/ant-design/ant-design/issues/10626
@@ -56,7 +56,7 @@ describe('Badge', () => {
   //     },
   //   }, { sync: false })
   //   await asyncExpect(() => {
-  //     wrapper.find({ name: 'ABadge' }).trigger('mouseenter')
+  //     wrapper.find({ name: 'BmaBadge' }).trigger('mouseenter')
   //   }, 0)
 
   //   expect(wrapper.vm.$refs.tooltip.sVisible).toBe(true)
@@ -164,7 +164,7 @@ describe('Ribbon', () => {
         },
       });
 
-      expect(wrapperStart.findAll('.ant-ribbon-placement-start').length).toEqual(1);
+      expect(wrapperStart.findAll('.bmant-ribbon-placement-start').length).toEqual(1);
 
       const wrapperEnd = mount({
         render() {
@@ -175,7 +175,7 @@ describe('Ribbon', () => {
           );
         },
       });
-      expect(wrapperEnd.findAll('.ant-ribbon-placement-end').length).toEqual(1);
+      expect(wrapperEnd.findAll('.bmant-ribbon-placement-end').length).toEqual(1);
     });
   });
 
@@ -190,7 +190,7 @@ describe('Ribbon', () => {
           );
         },
       });
-      expect(wrapper.findAll('.ant-ribbon-color-green').length).toEqual(1);
+      expect(wrapper.findAll('.bmant-ribbon-color-green').length).toEqual(1);
     });
   });
 
@@ -205,7 +205,7 @@ describe('Ribbon', () => {
           );
         },
       });
-      expect(wrapper.find('.ant-ribbon').text()).toEqual('cool');
+      expect(wrapper.find('.bmant-ribbon').text()).toEqual('cool');
     });
     it('works with element', () => {
       const wrapper = mount({

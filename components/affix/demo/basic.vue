@@ -17,13 +17,13 @@ The simplest usage.
 </docs>
 
 <template>
-  <a-affix :offset-top="top">
-    <a-button type="primary" @click="top += 10">Affix top</a-button>
-  </a-affix>
+  <bma-affix :offset-top="top">
+    <bma-button type="primary" @click="top += 10">Affix top</bma-button>
+  </bma-affix>
   <br />
-  <a-affix :offset-bottom="bottom">
-    <a-button type="primary" @click="bottom += 10">Affix bottom</a-button>
-  </a-affix>
+  <bma-affix :offset-bottom="bottom">
+    <bma-button type="primary" @click="bottom += 10">Affix bottom</bma-button>
+  </bma-affix>
 </template>
 
 <script lang="ts">

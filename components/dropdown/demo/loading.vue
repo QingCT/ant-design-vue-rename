@@ -18,41 +18,41 @@ A loading indicator can be added to a button by setting the `loading` property o
 </docs>
 
 <template>
-  <a-space direction="vertical">
-    <a-dropdown-button type="primary" loading>
+  <bma-space direction="vertical">
+    <bma-dropdown-button type="primary" loading>
       <template #overlay>
-        <a-menu>
-          <a-menu-item key="1">Submit and continue</a-menu-item>
-        </a-menu>
+        <bma-menu>
+          <bma-menu-item key="1">Submit and continue</bma-menu-item>
+        </bma-menu>
       </template>
       Submit
-    </a-dropdown-button>
-    <a-dropdown-button type="primary" size="small" loading>
+    </bma-dropdown-button>
+    <bma-dropdown-button type="primary" size="small" loading>
       <template #overlay>
-        <a-menu>
-          <a-menu-item key="1">Submit and continue</a-menu-item>
-        </a-menu>
+        <bma-menu>
+          <bma-menu-item key="1">Submit and continue</bma-menu-item>
+        </bma-menu>
       </template>
       Submit
-    </a-dropdown-button>
-    <a-dropdown-button type="primary" :loading="loading1" @click="enterLoading1">
+    </bma-dropdown-button>
+    <bma-dropdown-button type="primary" :loading="loading1" @click="enterLoading1">
       <template #overlay>
-        <a-menu>
-          <a-menu-item key="1">Submit and continue</a-menu-item>
-        </a-menu>
+        <bma-menu>
+          <bma-menu-item key="1">Submit and continue</bma-menu-item>
+        </bma-menu>
       </template>
       Submit
-    </a-dropdown-button>
-    <a-dropdown-button :loading="loading2" @click="enterLoading2">
+    </bma-dropdown-button>
+    <bma-dropdown-button :loading="loading2" @click="enterLoading2">
       Submit
       <template #overlay>
-        <a-menu>
-          <a-menu-item key="1">Submit and continue</a-menu-item>
-        </a-menu>
+        <bma-menu>
+          <bma-menu-item key="1">Submit and continue</bma-menu-item>
+        </bma-menu>
       </template>
       <template #icon><DownOutlined /></template>
-    </a-dropdown-button>
-  </a-space>
+    </bma-dropdown-button>
+  </bma-space>
 </template>
 <script lang="ts">
 import { defineComponent, Ref, ref } from 'vue';

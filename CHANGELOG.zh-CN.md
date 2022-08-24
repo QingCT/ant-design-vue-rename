@@ -496,7 +496,7 @@ Github：[https://github.com/surely-vue/table]
 - 🐞 修复 TreeSelect selectable、checkable 无法关闭问题 [#4838](https://github.com/vueComponent/ant-design-vue/issues/4838)
 - 🐞 修复 Tabs 在移动端无法滚动问题 [#4828](https://github.com/vueComponent/ant-design-vue/issues/4828)
 - 🐞 修复 InputNumber 在 form 下不触发检验问题 [#4831](https://github.com/vueComponent/ant-design-vue/issues/4831)
-- 🐞 修复 Select 使用 `<a-select-option>` 构建节点时，自动分词失效 [#4844](https://github.com/vueComponent/ant-design-vue/issues/4844)
+- 🐞 修复 Select 使用 `<bma-select-option>` 构建节点时，自动分词失效 [#4844](https://github.com/vueComponent/ant-design-vue/issues/4844)
 
 ## 3.0.0-alpha.8
 
@@ -620,10 +620,10 @@ Github：[https://github.com/surely-vue/table]
     2、一个 Form.Item 只能收集一个表单项的数据，如果有多个表单项，会导致收集错乱。例如：
 
     ```html
-    <a-form-item>
-      <a-input name="a"></a-input>
-      <a-input name="b"></a-input>
-    </a-form-item>
+    <bma-form-item>
+      <bma-input name="a"></bma-input>
+      <bma-input name="b"></bma-input>
+    </bma-form-item>
     ```
 
     如上 Form.Item 并不知道需要收集 `name="a"` 还是 `name="b"`，你可以通过如下三种方式去解决此类问题：
@@ -631,10 +631,10 @@ Github：[https://github.com/surely-vue/table]
     第一种，使用多个 `a-form-item`:
 
     ```html
-    <a-form-item>
-      <a-input name="a"></a-input>
-      <a-form-item><a-input name="b"></a-input></a-form-item>
-    </a-form-item>
+    <bma-form-item>
+      <bma-input name="a"></bma-input>
+      <bma-form-item><bma-input name="b"></bma-input></bma-form-item>
+    </bma-form-item>
     ```
 
     第二种，使用自定义组件包裹，并在自定义组件中调用 `useInjectFormItemContext`，相当于把多个表单项合并成了一个。
@@ -642,7 +642,7 @@ Github：[https://github.com/surely-vue/table]
     ```html
     <script>
       // 自定义组件
-      import { Form } from 'ant-design-vue';
+      import { Form } from 'bmant-design-vue';
       export default {
         setup() {
           const formItemContext = Form.useInjectFormItemContext();
@@ -652,21 +652,21 @@ Github：[https://github.com/surely-vue/table]
     ```
 
     ```html
-    <a-form-item>
+    <bma-form-item>
       <custom-com>
-        <a-input name="a"></a-input>
-        <a-input name="b"></a-input>
+        <bma-input name="a"></bma-input>
+        <bma-input name="b"></bma-input>
       </custom-com>
-    </a-form-item>
+    </bma-form-item>
     ```
 
     第三种，组件库提供了一个 `a-form-item-rest` 组件，它会阻止数据的收集，你可以将不需要收集校验的表单项放到这个组件中即可，它和第一种方式很类似，但它不会产生额外的 dom 节点。
 
     ```html
-    <a-form-item>
-      <a-input name="a"></a-input>
-      <a-form-item-rest><a-input name="b"></a-input></a-form-item-rest>
-    </a-form-item>
+    <bma-form-item>
+      <bma-input name="a"></bma-input>
+      <bma-form-item-rest><bma-input name="b"></bma-input></bma-form-item-rest>
+    </bma-form-item>
     ```
 
 ## 2.2.8
@@ -1206,8 +1206,8 @@ Github：[https://github.com/surely-vue/table]
 旧版 Icon 使用方式将被废弃：
 
 ```html
-<a-icon type="smile" />
-<a-button icon="smile" />
+<bma-icon type="smile" />
+<bma-button icon="smile" />
 ```
 
 2.0 中会采用按需引入的方式：
@@ -1215,9 +1215,9 @@ Github：[https://github.com/surely-vue/table]
 ```html
 <template>
   <smile-outlined />
-  <a-button>
+  <bma-button>
     <template v-slot:icon><smile-outlined /></template>
-  </a-buttom>
+  </bma-buttom>
 </template>
 <script>
 import SmileOutlined from '@ant-design/icons-vue/SmileOutlined';

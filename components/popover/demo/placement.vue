@@ -18,7 +18,7 @@ There are 12 `placement` options available.
 <template>
   <div id="components-popover-demo-placement">
     <div :style="{ marginLeft: `${buttonWidth}px`, whiteSpace: 'nowrap' }">
-      <a-popover placement="topLeft">
+      <bma-popover placement="topLeft">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -26,9 +26,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>TL</a-button>
-      </a-popover>
-      <a-popover placement="top">
+        <bma-button>TL</bma-button>
+      </bma-popover>
+      <bma-popover placement="top">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -36,9 +36,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>Top</a-button>
-      </a-popover>
-      <a-popover placement="topRight">
+        <bma-button>Top</bma-button>
+      </bma-popover>
+      <bma-popover placement="topRight">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -46,11 +46,11 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>TR</a-button>
-      </a-popover>
+        <bma-button>TR</bma-button>
+      </bma-popover>
     </div>
     <div :style="{ width: `${buttonWidth}px`, float: 'left' }">
-      <a-popover placement="leftTop">
+      <bma-popover placement="leftTop">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -58,9 +58,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>LT</a-button>
-      </a-popover>
-      <a-popover placement="left">
+        <bma-button>LT</bma-button>
+      </bma-popover>
+      <bma-popover placement="left">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -68,9 +68,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>Left</a-button>
-      </a-popover>
-      <a-popover placement="leftBottom">
+        <bma-button>Left</bma-button>
+      </bma-popover>
+      <bma-popover placement="leftBottom">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -78,11 +78,11 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>LB</a-button>
-      </a-popover>
+        <bma-button>LB</bma-button>
+      </bma-popover>
     </div>
     <div :style="{ width: `${buttonWidth}px`, marginLeft: `${buttonWidth * 4 + 24}px` }">
-      <a-popover placement="rightTop">
+      <bma-popover placement="rightTop">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -90,9 +90,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>RT</a-button>
-      </a-popover>
-      <a-popover placement="right">
+        <bma-button>RT</bma-button>
+      </bma-popover>
+      <bma-popover placement="right">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -100,9 +100,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>Right</a-button>
-      </a-popover>
-      <a-popover placement="rightBottom">
+        <bma-button>Right</bma-button>
+      </bma-popover>
+      <bma-popover placement="rightBottom">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -110,11 +110,11 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>RB</a-button>
-      </a-popover>
+        <bma-button>RB</bma-button>
+      </bma-popover>
     </div>
     <div :style="{ marginLeft: `${buttonWidth}px`, clear: 'both', whiteSpace: 'nowrap' }">
-      <a-popover placement="bottomLeft">
+      <bma-popover placement="bottomLeft">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -122,9 +122,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>BL</a-button>
-      </a-popover>
-      <a-popover placement="bottom">
+        <bma-button>BL</bma-button>
+      </bma-popover>
+      <bma-popover placement="bottom">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -132,9 +132,9 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>Bottom</a-button>
-      </a-popover>
-      <a-popover placement="bottomRight">
+        <bma-button>Bottom</bma-button>
+      </bma-popover>
+      <bma-popover placement="bottomRight">
         <template #content>
           <p>Content</p>
           <p>Content</p>
@@ -142,8 +142,8 @@ There are 12 `placement` options available.
         <template #title>
           <span>Title</span>
         </template>
-        <a-button>BR</a-button>
-      </a-popover>
+        <bma-button>BR</bma-button>
+      </bma-popover>
     </div>
   </div>
 </template>
@@ -159,7 +159,7 @@ export default defineComponent({
 });
 </script>
 <style>
-#components-popover-demo-placement .ant-btn {
+#components-popover-demo-placement .bmant-btn {
   width: 70px;
   text-align: center;
   padding: 0;

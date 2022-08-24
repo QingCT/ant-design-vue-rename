@@ -16,80 +16,80 @@ Both the top navigation and the sidebar, commonly used in application site.
 
 </docs>
 <template>
-  <a-layout>
-    <a-layout-header class="header">
+  <bma-layout>
+    <bma-layout-header class="header">
       <div class="logo" />
-      <a-menu
+      <bma-menu
         v-model:selectedKeys="selectedKeys1"
         theme="dark"
         mode="horizontal"
         :style="{ lineHeight: '64px' }"
       >
-        <a-menu-item key="1">nav 1</a-menu-item>
-        <a-menu-item key="2">nav 2</a-menu-item>
-        <a-menu-item key="3">nav 3</a-menu-item>
-      </a-menu>
-    </a-layout-header>
-    <a-layout>
-      <a-layout-sider width="200" style="background: #fff">
-        <a-menu
+        <bma-menu-item key="1">nav 1</bma-menu-item>
+        <bma-menu-item key="2">nav 2</bma-menu-item>
+        <bma-menu-item key="3">nav 3</bma-menu-item>
+      </bma-menu>
+    </bma-layout-header>
+    <bma-layout>
+      <bma-layout-sider width="200" style="background: #fff">
+        <bma-menu
           v-model:selectedKeys="selectedKeys2"
           v-model:openKeys="openKeys"
           mode="inline"
           :style="{ height: '100%', borderRight: 0 }"
         >
-          <a-sub-menu key="sub1">
+          <bma-sub-menu key="sub1">
             <template #title>
               <span>
                 <user-outlined />
                 subnav 1
               </span>
             </template>
-            <a-menu-item key="1">option1</a-menu-item>
-            <a-menu-item key="2">option2</a-menu-item>
-            <a-menu-item key="3">option3</a-menu-item>
-            <a-menu-item key="4">option4</a-menu-item>
-          </a-sub-menu>
-          <a-sub-menu key="sub2">
+            <bma-menu-item key="1">option1</bma-menu-item>
+            <bma-menu-item key="2">option2</bma-menu-item>
+            <bma-menu-item key="3">option3</bma-menu-item>
+            <bma-menu-item key="4">option4</bma-menu-item>
+          </bma-sub-menu>
+          <bma-sub-menu key="sub2">
             <template #title>
               <span>
                 <laptop-outlined />
                 subnav 2
               </span>
             </template>
-            <a-menu-item key="5">option5</a-menu-item>
-            <a-menu-item key="6">option6</a-menu-item>
-            <a-menu-item key="7">option7</a-menu-item>
-            <a-menu-item key="8">option8</a-menu-item>
-          </a-sub-menu>
-          <a-sub-menu key="sub3">
+            <bma-menu-item key="5">option5</bma-menu-item>
+            <bma-menu-item key="6">option6</bma-menu-item>
+            <bma-menu-item key="7">option7</bma-menu-item>
+            <bma-menu-item key="8">option8</bma-menu-item>
+          </bma-sub-menu>
+          <bma-sub-menu key="sub3">
             <template #title>
               <span>
                 <notification-outlined />
                 subnav 3
               </span>
             </template>
-            <a-menu-item key="9">option9</a-menu-item>
-            <a-menu-item key="10">option10</a-menu-item>
-            <a-menu-item key="11">option11</a-menu-item>
-            <a-menu-item key="12">option12</a-menu-item>
-          </a-sub-menu>
-        </a-menu>
-      </a-layout-sider>
-      <a-layout style="padding: 0 24px 24px">
-        <a-breadcrumb style="margin: 16px 0">
-          <a-breadcrumb-item>Home</a-breadcrumb-item>
-          <a-breadcrumb-item>List</a-breadcrumb-item>
-          <a-breadcrumb-item>App</a-breadcrumb-item>
-        </a-breadcrumb>
-        <a-layout-content
+            <bma-menu-item key="9">option9</bma-menu-item>
+            <bma-menu-item key="10">option10</bma-menu-item>
+            <bma-menu-item key="11">option11</bma-menu-item>
+            <bma-menu-item key="12">option12</bma-menu-item>
+          </bma-sub-menu>
+        </bma-menu>
+      </bma-layout-sider>
+      <bma-layout style="padding: 0 24px 24px">
+        <bma-breadcrumb style="margin: 16px 0">
+          <bma-breadcrumb-item>Home</bma-breadcrumb-item>
+          <bma-breadcrumb-item>List</bma-breadcrumb-item>
+          <bma-breadcrumb-item>App</bma-breadcrumb-item>
+        </bma-breadcrumb>
+        <bma-layout-content
           :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
           Content
-        </a-layout-content>
-      </a-layout>
-    </a-layout>
-  </a-layout>
+        </bma-layout-content>
+      </bma-layout>
+    </bma-layout>
+  </bma-layout>
 </template>
 <script lang="ts">
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons-vue';
@@ -120,7 +120,7 @@ export default defineComponent({
   background: rgba(255, 255, 255, 0.3);
 }
 
-.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+.bmant-row-rtl #components-layout-demo-top-side-2 .logo {
   float: right;
   margin: 16px 0 16px 24px;
 }

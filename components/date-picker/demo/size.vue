@@ -17,17 +17,17 @@ The input box comes in three sizes. `default` will be used if `size` is omitted.
 </docs>
 
 <template>
-  <a-space direction="vertical" :size="12">
-    <a-radio-group v-model:value="size">
-      <a-radio-button value="large">Large</a-radio-button>
-      <a-radio-button value="default">Default</a-radio-button>
-      <a-radio-button value="small">Small</a-radio-button>
-    </a-radio-group>
-    <a-date-picker :size="size" />
-    <a-date-picker :size="size" placeholder="Select Month" picker="month" />
-    <a-range-picker :size="size" />
-    <a-date-picker :size="size" placeholder="Select Week" picker="week" />
-  </a-space>
+  <bma-space direction="vertical" :size="12">
+    <bma-radio-group v-model:value="size">
+      <bma-radio-button value="large">Large</bma-radio-button>
+      <bma-radio-button value="default">Default</bma-radio-button>
+      <bma-radio-button value="small">Small</bma-radio-button>
+    </bma-radio-group>
+    <bma-date-picker :size="size" />
+    <bma-date-picker :size="size" placeholder="Select Month" picker="month" />
+    <bma-range-picker :size="size" />
+    <bma-date-picker :size="size" placeholder="Select Week" picker="week" />
+  </bma-space>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

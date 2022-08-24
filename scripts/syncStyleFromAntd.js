@@ -4,8 +4,8 @@ const fs = require('fs');
 const fse = require('fs-extra');
 const path = require('path');
 
-const owner = 'ant-design';
-const repo = 'ant-design';
+const owner = 'bmant-design';
+const repo = 'bmant-design';
 const tag = '3.26.13';
 const clientId = '5f6ccfdc4cdc69f8ba12';
 const clientSecret = process.env.CLIENT_SECRET;

@@ -50,9 +50,9 @@ $ npm i --save ant-design-vue
 
 ```jsx
 import { createApp } from 'vue';
-import Antd from 'ant-design-vue';
+import Antd from 'bmant-design-vue';
 import App from './App';
-import 'ant-design-vue/dist/antd.css';
+import 'bmant-design-vue/dist/antd.css';
 
 const app = createApp(App);
 
@@ -65,7 +65,7 @@ app.use(Antd).mount('#app');
 
 ```jsx
 import { createApp } from 'vue';
-import { Button, message } from 'ant-design-vue';
+import { Button, message } from 'bmant-design-vue';
 import App from './App';
 
 const app = createApp(App);
@@ -82,10 +82,10 @@ app.config.globalProperties.$message = message;
 
 ```html
 <template>
-  <a-button>Add</a-button>
+  <bma-button>Add</bma-button>
 </template>
 <script>
-  import { Button } from 'ant-design-vue';
+  import { Button } from 'bmant-design-vue';
   const ButtonGroup = Button.Group;
 
   export default {
@@ -108,25 +108,25 @@ Ant Design Vue 2.x+ 支持所有的现代浏览器。
 如果你仅需要加载使用的组件，可以通过以下的写法来按需加载组件。
 
 ```jsx
-import Button from 'ant-design-vue/lib/button';
-import 'ant-design-vue/lib/button/style'; // 或者 ant-design-vue/lib/button/style/css 加载 css 文件
+import Button from 'bmant-design-vue/lib/button';
+import 'bmant-design-vue/lib/button/style'; // 或者 ant-design-vue/lib/button/style/css 加载 css 文件
 ```
 
 如果你使用了 babel，那么可以使用 [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) 来进行按需加载，加入这个插件后。你可以仍然这么写：
 
 ```jsx
-import { Button } from 'ant-design-vue';
+import { Button } from 'bmant-design-vue';
 ```
 
 插件会帮你转换成 `ant-design-vue/lib/xxx` 的写法。另外此插件配合 [style](https://github.com/ant-design/babel-plugin-import#usage) 属性可以做到模块样式的按需自动加载。
 
-> 注意，babel-plugin-import 的 `style` 属性除了引入对应组件的样式，也会引入一些必要的全局样式。如果你不需要它们，建议不要使用此属性。你可以 `import 'ant-design-vue/dist/antd.css` 手动引入，并覆盖全局样式。
+> 注意，babel-plugin-import 的 `style` 属性除了引入对应组件的样式，也会引入一些必要的全局样式。如果你不需要它们，建议不要使用此属性。你可以 `import 'bmant-design-vue/dist/antd.css` 手动引入，并覆盖全局样式。
 
 如果你使用的 Vite，你可以使用 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) 来进行按需加载。但是此插件无法处理非组件模块，如 message，这种组件需要手动加载：
 
 ```ts
-import { message } from 'ant-design-vue';
-import 'ant-design-vue/es/message/style/css'; //vite只能用 ant-design-vue/es 而非 ant-design-vue/lib
+import { message } from 'bmant-design-vue';
+import 'bmant-design-vue/es/message/style/css'; //vite只能用 ant-design-vue/es 而非 ant-design-vue/lib
 ```
 
 ## 配置主题和字体

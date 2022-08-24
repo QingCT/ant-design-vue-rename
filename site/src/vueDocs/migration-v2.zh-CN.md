@@ -45,8 +45,8 @@
 旧版 Icon 使用方式将被废弃：
 
 ```html
-<a-icon type="smile" />
-<a-button icon="smile" />
+<bma-icon type="smile" />
+<bma-button icon="smile" />
 ```
 
 2.0 中会采用按需引入的方式：
@@ -54,9 +54,9 @@
 ```html
 <template>
   <smile-outlined />
-  <a-button>
+  <bma-button>
     <template #icon><smile-outlined /></template>
-  </a-button>
+  </bma-button>
 </template>
 <script>
   import SmileOutlined from '@ant-design/icons-vue/SmileOutlined';

@@ -142,7 +142,7 @@ export const treeProps = () => {
 export type TreeProps = Partial<ExtractPropTypes<ReturnType<typeof treeProps>>>;
 
 export default defineComponent({
-  name: 'ATree',
+  name: 'BmaTree',
   inheritAttrs: false,
   props: initDefaultProps(treeProps(), {
     checkable: false,

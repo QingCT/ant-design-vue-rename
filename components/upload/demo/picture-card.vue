@@ -17,7 +17,7 @@ After users upload picture, the thumbnail will be shown in list. The upload butt
 
 <template>
   <div class="clearfix">
-    <a-upload
+    <bma-upload
       v-model:file-list="fileList"
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       list-type="picture-card"
@@ -27,16 +27,21 @@ After users upload picture, the thumbnail will be shown in list. The upload butt
         <plus-outlined />
         <div style="margin-top: 8px">Upload</div>
       </div>
-    </a-upload>
-    <a-modal :visible="previewVisible" :title="previewTitle" :footer="null" @cancel="handleCancel">
+    </bma-upload>
+    <bma-modal
+      :visible="previewVisible"
+      :title="previewTitle"
+      :footer="null"
+      @cancel="handleCancel"
+    >
       <img alt="example" style="width: 100%" :src="previewImage" />
-    </a-modal>
+    </bma-modal>
   </div>
 </template>
 <script lang="ts">
 import { PlusOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadProps } from 'ant-design-vue';
+import type { UploadProps } from 'bmant-design-vue';
 
 function getBase64(file: File) {
   return new Promise((resolve, reject) => {
@@ -121,12 +126,12 @@ export default defineComponent({
 </script>
 <style>
 /* you can make up upload button and sample style by using stylesheets */
-.ant-upload-select-picture-card i {
+.bmant-upload-select-picture-card i {
   font-size: 32px;
   color: #999;
 }
 
-.ant-upload-select-picture-card .ant-upload-text {
+.bmant-upload-select-picture-card .bmant-upload-text {
   margin-top: 8px;
   color: #666;
 }

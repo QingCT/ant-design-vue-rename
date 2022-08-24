@@ -2,16 +2,16 @@
   <div>
     <h1>
       如果您正在寻找顶级的 Vue.js 开发者，请联系
-      <a-tooltip title="发送邮件到：antdv@foxmail.com">
+      <bma-tooltip title="发送邮件到：antdv@foxmail.com">
         <a href="mailto:antdv@foxmail.com">我们</a>
-      </a-tooltip>
+      </bma-tooltip>
       ！！！
     </h1>
     <div style="margin-top: 30px">
-      <a-list item-layout="vertical" size="large" :data-source="list">
+      <bma-list item-layout="vertical" size="large" :data-source="list">
         <template #renderItem="item">
-          <a-list-item v-show="isEffective(item.effectiveTime)">
-            <a-list-item-meta>
+          <bma-list-item v-show="isEffective(item.effectiveTime)">
+            <bma-list-item-meta>
               <template #description>
                 <div>
                   <p>工作地点：{{ item.location }}</p>
@@ -27,23 +27,23 @@
                   </h2>
                 </div>
               </template>
-            </a-list-item-meta>
+            </bma-list-item-meta>
             <template #actions>
               <div>
-                <a-tooltip title="发送邮件到：antdv@foxmail.com">
+                <bma-tooltip title="发送邮件到：antdv@foxmail.com">
                   <a :href="`mailto:antdv@foxmail.com?subject=应聘 ${item.id} 职位`">
-                    <a-icon type="link" style="margin-right: 8px" />
+                    <bma-icon type="link" style="margin-right: 8px" />
                     立刻申请
                   </a>
-                </a-tooltip>
+                </bma-tooltip>
 
                 <span>注：邮件中请注明投递岗位 ID</span>
               </div>
             </template>
             <p v-html="item.condition" />
-          </a-list-item>
+          </bma-list-item>
         </template>
-      </a-list>
+      </bma-list>
     </div>
   </div>
 </template>
@@ -73,7 +73,7 @@ export default {
           3、进行研发排期，高质量完成产品研发、沉淀相关文档 <br/>
           4、了解竞品，切磋前沿技术和创新交互，推动产品不断完善 <br/>
           `,
-          email: 'antdv',
+          email: 'bmantdv',
           effectiveTime: {
             start: '2020-06-02 00:00:00',
             end: '2020-08-15 17:00:00',
@@ -99,7 +99,7 @@ export default {
           5、思路清晰，具备良好的沟通能力和学习能力，且具备强烈的进取心、团队合作精神；<br/>
           6、掌握Node.js，有后端开发经验的优先。<br/>
           `,
-          email: 'antdv',
+          email: 'bmantdv',
           effectiveTime: {
             start: '2020-06-02 00:00:00',
             end: '2020-08-15 17:00:00',
@@ -127,7 +127,7 @@ export default {
   &nbsp;&nbsp;&nbsp; • 对nodejs/React Native/Flutter/webpack/Linux熟悉其中一种或几种； <br/>
   &nbsp;&nbsp;&nbsp; • 在工程化领域、可视化搭建平台、数据可视化、泛安全等领域有一项或是多项有深入研究（不仅仅只是使用）。 <br/>
           `,
-          email: 'antdv',
+          email: 'bmantdv',
           effectiveTime: {
             start: '2020-06-02 00:00:00',
             end: '2020-08-15 17:00:00',
@@ -153,7 +153,7 @@ export default {
 5、对实现高性能、高可用、优秀用户体验的 Web 应用有实际的了解和实践经验；<br/>
 6、有团队精神，性格乐观，能积极面对压力。<br/>
           `,
-          email: 'antdv',
+          email: 'bmantdv',
           effectiveTime: {
             start: '2020-06-02 00:00:00',
             end: '2020-06-15 17:00:00',

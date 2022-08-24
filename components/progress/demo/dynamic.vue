@@ -18,15 +18,15 @@ A dynamic progress bar is better.
 
 <template>
   <div>
-    <a-progress :percent="defaultPercent" />
-    <a-button-group>
-      <a-button @click="decline">
+    <bma-progress :percent="defaultPercent" />
+    <bma-button-group>
+      <bma-button @click="decline">
         <template #icon><minus-outlined /></template>
-      </a-button>
-      <a-button @click="increase">
+      </bma-button>
+      <bma-button @click="increase">
         <template #icon><plus-outlined /></template>
-      </a-button>
-    </a-button-group>
+      </bma-button>
+    </bma-button-group>
   </div>
 </template>
 <script lang="ts">

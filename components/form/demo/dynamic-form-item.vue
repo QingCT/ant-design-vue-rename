@@ -15,13 +15,13 @@ title:
 Add or remove form items dynamically.
 </docs>
 <template>
-  <a-form
+  <bma-form
     ref="formRef"
     name="dynamic_form_item"
     :model="dynamicValidateForm"
     v-bind="formItemLayoutWithOutLabel"
   >
-    <a-form-item
+    <bma-form-item
       v-for="(domain, index) in dynamicValidateForm.domains"
       :key="domain.key"
       v-bind="index === 0 ? formItemLayout : {}"
@@ -33,7 +33,7 @@ Add or remove form items dynamically.
         trigger: 'change',
       }"
     >
-      <a-input
+      <bma-input
         v-model:value="domain.value"
         placeholder="please input domain"
         style="width: 60%; margin-right: 8px"
@@ -44,24 +44,24 @@ Add or remove form items dynamically.
         :disabled="dynamicValidateForm.domains.length === 1"
         @click="removeDomain(domain)"
       />
-    </a-form-item>
-    <a-form-item v-bind="formItemLayoutWithOutLabel">
-      <a-button type="dashed" style="width: 60%" @click="addDomain">
+    </bma-form-item>
+    <bma-form-item v-bind="formItemLayoutWithOutLabel">
+      <bma-button type="dashed" style="width: 60%" @click="addDomain">
         <PlusOutlined />
         Add field
-      </a-button>
-    </a-form-item>
-    <a-form-item v-bind="formItemLayoutWithOutLabel">
-      <a-button type="primary" html-type="submit" @click="submitForm">Submit</a-button>
-      <a-button style="margin-left: 10px" @click="resetForm">Reset</a-button>
-    </a-form-item>
-  </a-form>
+      </bma-button>
+    </bma-form-item>
+    <bma-form-item v-bind="formItemLayoutWithOutLabel">
+      <bma-button type="primary" html-type="submit" @click="submitForm">Submit</bma-button>
+      <bma-button style="margin-left: 10px" @click="resetForm">Reset</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 
 <script lang="ts">
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons-vue';
 import { defineComponent, reactive, ref } from 'vue';
-import type { FormInstance } from 'ant-design-vue';
+import type { FormInstance } from 'bmant-design-vue';
 
 interface Domain {
   value: string;

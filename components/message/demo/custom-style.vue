@@ -17,10 +17,10 @@ The `style` and `class` are available to customize Message.
 </docs>
 
 <template>
-  <a-button @click="success">Customized style</a-button>
+  <bma-button @click="success">Customized style</bma-button>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {

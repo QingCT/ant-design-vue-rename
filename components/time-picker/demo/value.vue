@@ -18,14 +18,14 @@ value 和 onChange 需要配合使用。也可以直接使用v-model。
 </docs>
 
 <template>
-  <a-space direction="vertical">
+  <bma-space direction="vertical">
     <p>use value and @change</p>
-    <a-time-picker :value="value" @change="onChange" />
+    <bma-time-picker :value="value" @change="onChange" />
     <p>v-model</p>
-    <a-time-picker v-model:value="value" />
+    <bma-time-picker v-model:value="value" />
     <p>Do not change</p>
-    <a-time-picker :value="value2" />
-  </a-space>
+    <bma-time-picker :value="value2" />
+  </bma-space>
 </template>
 <script lang="ts">
 import dayjs, { Dayjs } from 'dayjs';

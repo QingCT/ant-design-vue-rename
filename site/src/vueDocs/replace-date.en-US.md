@@ -6,15 +6,15 @@ Starting from the V3 version, the momentjs library is replaced by dayjs by defau
 
 ```js
 // moment or date-fns
-import DatePicker from 'ant-design-vue/es/date-picker/moment';
-import TimePicker from 'ant-design-vue/es/time-picker/moment';
-import Calendar from 'ant-design-vue/es/calendar/moment';
-// import DatePicker from 'ant-design-vue/es/date-picker/date-fns';
-// import TimePicker from 'ant-design-vue/es/time-picker/date-fns';
-// import Calendar from 'ant-design-vue/es/calendar/date-fns';
+import DatePicker from 'bmant-design-vue/es/date-picker/moment';
+import TimePicker from 'bmant-design-vue/es/time-picker/moment';
+import Calendar from 'bmant-design-vue/es/calendar/moment';
+// import DatePicker from 'bmant-design-vue/es/date-picker/date-fns';
+// import TimePicker from 'bmant-design-vue/es/time-picker/date-fns';
+// import Calendar from 'bmant-design-vue/es/calendar/date-fns';
 import { createApp } from 'vue';
 import App from './App.vue';
-import antd from 'ant-design-vue';
+import antd from 'bmant-design-vue';
 const app = createApp(App);
 app.use(DatePicker).use(TimePicker).use(Calendar).use(antd).mount('#app');
 ```

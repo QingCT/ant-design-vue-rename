@@ -17,11 +17,11 @@ The icon can be customized to any vue node or (h) => vue node.
 </docs>
 
 <template>
-  <a-button type="primary" @click="openNotification">Open the notification box</a-button>
+  <bma-button type="primary" @click="openNotification">Open the notification box</bma-button>
 </template>
 <script lang="ts">
 import { SmileOutlined } from '@ant-design/icons-vue';
-import { notification } from 'ant-design-vue';
+import { notification } from 'bmant-design-vue';
 import { defineComponent, h } from 'vue';
 
 export default defineComponent({

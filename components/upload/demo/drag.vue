@@ -20,7 +20,7 @@ We can upload serveral files at once by giving the input the `multiple` attribut
 </docs>
 
 <template>
-  <a-upload-dragger
+  <bma-upload-dragger
     v-model:fileList="fileList"
     name="file"
     :multiple="true"
@@ -28,21 +28,21 @@ We can upload serveral files at once by giving the input the `multiple` attribut
     @change="handleChange"
     @drop="handleDrop"
   >
-    <p class="ant-upload-drag-icon">
+    <p class="bmant-upload-drag-icon">
       <inbox-outlined></inbox-outlined>
     </p>
-    <p class="ant-upload-text">Click or drag file to this area to upload</p>
-    <p class="ant-upload-hint">
+    <p class="bmant-upload-text">Click or drag file to this area to upload</p>
+    <p class="bmant-upload-hint">
       Support for a single or bulk upload. Strictly prohibit from uploading company data or other
       band files
     </p>
-  </a-upload-dragger>
+  </bma-upload-dragger>
 </template>
 <script lang="ts">
 import { InboxOutlined } from '@ant-design/icons-vue';
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadChangeParam } from 'ant-design-vue';
+import type { UploadChangeParam } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

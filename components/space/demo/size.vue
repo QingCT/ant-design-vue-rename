@@ -21,19 +21,19 @@ Set the size to `large` and `middle` by setting size to large and middle respect
 
 <template>
   <div>
-    <a-radio-group v-model:value="size">
-      <a-radio value="small">Small</a-radio>
-      <a-radio value="middle">Middle</a-radio>
-      <a-radio value="large">Large</a-radio>
-    </a-radio-group>
+    <bma-radio-group v-model:value="size">
+      <bma-radio value="small">Small</bma-radio>
+      <bma-radio value="middle">Middle</bma-radio>
+      <bma-radio value="large">Large</bma-radio>
+    </bma-radio-group>
     <br />
     <br />
-    <a-space :size="size">
-      <a-button type="primary">Primary</a-button>
-      <a-button>Default</a-button>
-      <a-button type="dashed">Dashed</a-button>
-      <a-button type="link">Link</a-button>
-    </a-space>
+    <bma-space :size="size">
+      <bma-button type="primary">Primary</bma-button>
+      <bma-button>Default</bma-button>
+      <bma-button type="dashed">Dashed</bma-button>
+      <bma-button type="link">Link</bma-button>
+    </bma-space>
   </div>
 </template>
 <script>

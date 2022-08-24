@@ -14,7 +14,7 @@ import { progressProps, progressStatuses } from './props';
 import type { VueNode } from '../_util/type';
 
 export default defineComponent({
-  name: 'AProgress',
+  name: 'BmaProgress',
   props: initDefaultProps(progressProps(), {
     type: 'line',
     percent: 0,

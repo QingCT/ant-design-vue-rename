@@ -16,15 +16,15 @@ Vertical RadioGroup, with more radios.
 
 </docs>
 <template>
-  <a-radio-group v-model:value="value">
-    <a-radio :style="radioStyle" :value="1">Option A</a-radio>
-    <a-radio :style="radioStyle" :value="2">Option B</a-radio>
-    <a-radio :style="radioStyle" :value="3">Option C</a-radio>
-    <a-radio :style="radioStyle" :value="4">
+  <bma-radio-group v-model:value="value">
+    <bma-radio :style="radioStyle" :value="1">Option A</bma-radio>
+    <bma-radio :style="radioStyle" :value="2">Option B</bma-radio>
+    <bma-radio :style="radioStyle" :value="3">Option C</bma-radio>
+    <bma-radio :style="radioStyle" :value="4">
       More...
-      <a-input v-if="value === 4" style="width: 100px; margin-left: 10px" />
-    </a-radio>
-  </a-radio-group>
+      <bma-input v-if="value === 4" style="width: 100px; margin-left: 10px" />
+    </bma-radio>
+  </bma-radio-group>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, ref } from 'vue';

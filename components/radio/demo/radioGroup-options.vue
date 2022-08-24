@@ -16,18 +16,18 @@ Render radios by configuring `options`.
 
 </docs>
 <template>
-  <a-space direction="vertical">
-    <a-radio-group v-model:value="value1" :options="plainOptions" />
-    <a-radio-group v-model:value="value2" :options="optionsWithDisabled" />
-    <a-radio-group v-model:value="value3" :options="plainOptions" disabled />
-    <a-radio-group v-model:value="value1" option-type="button" :options="plainOptions" />
-    <a-radio-group v-model:value="value2" option-type="button" :options="optionsWithDisabled" />
-    <a-radio-group v-model:value="value3" option-type="button" :options="plainOptions" disabled />
-  </a-space>
+  <bma-space direction="vertical">
+    <bma-radio-group v-model:value="value1" :options="plainOptions" />
+    <bma-radio-group v-model:value="value2" :options="optionsWithDisabled" />
+    <bma-radio-group v-model:value="value3" :options="plainOptions" disabled />
+    <bma-radio-group v-model:value="value1" option-type="button" :options="plainOptions" />
+    <bma-radio-group v-model:value="value2" option-type="button" :options="optionsWithDisabled" />
+    <bma-radio-group v-model:value="value3" option-type="button" :options="plainOptions" disabled />
+  </bma-space>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { RadioGroupProps } from 'ant-design-vue';
+import { RadioGroupProps } from 'bmant-design-vue';
 const plainOptions = ['Apple', 'Pear', 'Orange'];
 const options = [
   { label: 'Apple', value: 'Apple' },

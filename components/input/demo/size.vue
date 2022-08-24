@@ -1,8 +1,8 @@
 <docs>
 ---
-order: 5 
-title: 
-  zh-CN: 三种大小 
+order: 5
+title:
+  zh-CN: 三种大小
   en-US: Three sizes of Input
 ---
 
@@ -17,9 +17,9 @@ There are three sizes of an Input box: `large` (40px)、`default` (32px) and `sm
 </docs>
 <template>
   <div class="components-input-demo-size">
-    <a-input v-model:value="value" size="large" placeholder="large size" />
-    <a-input v-model:value="value" placeholder="default size" />
-    <a-input v-model:value="value" size="small" placeholder="small size" />
+    <bma-input v-model:value="value" size="large" placeholder="large size" />
+    <bma-input v-model:value="value" placeholder="default size" />
+    <bma-input v-model:value="value" size="small" placeholder="small size" />
   </div>
 </template>
 <script lang="ts">
@@ -34,7 +34,7 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.components-input-demo-size .ant-input {
+.components-input-demo-size .bmant-input {
   width: 200px;
   margin: 0 8px 8px 0;
 }

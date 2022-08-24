@@ -408,7 +408,7 @@ function PickerPanel<DateType>() {
 
       return () => {
         const {
-          prefixCls = 'ant-picker',
+          prefixCls = 'bmant-picker',
           locale,
           generateConfig,
           disabledDate,

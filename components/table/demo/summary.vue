@@ -17,29 +17,29 @@ Set summary content by `summary` prop. Sync column fixed status with `a-table-su
 </docs>
 
 <template>
-  <a-table :columns="columns" :data-source="data" :pagination="false" bordered>
+  <bma-table :columns="columns" :data-source="data" :pagination="false" bordered>
     <template #summary>
-      <a-table-summary-row>
-        <a-table-summary-cell>Total</a-table-summary-cell>
-        <a-table-summary-cell>
-          <a-typography-text type="danger">{{ totals.totalBorrow }}</a-typography-text>
-        </a-table-summary-cell>
-        <a-table-summary-cell>
-          <a-typography-text>{{ totals.totalRepayment }}</a-typography-text>
-        </a-table-summary-cell>
-      </a-table-summary-row>
-      <a-table-summary-row>
-        <a-table-summary-cell>Balance</a-table-summary-cell>
-        <a-table-summary-cell :col-span="2">
-          <a-typography-text type="danger">
+      <bma-table-summary-row>
+        <bma-table-summary-cell>Total</bma-table-summary-cell>
+        <bma-table-summary-cell>
+          <bma-typography-text type="danger">{{ totals.totalBorrow }}</bma-typography-text>
+        </bma-table-summary-cell>
+        <bma-table-summary-cell>
+          <bma-typography-text>{{ totals.totalRepayment }}</bma-typography-text>
+        </bma-table-summary-cell>
+      </bma-table-summary-row>
+      <bma-table-summary-row>
+        <bma-table-summary-cell>Balance</bma-table-summary-cell>
+        <bma-table-summary-cell :col-span="2">
+          <bma-typography-text type="danger">
             {{ totals.totalBorrow - totals.totalRepayment }}
-          </a-typography-text>
-        </a-table-summary-cell>
-      </a-table-summary-row>
+          </bma-typography-text>
+        </bma-table-summary-cell>
+      </bma-table-summary-row>
     </template>
-  </a-table>
+  </bma-table>
   <br />
-  <a-table
+  <bma-table
     :columns="fixedColumns"
     :data-source="fixedData"
     :pagination="false"
@@ -47,18 +47,18 @@ Set summary content by `summary` prop. Sync column fixed status with `a-table-su
     bordered
   >
     <template #summary>
-      <a-table-summary fixed>
-        <a-table-summary-row>
-          <a-table-summary-cell :index="0">Summary</a-table-summary-cell>
-          <a-table-summary-cell :index="1">This is a summary content</a-table-summary-cell>
-        </a-table-summary-row>
-      </a-table-summary>
+      <bma-table-summary fixed>
+        <bma-table-summary-row>
+          <bma-table-summary-cell :index="0">Summary</bma-table-summary-cell>
+          <bma-table-summary-cell :index="1">This is a summary content</bma-table-summary-cell>
+        </bma-table-summary-row>
+      </bma-table-summary>
     </template>
-  </a-table>
+  </bma-table>
 </template>
 
 <script lang="ts">
-import type { TableColumnsType } from 'ant-design-vue';
+import type { TableColumnsType } from 'bmant-design-vue';
 import { computed, defineComponent, ref } from 'vue';
 
 export default defineComponent({

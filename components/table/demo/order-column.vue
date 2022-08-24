@@ -18,17 +18,17 @@ You can control the order of the expand and select columns by using `Table.EXPAN
 </docs>
 
 <template>
-  <a-table :columns="columns" :data-source="data" :row-selection="{}">
+  <bma-table :columns="columns" :data-source="data" :row-selection="{}">
     <template #expandedRowRender="{ record }">
       <p style="margin: 0">
         {{ record.description }}
       </p>
     </template>
-  </a-table>
+  </bma-table>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { Table } from 'ant-design-vue';
+import { Table } from 'bmant-design-vue';
 
 export default defineComponent({
   setup() {

@@ -16,9 +16,9 @@ title:
 </docs>
 
 <template>
-  <a-button type="primary" block>Primary</a-button>
-  <a-button block>Default</a-button>
-  <a-button type="dashed" block>Dashed</a-button>
-  <a-button danger block>Danger</a-button>
-  <a-button type="link" block>Link</a-button>
+  <bma-button type="primary" block>Primary</bma-button>
+  <bma-button block>Default</bma-button>
+  <bma-button type="dashed" block>Dashed</bma-button>
+  <bma-button danger block>Danger</bma-button>
+  <bma-button type="link" block>Link</bma-button>
 </template>

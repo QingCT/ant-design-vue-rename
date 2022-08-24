@@ -14,9 +14,9 @@ This component provides a configuration to all Vue components underneath itself 
 
 ```html
 <template>
-  <a-config-provider :getPopupContainer="getPopupContainer">
+  <bma-config-provider :getPopupContainer="getPopupContainer">
     <app />
-  </a-config-provider>
+  </bma-config-provider>
 </template>
 <script>
   export default {
@@ -38,9 +38,9 @@ This component provides a configuration to all Vue components underneath itself 
 Some components use dynamic style to support wave effect. You can config `csp` prop if Content Security Policy (CSP) is enabled:
 
 ```html
-<a-config-provider :csp="{ nonce: 'YourNonceCode' }">
-  <a-button>My Button</a-button>
-</a-config-provider>
+<bma-config-provider :csp="{ nonce: 'YourNonceCode' }">
+  <bma-button>My Button</bma-button>
+</bma-config-provider>
 ```
 
 ## API
@@ -70,7 +70,7 @@ Setting `Modal`、`Message`、`Notification` rootPrefixCls.
 
 ```jsx
 ConfigProvider.config({
-  prefixCls: 'ant',
+  prefixCls: 'bmant',
 });
 ```
 
@@ -78,7 +78,7 @@ or
 
 ```jsx
 // some cinfig support reactively, you can change prefixCls.value = 'other'
-const prefixCls = ref('ant');
+const prefixCls = ref('bmant');
 ConfigProvider.config({
   prefixCls,
 });

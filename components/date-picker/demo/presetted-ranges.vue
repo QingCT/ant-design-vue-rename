@@ -17,16 +17,16 @@ We can set presetted ranges to RangePicker to improve user experience.
 </docs>
 
 <template>
-  <a-space direction="vertical" :size="12">
-    <a-range-picker v-model:value="value1" :ranges="ranges" />
-    <a-range-picker
+  <bma-space direction="vertical" :size="12">
+    <bma-range-picker v-model:value="value1" :ranges="ranges" />
+    <bma-range-picker
       v-model:value="value2"
       style="width: 400px"
       :ranges="ranges"
       show-time
       format="YYYY/MM/DD HH:mm:ss"
     />
-  </a-space>
+  </bma-space>
 </template>
 <script lang="ts">
 import dayjs, { Dayjs } from 'dayjs';

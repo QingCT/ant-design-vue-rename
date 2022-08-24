@@ -1,14 +1,14 @@
 {
-  "name": "ant-design-vue",
+  "name": "bmant-design-vue",
   "version": "3.2.11",
   "title": "Ant Design Vue",
   "description": "An enterprise-class UI design language and Vue-based implementation",
   "keywords": [
     "vue",
     "vue3",
-    "ant",
+    "bmant",
     "design",
-    "antd",
+    "bmantd",
     "vueComponent",
     "component",
     "components",

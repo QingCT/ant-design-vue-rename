@@ -19,35 +19,35 @@ Support 6 placements.
 <template>
   <div id="components-dropdown-demo-placement">
     <template v-for="(placement, index) in placements" :key="placement">
-      <a-dropdown :placement="placement">
-        <a-button>{{ placement }}</a-button>
+      <bma-dropdown :placement="placement">
+        <bma-button>{{ placement }}</bma-button>
         <template #overlay>
-          <a-menu>
-            <a-menu-item>
+          <bma-menu>
+            <bma-menu-item>
               <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
                 1st menu item
               </a>
-            </a-menu-item>
-            <a-menu-item>
+            </bma-menu-item>
+            <bma-menu-item>
               <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
                 2nd menu item
               </a>
-            </a-menu-item>
-            <a-menu-item>
+            </bma-menu-item>
+            <bma-menu-item>
               <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
                 3rd menu item
               </a>
-            </a-menu-item>
-          </a-menu>
+            </bma-menu-item>
+          </bma-menu>
         </template>
-      </a-dropdown>
+      </bma-dropdown>
       <br v-if="index === 2" />
     </template>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import type { DropdownProps } from 'ant-design-vue';
+import type { DropdownProps } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     return {
@@ -64,7 +64,7 @@ export default defineComponent({
 });
 </script>
 <style>
-#components-dropdown-demo-placement .ant-btn {
+#components-dropdown-demo-placement .bmant-btn {
   margin-right: 8px;
   margin-bottom: 8px;
 }

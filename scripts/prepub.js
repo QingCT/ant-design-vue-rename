@@ -95,7 +95,7 @@ function finalizeDist() {
   if (fs.existsSync(path.join(__dirname, '../dist'))) {
     // Build less entry file: dist/antd.less
     fs.writeFileSync(
-      path.join(process.cwd(), 'dist', 'antd.less'),
+      path.join(process.cwd(), 'dist', 'bmantd.less'),
       '@import "../lib/style/index.less";\n@import "../lib/style/components.less";',
     );
     // eslint-disable-next-line no-console
@@ -113,7 +113,7 @@ function finalizeDist() {
       `
 function getThemeVariables(options = {}) {
   let themeVar = {
-    'hack': \`true;@import "\${require.resolve('ant-design-vue/lib/style/color/colorPalette.less')}";\`,
+    'hack': \`true;@import "\${require.resolve('bmant-design-vue/lib/style/color/colorPalette.less')}";\`,
     ...defaultTheme
   };
   if(options.dark) {
