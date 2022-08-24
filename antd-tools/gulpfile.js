@@ -32,7 +32,8 @@ const packageJson = require(getProjectPath('package.json'));
 const tsDefaultReporter = ts.reporter.defaultReporter();
 const cwd = process.cwd();
 const libDir = getProjectPath('lib');
-const esDir = getProjectPath('es');
+// const esDir = getProjectPath('es');
+const esDir = getProjectPath('bmantd');
 
 const tsConfig = getTSCommonConfig();
 
@@ -410,11 +411,15 @@ gulp.task('compile-finalize', done => {
 
 gulp.task(
   'compile',
-  gulp.series(gulp.parallel('compile-with-es', 'compile-with-lib'), 'compile-finalize', done => {
-    console.log('end compile at ', new Date());
-    console.log('compile time ', (new Date() - startTime) / 1000, 's');
-    done();
-  }),
+  gulp.series(
+    gulp.parallel('compile-with-es' /*, 'compile-with-lib'*/),
+    'compile-finalize',
+    done => {
+      console.log('end compile at ', new Date());
+      console.log('compile time ', (new Date() - startTime) / 1000, 's');
+      done();
+    },
+  ),
 );
 
 gulp.task(
