@@ -18,7 +18,7 @@ The most basic dropdown menu.
 
 <template>
   <bma-dropdown>
-    <a class="ant-dropdown-link" @click.prevent>
+    <a class="bmant-dropdown-link" @click.prevent>
       Hover me
       <DownOutlined />
     </a>

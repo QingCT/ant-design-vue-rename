@@ -18,7 +18,7 @@ An event will be triggered when you click menu items, in which you can make diff
 
 <template>
   <bma-dropdown>
-    <a class="ant-dropdown-link" @click.prevent>
+    <a class="bmant-dropdown-link" @click.prevent>
       Hover me, Click menu item
       <DownOutlined />
     </a>

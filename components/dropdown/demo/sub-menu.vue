@@ -18,7 +18,7 @@ The menu has multiple levels.
 
 <template>
   <bma-dropdown>
-    <a class="ant-dropdown-link" @click.prevent>
+    <a class="bmant-dropdown-link" @click.prevent>
       Cascading menu
       <DownOutlined />
     </a>

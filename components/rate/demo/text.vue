@@ -18,7 +18,7 @@ Add copywriting in rate components.
 <template>
   <span>
     <bma-rate v-model:value="value" :tooltips="desc" />
-    <span class="ant-rate-text">{{ desc[value - 1] }}</span>
+    <span class="bmant-rate-text">{{ desc[value - 1] }}</span>
   </span>
 </template>
 <script lang="ts">

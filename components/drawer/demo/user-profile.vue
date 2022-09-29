@@ -109,7 +109,7 @@ Use Drawer to quickly preview details of an object, such as those in a list.
     <p :style="pStyle">Contacts</p>
     <bma-row>
       <bma-col :span="12">
-        <description-item title="Email" content="ant-design-vue@example.com" />
+        <description-item title="Email" content="bmant-design-vue@example.com" />
       </bma-col>
       <bma-col :span="12">
         <description-item title="Phone Number" content="+86 181 0000 0000" />

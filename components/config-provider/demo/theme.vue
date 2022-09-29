@@ -114,7 +114,7 @@ Modify global theme color by css variable. Css variable depends on the design, i
                 <bma-menu-item danger>a danger item</bma-menu-item>
               </bma-menu>
             </template>
-            <a class="ant-dropdown-link" @click.prevent>
+            <a class="bmant-dropdown-link" @click.prevent>
               Hover me
               <DownOutlined />
             </a>

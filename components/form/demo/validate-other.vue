@@ -23,7 +23,7 @@ Demonstration of validation configuration for form controls which are not shown 
     @finish="onFinish"
   >
     <bma-form-item label="Plain Text">
-      <span class="ant-form-text">China</span>
+      <span class="bmant-form-text">China</span>
     </bma-form-item>
     <bma-form-item
       name="select"
@@ -57,7 +57,7 @@ Demonstration of validation configuration for form controls which are not shown 
       <bma-form-item name="input-number" no-style>
         <bma-input-number v-model:value="formState['input-number']" :min="1" :max="10" />
       </bma-form-item>
-      <span class="ant-form-text">machines</span>
+      <span class="bmant-form-text">machines</span>
     </bma-form-item>
 
     <bma-form-item name="switch" label="Switch">
@@ -144,11 +144,11 @@ Demonstration of validation configuration for form controls which are not shown 
     <bma-form-item label="Dragger">
       <bma-form-item name="dragger" no-style>
         <bma-upload-dragger v-model:fileList="formState.dragger" name="files" action="/upload.do">
-          <p class="ant-upload-drag-icon">
+          <p class="bmant-upload-drag-icon">
             <InboxOutlined />
           </p>
-          <p class="ant-upload-text">Click or drag file to this area to upload</p>
-          <p class="ant-upload-hint">Support for a single or bulk upload.</p>
+          <p class="bmant-upload-text">Click or drag file to this area to upload</p>
+          <p class="bmant-upload-hint">Support for a single or bulk upload.</p>
         </bma-upload-dragger>
       </bma-form-item>
     </bma-form-item>

@@ -17,7 +17,7 @@ The default trigger mode is `hover`, you can change it to `click`.
 
 <template>
   <bma-dropdown :trigger="['click']">
-    <a class="ant-dropdown-link" @click.prevent>
+    <a class="bmant-dropdown-link" @click.prevent>
       Click me
       <DownOutlined />
     </a>

@@ -39,7 +39,7 @@ In this case, submit button is in the Modal which is out of Form. You can use `f
         </ul>
       </template>
       <template v-else>
-        <bma-typography-text class="ant-form-text" type="secondary">
+        <bma-typography-text class="bmant-form-text" type="secondary">
           (
           <SmileOutlined />
           No user yet. )

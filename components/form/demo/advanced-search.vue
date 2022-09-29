@@ -24,7 +24,7 @@ Because the width of label is not fixed, you may need to adjust it by customizin
     <bma-form
       ref="formRef"
       name="advanced_search"
-      class="ant-advanced-search-form"
+      class="bmant-advanced-search-form"
       :model="formState"
       @finish="onFinish"
     >
