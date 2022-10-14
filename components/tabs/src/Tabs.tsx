@@ -330,7 +330,7 @@ const InternalTabs = defineComponent({
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ATabs',
+  name: 'BmaTabs',
   inheritAttrs: false,
   props: initDefaultProps(tabsProps(), {
     tabPosition: 'top',

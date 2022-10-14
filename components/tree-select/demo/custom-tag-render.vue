@@ -17,7 +17,7 @@ Allows for custom rendering of tags.
 </docs>
 
 <template>
-  <a-tree-select
+  <bma-tree-select
     v-model:value="value"
     show-search
     style="width: 100%"
@@ -30,20 +30,25 @@ Allows for custom rendering of tags.
     :tree-data="treeData"
   >
     <template #tagRender="{ label, closable, onClose, option }">
-      <a-tag :closable="closable" :color="option.color" style="margin-right: 3px" @close="onClose">
+      <bma-tag
+        :closable="closable"
+        :color="option.color"
+        style="margin-right: 3px"
+        @close="onClose"
+      >
         {{ label }}&nbsp;&nbsp;
-      </a-tag>
+      </bma-tag>
     </template>
     <template #title="{ value: val, title }">
       <b v-if="val === 'parent 1-1'" style="color: #08c">{{ val }}</b>
       <template v-else>{{ title }}</template>
     </template>
-  </a-tree-select>
+  </bma-tree-select>
 </template>
 <script lang="ts">
-import type { TreeSelectProps } from 'ant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
-import { TreeSelect } from 'ant-design-vue';
+import { TreeSelect } from 'bmant-design-vue';
 const SHOW_ALL = TreeSelect.SHOW_ALL;
 export default defineComponent({
   setup() {

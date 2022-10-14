@@ -16,18 +16,18 @@ title:
 Select multiple options
 </docs>
 <template>
-  <a-cascader
+  <bma-cascader
     v-model:value="value"
     style="width: 100%"
     multiple
     max-tag-count="responsive"
     :options="options"
     placeholder="Please select"
-  ></a-cascader>
+  ></bma-cascader>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { CascaderProps } from 'ant-design-vue';
+import type { CascaderProps } from 'bmant-design-vue';
 const options: CascaderProps['options'] = [
   {
     label: 'Light',

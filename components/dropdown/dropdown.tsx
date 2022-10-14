@@ -16,7 +16,7 @@ export type DropdownProps = Partial<ExtractPropTypes<ReturnType<typeof dropdownP
 
 const Dropdown = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ADropdown',
+  name: 'BmaDropdown',
   inheritAttrs: false,
   props: initDefaultProps(dropdownProps(), {
     mouseEnterDelay: 0.15,

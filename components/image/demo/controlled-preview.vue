@@ -18,8 +18,8 @@ You can make preview controlled.
 
 <template>
   <div>
-    <a-button type="primary" @click="() => setVisible(true)">show image preview</a-button>
-    <a-image
+    <bma-button type="primary" @click="() => setVisible(true)">show image preview</bma-button>
+    <bma-image
       :width="200"
       :style="{ display: 'none' }"
       :preview="{

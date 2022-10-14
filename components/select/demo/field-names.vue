@@ -21,7 +21,7 @@ Only options passing is supported, a-select-option construction node is not supp
 </docs>
 
 <template>
-  <a-select
+  <bma-select
     ref="select"
     v-model:value="value"
     style="width: 120px"
@@ -29,10 +29,10 @@ Only options passing is supported, a-select-option construction node is not supp
     :field-names="{ label: 'name', value: 'id', options: 'children' }"
     @focus="focus"
     @change="handleChange"
-  ></a-select>
+  ></bma-select>
 </template>
 <script lang="ts">
-import type { SelectProps } from 'ant-design-vue';
+import type { SelectProps } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 export default defineComponent({
   setup() {

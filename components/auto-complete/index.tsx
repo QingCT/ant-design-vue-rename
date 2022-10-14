@@ -40,7 +40,7 @@ export const AutoCompleteOptGroup = OptGroup;
 
 const AutoComplete = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AAutoComplete',
+  name: 'BmaAutoComplete',
   inheritAttrs: false,
   props: autoCompleteProps(),
   // emits: ['change', 'select', 'focus', 'blur'],

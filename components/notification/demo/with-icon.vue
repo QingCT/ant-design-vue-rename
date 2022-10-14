@@ -18,14 +18,14 @@ A notification box with a icon at the left side.
 
 <template>
   <div>
-    <a-button @click="() => openNotificationWithIcon('success')">Success</a-button>
-    <a-button @click="() => openNotificationWithIcon('info')">Info</a-button>
-    <a-button @click="() => openNotificationWithIcon('warning')">Warning</a-button>
-    <a-button @click="() => openNotificationWithIcon('error')">Error</a-button>
+    <bma-button @click="() => openNotificationWithIcon('success')">Success</bma-button>
+    <bma-button @click="() => openNotificationWithIcon('info')">Info</bma-button>
+    <bma-button @click="() => openNotificationWithIcon('warning')">Warning</bma-button>
+    <bma-button @click="() => openNotificationWithIcon('error')">Error</bma-button>
   </div>
 </template>
 <script lang="ts">
-import { notification } from 'ant-design-vue';
+import { notification } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({

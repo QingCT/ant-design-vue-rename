@@ -78,7 +78,7 @@ import type { RenderEmptyHandler } from '../config-provider/renderEmpty';
 
 const List = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AList',
+  name: 'BmaList',
   Item,
   props: initDefaultProps(listProps(), {
     dataSource: [],

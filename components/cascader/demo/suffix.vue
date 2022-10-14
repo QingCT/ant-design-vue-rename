@@ -16,28 +16,28 @@ Custom suffix icon
 
 </docs>
 <template>
-  <a-space>
-    <a-cascader
+  <bma-space>
+    <bma-cascader
       v-model:value="value1"
       style="margin-top: 1rem"
       :options="options"
       placeholder="Please select"
     >
       <template #suffixIcon><smile-outlined class="test" /></template>
-    </a-cascader>
-    <a-cascader
+    </bma-cascader>
+    <bma-cascader
       v-model:value="value2"
       suffix-icon="ab"
       style="margin-top: 1rem"
       :options="options"
       placeholder="Please select"
     />
-  </a-space>
+  </bma-space>
 </template>
 <script lang="ts">
 import { SmileOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { CascaderProps } from 'ant-design-vue';
+import type { CascaderProps } from 'bmant-design-vue';
 const options: CascaderProps['options'] = [
   {
     value: 'zhejiang',

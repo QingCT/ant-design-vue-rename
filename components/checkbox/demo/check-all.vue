@@ -18,16 +18,16 @@ The `indeterminate` property can help you to achieve a 'check all' effect.
 
 <template>
   <div>
-    <a-checkbox
+    <bma-checkbox
       v-model:checked="checkAll"
       :indeterminate="indeterminate"
       @change="onCheckAllChange"
     >
       Check all
-    </a-checkbox>
+    </bma-checkbox>
   </div>
-  <a-divider />
-  <a-checkbox-group v-model:value="checkedList" :options="plainOptions" />
+  <bma-divider />
+  <bma-checkbox-group v-model:value="checkedList" :options="plainOptions" />
 </template>
 <script lang="ts">
 import { defineComponent, reactive, toRefs, watch } from 'vue';

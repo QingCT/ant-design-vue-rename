@@ -17,7 +17,7 @@ export type ButtonGroupProps = Partial<ExtractPropTypes<ReturnType<typeof button
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AButtonGroup',
+  name: 'BmaButtonGroup',
   props: buttonGroupProps(),
   setup(props, { slots }) {
     const { prefixCls, direction } = useConfigInject('btn-group', props);

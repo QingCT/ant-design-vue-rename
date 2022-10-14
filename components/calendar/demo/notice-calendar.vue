@@ -17,11 +17,11 @@ This component can be rendered by using `dateCellRender` and `monthCellRender` w
 </docs>
 
 <template>
-  <a-calendar v-model:value="value">
+  <bma-calendar v-model:value="value">
     <template #dateCellRender="{ current }">
       <ul class="events">
         <li v-for="item in getListData(current)" :key="item.content">
-          <a-badge :status="item.type" :text="item.content" />
+          <bma-badge :status="item.type" :text="item.content" />
         </li>
       </ul>
     </template>
@@ -31,7 +31,7 @@ This component can be rendered by using `dateCellRender` and `monthCellRender` w
         <span>Backlog number</span>
       </div>
     </template>
-  </a-calendar>
+  </bma-calendar>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
@@ -92,7 +92,7 @@ export default defineComponent({
   margin: 0;
   padding: 0;
 }
-.events .ant-badge-status {
+.events .bmant-badge-status {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;

@@ -18,8 +18,8 @@ By setting `strokeLinecap="square"`, you can change the linecaps from round to s
 
 <template>
   <div>
-    <a-progress stroke-linecap="square" :percent="75" />
-    <a-progress stroke-linecap="square" :percent="75" type="circle" />
-    <a-progress stroke-linecap="square" :percent="75" type="dashboard" />
+    <bma-progress stroke-linecap="square" :percent="75" />
+    <bma-progress stroke-linecap="square" :percent="75" type="circle" />
+    <bma-progress stroke-linecap="square" :percent="75" type="dashboard" />
   </div>
 </template>

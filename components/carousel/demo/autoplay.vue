@@ -17,16 +17,16 @@ Timing of scrolling to the next card/picture.
 </docs>
 
 <template>
-  <a-carousel autoplay>
+  <bma-carousel autoplay>
     <div><h3>1</h3></div>
     <div><h3>2</h3></div>
     <div><h3>3</h3></div>
     <div><h3>4</h3></div>
-  </a-carousel>
+  </bma-carousel>
 </template>
 <style scoped>
 /* For demo */
-.ant-carousel :deep(.slick-slide) {
+.bmant-carousel :deep(.slick-slide) {
   text-align: center;
   height: 160px;
   line-height: 160px;
@@ -34,7 +34,7 @@ Timing of scrolling to the next card/picture.
   overflow: hidden;
 }
 
-.ant-carousel :deep(.slick-slide h3) {
+.bmant-carousel :deep(.slick-slide h3) {
   color: #fff;
 }
 </style>

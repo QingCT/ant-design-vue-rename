@@ -13,7 +13,7 @@ export type MenuItemGroupProps = Partial<ExtractPropTypes<ReturnType<typeof menu
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AMenuItemGroup',
+  name: 'BmaMenuItemGroup',
   inheritAttrs: false,
   props: menuItemGroupProps(),
   slots: ['title'],

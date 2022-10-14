@@ -14,7 +14,7 @@ export type ListItemMetaProps = Partial<ExtractPropTypes<ReturnType<typeof listI
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AListItemMeta',
+  name: 'BmaListItemMeta',
   props: listItemMetaProps(),
   displayName: 'AListItemMeta', // 兼容历史函数式组件
   __ANT_LIST_ITEM_META: true,

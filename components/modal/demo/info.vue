@@ -17,15 +17,15 @@ In the various types of information modal dialog, only one button to close dialo
 </docs>
 
 <template>
-  <a-space wrap>
-    <a-button @click="info">Info</a-button>
-    <a-button @click="success">Success</a-button>
-    <a-button @click="error">Error</a-button>
-    <a-button @click="warning">Warning</a-button>
-  </a-space>
+  <bma-space wrap>
+    <bma-button @click="info">Info</bma-button>
+    <bma-button @click="success">Success</bma-button>
+    <bma-button @click="error">Error</bma-button>
+    <bma-button @click="warning">Warning</bma-button>
+  </bma-space>
 </template>
 <script lang="ts">
-import { Modal } from 'ant-design-vue';
+import { Modal } from 'bmant-design-vue';
 import { defineComponent, h } from 'vue';
 export default defineComponent({
   setup() {

@@ -17,9 +17,9 @@ The result of the warning.
 </docs>
 
 <template>
-  <a-result status="warning" title="There are some problems with your operation.">
+  <bma-result status="warning" title="There are some problems with your operation.">
     <template #extra>
-      <a-button key="console" type="primary">Go Console</a-button>
+      <bma-button key="console" type="primary">Go Console</bma-button>
     </template>
-  </a-result>
+  </bma-result>
 </template>

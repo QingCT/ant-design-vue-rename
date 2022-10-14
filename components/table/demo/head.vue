@@ -25,10 +25,10 @@ If a `sortOrder` or `defaultSortOrder` is specified with the value `ascend` or `
 </docs>
 
 <template>
-  <a-table :columns="columns" :data-source="data" @change="onChange" />
+  <bma-table :columns="columns" :data-source="data" @change="onChange" />
 </template>
 <script lang="ts">
-import type { TableColumnType, TableProps } from 'ant-design-vue';
+import type { TableColumnType, TableProps } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 
 type TableDataType = {

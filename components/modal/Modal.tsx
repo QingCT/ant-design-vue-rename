@@ -141,7 +141,7 @@ export const destroyFns = [];
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AModal',
+  name: 'BmaModal',
   inheritAttrs: false,
   props: initDefaultProps(modalProps(), {
     width: 520,

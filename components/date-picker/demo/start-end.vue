@@ -21,8 +21,8 @@ When `RangePicker` does not satisfied your requirements, try to implement simila
 </docs>
 
 <template>
-  <a-space direction="vertical">
-    <a-date-picker
+  <bma-space direction="vertical">
+    <bma-date-picker
       v-model:value="startValue"
       :disabled-date="disabledStartDate"
       show-time
@@ -30,7 +30,7 @@ When `RangePicker` does not satisfied your requirements, try to implement simila
       placeholder="Start"
       @openChange="handleStartOpenChange"
     />
-    <a-date-picker
+    <bma-date-picker
       v-model:value="endValue"
       :disabled-date="disabledEndDate"
       show-time
@@ -39,7 +39,7 @@ When `RangePicker` does not satisfied your requirements, try to implement simila
       :open="endOpen"
       @openChange="handleEndOpenChange"
     />
-  </a-space>
+  </bma-space>
 </template>
 <script lang="ts">
 import { Dayjs } from 'dayjs';

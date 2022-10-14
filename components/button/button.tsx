@@ -30,7 +30,7 @@ function isUnborderedButtonType(type: ButtonType | undefined) {
 export { buttonProps };
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AButton',
+  name: 'BmaButton',
   inheritAttrs: false,
   __ANT_BUTTON: true,
   props: initDefaultProps(buttonProps(), { type: 'default' }),

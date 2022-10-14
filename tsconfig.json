@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "ant-design-vue": ["components/index.ts"],
-      "ant-design-vue/es/*": ["components/*"]
+      "bmant-design-vue": ["components/index.ts"],
+      "bmant-design-vue/es/*": ["components/*"]
     },
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "strictNullChecks": false,

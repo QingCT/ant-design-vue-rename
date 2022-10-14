@@ -29,7 +29,7 @@ export type StatisticProps = Partial<ExtractPropTypes<ReturnType<typeof statisti
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AStatistic',
+  name: 'BmaStatistic',
   props: initDefaultProps(statisticProps(), {
     decimalSeparator: '.',
     groupSeparator: ',',

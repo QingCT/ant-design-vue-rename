@@ -16,40 +16,40 @@ If you want to use a customized trigger, you can hide the default one by setting
 
 </docs>
 <template>
-  <a-layout>
-    <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
+  <bma-layout>
+    <bma-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
       <div class="logo" />
-      <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-        <a-menu-item key="1">
+      <bma-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
+        <bma-menu-item key="1">
           <user-outlined />
           <span>nav 1</span>
-        </a-menu-item>
-        <a-menu-item key="2">
+        </bma-menu-item>
+        <bma-menu-item key="2">
           <video-camera-outlined />
           <span>nav 2</span>
-        </a-menu-item>
-        <a-menu-item key="3">
+        </bma-menu-item>
+        <bma-menu-item key="3">
           <upload-outlined />
           <span>nav 3</span>
-        </a-menu-item>
-      </a-menu>
-    </a-layout-sider>
-    <a-layout>
-      <a-layout-header style="background: #fff; padding: 0">
+        </bma-menu-item>
+      </bma-menu>
+    </bma-layout-sider>
+    <bma-layout>
+      <bma-layout-header style="background: #fff; padding: 0">
         <menu-unfold-outlined
           v-if="collapsed"
           class="trigger"
           @click="() => (collapsed = !collapsed)"
         />
         <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
-      </a-layout-header>
-      <a-layout-content
+      </bma-layout-header>
+      <bma-layout-content
         :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"
       >
         Content
-      </a-layout-content>
-    </a-layout>
-  </a-layout>
+      </bma-layout-content>
+    </bma-layout>
+  </bma-layout>
 </template>
 <script lang="ts">
 import {

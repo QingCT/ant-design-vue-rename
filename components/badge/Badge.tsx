@@ -35,7 +35,7 @@ export type BadgeProps = Partial<ExtractPropTypes<ReturnType<typeof badgeProps>>
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ABadge',
+  name: 'BmaBadge',
   Ribbon,
   inheritAttrs: false,
   props: badgeProps(),

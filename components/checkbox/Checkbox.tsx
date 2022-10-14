@@ -13,7 +13,7 @@ import { CheckboxGroupContextKey, checkboxProps } from './interface';
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ACheckbox',
+  name: 'BmaCheckbox',
   inheritAttrs: false,
   __ANT_CHECKBOX: true,
   props: checkboxProps(),

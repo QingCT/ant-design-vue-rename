@@ -11,17 +11,17 @@ There are three size of ColorPicker: large, medium(default), small.
 ```vue
 <template>
   <div>
-    <a-row>
-      <a-col span="8">
-        <a-colorPicker v-model="color6" size="large" />
-      </a-col>
-      <a-col span="8">
-        <a-colorPicker v-model="color6" />
-      </a-col>
-      <a-col span="8">
-        <a-colorPicker v-model="color6" size="small" />
-      </a-col>
-    </a-row>
+    <bma-row>
+      <bma-col span="8">
+        <bma-colorPicker v-model="color6" size="large" />
+      </bma-col>
+      <bma-col span="8">
+        <bma-colorPicker v-model="color6" />
+      </bma-col>
+      <bma-col span="8">
+        <bma-colorPicker v-model="color6" size="small" />
+      </bma-col>
+    </bma-row>
   </div>
 </template>
 <script>

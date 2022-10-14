@@ -3,16 +3,16 @@
     <h3>
       {{ $t('userandregister.register.register') }}
     </h3>
-    <a-form :form="form" @submit="handleSubmit">
-      <a-form-item>
-        <a-input
+    <bma-form :form="form" @submit="handleSubmit">
+      <bma-form-item>
+        <bma-input
           v-decorator="formConfig.mail"
           size="large"
           :placeholder="$t('userandregister.email.placeholder')"
         />
-      </a-form-item>
-      <a-form-item :help="help">
-        <a-popover
+      </bma-form-item>
+      <bma-form-item :help="help">
+        <bma-popover
           :get-popup-container="getPopupContainer"
           :overlay-style="{ width: '240px' }"
           placement="right"
@@ -32,7 +32,7 @@
                     {{ $t('userandregister.strength.short') }}
                   </div>
                   <div v-if="password && password.length" :class="`progress-${status}`">
-                    <a-progress
+                    <bma-progress
                       :status="passwordProgressMap[status]"
                       class="progress"
                       :stroke-width="6"
@@ -47,24 +47,24 @@
               </div>
             </div>
           </template>
-          <a-input
+          <bma-input
             v-decorator="formConfig.password"
             size="large"
             type="password"
             :placeholder="$t('userandregister.password.placeholder')"
           />
-        </a-popover>
-      </a-form-item>
-      <a-form-item>
-        <a-input
+        </bma-popover>
+      </bma-form-item>
+      <bma-form-item>
+        <bma-input
           v-decorator="formConfig.confirm"
           size="large"
           type="password"
           :placeholder="$t('userandregister.confirm-password.placeholder')"
         />
-      </a-form-item>
-      <a-form-item>
-        <a-button
+      </bma-form-item>
+      <bma-form-item>
+        <bma-button
           size="large"
           :loading="submitting"
           class="submit"
@@ -72,12 +72,12 @@
           html-type="submit"
         >
           {{ $t('userandregister.register.register') }}
-        </a-button>
+        </bma-button>
         <router-link class="login" to="/user/login">
           {{ $t('userandregister.register.sign-in') }}
         </router-link>
-      </a-form-item>
-    </a-form>
+      </bma-form-item>
+    </bma-form>
   </div>
 </template>
 <script>

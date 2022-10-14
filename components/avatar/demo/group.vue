@@ -16,33 +16,33 @@ Avatar group display.
 </docs>
 
 <template>
-  <a-avatar-group>
-    <a-avatar src="https://joeschmoe.io/api/v1/random" />
-    <a-avatar style="background-color: #f56a00">K</a-avatar>
-    <a-tooltip title="Ant User" placement="top">
-      <a-avatar style="background-color: #87d068">
+  <bma-avatar-group>
+    <bma-avatar src="https://joeschmoe.io/api/v1/random" />
+    <bma-avatar style="background-color: #f56a00">K</bma-avatar>
+    <bma-tooltip title="Ant User" placement="top">
+      <bma-avatar style="background-color: #87d068">
         <template #icon><UserOutlined /></template>
-      </a-avatar>
-    </a-tooltip>
-    <a-avatar style="background-color: #1890ff">
+      </bma-avatar>
+    </bma-tooltip>
+    <bma-avatar style="background-color: #1890ff">
       <template #icon><UserOutlined /></template>
-    </a-avatar>
-  </a-avatar-group>
-  <a-divider />
-  <a-avatar-group :max-count="2" :max-style="{ color: '#f56a00', backgroundColor: '#fde3cf' }">
-    <a-avatar src="https://joeschmoe.io/api/v1/random" />
-    <a-avatar style="background-color: #1890ff">K</a-avatar>
-    <a-tooltip title="Ant User" placement="top">
-      <a-avatar style="background-color: #87d068">
+    </bma-avatar>
+  </bma-avatar-group>
+  <bma-divider />
+  <bma-avatar-group :max-count="2" :max-style="{ color: '#f56a00', backgroundColor: '#fde3cf' }">
+    <bma-avatar src="https://joeschmoe.io/api/v1/random" />
+    <bma-avatar style="background-color: #1890ff">K</bma-avatar>
+    <bma-tooltip title="Ant User" placement="top">
+      <bma-avatar style="background-color: #87d068">
         <template #icon><UserOutlined /></template>
-      </a-avatar>
-    </a-tooltip>
-    <a-avatar style="background-color: #1890ff">
+      </bma-avatar>
+    </bma-tooltip>
+    <bma-avatar style="background-color: #1890ff">
       <template #icon><UserOutlined /></template>
-    </a-avatar>
-  </a-avatar-group>
-  <a-divider />
-  <a-avatar-group
+    </bma-avatar>
+  </bma-avatar-group>
+  <bma-divider />
+  <bma-avatar-group
     :max-count="2"
     size="large"
     :max-style="{
@@ -50,17 +50,17 @@ Avatar group display.
       backgroundColor: '#fde3cf',
     }"
   >
-    <a-avatar src="https://joeschmoe.io/api/v1/random" />
-    <a-avatar style="background-color: #1890ff">K</a-avatar>
-    <a-tooltip title="Ant User" placement="top">
-      <a-avatar style="background-color: #87d068">
+    <bma-avatar src="https://joeschmoe.io/api/v1/random" />
+    <bma-avatar style="background-color: #1890ff">K</bma-avatar>
+    <bma-tooltip title="Ant User" placement="top">
+      <bma-avatar style="background-color: #87d068">
         <template #icon><UserOutlined /></template>
-      </a-avatar>
-    </a-tooltip>
-    <a-avatar style="background-color: #1890ff">
+      </bma-avatar>
+    </bma-tooltip>
+    <bma-avatar style="background-color: #1890ff">
       <template #icon><UserOutlined /></template>
-    </a-avatar>
-  </a-avatar-group>
+    </bma-avatar>
+  </bma-avatar-group>
 </template>
 
 <script lang="ts">

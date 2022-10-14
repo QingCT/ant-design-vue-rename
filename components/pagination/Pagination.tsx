@@ -76,7 +76,7 @@ export interface PaginationLocale {
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'APagination',
+  name: 'BmaPagination',
   inheritAttrs: false,
   props: paginationProps(),
   // emits: ['change', 'showSizeChange', 'update:current', 'update:pageSize'],

@@ -17,7 +17,7 @@ Group table head with `columns[n].children`.
 </docs>
 
 <template>
-  <a-table
+  <bma-table
     :columns="columns"
     :data-source="data"
     bordered
@@ -26,7 +26,7 @@ Group table head with `columns[n].children`.
   />
 </template>
 <script lang="ts">
-import type { TableColumnsType } from 'ant-design-vue';
+import type { TableColumnsType } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 type TableDataType = {
   key: number;

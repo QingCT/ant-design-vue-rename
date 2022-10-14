@@ -19,16 +19,16 @@ The label of the selected item will be packed as an object for passing to the on
 </docs>
 
 <template>
-  <a-select
+  <bma-select
     v-model:value="value"
     label-in-value
     style="width: 120px"
     :options="options"
     @change="handleChange"
-  ></a-select>
+  ></bma-select>
 </template>
 <script lang="ts">
-import type { SelectProps } from 'ant-design-vue';
+import type { SelectProps } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({

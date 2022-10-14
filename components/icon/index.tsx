@@ -6,6 +6,6 @@ const Icon = () => {
   return null;
 };
 
-Icon.displayName = 'AIcon';
+Icon.displayName = 'BmaIcon';
 
 export default withInstall(Icon);

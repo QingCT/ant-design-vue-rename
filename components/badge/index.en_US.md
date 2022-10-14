@@ -14,13 +14,13 @@ Badge normally appears in proximity to notifications or user avatars with eye-ca
 ## API
 
 ```html
-<a-badge :count="5">
+<bma-badge :count="5">
   <a href="#" class="head-example" />
-</a-badge>
+</bma-badge>
 ```
 
 ```html
-<a-badge :count="5" />
+<bma-badge :count="5" />
 ```
 
 ### Badge

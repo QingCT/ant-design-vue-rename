@@ -17,10 +17,10 @@ Customize message display duration from default `3s` to `10s`.
 </docs>
 
 <template>
-  <a-button @click="success">Customized display duration</a-button>
+  <bma-button @click="success">Customized display duration</bma-button>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {

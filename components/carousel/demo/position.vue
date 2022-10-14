@@ -16,22 +16,22 @@ There are 4 position options available.
 </docs>
 
 <template>
-  <a-radio-group v-model:value="dotPosition" style="margin-bottom: 8px">
-    <a-radio-button value="top">Top</a-radio-button>
-    <a-radio-button value="bottom">Bottom</a-radio-button>
-    <a-radio-button value="left">Left</a-radio-button>
-    <a-radio-button value="right">Right</a-radio-button>
-  </a-radio-group>
-  <a-carousel :dot-position="dotPosition">
+  <bma-radio-group v-model:value="dotPosition" style="margin-bottom: 8px">
+    <bma-radio-button value="top">Top</bma-radio-button>
+    <bma-radio-button value="bottom">Bottom</bma-radio-button>
+    <bma-radio-button value="left">Left</bma-radio-button>
+    <bma-radio-button value="right">Right</bma-radio-button>
+  </bma-radio-group>
+  <bma-carousel :dot-position="dotPosition">
     <div><h3>1</h3></div>
     <div><h3>2</h3></div>
     <div><h3>3</h3></div>
     <div><h3>4</h3></div>
-  </a-carousel>
+  </bma-carousel>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { CarouselProps } from 'ant-design-vue';
+import type { CarouselProps } from 'bmant-design-vue';
 
 export default defineComponent({
   setup() {
@@ -43,7 +43,7 @@ export default defineComponent({
 </script>
 <style scoped>
 /* For demo */
-.ant-carousel :deep(.slick-slide) {
+.bmant-carousel :deep(.slick-slide) {
   text-align: center;
   height: 160px;
   line-height: 160px;
@@ -51,7 +51,7 @@ export default defineComponent({
   overflow: hidden;
 }
 
-.ant-carousel :deep(.slick-slide h3) {
+.bmant-carousel :deep(.slick-slide h3) {
   color: #fff;
 }
 </style>

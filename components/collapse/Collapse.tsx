@@ -32,13 +32,13 @@ export { collapseProps };
 export type CollapseProps = Partial<ExtractPropTypes<ReturnType<typeof collapseProps>>>;
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ACollapse',
+  name: 'BmaCollapse',
   inheritAttrs: false,
   props: initDefaultProps(collapseProps(), {
     accordion: false,
     destroyInactivePanel: false,
     bordered: true,
-    openAnimation: collapseMotion('ant-motion-collapse', false),
+    openAnimation: collapseMotion('bmant-motion-collapse', false),
     expandIconPosition: 'left',
   }),
   slots: ['expandIcon'],

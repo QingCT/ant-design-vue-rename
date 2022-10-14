@@ -17,14 +17,14 @@ Select with tags, transform input to tag (scroll the menu)
 </docs>
 
 <template>
-  <a-select
+  <bma-select
     v-model:value="value"
     mode="tags"
     style="width: 100%"
     placeholder="Tags Mode"
     :options="options"
     @change="handleChange"
-  ></a-select>
+  ></bma-select>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

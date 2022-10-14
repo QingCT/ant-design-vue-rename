@@ -95,7 +95,7 @@ export const useInjectFormItemContext = () => {
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AFormItemRest',
+  name: 'BmaFormItemRest',
   setup(_, { slots }) {
     provide(InternalContextKey, defaultInternalContext);
     provide(ContextKey, defaultContext);

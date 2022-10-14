@@ -22,7 +22,7 @@ export const icons = {
 
 const InternalPreviewGroup = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AImagePreviewGroup',
+  name: 'BmaImagePreviewGroup',
   inheritAttrs: false,
   props: { previewPrefixCls: String },
   setup(props, { attrs, slots }) {

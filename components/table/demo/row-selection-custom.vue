@@ -15,11 +15,11 @@ Use `rowSelection.selections` custom selections, default no select dropdown, sho
 </docs>
 
 <template>
-  <a-table :row-selection="rowSelection" :columns="columns" :data-source="data" />
+  <bma-table :row-selection="rowSelection" :columns="columns" :data-source="data" />
 </template>
 <script lang="ts">
 import { defineComponent, computed, ref, unref } from 'vue';
-import { Table } from 'ant-design-vue';
+import { Table } from 'bmant-design-vue';
 
 interface DataType {
   key: string | number;

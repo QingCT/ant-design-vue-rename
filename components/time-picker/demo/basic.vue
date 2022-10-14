@@ -17,10 +17,10 @@ Click `TimePicker`, and then we could select or input a time in panel.
 </docs>
 
 <template>
-  <a-space direction="vertical">
-    <a-time-picker v-model:value="value" />
-    <a-time-picker v-model:value="strValue" value-format="HH:mm:ss" />
-  </a-space>
+  <bma-space direction="vertical">
+    <bma-time-picker v-model:value="value" />
+    <bma-time-picker v-model:value="strValue" value-format="HH:mm:ss" />
+  </bma-space>
 </template>
 <script lang="ts">
 import dayjs, { Dayjs } from 'dayjs';

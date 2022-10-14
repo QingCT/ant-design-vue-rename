@@ -17,17 +17,17 @@ Tab's position: left, right, top or bottom.  Will auto switch to `top` in mobile
 </docs>
 
 <template>
-  <a-radio-group v-model:value="tabPosition" style="margin: 8px">
-    <a-radio-button value="top">top</a-radio-button>
-    <a-radio-button value="bottom">bottom</a-radio-button>
-    <a-radio-button value="left">left</a-radio-button>
-    <a-radio-button value="right">right</a-radio-button>
-  </a-radio-group>
-  <a-tabs v-model:activeKey="activeKey" :tab-position="tabPosition" animated>
-    <a-tab-pane key="1" tab="Tab 1">Content of Tab 1</a-tab-pane>
-    <a-tab-pane key="2" tab="Tab 2">Content of Tab 2</a-tab-pane>
-    <a-tab-pane key="3" tab="Tab 3">Content of Tab 3</a-tab-pane>
-  </a-tabs>
+  <bma-radio-group v-model:value="tabPosition" style="margin: 8px">
+    <bma-radio-button value="top">top</bma-radio-button>
+    <bma-radio-button value="bottom">bottom</bma-radio-button>
+    <bma-radio-button value="left">left</bma-radio-button>
+    <bma-radio-button value="right">right</bma-radio-button>
+  </bma-radio-group>
+  <bma-tabs v-model:activeKey="activeKey" :tab-position="tabPosition" animated>
+    <bma-tab-pane key="1" tab="Tab 1">Content of Tab 1</bma-tab-pane>
+    <bma-tab-pane key="2" tab="Tab 2">Content of Tab 2</bma-tab-pane>
+    <bma-tab-pane key="3" tab="Tab 3">Content of Tab 3</bma-tab-pane>
+  </bma-tabs>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

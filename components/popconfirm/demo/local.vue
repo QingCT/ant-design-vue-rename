@@ -17,7 +17,7 @@ Set `okText` and `cancelText` props to customize the button's labels.
 </docs>
 
 <template>
-  <a-popconfirm title="Are you sure？" ok-text="Yes" cancel-text="No">
+  <bma-popconfirm title="Are you sure？" ok-text="Yes" cancel-text="No">
     <a href="#">Delete</a>
-  </a-popconfirm>
+  </bma-popconfirm>
 </template>

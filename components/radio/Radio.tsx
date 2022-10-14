@@ -30,7 +30,7 @@ export type RadioProps = Partial<ExtractPropTypes<ReturnType<typeof radioProps>>
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ARadio',
+  name: 'BmaRadio',
   props: radioProps(),
   // emits: ['update:checked', 'update:value', 'change', 'blur', 'focus'],
   setup(props, { emit, expose, slots }) {

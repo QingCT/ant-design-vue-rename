@@ -17,7 +17,7 @@ Use `progress` for customize progress bar.
 </docs>
 
 <template>
-  <a-upload
+  <bma-upload
     v-model:file-list="fileList"
     name="file"
     action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
@@ -25,17 +25,17 @@ Use `progress` for customize progress bar.
     :progress="progress"
     @change="handleChange"
   >
-    <a-button>
+    <bma-button>
       <upload-outlined></upload-outlined>
       Click to Upload
-    </a-button>
-  </a-upload>
+    </bma-button>
+  </bma-upload>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { UploadOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadChangeParam, UploadProps } from 'ant-design-vue';
+import type { UploadChangeParam, UploadProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

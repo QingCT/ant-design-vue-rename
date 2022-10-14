@@ -59,7 +59,7 @@ export default defineComponent({
 });
 </script>
 <style>
-[id^='components-modal-demo'] .ant-btn {
+[id^='components-modal-demo'] .bmant-btn {
   margin-right: 8px;
 }
 </style>

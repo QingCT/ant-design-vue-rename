@@ -89,7 +89,7 @@ export type MentionsProps = Partial<ExtractPropTypes<ReturnType<typeof mentionsP
 
 const Mentions = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AMentions',
+  name: 'BmaMentions',
   inheritAttrs: false,
   props: mentionsProps(),
   slots: ['notFoundContent', 'option'],
@@ -207,7 +207,7 @@ const Mentions = defineComponent({
 export const MentionsOption = defineComponent({
   compatConfig: { MODE: 3 },
   ...Option,
-  name: 'AMentionsOption',
+  name: 'BmaMentionsOption',
   props: optionProps,
 });
 

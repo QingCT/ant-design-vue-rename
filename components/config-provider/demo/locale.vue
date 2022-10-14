@@ -18,52 +18,57 @@ Components which need localization support are listed here, you can toggle the l
 <template>
   <div class="change-locale">
     <span style="margin-right: 16px">Change locale of components:</span>
-    <a-radio-group v-model:value="locale">
-      <a-radio-button key="en" :value="enUS.locale">English</a-radio-button>
-      <a-radio-button key="cn" :value="zhCN.locale">中文</a-radio-button>
-    </a-radio-group>
+    <bma-radio-group v-model:value="locale">
+      <bma-radio-button key="en" :value="enUS.locale">English</bma-radio-button>
+      <bma-radio-button key="cn" :value="zhCN.locale">中文</bma-radio-button>
+    </bma-radio-group>
   </div>
-  <a-config-provider :locale="locale === 'en' ? enUS : zhCN">
+  <bma-config-provider :locale="locale === 'en' ? enUS : zhCN">
     <div class="locale-components">
       <div class="example">
-        <a-pagination :total="50" show-size-changer />
+        <bma-pagination :total="50" show-size-changer />
       </div>
       <div class="example">
-        <a-select show-search style="width: 200px">
-          <a-select-option value="jack">jack</a-select-option>
-          <a-select-option value="lucy">lucy</a-select-option>
-        </a-select>
-        <a-date-picker />
-        <a-time-picker />
-        <a-range-picker style="width: 200px" />
+        <bma-select show-search style="width: 200px">
+          <bma-select-option value="jack">jack</bma-select-option>
+          <bma-select-option value="lucy">lucy</bma-select-option>
+        </bma-select>
+        <bma-date-picker />
+        <bma-time-picker />
+        <bma-range-picker style="width: 200px" />
       </div>
       <div class="example">
-        <a-button type="primary" @click="visible = true">Show Modal</a-button>
-        <a-button @click="info">Show info</a-button>
-        <a-button @click="confirm">Show confirm</a-button>
-        <a-popconfirm title="Question?">
+        <bma-button type="primary" @click="visible = true">Show Modal</bma-button>
+        <bma-button @click="info">Show info</bma-button>
+        <bma-button @click="confirm">Show confirm</bma-button>
+        <bma-popconfirm title="Question?">
           <a href="#">Click to confirm</a>
-        </a-popconfirm>
+        </bma-popconfirm>
       </div>
       <div class="example">
-        <a-transfer :data-source="[]" show-search :target-keys="[]" :render="item => item.title" />
+        <bma-transfer
+          :data-source="[]"
+          show-search
+          :target-keys="[]"
+          :render="item => item.title"
+        />
       </div>
       <div class="site-config-provider-calendar-wrapper">
-        <a-calendar :fullscreen="false" />
+        <bma-calendar :fullscreen="false" />
       </div>
       <div class="example">
-        <a-table :data-source="[]" :columns="columns" />
+        <bma-table :data-source="[]" :columns="columns" />
       </div>
-      <a-modal v-model:visible="visible" title="Locale Modal">
+      <bma-modal v-model:visible="visible" title="Locale Modal">
         <p>Locale Modal</p>
-      </a-modal>
+      </bma-modal>
     </div>
-  </a-config-provider>
+  </bma-config-provider>
 </template>
 <script>
-import { Modal } from 'ant-design-vue';
-import enUS from 'ant-design-vue/es/locale/en_US';
-import zhCN from 'ant-design-vue/es/locale/zh_CN';
+import { Modal } from 'bmant-design-vue';
+import enUS from 'bmant-design-vue/es/locale/en_US';
+import zhCN from 'bmant-design-vue/es/locale/zh_CN';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import { defineComponent, ref, watch } from 'vue';

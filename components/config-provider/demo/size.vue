@@ -17,47 +17,47 @@ Config component default size.
 </docs>
 
 <template>
-  <a-radio-group v-model:value="componentSize">
-    <a-radio-button value="small">Small</a-radio-button>
-    <a-radio-button value="middle">Middle</a-radio-button>
-    <a-radio-button value="large">Large</a-radio-button>
-  </a-radio-group>
-  <a-divider />
-  <a-config-provider :component-size="componentSize">
+  <bma-radio-group v-model:value="componentSize">
+    <bma-radio-button value="small">Small</bma-radio-button>
+    <bma-radio-button value="middle">Middle</bma-radio-button>
+    <bma-radio-button value="large">Large</bma-radio-button>
+  </bma-radio-group>
+  <bma-divider />
+  <bma-config-provider :component-size="componentSize">
     <div class="example">
-      <a-input />
+      <bma-input />
     </div>
     <div class="example">
-      <a-tabs>
-        <a-tab-pane key="1" tab="Tab 1">Content of Tab Pane 1</a-tab-pane>
-        <a-tab-pane key="2" tab="Tab 2">Content of Tab Pane 2</a-tab-pane>
-        <a-tab-pane key="3" tab="Tab 3">Content of Tab Pane 3</a-tab-pane>
-      </a-tabs>
+      <bma-tabs>
+        <bma-tab-pane key="1" tab="Tab 1">Content of Tab Pane 1</bma-tab-pane>
+        <bma-tab-pane key="2" tab="Tab 2">Content of Tab Pane 2</bma-tab-pane>
+        <bma-tab-pane key="3" tab="Tab 3">Content of Tab Pane 3</bma-tab-pane>
+      </bma-tabs>
     </div>
     <div class="example">
-      <a-input-search allow-clear />
+      <bma-input-search allow-clear />
     </div>
     <div class="example">
-      <a-textarea allow-clear />
+      <bma-textarea allow-clear />
     </div>
     <div class="example">
-      <a-select style="width: 100px" placeholder="select value" :options="[{ value: 'demo' }]" />
+      <bma-select style="width: 100px" placeholder="select value" :options="[{ value: 'demo' }]" />
     </div>
     <div class="example">
-      <a-datePicker />
+      <bma-datePicker />
     </div>
     <div class="example">
-      <a-range-picker />
+      <bma-range-picker />
     </div>
     <div class="example">
-      <a-button>Button</a-button>
+      <bma-button>Button</bma-button>
     </div>
     <div class="example">
-      <a-card title="Card">
-        <a-table :columns="columns" :data-source="dataSource" />
-      </a-card>
+      <bma-card title="Card">
+        <bma-table :columns="columns" :data-source="dataSource" />
+      </bma-card>
     </div>
-  </a-config-provider>
+  </bma-config-provider>
 </template>
 <script>
 import { defineComponent, ref } from 'vue';

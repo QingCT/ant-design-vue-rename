@@ -15,7 +15,7 @@ title:
 Simple mode.
 </docs>
 <template>
-  <a-pagination v-model:current="current" simple :total="50" />
+  <bma-pagination v-model:current="current" simple :total="50" />
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

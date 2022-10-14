@@ -17,21 +17,21 @@ The height of the input field for the select defaults to 32px. If size is set to
 </docs>
 
 <template>
-  <a-radio-group v-model:value="size">
-    <a-radio-button value="large">Large</a-radio-button>
-    <a-radio-button value="middle">Middle</a-radio-button>
-    <a-radio-button value="small">Small</a-radio-button>
-  </a-radio-group>
+  <bma-radio-group v-model:value="size">
+    <bma-radio-button value="large">Large</bma-radio-button>
+    <bma-radio-button value="middle">Middle</bma-radio-button>
+    <bma-radio-button value="small">Small</bma-radio-button>
+  </bma-radio-group>
   <br />
   <br />
-  <a-space direction="vertical">
-    <a-select
+  <bma-space direction="vertical">
+    <bma-select
       v-model:value="value1"
       :size="size"
       style="width: 200px"
       :options="options"
-    ></a-select>
-    <a-select
+    ></bma-select>
+    <bma-select
       v-model:value="value2"
       :options="options"
       mode="multiple"
@@ -39,19 +39,19 @@ The height of the input field for the select defaults to 32px. If size is set to
       placeholder="Please select"
       style="width: 200px"
       @popupScroll="popupScroll"
-    ></a-select>
-    <a-select
+    ></bma-select>
+    <bma-select
       v-model:value="value3"
       :options="options"
       mode="tags"
       :size="size"
       placeholder="Please select"
       style="width: 200px"
-    ></a-select>
-  </a-space>
+    ></bma-select>
+  </bma-space>
 </template>
 <script lang="ts">
-import type { SelectProps } from 'ant-design-vue';
+import type { SelectProps } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 export default defineComponent({
   setup() {

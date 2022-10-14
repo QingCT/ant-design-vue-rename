@@ -59,7 +59,7 @@ const generateId = (() => {
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ALayoutSider',
+  name: 'BmaLayoutSider',
   inheritAttrs: false,
   props: initDefaultProps(siderProps(), {
     collapsible: false,
@@ -109,7 +109,7 @@ export default defineComponent({
     function responsiveHandler(mql: MediaQueryListEvent | MediaQueryList) {
       return responsiveHandlerRef.value!(mql);
     }
-    const uniqueId = generateId('ant-sider-');
+    const uniqueId = generateId('bmant-sider-');
     siderHook && siderHook.addSider(uniqueId);
 
     onMounted(() => {

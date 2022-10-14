@@ -17,8 +17,8 @@ Open a new drawer on top of an existing drawer to handle multi branch tasks.
 </docs>
 
 <template>
-  <a-button type="primary" @click="showDrawer">Open</a-button>
-  <a-drawer
+  <bma-button type="primary" @click="showDrawer">Open</bma-button>
+  <bma-drawer
     v-model:visible="visible"
     title="Multi-level drawer"
     width="520"
@@ -26,21 +26,21 @@ Open a new drawer on top of an existing drawer to handle multi branch tasks.
     :footer-style="{ textAlign: 'right' }"
     @close="onClose"
   >
-    <a-button type="primary" @click="showChildrenDrawer">Two-level drawer</a-button>
-    <a-drawer
+    <bma-button type="primary" @click="showChildrenDrawer">Two-level drawer</bma-button>
+    <bma-drawer
       v-model:visible="childrenDrawer"
       title="Two-level Drawer"
       width="320"
       :closable="false"
     >
-      <a-button type="primary" @click="showChildrenDrawer">This is two-level drawer</a-button>
-    </a-drawer>
+      <bma-button type="primary" @click="showChildrenDrawer">This is two-level drawer</bma-button>
+    </bma-drawer>
 
     <template #footer>
-      <a-button style="margin-right: 8px" @click="onClose">Cancel</a-button>
-      <a-button type="primary" @click="onClose">Submit</a-button>
+      <bma-button style="margin-right: 8px" @click="onClose">Cancel</bma-button>
+      <bma-button type="primary" @click="onClose">Submit</bma-button>
     </template>
-  </a-drawer>
+  </bma-drawer>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

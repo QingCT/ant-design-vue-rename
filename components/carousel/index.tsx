@@ -71,7 +71,7 @@ export const carouselProps = () => ({
 export type CarouselProps = Partial<ExtractPropTypes<ReturnType<typeof carouselProps>>>;
 const Carousel = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ACarousel',
+  name: 'BmaCarousel',
   inheritAttrs: false,
   props: carouselProps(),
   setup(props, { slots, attrs, expose }) {

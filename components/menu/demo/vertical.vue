@@ -17,48 +17,48 @@ Submenus open as pop-ups.
 </docs>
 
 <template>
-  <a-menu
+  <bma-menu
     v-model:openKeys="openKeys"
     v-model:selectedKeys="selectedKeys"
     style="width: 256px"
     mode="vertical"
     @click="handleClick"
   >
-    <a-menu-item key="1">
+    <bma-menu-item key="1">
       <template #icon>
         <MailOutlined />
       </template>
       Navigation One
-    </a-menu-item>
-    <a-menu-item key="2">
+    </bma-menu-item>
+    <bma-menu-item key="2">
       <template #icon>
         <CalendarOutlined />
       </template>
       Navigation Two
-    </a-menu-item>
-    <a-sub-menu key="sub1">
+    </bma-menu-item>
+    <bma-sub-menu key="sub1">
       <template #icon>
         <AppstoreOutlined />
       </template>
       <template #title>Navigation Three</template>
-      <a-menu-item key="3">Option 3</a-menu-item>
-      <a-menu-item key="4">Option 4</a-menu-item>
-      <a-sub-menu key="sub1-2" title="Submenu">
-        <a-menu-item key="5">Option 5</a-menu-item>
-        <a-menu-item key="6">Option 6</a-menu-item>
-      </a-sub-menu>
-    </a-sub-menu>
-    <a-sub-menu key="sub2">
+      <bma-menu-item key="3">Option 3</bma-menu-item>
+      <bma-menu-item key="4">Option 4</bma-menu-item>
+      <bma-sub-menu key="sub1-2" title="Submenu">
+        <bma-menu-item key="5">Option 5</bma-menu-item>
+        <bma-menu-item key="6">Option 6</bma-menu-item>
+      </bma-sub-menu>
+    </bma-sub-menu>
+    <bma-sub-menu key="sub2">
       <template #icon>
         <SettingOutlined />
       </template>
       <template #title>Navigation Four</template>
-      <a-menu-item key="7">Option 7</a-menu-item>
-      <a-menu-item key="8">Option 8</a-menu-item>
-      <a-menu-item key="9">Option 9</a-menu-item>
-      <a-menu-item key="10">Option 10</a-menu-item>
-    </a-sub-menu>
-  </a-menu>
+      <bma-menu-item key="7">Option 7</bma-menu-item>
+      <bma-menu-item key="8">Option 8</bma-menu-item>
+      <bma-menu-item key="9">Option 9</bma-menu-item>
+      <bma-menu-item key="10">Option 10</bma-menu-item>
+    </bma-sub-menu>
+  </bma-menu>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from 'vue';
@@ -68,7 +68,7 @@ import {
   AppstoreOutlined,
   SettingOutlined,
 } from '@ant-design/icons-vue';
-import type { MenuProps } from 'ant-design-vue';
+import type { MenuProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

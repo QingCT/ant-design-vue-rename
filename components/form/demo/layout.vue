@@ -16,24 +16,24 @@ There are three layout for form: `horizontal`, `vertical`, `inline`.
 </docs>
 
 <template>
-  <a-form :layout="formState.layout" :model="formState" v-bind="formItemLayout">
-    <a-form-item label="Form Layout">
-      <a-radio-group v-model:value="formState.layout">
-        <a-radio-button value="horizontal">Horizontal</a-radio-button>
-        <a-radio-button value="vertical">Vertical</a-radio-button>
-        <a-radio-button value="inline">Inline</a-radio-button>
-      </a-radio-group>
-    </a-form-item>
-    <a-form-item label="Field A">
-      <a-input v-model:value="formState.fieldA" placeholder="input placeholder" />
-    </a-form-item>
-    <a-form-item label="Field B">
-      <a-input v-model:value="formState.fieldB" placeholder="input placeholder" />
-    </a-form-item>
-    <a-form-item :wrapper-col="buttonItemLayout.wrapperCol">
-      <a-button type="primary">Submit</a-button>
-    </a-form-item>
-  </a-form>
+  <bma-form :layout="formState.layout" :model="formState" v-bind="formItemLayout">
+    <bma-form-item label="Form Layout">
+      <bma-radio-group v-model:value="formState.layout">
+        <bma-radio-button value="horizontal">Horizontal</bma-radio-button>
+        <bma-radio-button value="vertical">Vertical</bma-radio-button>
+        <bma-radio-button value="inline">Inline</bma-radio-button>
+      </bma-radio-group>
+    </bma-form-item>
+    <bma-form-item label="Field A">
+      <bma-input v-model:value="formState.fieldA" placeholder="input placeholder" />
+    </bma-form-item>
+    <bma-form-item label="Field B">
+      <bma-input v-model:value="formState.fieldB" placeholder="input placeholder" />
+    </bma-form-item>
+    <bma-form-item :wrapper-col="buttonItemLayout.wrapperCol">
+      <bma-button type="primary">Submit</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { computed, defineComponent, reactive } from 'vue';

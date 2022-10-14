@@ -10,16 +10,16 @@ Basic usage. You can use v-model to enable a two-way bingding on data.
 
 ```vue
 <template>
-  <a-row>
-    <a-col span="12">
+  <bma-row>
+    <bma-col span="12">
       有默认值
-      <a-colorPicker v-model="color1" />
-    </a-col>
-    <a-col span="12">
+      <bma-colorPicker v-model="color1" />
+    </bma-col>
+    <bma-col span="12">
       无默认值
-      <a-colorPicker v-model="color2" />
-    </a-col>
-  </a-row>
+      <bma-colorPicker v-model="color2" />
+    </bma-col>
+  </bma-row>
 </template>
 <script>
 export default {

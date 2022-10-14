@@ -15,7 +15,7 @@ import isMobile from '../_util/isMobile';
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AInputSearch',
+  name: 'BmaInputSearch',
   inheritAttrs: false,
   props: {
     ...inputProps(),

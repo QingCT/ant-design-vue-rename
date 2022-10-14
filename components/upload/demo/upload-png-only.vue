@@ -17,23 +17,23 @@ title:
 </docs>
 
 <template>
-  <a-upload
+  <bma-upload
     v-model:file-list="fileList"
     action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
     :before-upload="beforeUpload"
     @change="handleChange"
   >
-    <a-button>
+    <bma-button>
       <upload-outlined></upload-outlined>
       Upload png only
-    </a-button>
-  </a-upload>
+    </bma-button>
+  </bma-upload>
 </template>
 <script lang="ts">
 import { UploadOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadChangeParam, UploadProps } from 'ant-design-vue';
-import { message, Upload } from 'ant-design-vue';
+import type { UploadChangeParam, UploadProps } from 'bmant-design-vue';
+import { message, Upload } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

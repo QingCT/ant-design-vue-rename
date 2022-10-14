@@ -17,10 +17,10 @@ Basic slider. When `range` is `true`, display as dual thumb mode. When `disable`
 
 <template>
   <div>
-    <a-slider id="test" v-model:value="value1" :disabled="disabled" />
-    <a-slider v-model:value="value2" range :disabled="disabled" />
+    <bma-slider id="test" v-model:value="value1" :disabled="disabled" />
+    <bma-slider v-model:value="value2" range :disabled="disabled" />
     Disabled:
-    <a-switch v-model:checked="disabled" size="small" />
+    <bma-switch v-model:checked="disabled" size="small" />
   </div>
 </template>
 <script lang="ts">
@@ -41,7 +41,7 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.code-box-demo .ant-slider {
+.code-box-demo .bmant-slider {
   margin-bottom: 16px;
 }
 </style>

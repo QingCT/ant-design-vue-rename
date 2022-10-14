@@ -16,7 +16,7 @@ Asynchronous loading tree node.
 
 </docs>
 <template>
-  <a-tree-select
+  <bma-tree-select
     v-model:value="value"
     tree-data-simple-mode
     style="width: 100%"
@@ -28,7 +28,7 @@ Asynchronous loading tree node.
 </template>
 
 <script lang="ts">
-import type { TreeSelectProps } from 'ant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
 
 export default defineComponent({

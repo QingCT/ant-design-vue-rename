@@ -16,35 +16,35 @@ Limit files with `maxCount`. Will replace current one when `maxCount` is `1`.
 </docs>
 
 <template>
-  <a-space direction="vertical" style="width: 100%" size="large">
-    <a-upload
+  <bma-space direction="vertical" style="width: 100%" size="large">
+    <bma-upload
       v-model:file-list="fileList"
       list-type="picture"
       :max-count="1"
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
     >
-      <a-button>
+      <bma-button>
         <upload-outlined></upload-outlined>
         Upload (Max: 1)
-      </a-button>
-    </a-upload>
-    <a-upload
+      </bma-button>
+    </bma-upload>
+    <bma-upload
       v-model:file-list="fileList2"
       list-type="picture"
       :max-count="3"
       action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
     >
-      <a-button>
+      <bma-button>
         <upload-outlined></upload-outlined>
         Upload (Max: 3)
-      </a-button>
-    </a-upload>
-  </a-space>
+      </bma-button>
+    </bma-upload>
+  </bma-space>
 </template>
 <script lang="ts">
 import { UploadOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadProps } from 'ant-design-vue';
+import type { UploadProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

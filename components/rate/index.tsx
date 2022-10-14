@@ -41,7 +41,7 @@ export type RateProps = Partial<ExtractPropTypes<ReturnType<typeof rateProps>>>;
 
 const Rate = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ARate',
+  name: 'BmaRate',
   inheritAttrs: false,
   props: initDefaultProps(rateProps(), {
     value: 0,

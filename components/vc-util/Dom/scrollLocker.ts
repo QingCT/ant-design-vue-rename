@@ -12,7 +12,7 @@ interface Ilocks {
 }
 
 let locks: Ilocks[] = [];
-const scrollingEffectClassName = 'ant-scrolling-effect';
+const scrollingEffectClassName = 'bmant-scrolling-effect';
 const scrollingEffectClassNameReg = new RegExp(`${scrollingEffectClassName}`, 'g');
 
 let uuid = 0;

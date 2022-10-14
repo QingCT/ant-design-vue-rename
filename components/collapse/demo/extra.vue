@@ -17,31 +17,31 @@ More than one panel can be expanded at a time, the first panel is initialized to
 </docs>
 
 <template>
-  <a-collapse v-model:activeKey="activeKey" :expand-icon-position="expandIconPosition">
-    <a-collapse-panel key="1" header="This is panel header 1">
+  <bma-collapse v-model:activeKey="activeKey" :expand-icon-position="expandIconPosition">
+    <bma-collapse-panel key="1" header="This is panel header 1">
       <p>{{ text }}</p>
       <template #extra><setting-outlined @click="handleClick" /></template>
-    </a-collapse-panel>
-    <a-collapse-panel key="2" header="This is panel header 2">
+    </bma-collapse-panel>
+    <bma-collapse-panel key="2" header="This is panel header 2">
       <p>{{ text }}</p>
       <template #extra><setting-outlined @click="handleClick" /></template>
-    </a-collapse-panel>
-    <a-collapse-panel key="3" header="This is panel header 3" collapsible="disabled">
+    </bma-collapse-panel>
+    <bma-collapse-panel key="3" header="This is panel header 3" collapsible="disabled">
       <p>{{ text }}</p>
       <template #extra><setting-outlined @click="handleClick" /></template>
-    </a-collapse-panel>
-  </a-collapse>
+    </bma-collapse-panel>
+  </bma-collapse>
   <br />
   <span>Expand Icon Position:</span>
-  <a-select v-model:value="expandIconPosition">
-    <a-select-option value="left">left</a-select-option>
-    <a-select-option value="right">right</a-select-option>
-  </a-select>
+  <bma-select v-model:value="expandIconPosition">
+    <bma-select-option value="left">left</bma-select-option>
+    <bma-select-option value="right">right</bma-select-option>
+  </bma-select>
 </template>
 <script lang="ts">
 import { SettingOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref, watch } from 'vue';
-import type { CollapseProps } from 'ant-design-vue';
+import type { CollapseProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

@@ -20,14 +20,14 @@ Set a number and automatically fold after exceeding.
 </docs>
 
 <template>
-  <a-space direction="vertical" style="width: 100%">
-    <a-space>
-      <a-button type="primary" @click="maxTagCount++">maxTagCount++</a-button>
-      <a-button type="primary" @click="maxTagCount--">maxTagCount--</a-button>
-    </a-space>
+  <bma-space direction="vertical" style="width: 100%">
+    <bma-space>
+      <bma-button type="primary" @click="maxTagCount++">maxTagCount++</bma-button>
+      <bma-button type="primary" @click="maxTagCount--">maxTagCount--</bma-button>
+    </bma-space>
 
     <h2>maxTagCount: {{ maxTagCount }}</h2>
-    <a-select
+    <bma-select
       v-model:value="value"
       mode="multiple"
       style="width: 100%"
@@ -38,33 +38,33 @@ Set a number and automatically fold after exceeding.
       <template #maxTagPlaceholder="omittedValues">
         <span style="color: red">+ {{ omittedValues.length }} ...</span>
       </template>
-    </a-select>
+    </bma-select>
     <h2>maxTagCount: responsive</h2>
-    <a-select
+    <bma-select
       v-model:value="value"
       mode="multiple"
       style="width: 100%"
       placeholder="Select Item..."
       max-tag-count="responsive"
       :options="options"
-    ></a-select>
-    <a-space>
-      <a-button type="primary" @click="maxTagTextLength++">maxTagTextLength++</a-button>
-      <a-button type="primary" @click="maxTagTextLength--">maxTagTextLength--</a-button>
-    </a-space>
+    ></bma-select>
+    <bma-space>
+      <bma-button type="primary" @click="maxTagTextLength++">maxTagTextLength++</bma-button>
+      <bma-button type="primary" @click="maxTagTextLength--">maxTagTextLength--</bma-button>
+    </bma-space>
     <h2>maxTagTextLength: {{ maxTagTextLength }}</h2>
-    <a-select
+    <bma-select
       v-model:value="value"
       mode="multiple"
       style="width: 100%"
       placeholder="Select Item..."
       :max-tag-text-length="maxTagTextLength"
       :options="options"
-    ></a-select>
-  </a-space>
+    ></bma-select>
+  </bma-space>
 </template>
 <script lang="ts">
-import type { SelectProps } from 'ant-design-vue';
+import type { SelectProps } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 export default defineComponent({
   setup() {

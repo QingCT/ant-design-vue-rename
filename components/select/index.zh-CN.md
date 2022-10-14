@@ -16,9 +16,9 @@ cover: https://gw.alipayobjects.com/zos/alicdn/_0XzgOis7/Select.svg
 ## API
 
 ```html
-<a-select>
-  <a-select-option value="lucy">lucy</a-select-option>
-</a-select>
+<bma-select>
+  <bma-select-option value="lucy">lucy</bma-select-option>
+</bma-select>
 ```
 
 ### Select props

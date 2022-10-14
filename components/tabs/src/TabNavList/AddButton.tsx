@@ -10,7 +10,7 @@ export interface AddButtonProps {
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AddButton',
+  name: 'BmaddButton',
   inheritAttrs: false,
   props: {
     prefixCls: String,

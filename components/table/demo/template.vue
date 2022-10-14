@@ -25,33 +25,33 @@ Using template style API.
 </docs>
 
 <template>
-  <a-table :data-source="data">
-    <a-table-column-group>
+  <bma-table :data-source="data">
+    <bma-table-column-group>
       <template #title><span style="color: #1890ff">Name</span></template>
-      <a-table-column key="firstName" data-index="firstName">
+      <bma-table-column key="firstName" data-index="firstName">
         <template #title><span style="color: #1890ff">First Name</span></template>
-      </a-table-column>
-      <a-table-column key="lastName" title="Last Name" data-index="lastName" />
-    </a-table-column-group>
-    <a-table-column key="age" title="Age" data-index="age" />
-    <a-table-column key="address" title="Address" data-index="address" />
-    <a-table-column key="tags" title="Tags" data-index="tags">
+      </bma-table-column>
+      <bma-table-column key="lastName" title="Last Name" data-index="lastName" />
+    </bma-table-column-group>
+    <bma-table-column key="age" title="Age" data-index="age" />
+    <bma-table-column key="address" title="Address" data-index="address" />
+    <bma-table-column key="tags" title="Tags" data-index="tags">
       <template #default="{ text: tags }">
         <span>
-          <a-tag v-for="tag in tags" :key="tag" color="blue">{{ tag }}</a-tag>
+          <bma-tag v-for="tag in tags" :key="tag" color="blue">{{ tag }}</bma-tag>
         </span>
       </template>
-    </a-table-column>
-    <a-table-column key="action" title="Action">
+    </bma-table-column>
+    <bma-table-column key="action" title="Action">
       <template #default="{ record }">
         <span>
           <a>Action 一 {{ record.firstName }}</a>
-          <a-divider type="vertical" />
+          <bma-divider type="vertical" />
           <a>Delete</a>
         </span>
       </template>
-    </a-table-column>
-  </a-table>
+    </bma-table-column>
+  </bma-table>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

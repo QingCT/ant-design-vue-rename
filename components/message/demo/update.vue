@@ -17,15 +17,15 @@ Update message content with unique `key`，or use reactive data.
 </docs>
 
 <template>
-  <a-button type="primary" @click="openMessage">Open the message box (update by key)</a-button>
+  <bma-button type="primary" @click="openMessage">Open the message box (update by key)</bma-button>
   <br />
   <br />
-  <a-button type="primary" @click="openMessage2">
+  <bma-button type="primary" @click="openMessage2">
     Open the message box (update by reactive)
-  </a-button>
+  </bma-button>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
 const key = 'updatable';
 export default defineComponent({

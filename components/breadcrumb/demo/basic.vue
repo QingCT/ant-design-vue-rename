@@ -17,10 +17,10 @@ The simplest use.
 </docs>
 
 <template>
-  <a-breadcrumb>
-    <a-breadcrumb-item>Home</a-breadcrumb-item>
-    <a-breadcrumb-item><a href="">Application Center</a></a-breadcrumb-item>
-    <a-breadcrumb-item><a href="">Application List</a></a-breadcrumb-item>
-    <a-breadcrumb-item>An Application</a-breadcrumb-item>
-  </a-breadcrumb>
+  <bma-breadcrumb>
+    <bma-breadcrumb-item>Home</bma-breadcrumb-item>
+    <bma-breadcrumb-item><a href="">Application Center</a></bma-breadcrumb-item>
+    <bma-breadcrumb-item><a href="">Application List</a></bma-breadcrumb-item>
+    <bma-breadcrumb-item>An Application</bma-breadcrumb-item>
+  </bma-breadcrumb>
 </template>

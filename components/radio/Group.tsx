@@ -40,7 +40,7 @@ export type RadioGroupProps = Partial<ExtractPropTypes<ReturnType<typeof radioGr
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ARadioGroup',
+  name: 'BmaRadioGroup',
   props: radioGroupProps(),
   // emits: ['update:value', 'change'],
   setup(props, { slots, emit }) {

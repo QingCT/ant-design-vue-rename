@@ -17,18 +17,18 @@ Steps with progress dot style.
 
 <template>
   <div>
-    <a-steps progress-dot :current="1">
-      <a-step title="Finished" description="This is a description." />
-      <a-step title="In Progress" description="This is a description." />
-      <a-step title="Waiting" description="This is a description." />
-    </a-steps>
-    <a-divider />
-    <a-steps progress-dot :current="1" direction="vertical">
-      <a-step title="Finished" description="This is a description. This is a description." />
-      <a-step title="Finished" description="This is a description. This is a description." />
-      <a-step title="In Progress" description="This is a description. This is a description." />
-      <a-step title="Waiting" description="This is a description." />
-      <a-step title="Waiting" description="This is a description." />
-    </a-steps>
+    <bma-steps progress-dot :current="1">
+      <bma-step title="Finished" description="This is a description." />
+      <bma-step title="In Progress" description="This is a description." />
+      <bma-step title="Waiting" description="This is a description." />
+    </bma-steps>
+    <bma-divider />
+    <bma-steps progress-dot :current="1" direction="vertical">
+      <bma-step title="Finished" description="This is a description. This is a description." />
+      <bma-step title="Finished" description="This is a description. This is a description." />
+      <bma-step title="In Progress" description="This is a description. This is a description." />
+      <bma-step title="Waiting" description="This is a description." />
+      <bma-step title="Waiting" description="This is a description." />
+    </bma-steps>
   </div>
 </template>

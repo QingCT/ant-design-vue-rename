@@ -113,7 +113,7 @@ export interface CascaderRef {
 
 const Cascader = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ACascader',
+  name: 'BmaCascader',
   inheritAttrs: false,
   props: initDefaultProps(cascaderProps(), {
     bordered: true,

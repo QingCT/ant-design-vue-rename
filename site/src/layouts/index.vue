@@ -1,9 +1,9 @@
 <template>
   <Header />
   <div class="main-wrapper">
-    <a-row>
+    <bma-row>
       <template v-if="isMobile">
-        <a-drawer
+        <bma-drawer
           key="mobile-menu"
           :closable="false"
           placement="left"
@@ -20,11 +20,11 @@
               <MenuOutlined v-else :style="iconStyle" />
             </div>
           </template>
-        </a-drawer>
+        </bma-drawer>
       </template>
       <template v-else>
-        <a-col :xxxl="4" :xxl="4" :xl="5" :lg="6" :md="6" :sm="24" :xs="24" class="main-menu">
-          <a-affix>
+        <bma-col :xxxl="4" :xxl="4" :xl="5" :lg="6" :md="6" :sm="24" :xs="24" class="main-menu">
+          <bma-affix>
             <section class="main-menu-inner">
               <!-- <Sponsors :is-c-n="isZhCN" /> -->
               <div>
@@ -32,10 +32,10 @@
               </div>
               <Menu :menus="dataSource" :active-menu-item="activeMenuItem" :is-zh-c-n="isZhCN" />
             </section>
-          </a-affix>
-        </a-col>
+          </bma-affix>
+        </bma-col>
       </template>
-      <a-col :xxxl="20" :xxl="20" :xl="19" :lg="18" :md="18" :sm="24" :xs="24">
+      <bma-col :xxxl="20" :xxl="20" :xl="19" :lg="18" :md="18" :sm="24" :xs="24">
         <section :class="mainContainerClass">
           <WWAdsVue v-if="isZhCN" />
           <TopAd v-else />
@@ -43,9 +43,9 @@
             <component :is="matchCom" />
           </Demo>
           <router-view v-else />
-          <a-affix v-if="headers.length" class="toc-affix" :offset-top="20">
-            <a-anchor>
-              <a-anchor-link
+          <bma-affix v-if="headers.length" class="toc-affix" :offset-top="20">
+            <bma-anchor>
+              <bma-anchor-link
                 v-for="h in headers"
                 :key="h.title"
                 :href="h.href || `#${slugifyTitle(h.title)}`"
@@ -55,30 +55,30 @@
                   <LinkOutlined v-if="h.target" />
                   {{ isZhCN ? h.title : h.enTitle || h.title }}
                 </template>
-              </a-anchor-link>
-            </a-anchor>
-          </a-affix>
+              </bma-anchor-link>
+            </bma-anchor>
+          </bma-affix>
         </section>
         <div class="fixed-widgets" :style="isZhCN ? { bottom: '175px' } : {}">
-          <a-dropdown placement="top">
+          <bma-dropdown placement="top">
             <template #overlay>
-              <a-menu
+              <bma-menu
                 :selected-keys="[themeMode.theme.value]"
                 @click="({ key }) => themeMode.changeTheme(key)"
               >
-                <a-menu-item key="default">{{ $t('app.theme.switch.default') }}</a-menu-item>
-                <a-menu-item key="dark">{{ $t('app.theme.switch.dark') }}</a-menu-item>
-              </a-menu>
+                <bma-menu-item key="default">{{ $t('app.theme.switch.default') }}</bma-menu-item>
+                <bma-menu-item key="dark">{{ $t('app.theme.switch.dark') }}</bma-menu-item>
+              </bma-menu>
             </template>
-            <a-avatar class="fixed-widgets-avatar" :size="44">
+            <bma-avatar class="fixed-widgets-avatar" :size="44">
               <template #icon><ThemeIcon /></template>
-            </a-avatar>
-          </a-dropdown>
+            </bma-avatar>
+          </bma-dropdown>
         </div>
         <PrevAndNext :menus="menus" :current-menu-index="currentMenuIndex" :is-zh-c-n="isZhCN" />
         <Footer />
-      </a-col>
-    </a-row>
+      </bma-col>
+    </bma-row>
   </div>
 </template>
 <script lang="ts">
@@ -253,30 +253,30 @@ export default defineComponent({
 });
 </script>
 <style lang="less" scoped>
-.toc-affix :deep(.ant-anchor) {
+.toc-affix :deep(.bmant-anchor) {
   font-size: 12px;
   max-width: 110px;
-  .ant-anchor-link {
+  .bmant-anchor-link {
     border-left: 2px solid #f0f0f0;
     padding: 4px 0 4px 16px;
   }
 
-  .ant-anchor-link-active {
+  .bmant-anchor-link-active {
     border-left: 2px solid #1890ff;
   }
-  .ant-anchor-ink::before {
+  .bmant-anchor-ink::before {
     display: none;
   }
-  .ant-anchor-ink-ball {
+  .bmant-anchor-ink-ball {
     display: none;
   }
 }
 
-[data-theme='dark'] .toc-affix :deep(.ant-anchor) {
-  .ant-anchor-link {
+[data-theme='dark'] .toc-affix :deep(.bmant-anchor) {
+  .bmant-anchor-link {
     border-left: 2px solid #303030;
   }
-  .ant-anchor-link-active {
+  .bmant-anchor-link-active {
     border-left: 2px solid #177ddc;
   }
 }

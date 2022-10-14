@@ -17,10 +17,10 @@ Normal message for information.
 </docs>
 
 <template>
-  <a-button type="primary" @click="info">Display normal message</a-button>
+  <bma-button type="primary" @click="info">Display normal message</bma-button>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {

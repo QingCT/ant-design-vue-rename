@@ -16,11 +16,11 @@ Default activate first tab.
 </docs>
 
 <template>
-  <a-tabs v-model:activeKey="activeKey">
-    <a-tab-pane key="1" tab="Tab 1">Content of Tab Pane 1</a-tab-pane>
-    <a-tab-pane key="2" tab="Tab 2" force-render>Content of Tab Pane 2</a-tab-pane>
-    <a-tab-pane key="3" tab="Tab 3">Content of Tab Pane 3</a-tab-pane>
-  </a-tabs>
+  <bma-tabs v-model:activeKey="activeKey">
+    <bma-tab-pane key="1" tab="Tab 1">Content of Tab Pane 1</bma-tab-pane>
+    <bma-tab-pane key="2" tab="Tab 2" force-render>Content of Tab Pane 2</bma-tab-pane>
+    <bma-tab-pane key="3" tab="Tab 3">Content of Tab Pane 3</bma-tab-pane>
+  </bma-tabs>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

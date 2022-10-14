@@ -22,7 +22,7 @@ const HackSlot = (_, { slots }) => {
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AUploadList',
+  name: 'BmaUploadList',
   props: initDefaultProps(uploadListProps(), {
     listType: 'text' as UploadListType, // or picture
     progress: {

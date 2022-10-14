@@ -7,7 +7,7 @@ import { CheckboxGroupContextKey, checkboxGroupProps } from './interface';
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ACheckboxGroup',
+  name: 'BmaCheckboxGroup',
   props: checkboxGroupProps(),
   // emits: ['change', 'update:value'],
   setup(props, { slots, emit, expose }) {

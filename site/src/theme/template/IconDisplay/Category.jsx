@@ -1,4 +1,4 @@
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 import CopyableIcon from './CopyableIcon.vue';
 

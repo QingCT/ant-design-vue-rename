@@ -16,7 +16,7 @@ The simplest usage.
 
 </docs>
 <template>
-  <a-rate v-model:value="value" />
+  <bma-rate v-model:value="value" />
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

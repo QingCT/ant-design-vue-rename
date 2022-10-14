@@ -83,14 +83,14 @@ Like:
 ## Usage
 
 ```jsx
-import { DatePicker } from 'ant-design-vue';
+import { DatePicker } from 'bmant-design-vue';
 app.use(DatePicker);
 ```
 
 And import stylesheets manually:
 
 ```jsx
-import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
+import 'bmant-design-vue/dist/antd.css'; // or 'bmant-design-vue/dist/antd.less'
 ```
 
 ### Use modularized antd
@@ -101,7 +101,7 @@ import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
   // .babelrc or babel-loader option
   {
     "plugins": [
-      ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }] // `style: true` for less
+      ["import", { "libraryName": "bmant-design-vue", "libraryDirectory": "es", "style": "css" }] // `style: true` for less
     ]
   }
   ```
@@ -112,15 +112,15 @@ import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
 
   ```jsx
   // import js and css modularly, parsed by babel-plugin-import
-  import { DatePicker } from 'ant-design-vue';
+  import { DatePicker } from 'bmant-design-vue';
   ```
 
 - Manually import
 
   ```jsx
-  import DatePicker from 'ant-design-vue/lib/date-picker'; // for js
-  import 'ant-design-vue/lib/date-picker/style/css'; // for css
-  // import 'ant-design-vue/lib/date-picker/style';         // that will import less
+  import DatePicker from 'bmant-design-vue/lib/date-picker'; // for js
+  import 'bmant-design-vue/lib/date-picker/style/css'; // for css
+  // import 'bmant-design-vue/lib/date-picker/style';         // that will import less
   ```
 
 - For Vite

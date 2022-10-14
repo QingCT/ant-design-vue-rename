@@ -17,19 +17,19 @@ customize collapse/expand icon of tree node
 </docs>
 
 <template>
-  <a-tree
+  <bma-tree
     v-model:expandedKeys="expandedKeys"
     v-model:selectedKeys="selectedKeys"
     show-line
     :tree-data="treeData"
   >
     <template #switcherIcon="{ switcherCls }"><down-outlined :class="switcherCls" /></template>
-  </a-tree>
+  </bma-tree>
 </template>
 <script lang="ts">
 import { DownOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { TreeProps } from 'ant-design-vue';
+import type { TreeProps } from 'bmant-design-vue';
 export default defineComponent({
   components: {
     DownOutlined,

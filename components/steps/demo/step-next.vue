@@ -16,28 +16,28 @@ Cooperate with the content and buttons, to represent the progress of a process.
 </docs>
 <template>
   <div>
-    <a-steps :current="current">
-      <a-step v-for="item in steps" :key="item.title" :title="item.title" />
-    </a-steps>
+    <bma-steps :current="current">
+      <bma-step v-for="item in steps" :key="item.title" :title="item.title" />
+    </bma-steps>
     <div class="steps-content">
       {{ steps[current].content }}
     </div>
     <div class="steps-action">
-      <a-button v-if="current < steps.length - 1" type="primary" @click="next">Next</a-button>
-      <a-button
+      <bma-button v-if="current < steps.length - 1" type="primary" @click="next">Next</bma-button>
+      <bma-button
         v-if="current == steps.length - 1"
         type="primary"
         @click="message.success('Processing complete!')"
       >
         Done
-      </a-button>
-      <a-button v-if="current > 0" style="margin-left: 8px" @click="prev">Previous</a-button>
+      </bma-button>
+      <bma-button v-if="current > 0" style="margin-left: 8px" @click="prev">Previous</bma-button>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 
 export default defineComponent({
   setup() {

@@ -50,7 +50,7 @@ export type StepProps = Partial<ExtractPropTypes<ReturnType<typeof stepProps>>>;
 
 const Steps = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ASteps',
+  name: 'BmaSteps',
   inheritAttrs: false,
   props: initDefaultProps(stepsProps(), {
     current: 0,
@@ -131,7 +131,7 @@ const Steps = defineComponent({
 export const Step = defineComponent({
   compatConfig: { MODE: 3 },
   ...VcStep,
-  name: 'AStep',
+  name: 'BmaStep',
   props: VcStepProps(),
 });
 export default Object.assign(Steps, {

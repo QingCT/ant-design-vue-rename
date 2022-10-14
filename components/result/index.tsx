@@ -60,7 +60,7 @@ const renderExtra = (prefixCls: string, extra: VNodeTypes) =>
 
 const Result = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AResult',
+  name: 'BmaResult',
   props: resultProps(),
   slots: ['title', 'subTitle', 'icon', 'extra'],
   setup(props, { slots }) {

@@ -18,7 +18,7 @@ Search and select options directly.
 
 </docs>
 <template>
-  <a-cascader
+  <bma-cascader
     v-model:value="value"
     :options="options"
     :show-search="{ filter }"
@@ -27,8 +27,8 @@ Search and select options directly.
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { CascaderProps } from 'ant-design-vue';
-import type { ShowSearchType } from 'ant-design-vue/es/cascader';
+import type { CascaderProps } from 'bmant-design-vue';
+import type { ShowSearchType } from 'bmant-design-vue/es/cascader';
 const options: CascaderProps['options'] = [
   {
     value: 'zhejiang',

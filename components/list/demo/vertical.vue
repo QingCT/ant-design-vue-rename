@@ -17,7 +17,7 @@ Setting `itemLayout` property with `vertical` to create a vertical list.
 </docs>
 
 <template>
-  <a-list item-layout="vertical" size="large" :pagination="pagination" :data-source="listData">
+  <bma-list item-layout="vertical" size="large" :pagination="pagination" :data-source="listData">
     <template #footer>
       <div>
         <b>ant design vue</b>
@@ -25,7 +25,7 @@ Setting `itemLayout` property with `vertical` to create a vertical list.
       </div>
     </template>
     <template #renderItem="{ item }">
-      <a-list-item key="item.title">
+      <bma-list-item key="item.title">
         <template #actions>
           <span v-for="{ type, text } in actions" :key="type">
             <component :is="type" style="margin-right: 8px" />
@@ -39,16 +39,16 @@ Setting `itemLayout` property with `vertical` to create a vertical list.
             src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
           />
         </template>
-        <a-list-item-meta :description="item.description">
+        <bma-list-item-meta :description="item.description">
           <template #title>
             <a :href="item.href">{{ item.title }}</a>
           </template>
-          <template #avatar><a-avatar :src="item.avatar" /></template>
-        </a-list-item-meta>
+          <template #avatar><bma-avatar :src="item.avatar" /></template>
+        </bma-list-item-meta>
         {{ item.content }}
-      </a-list-item>
+      </bma-list-item>
     </template>
-  </a-list>
+  </bma-list>
 </template>
 <script lang="ts">
 import { StarOutlined, LikeOutlined, MessageOutlined } from '@ant-design/icons-vue';

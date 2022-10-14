@@ -17,12 +17,12 @@ title:
 </docs>
 
 <template>
-  <a-button @click="showConfirm">Confirm</a-button>
+  <bma-button @click="showConfirm">Confirm</bma-button>
 </template>
 <script lang="ts">
 import { ExclamationCircleOutlined } from '@ant-design/icons-vue';
 import { createVNode, defineComponent } from 'vue';
-import { Modal } from 'ant-design-vue';
+import { Modal } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const showConfirm = () => {

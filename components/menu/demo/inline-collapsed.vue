@@ -22,58 +22,58 @@ Here is [a complete demo](/components/layout/#components-layout-demo-side) with 
 
 <template>
   <div style="width: 256px">
-    <a-button type="primary" style="margin-bottom: 16px" @click="toggleCollapsed">
+    <bma-button type="primary" style="margin-bottom: 16px" @click="toggleCollapsed">
       <MenuUnfoldOutlined v-if="collapsed" />
       <MenuFoldOutlined v-else />
-    </a-button>
-    <a-menu
+    </bma-button>
+    <bma-menu
       v-model:openKeys="openKeys"
       v-model:selectedKeys="selectedKeys"
       mode="inline"
       theme="dark"
       :inline-collapsed="collapsed"
     >
-      <a-menu-item key="1">
+      <bma-menu-item key="1">
         <template #icon>
           <PieChartOutlined />
         </template>
         <span>Option 1</span>
-      </a-menu-item>
-      <a-menu-item key="2">
+      </bma-menu-item>
+      <bma-menu-item key="2">
         <template #icon>
           <DesktopOutlined />
         </template>
         <span>Option 2</span>
-      </a-menu-item>
-      <a-menu-item key="3">
+      </bma-menu-item>
+      <bma-menu-item key="3">
         <template #icon>
           <InboxOutlined />
         </template>
         <span>Option 3</span>
-      </a-menu-item>
-      <a-sub-menu key="sub1">
+      </bma-menu-item>
+      <bma-sub-menu key="sub1">
         <template #icon>
           <MailOutlined />
         </template>
         <template #title>Navigation One</template>
-        <a-menu-item key="5">Option 5</a-menu-item>
-        <a-menu-item key="6">Option 6</a-menu-item>
-        <a-menu-item key="7">Option 7</a-menu-item>
-        <a-menu-item key="8">Option 8</a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu key="sub2">
+        <bma-menu-item key="5">Option 5</bma-menu-item>
+        <bma-menu-item key="6">Option 6</bma-menu-item>
+        <bma-menu-item key="7">Option 7</bma-menu-item>
+        <bma-menu-item key="8">Option 8</bma-menu-item>
+      </bma-sub-menu>
+      <bma-sub-menu key="sub2">
         <template #icon>
           <AppstoreOutlined />
         </template>
         <template #title>Navigation Two</template>
-        <a-menu-item key="9">Option 9</a-menu-item>
-        <a-menu-item key="10">Option 10</a-menu-item>
-        <a-sub-menu key="sub3" title="Submenu">
-          <a-menu-item key="11">Option 11</a-menu-item>
-          <a-menu-item key="12">Option 12</a-menu-item>
-        </a-sub-menu>
-      </a-sub-menu>
-    </a-menu>
+        <bma-menu-item key="9">Option 9</bma-menu-item>
+        <bma-menu-item key="10">Option 10</bma-menu-item>
+        <bma-sub-menu key="sub3" title="Submenu">
+          <bma-menu-item key="11">Option 11</bma-menu-item>
+          <bma-menu-item key="12">Option 12</bma-menu-item>
+        </bma-sub-menu>
+      </bma-sub-menu>
+    </bma-menu>
   </div>
 </template>
 

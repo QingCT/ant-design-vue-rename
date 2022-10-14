@@ -17,14 +17,14 @@ Grid style card content.
 </docs>
 
 <template>
-  <a-card title="Card Title">
-    <a-card-grid style="width: 25%; text-align: center">Content</a-card-grid>
-    <a-card-grid style="width: 25%; text-align: center" :hoverable="false">Content</a-card-grid>
-    <a-card-grid style="width: 25%; text-align: center">Content</a-card-grid>
-    <a-card-grid style="width: 25%; text-align: center">Content</a-card-grid>
-    <a-card-grid style="width: 25%; text-align: center">Content</a-card-grid>
-    <a-card-grid style="width: 25%; text-align: center">Content</a-card-grid>
-    <a-card-grid style="width: 25%; text-align: center">Content</a-card-grid>
-    <a-card-grid style="width: 25%; text-align: center">Content</a-card-grid>
-  </a-card>
+  <bma-card title="Card Title">
+    <bma-card-grid style="width: 25%; text-align: center">Content</bma-card-grid>
+    <bma-card-grid style="width: 25%; text-align: center" :hoverable="false">Content</bma-card-grid>
+    <bma-card-grid style="width: 25%; text-align: center">Content</bma-card-grid>
+    <bma-card-grid style="width: 25%; text-align: center">Content</bma-card-grid>
+    <bma-card-grid style="width: 25%; text-align: center">Content</bma-card-grid>
+    <bma-card-grid style="width: 25%; text-align: center">Content</bma-card-grid>
+    <bma-card-grid style="width: 25%; text-align: center">Content</bma-card-grid>
+    <bma-card-grid style="width: 25%; text-align: center">Content</bma-card-grid>
+  </bma-card>
 </template>

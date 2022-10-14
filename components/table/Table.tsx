@@ -684,7 +684,7 @@ const InteralTable = defineComponent<
 });
 
 const Table = defineComponent<TableProps>({
-  name: 'ATable',
+  name: 'BmaTable',
   inheritAttrs: false,
   setup(_props, { attrs, slots, expose }) {
     const table = ref();

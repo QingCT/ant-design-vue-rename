@@ -7,6 +7,7 @@ const i18n = createI18n({
   legacy: false,
   locale: isZhCN(location.pathname) ? 'zh-CN' : 'en-US',
   fallbackLocale: 'en-US',
+  globalInjection: true,
   messages: {
     'zh-CN': zhCN,
     'en-US': enUS,

@@ -50,7 +50,7 @@ export type CardProps = Partial<ExtractPropTypes<ReturnType<typeof cardProps>>>;
 
 const Card = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ACard',
+  name: 'BmaCard',
   props: cardProps(),
   slots: ['title', 'extra', 'tabBarExtraContent', 'actions', 'cover', 'customTab'],
   setup(props, { slots }) {

@@ -17,16 +17,16 @@ The icon should be placed in front of the text.
 </docs>
 
 <template>
-  <a-breadcrumb>
-    <a-breadcrumb-item href="">
+  <bma-breadcrumb>
+    <bma-breadcrumb-item href="">
       <home-outlined />
-    </a-breadcrumb-item>
-    <a-breadcrumb-item href="">
+    </bma-breadcrumb-item>
+    <bma-breadcrumb-item href="">
       <user-outlined />
       <span>Application List</span>
-    </a-breadcrumb-item>
-    <a-breadcrumb-item>Application</a-breadcrumb-item>
-  </a-breadcrumb>
+    </bma-breadcrumb-item>
+    <bma-breadcrumb-item>Application</bma-breadcrumb-item>
+  </bma-breadcrumb>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

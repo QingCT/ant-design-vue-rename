@@ -16,35 +16,35 @@ Perform different check rules according to different situations.
 
 </docs>
 <template>
-  <a-form ref="formRef" :model="formState" name="dynamic_rule" v-bind="formItemLayout">
-    <a-form-item
+  <bma-form ref="formRef" :model="formState" name="dynamic_rule" v-bind="formItemLayout">
+    <bma-form-item
       label="Username"
       name="username"
       :rules="[{ required: true, message: 'Please input your username!' }]"
     >
-      <a-input v-model:value="formState.username" />
-    </a-form-item>
+      <bma-input v-model:value="formState.username" />
+    </bma-form-item>
 
-    <a-form-item
+    <bma-form-item
       label="Nickname"
       name="nickname"
       :rules="[{ required: formState.checkNick, message: 'Please input your nickname!' }]"
     >
-      <a-input v-model:value="formState.nickname" />
-    </a-form-item>
+      <bma-input v-model:value="formState.nickname" />
+    </bma-form-item>
 
-    <a-form-item name="checkNick" v-bind="formTailLayout">
-      <a-checkbox v-model:checked="formState.checkNick">Nickname is required</a-checkbox>
-    </a-form-item>
+    <bma-form-item name="checkNick" v-bind="formTailLayout">
+      <bma-checkbox v-model:checked="formState.checkNick">Nickname is required</bma-checkbox>
+    </bma-form-item>
 
-    <a-form-item v-bind="formTailLayout">
-      <a-button type="primary" @click="onCheck">Check</a-button>
-    </a-form-item>
-  </a-form>
+    <bma-form-item v-bind="formTailLayout">
+      <bma-button type="primary" @click="onCheck">Check</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, ref, watch } from 'vue';
-import type { FormInstance } from 'ant-design-vue';
+import type { FormInstance } from 'bmant-design-vue';
 
 interface FormState {
   username: string;

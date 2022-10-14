@@ -31,7 +31,7 @@ export type InputNumberProps = Partial<ExtractPropTypes<ReturnType<typeof inputN
 
 const InputNumber = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AInputNumber',
+  name: 'BmaInputNumber',
   inheritAttrs: false,
   props: inputNumberProps(),
   // emits: ['focus', 'blur', 'change', 'input', 'update:value'],

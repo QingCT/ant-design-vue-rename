@@ -1,7 +1,7 @@
 <docs>
 ---
 order: 3
-title: 
+title:
   zh-CN: 响应式
   en-US: Responsive
 ---
@@ -17,18 +17,18 @@ Responsive configuration enables perfect presentation on small screen devices.
 </docs>
 
 <template>
-  <a-descriptions
+  <bma-descriptions
     title="Responsive Descriptions"
     bordered
     :column="{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }"
   >
-    <a-descriptions-item label="Product">Cloud Database</a-descriptions-item>
-    <a-descriptions-item label="Billing">Prepaid</a-descriptions-item>
-    <a-descriptions-item label="Time">18:00:00</a-descriptions-item>
-    <a-descriptions-item label="Amount">$80.00</a-descriptions-item>
-    <a-descriptions-item label="Discount">$20.00</a-descriptions-item>
-    <a-descriptions-item label="Official">$60.00</a-descriptions-item>
-    <a-descriptions-item label="Config Info">
+    <bma-descriptions-item label="Product">Cloud Database</bma-descriptions-item>
+    <bma-descriptions-item label="Billing">Prepaid</bma-descriptions-item>
+    <bma-descriptions-item label="Time">18:00:00</bma-descriptions-item>
+    <bma-descriptions-item label="Amount">$80.00</bma-descriptions-item>
+    <bma-descriptions-item label="Discount">$20.00</bma-descriptions-item>
+    <bma-descriptions-item label="Official">$60.00</bma-descriptions-item>
+    <bma-descriptions-item label="Config Info">
       Data disk type: MongoDB
       <br />
       Database version: 3.4
@@ -40,6 +40,6 @@ Responsive configuration enables perfect presentation on small screen devices.
       Replication factor: 3
       <br />
       Region: East China 1
-    </a-descriptions-item>
-  </a-descriptions>
+    </bma-descriptions-item>
+  </bma-descriptions>
 </template>

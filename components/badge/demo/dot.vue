@@ -17,12 +17,12 @@ If count equals 0, it won't display the dot.
 </docs>
 
 <template>
-  <a-badge dot>
+  <bma-badge dot>
     <notification-outlined style="font-size: 16px" />
-  </a-badge>
-  <a-badge dot>
+  </bma-badge>
+  <bma-badge dot>
     <a href="#">Link something</a>
-  </a-badge>
+  </bma-badge>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

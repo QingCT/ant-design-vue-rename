@@ -17,31 +17,31 @@ Mouse to click, focus and move in.
 </docs>
 <template>
   <div>
-    <a-popover title="Title" trigger="hover">
+    <bma-popover title="Title" trigger="hover">
       <template #content>
         <p>Content</p>
         <p>Content</p>
       </template>
-      <a-button>Hover me</a-button>
-    </a-popover>
-    <a-popover title="Title" trigger="focus">
+      <bma-button>Hover me</bma-button>
+    </bma-popover>
+    <bma-popover title="Title" trigger="focus">
       <template #content>
         <p>Content</p>
         <p>Content</p>
       </template>
-      <a-button>Focus me</a-button>
-    </a-popover>
-    <a-popover title="Title" trigger="click">
+      <bma-button>Focus me</bma-button>
+    </bma-popover>
+    <bma-popover title="Title" trigger="click">
       <template #content>
         <p>Content</p>
         <p>Content</p>
       </template>
-      <a-button>Click me</a-button>
-    </a-popover>
+      <bma-button>Click me</bma-button>
+    </bma-popover>
   </div>
 </template>
 <style>
-#components-popover-demo-triggerType .ant-btn {
+#components-popover-demo-triggerType .bmant-btn {
   margin-right: 8px;
 }
 </style>

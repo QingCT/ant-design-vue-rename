@@ -18,9 +18,9 @@ Modify global theme color by css variable. Css variable depends on the design, i
 </docs>
 
 <template>
-  <a-row :gutter="16" :wrap="false">
-    <a-col flex="none">
-      <a-space direction="vertical" align="center">
+  <bma-row :gutter="16" :wrap="false">
+    <bma-col flex="none">
+      <bma-space direction="vertical" align="center">
         <!-- Primary Color -->
         <input
           type="color"
@@ -64,300 +64,300 @@ Modify global theme color by css variable. Css variable depends on the design, i
           @input="e => onColorChange('infoColor', e)"
         />
         <span style="color: var(--ant-info-color)">var(`--ant-info-color`)</span>
-      </a-space>
-    </a-col>
+      </bma-space>
+    </bma-col>
 
-    <a-col flex="auto">
-      <a-space direction="vertical" style="width: 100%" :size="0">
-        <template #split><a-divider /></template>
+    <bma-col flex="auto">
+      <bma-space direction="vertical" style="width: 100%" :size="0">
+        <template #split><bma-divider /></template>
         <!-- Primary Button -->
         <SplitSpace>
-          <a-button type="primary">Primary</a-button>
-          <a-button>Default</a-button>
-          <a-button type="dashed">Dashed</a-button>
-          <a-button type="text">Text</a-button>
-          <a-button type="link">Link</a-button>
+          <bma-button type="primary">Primary</bma-button>
+          <bma-button>Default</bma-button>
+          <bma-button type="dashed">Dashed</bma-button>
+          <bma-button type="text">Text</bma-button>
+          <bma-button type="link">Link</bma-button>
         </SplitSpace>
 
         <!-- Danger Button -->
         <SplitSpace>
-          <a-button danger type="primary">Primary</a-button>
-          <a-button danger>Default</a-button>
-          <a-button danger type="dashed">Dashed</a-button>
-          <a-button danger type="text">Text</a-button>
-          <a-button danger type="link">Link</a-button>
+          <bma-button danger type="primary">Primary</bma-button>
+          <bma-button danger>Default</bma-button>
+          <bma-button danger type="dashed">Dashed</bma-button>
+          <bma-button danger type="text">Text</bma-button>
+          <bma-button danger type="link">Link</bma-button>
         </SplitSpace>
 
         <!-- Ghost Button -->
         <SplitSpace style="background: rgb(190, 200, 200)">
-          <a-button type="primary" ghost>Primary</a-button>
-          <a-button ghost>Default</a-button>
-          <a-button type="dashed" ghost>Dashed</a-button>
-          <a-button type="primary" ghost danger>Primary</a-button>
-          <a-button ghost danger>Default</a-button>
-          <a-button type="dashed" ghost danger>Dashed</a-button>
+          <bma-button type="primary" ghost>Primary</bma-button>
+          <bma-button ghost>Default</bma-button>
+          <bma-button type="dashed" ghost>Dashed</bma-button>
+          <bma-button type="primary" ghost danger>Primary</bma-button>
+          <bma-button ghost danger>Default</bma-button>
+          <bma-button type="dashed" ghost danger>Dashed</bma-button>
         </SplitSpace>
 
         <!-- Typography -->
         <SplitSpace>
-          <a-typography-text type="success">Text (success)</a-typography-text>
-          <a-typography-text type="warning">Text(warning)</a-typography-text>
-          <a-typography-text type="danger">Text(danger)</a-typography-text>
-          <a-typography-link href="https://ant.design" target="_blank">Link</a-typography-link>
-          <a-typography-text copyable>Text</a-typography-text>
+          <bma-typography-text type="success">Text (success)</bma-typography-text>
+          <bma-typography-text type="warning">Text(warning)</bma-typography-text>
+          <bma-typography-text type="danger">Text(danger)</bma-typography-text>
+          <bma-typography-link href="https://ant.design" target="_blank">Link</bma-typography-link>
+          <bma-typography-text copyable>Text</bma-typography-text>
 
           <!-- Dropdown -->
-          <a-dropdown>
+          <bma-dropdown>
             <template #overlay>
-              <a-menu>
-                <a-menu-item>1st menu item</a-menu-item>
-                <a-menu-item danger>a danger item</a-menu-item>
-              </a-menu>
+              <bma-menu>
+                <bma-menu-item>1st menu item</bma-menu-item>
+                <bma-menu-item danger>a danger item</bma-menu-item>
+              </bma-menu>
             </template>
-            <a class="ant-dropdown-link" @click.prevent>
+            <a class="bmant-dropdown-link" @click.prevent>
               Hover me
               <DownOutlined />
             </a>
-          </a-dropdown>
+          </bma-dropdown>
 
           <!-- Spin -->
-          <a-spin />
+          <bma-spin />
         </SplitSpace>
 
         <!-- Menu - horizontal -->
-        <a-row :gutter="16">
-          <a-col :span="12">
-            <a-menu v-model:selectedKeys="selectedKeys" mode="horizontal">
-              <a-menu-item key="mail">
+        <bma-row :gutter="16">
+          <bma-col :span="12">
+            <bma-menu v-model:selectedKeys="selectedKeys" mode="horizontal">
+              <bma-menu-item key="mail">
                 Mail
                 <template #icon>
                   <MailOutlined />
                 </template>
-              </a-menu-item>
-              <a-sub-menu key="SubMenu" title="Submenu">
+              </bma-menu-item>
+              <bma-sub-menu key="SubMenu" title="Submenu">
                 <template #icon><SettingOutlined /></template>
-                <a-menu-item-group title="Item 1">
-                  <a-menu-item key="setting:1">Option 1</a-menu-item>
-                  <a-menu-item key="setting:2">Option 2</a-menu-item>
-                </a-menu-item-group>
-              </a-sub-menu>
-            </a-menu>
-          </a-col>
-          <a-col :span="12">
-            <a-menu v-model:selectedKeys="selectedKeys" mode="horizontal" theme="dark">
-              <a-menu-item key="mail">
+                <bma-menu-item-group title="Item 1">
+                  <bma-menu-item key="setting:1">Option 1</bma-menu-item>
+                  <bma-menu-item key="setting:2">Option 2</bma-menu-item>
+                </bma-menu-item-group>
+              </bma-sub-menu>
+            </bma-menu>
+          </bma-col>
+          <bma-col :span="12">
+            <bma-menu v-model:selectedKeys="selectedKeys" mode="horizontal" theme="dark">
+              <bma-menu-item key="mail">
                 <template #icon><SettingOutlined /></template>
                 Mail
-              </a-menu-item>
-              <a-sub-menu key="SubMenu" title="Submenu">
+              </bma-menu-item>
+              <bma-sub-menu key="SubMenu" title="Submenu">
                 <template #icon><SettingOutlined /></template>
-                <a-menu-item-group title="Item 1">
-                  <a-menu-item key="setting:1">Option 1</a-menu-item>
-                  <a-menu-item key="setting:2">Option 2</a-menu-item>
-                </a-menu-item-group>
-              </a-sub-menu>
-            </a-menu>
-          </a-col>
-        </a-row>
+                <bma-menu-item-group title="Item 1">
+                  <bma-menu-item key="setting:1">Option 1</bma-menu-item>
+                  <bma-menu-item key="setting:2">Option 2</bma-menu-item>
+                </bma-menu-item-group>
+              </bma-sub-menu>
+            </bma-menu>
+          </bma-col>
+        </bma-row>
 
         <!-- Menu - vertical -->
-        <a-row :gutter="16">
-          <a-col :span="12">
-            <a-menu v-model:selectedKeys="selectedKeys" mode="inline">
-              <a-menu-item key="mail">
+        <bma-row :gutter="16">
+          <bma-col :span="12">
+            <bma-menu v-model:selectedKeys="selectedKeys" mode="inline">
+              <bma-menu-item key="mail">
                 <template #icon><MailOutlined /></template>
                 Mail
-              </a-menu-item>
-              <a-sub-menu key="SubMenu" title="Submenu">
+              </bma-menu-item>
+              <bma-sub-menu key="SubMenu" title="Submenu">
                 <template #icon><SettingOutlined /></template>
-                <a-menu-item-group title="Item 1">
-                  <a-menu-item key="setting:1">Option 1</a-menu-item>
-                  <a-menu-item key="setting:2">Option 2</a-menu-item>
-                </a-menu-item-group>
-              </a-sub-menu>
-            </a-menu>
-          </a-col>
-          <a-col :span="12">
-            <a-menu v-model:selectedKeys="selectedKeys" mode="vertical" theme="dark">
-              <a-menu-item key="mail">
+                <bma-menu-item-group title="Item 1">
+                  <bma-menu-item key="setting:1">Option 1</bma-menu-item>
+                  <bma-menu-item key="setting:2">Option 2</bma-menu-item>
+                </bma-menu-item-group>
+              </bma-sub-menu>
+            </bma-menu>
+          </bma-col>
+          <bma-col :span="12">
+            <bma-menu v-model:selectedKeys="selectedKeys" mode="vertical" theme="dark">
+              <bma-menu-item key="mail">
                 <template #icon><MailOutlined /></template>
                 Mail
-              </a-menu-item>
-              <a-sub-menu key="SubMenu" title="Submenu">
+              </bma-menu-item>
+              <bma-sub-menu key="SubMenu" title="Submenu">
                 <template #icon><SettingOutlined /></template>
-                <a-menu-item-group title="Item 1">
-                  <a-menu-item key="setting:1">Option 1</a-menu-item>
-                  <a-menu-item key="setting:2">Option 2</a-menu-item>
-                </a-menu-item-group>
-              </a-sub-menu>
-            </a-menu>
-          </a-col>
-        </a-row>
+                <bma-menu-item-group title="Item 1">
+                  <bma-menu-item key="setting:1">Option 1</bma-menu-item>
+                  <bma-menu-item key="setting:2">Option 2</bma-menu-item>
+                </bma-menu-item-group>
+              </bma-sub-menu>
+            </bma-menu>
+          </bma-col>
+        </bma-row>
 
         <!-- Pagination -->
-        <a-pagination show-quick-jumper :default-current="2" :total="500" />
+        <bma-pagination show-quick-jumper :default-current="2" :total="500" />
 
         <!-- Steps -->
-        <a-steps :current="1" :percent="60">
-          <a-step title="Finished" description="This is a description." />
-          <a-step
+        <bma-steps :current="1" :percent="60">
+          <bma-step title="Finished" description="This is a description." />
+          <bma-step
             title="In Progress"
             sub-title="Left 00:00:08"
             description="This is a description."
           />
-          <a-step title="Waiting" description="This is a description." />
-        </a-steps>
+          <bma-step title="Waiting" description="This is a description." />
+        </bma-steps>
 
         <!-- Steps - dot -->
-        <a-steps :current="2" status="error" progress-dot>
-          <a-step title="Finished" description="You can hover on the dot." />
-          <a-step title="In Progress" description="You can hover on the dot." />
-          <a-step title="Error" description="You can hover on the dot." />
-          <a-step title="Waiting" description="You can hover on the dot." />
-        </a-steps>
+        <bma-steps :current="2" status="error" progress-dot>
+          <bma-step title="Finished" description="You can hover on the dot." />
+          <bma-step title="In Progress" description="You can hover on the dot." />
+          <bma-step title="Error" description="You can hover on the dot." />
+          <bma-step title="Waiting" description="You can hover on the dot." />
+        </bma-steps>
 
         <!-- Form - Input -->
-        <a-form>
+        <bma-form>
           <SplitSpace>
-            <a-form-item>
-              <a-input v-bind="inputProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="success">
-              <a-input v-bind="inputProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="warning">
-              <a-input v-bind="inputProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="error">
-              <a-input v-bind="inputProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="validating">
-              <a-input v-bind="inputProps" />
-            </a-form-item>
+            <bma-form-item>
+              <bma-input v-bind="inputProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="success">
+              <bma-input v-bind="inputProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="warning">
+              <bma-input v-bind="inputProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="error">
+              <bma-input v-bind="inputProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="validating">
+              <bma-input v-bind="inputProps" />
+            </bma-form-item>
           </SplitSpace>
-        </a-form>
+        </bma-form>
 
         <!-- Form - Select -->
-        <a-form>
+        <bma-form>
           <SplitSpace>
-            <a-form-item>
-              <a-select v-bind="selectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="success">
-              <a-select v-bind="selectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="warning">
-              <a-select v-bind="selectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="error">
-              <a-select v-bind="selectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="validating">
-              <a-select v-bind="selectProps" />
-            </a-form-item>
+            <bma-form-item>
+              <bma-select v-bind="selectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="success">
+              <bma-select v-bind="selectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="warning">
+              <bma-select v-bind="selectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="error">
+              <bma-select v-bind="selectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="validating">
+              <bma-select v-bind="selectProps" />
+            </bma-form-item>
           </SplitSpace>
-        </a-form>
+        </bma-form>
 
         <!-- Form - TreeSelect -->
-        <a-form>
+        <bma-form>
           <SplitSpace>
-            <a-form-item>
-              <a-tree-select v-bind="treeSelectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="success">
-              <a-tree-select v-bind="treeSelectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="warning">
-              <a-tree-select v-bind="treeSelectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="error">
-              <a-tree-select v-bind="treeSelectProps" />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="validating">
-              <a-tree-select v-bind="treeSelectProps" />
-            </a-form-item>
+            <bma-form-item>
+              <bma-tree-select v-bind="treeSelectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="success">
+              <bma-tree-select v-bind="treeSelectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="warning">
+              <bma-tree-select v-bind="treeSelectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="error">
+              <bma-tree-select v-bind="treeSelectProps" />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="validating">
+              <bma-tree-select v-bind="treeSelectProps" />
+            </bma-form-item>
           </SplitSpace>
-        </a-form>
+        </bma-form>
 
         <!-- Form - InputNumber -->
-        <a-form>
+        <bma-form>
           <SplitSpace>
-            <a-form-item>
-              <a-input-number />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="success">
-              <a-input-number />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="warning">
-              <a-input-number />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="error">
-              <a-input-number />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="validating">
-              <a-input-number />
-            </a-form-item>
+            <bma-form-item>
+              <bma-input-number />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="success">
+              <bma-input-number />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="warning">
+              <bma-input-number />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="error">
+              <bma-input-number />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="validating">
+              <bma-input-number />
+            </bma-form-item>
           </SplitSpace>
-        </a-form>
+        </bma-form>
 
         <!-- Form - DatePicker -->
-        <a-form>
+        <bma-form>
           <SplitSpace>
-            <a-form-item>
-              <a-date-picker />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="success">
-              <a-date-picker />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="warning">
-              <a-date-picker />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="error">
-              <a-date-picker />
-            </a-form-item>
-            <a-form-item has-feedback validate-status="validating">
-              <a-date-picker />
-            </a-form-item>
+            <bma-form-item>
+              <bma-date-picker />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="success">
+              <bma-date-picker />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="warning">
+              <bma-date-picker />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="error">
+              <bma-date-picker />
+            </bma-form-item>
+            <bma-form-item has-feedback validate-status="validating">
+              <bma-date-picker />
+            </bma-form-item>
           </SplitSpace>
-        </a-form>
+        </bma-form>
 
         <SplitSpace>
-          <a-checkbox>Checkbox</a-checkbox>
+          <bma-checkbox>Checkbox</bma-checkbox>
 
-          <a-radio-group default-value="bamboo">
-            <a-radio value="bamboo">Bamboo</a-radio>
-            <a-radio value="light">Light</a-radio>
-            <a-radio value="little">Little</a-radio>
-          </a-radio-group>
+          <bma-radio-group default-value="bamboo">
+            <bma-radio value="bamboo">Bamboo</bma-radio>
+            <bma-radio value="light">Light</bma-radio>
+            <bma-radio value="little">Little</bma-radio>
+          </bma-radio-group>
 
-          <a-mentions placeholder="Mention by @">
-            <a-mentions-option value="afc163">afc163</a-mentions-option>
-            <a-mentions-option value="zombieJ">zombieJ</a-mentions-option>
-            <a-mentions-option value="yesmeck">yesmeck</a-mentions-option>
-          </a-mentions>
+          <bma-mentions placeholder="Mention by @">
+            <bma-mentions-option value="afc163">afc163</bma-mentions-option>
+            <bma-mentions-option value="zombieJ">zombieJ</bma-mentions-option>
+            <bma-mentions-option value="yesmeck">yesmeck</bma-mentions-option>
+          </bma-mentions>
 
-          <a-slider :default-value="30" style="width: 100px" />
+          <bma-slider :default-value="30" style="width: 100px" />
 
-          <a-switch default-checked />
+          <bma-switch default-checked />
         </SplitSpace>
 
         <SplitSpace>
-          <a-range-picker />
-          <a-time-range-picker />
+          <bma-range-picker />
+          <bma-time-range-picker />
         </SplitSpace>
 
-        <a-row :gutter="16">
-          <a-col :span="8">
+        <bma-row :gutter="16">
+          <bma-col :span="8">
             <!-- Card -->
-            <a-card style="width: 100%" :tab-list="carTabListNoTitle">
+            <bma-card style="width: 100%" :tab-list="carTabListNoTitle">
               <template #tabBarExtraContent>
                 <a href="#">More</a>
               </template>
-            </a-card>
-          </a-col>
-          <a-col :span="8">
+            </bma-card>
+          </bma-col>
+          <bma-col :span="8">
             <!-- Table -->
-            <a-table
+            <bma-table
               size="small"
               bordered
               :row-selection="{}"
@@ -386,90 +386,90 @@ Modify global theme color by css variable. Css variable depends on the design, i
                 },
               ]"
             />
-          </a-col>
-          <a-col :span="8">
+          </bma-col>
+          <bma-col :span="8">
             <!-- Table -->
-            <a-tabs default-active-key="1">
-              <a-tab-pane key="1" tab="Tab 1">Content of Tab Pane 1</a-tab-pane>
-              <a-tab-pane key="2" tab="Tab 2">Content of Tab Pane 2</a-tab-pane>
-              <a-tab-pane key="3" tab="Tab 3">Content of Tab Pane 3</a-tab-pane>
-            </a-tabs>
-          </a-col>
-        </a-row>
+            <bma-tabs default-active-key="1">
+              <bma-tab-pane key="1" tab="Tab 1">Content of Tab Pane 1</bma-tab-pane>
+              <bma-tab-pane key="2" tab="Tab 2">Content of Tab Pane 2</bma-tab-pane>
+              <bma-tab-pane key="3" tab="Tab 3">Content of Tab Pane 3</bma-tab-pane>
+            </bma-tabs>
+          </bma-col>
+        </bma-row>
 
         <SplitSpace>
-          <a-tag color="success">success</a-tag>
-          <a-tag color="processing">processing</a-tag>
-          <a-tag color="error">error</a-tag>
-          <a-tag color="warning">warning</a-tag>
-          <a-tag color="default">default</a-tag>
-          <a-checkable-tag checked>CheckableTag</a-checkable-tag>
+          <bma-tag color="success">success</bma-tag>
+          <bma-tag color="processing">processing</bma-tag>
+          <bma-tag color="error">error</bma-tag>
+          <bma-tag color="warning">warning</bma-tag>
+          <bma-tag color="default">default</bma-tag>
+          <bma-checkable-tag checked>CheckableTag</bma-checkable-tag>
         </SplitSpace>
 
-        <a-row :gutter="16">
-          <a-col :span="16">
-            <a-timeline mode="alternate">
-              <a-timeline-item>Create a services site 2015-09-01</a-timeline-item>
-              <a-timeline-item color="gray">
+        <bma-row :gutter="16">
+          <bma-col :span="16">
+            <bma-timeline mode="alternate">
+              <bma-timeline-item>Create a services site 2015-09-01</bma-timeline-item>
+              <bma-timeline-item color="gray">
                 Solve initial network problems 2015-09-01
-              </a-timeline-item>
-              <a-timeline-item>
+              </bma-timeline-item>
+              <bma-timeline-item>
                 <template #dot>
                   <ClockCircleOutlined style="font-size: 16px" />
                 </template>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                 veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              </a-timeline-item>
-            </a-timeline>
-          </a-col>
+              </bma-timeline-item>
+            </bma-timeline>
+          </bma-col>
 
-          <a-col :span="8">
-            <a-tree :tree-data="treeData" :height="200" default-expand-all checkable />
-          </a-col>
-        </a-row>
+          <bma-col :span="8">
+            <bma-tree :tree-data="treeData" :height="200" default-expand-all checkable />
+          </bma-col>
+        </bma-row>
 
         <!-- Alert -->
-        <a-row :gutter="16">
-          <a-col :span="6">
-            <a-alert show-icon message="Success Text" type="success" />
-          </a-col>
-          <a-col :span="6">
-            <a-alert show-icon message="Info Text" type="info" />
-          </a-col>
-          <a-col :span="6">
-            <a-alert show-icon message="Warning Text" type="warning" />
-          </a-col>
-          <a-col :span="6">
-            <a-alert show-icon message="Error Text" type="error" />
-          </a-col>
-        </a-row>
+        <bma-row :gutter="16">
+          <bma-col :span="6">
+            <bma-alert show-icon message="Success Text" type="success" />
+          </bma-col>
+          <bma-col :span="6">
+            <bma-alert show-icon message="Info Text" type="info" />
+          </bma-col>
+          <bma-col :span="6">
+            <bma-alert show-icon message="Warning Text" type="warning" />
+          </bma-col>
+          <bma-col :span="6">
+            <bma-alert show-icon message="Error Text" type="error" />
+          </bma-col>
+        </bma-row>
 
         <!-- Progress -->
-        <a-row :gutter="16">
-          <a-col flex="auto">
-            <a-progress :percent="30" />
-            <a-progress :percent="70" status="exception" />
-            <a-progress :percent="100" />
-          </a-col>
-          <a-col flex="none">
-            <a-progress type="circle" :percent="75" />
-            <a-progress type="circle" :percent="70" status="exception" />
-            <a-progress type="circle" :percent="100" />
-          </a-col>
-        </a-row>
+        <bma-row :gutter="16">
+          <bma-col flex="auto">
+            <bma-progress :percent="30" />
+            <bma-progress :percent="70" status="exception" />
+            <bma-progress :percent="100" />
+          </bma-col>
+          <bma-col flex="none">
+            <bma-progress type="circle" :percent="75" />
+            <bma-progress type="circle" :percent="70" status="exception" />
+            <bma-progress type="circle" :percent="100" />
+          </bma-col>
+        </bma-row>
 
-        <a-transfer :data-source="transferData" :target-keys="['18']" :selected-keys="['3']">
+        <bma-transfer :data-source="transferData" :target-keys="['18']" :selected-keys="['3']">
           <template #render="item">{{ item.title }}</template>
-        </a-transfer>
-      </a-space>
-    </a-col>
-  </a-row>
+        </bma-transfer>
+      </bma-space>
+    </bma-col>
+  </bma-row>
 </template>
 <script lang="ts">
 import { defineComponent, h, reactive, ref } from 'vue';
-import { ConfigProvider, Space, Divider } from 'ant-design-vue';
-import type { TreeSelectProps } from 'ant-design-vue';
+import { ConfigProvider, Space, Divider } from 'bmant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import {
   DownOutlined,
   MailOutlined,

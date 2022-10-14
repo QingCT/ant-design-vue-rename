@@ -18,28 +18,28 @@ There are three sizes available: large, medium, and small. It can coordinate wit
 <template>
   <div>
     <div>
-      <a-radio-group v-model:value="value1" size="large">
-        <a-radio-button value="a">Hangzhou</a-radio-button>
-        <a-radio-button value="b">Shanghai</a-radio-button>
-        <a-radio-button value="c">Beijing</a-radio-button>
-        <a-radio-button value="d">Chengdu</a-radio-button>
-      </a-radio-group>
+      <bma-radio-group v-model:value="value1" size="large">
+        <bma-radio-button value="a">Hangzhou</bma-radio-button>
+        <bma-radio-button value="b">Shanghai</bma-radio-button>
+        <bma-radio-button value="c">Beijing</bma-radio-button>
+        <bma-radio-button value="d">Chengdu</bma-radio-button>
+      </bma-radio-group>
     </div>
     <div :style="{ marginTop: '16px' }">
-      <a-radio-group v-model:value="value2">
-        <a-radio-button value="a">Hangzhou</a-radio-button>
-        <a-radio-button value="b">Shanghai</a-radio-button>
-        <a-radio-button value="c">Beijing</a-radio-button>
-        <a-radio-button value="d">Chengdu</a-radio-button>
-      </a-radio-group>
+      <bma-radio-group v-model:value="value2">
+        <bma-radio-button value="a">Hangzhou</bma-radio-button>
+        <bma-radio-button value="b">Shanghai</bma-radio-button>
+        <bma-radio-button value="c">Beijing</bma-radio-button>
+        <bma-radio-button value="d">Chengdu</bma-radio-button>
+      </bma-radio-group>
     </div>
     <div :style="{ marginTop: '16px' }">
-      <a-radio-group v-model:value="value3" size="small">
-        <a-radio-button value="a">Hangzhou</a-radio-button>
-        <a-radio-button value="b">Shanghai</a-radio-button>
-        <a-radio-button value="c">Beijing</a-radio-button>
-        <a-radio-button value="d">Chengdu</a-radio-button>
-      </a-radio-group>
+      <bma-radio-group v-model:value="value3" size="small">
+        <bma-radio-button value="a">Hangzhou</bma-radio-button>
+        <bma-radio-button value="b">Shanghai</bma-radio-button>
+        <bma-radio-button value="c">Beijing</bma-radio-button>
+        <bma-radio-button value="d">Chengdu</bma-radio-button>
+      </bma-radio-group>
     </div>
   </div>
 </template>

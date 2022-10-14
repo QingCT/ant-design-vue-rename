@@ -17,17 +17,17 @@ Setting `v-model` makes Steps clickable.
 
 <template>
   <div>
-    <a-steps v-model:current="current">
-      <a-step title="Step 1" description="This is a description." />
-      <a-step title="Step 2" description="This is a description." />
-      <a-step title="Step 3" description="This is a description." />
-    </a-steps>
-    <a-divider />
-    <a-steps v-model:current="current" direction="vertical">
-      <a-step title="Step 1" description="This is a description." />
-      <a-step title="Step 2" description="This is a description." />
-      <a-step title="Step 3" description="This is a description." />
-    </a-steps>
+    <bma-steps v-model:current="current">
+      <bma-step title="Step 1" description="This is a description." />
+      <bma-step title="Step 2" description="This is a description." />
+      <bma-step title="Step 3" description="This is a description." />
+    </bma-steps>
+    <bma-divider />
+    <bma-steps v-model:current="current" direction="vertical">
+      <bma-step title="Step 1" description="This is a description." />
+      <bma-step title="Step 2" description="This is a description." />
+      <bma-step title="Step 3" description="This is a description." />
+    </bma-steps>
   </div>
 </template>
 <script lang="ts">

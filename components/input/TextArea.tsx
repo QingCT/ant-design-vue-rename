@@ -46,7 +46,7 @@ function setTriggerValue(
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ATextarea',
+  name: 'BmaTextarea',
   inheritAttrs: false,
   props: textAreaProps(),
   setup(props, { attrs, expose, emit }) {

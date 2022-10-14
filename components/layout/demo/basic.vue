@@ -16,76 +16,76 @@ Classic page layouts.
 
 </docs>
 <template>
-  <a-layout>
-    <a-layout-header>Header</a-layout-header>
-    <a-layout-content>Content</a-layout-content>
-    <a-layout-footer>Footer</a-layout-footer>
-  </a-layout>
+  <bma-layout>
+    <bma-layout-header>Header</bma-layout-header>
+    <bma-layout-content>Content</bma-layout-content>
+    <bma-layout-footer>Footer</bma-layout-footer>
+  </bma-layout>
 
-  <a-layout>
-    <a-layout-header>Header</a-layout-header>
-    <a-layout>
-      <a-layout-sider>Sider</a-layout-sider>
-      <a-layout-content>Content</a-layout-content>
-    </a-layout>
-    <a-layout-footer>Footer</a-layout-footer>
-  </a-layout>
+  <bma-layout>
+    <bma-layout-header>Header</bma-layout-header>
+    <bma-layout>
+      <bma-layout-sider>Sider</bma-layout-sider>
+      <bma-layout-content>Content</bma-layout-content>
+    </bma-layout>
+    <bma-layout-footer>Footer</bma-layout-footer>
+  </bma-layout>
 
-  <a-layout>
-    <a-layout-header>Header</a-layout-header>
-    <a-layout>
-      <a-layout-content>Content</a-layout-content>
-      <a-layout-sider>Sider</a-layout-sider>
-    </a-layout>
-    <a-layout-footer>Footer</a-layout-footer>
-  </a-layout>
+  <bma-layout>
+    <bma-layout-header>Header</bma-layout-header>
+    <bma-layout>
+      <bma-layout-content>Content</bma-layout-content>
+      <bma-layout-sider>Sider</bma-layout-sider>
+    </bma-layout>
+    <bma-layout-footer>Footer</bma-layout-footer>
+  </bma-layout>
 
-  <a-layout>
-    <a-layout-sider>Sider</a-layout-sider>
-    <a-layout>
-      <a-layout-header>Header</a-layout-header>
-      <a-layout-content>Content</a-layout-content>
-      <a-layout-footer>Footer</a-layout-footer>
-    </a-layout>
-  </a-layout>
+  <bma-layout>
+    <bma-layout-sider>Sider</bma-layout-sider>
+    <bma-layout>
+      <bma-layout-header>Header</bma-layout-header>
+      <bma-layout-content>Content</bma-layout-content>
+      <bma-layout-footer>Footer</bma-layout-footer>
+    </bma-layout>
+  </bma-layout>
 </template>
 
 <style>
 #components-layout-demo-basic .code-box-demo {
   text-align: center;
 }
-#components-layout-demo-basic .ant-layout-header,
-#components-layout-demo-basic .ant-layout-footer {
+#components-layout-demo-basic .bmant-layout-header,
+#components-layout-demo-basic .bmant-layout-footer {
   color: #fff;
   background: #7dbcea;
 }
-[data-theme='dark'] #components-layout-demo-basic .ant-layout-header {
+[data-theme='dark'] #components-layout-demo-basic .bmant-layout-header {
   background: #6aa0c7;
 }
-[data-theme='dark'] #components-layout-demo-basic .ant-layout-footer {
+[data-theme='dark'] #components-layout-demo-basic .bmant-layout-footer {
   background: #6aa0c7;
 }
-#components-layout-demo-basic .ant-layout-footer {
+#components-layout-demo-basic .bmant-layout-footer {
   line-height: 1.5;
 }
-#components-layout-demo-basic .ant-layout-sider {
+#components-layout-demo-basic .bmant-layout-sider {
   color: #fff;
   line-height: 120px;
   background: #3ba0e9;
 }
-[data-theme='dark'] #components-layout-demo-basic .ant-layout-sider {
+[data-theme='dark'] #components-layout-demo-basic .bmant-layout-sider {
   background: #3499ec;
 }
-#components-layout-demo-basic .ant-layout-content {
+#components-layout-demo-basic .bmant-layout-content {
   min-height: 120px;
   color: #fff;
   line-height: 120px;
   background: rgba(16, 142, 233, 1);
 }
-[data-theme='dark'] #components-layout-demo-basic .ant-layout-content {
+[data-theme='dark'] #components-layout-demo-basic .bmant-layout-content {
   background: #107bcb;
 }
-#components-layout-demo-basic > .code-box-demo > .ant-layout + .ant-layout {
+#components-layout-demo-basic > .code-box-demo > .bmant-layout + .bmant-layout {
   margin-top: 48px;
 }
 </style>

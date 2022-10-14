@@ -34,7 +34,7 @@ export default defineComponent({
   white-space: nowrap;
   text-decoration: none;
 
-  .ant-row-rtl & {
+  .bmant-row-rtl & {
     float: right;
     padding-right: 40px;
     padding-left: 0;
@@ -46,7 +46,7 @@ export default defineComponent({
     height: 32px;
     margin-right: 16px;
 
-    .ant-row-rtl & {
+    .bmant-row-rtl & {
       margin-right: 0;
       margin-left: 16px;
     }

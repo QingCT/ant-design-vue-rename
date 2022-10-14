@@ -6,7 +6,7 @@ import type { RadioGroupContext } from './interface';
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ARadioButton',
+  name: 'BmaRadioButton',
   props: radioProps(),
   setup(props, { slots }) {
     const { prefixCls } = useConfigInject('radio-button', props);

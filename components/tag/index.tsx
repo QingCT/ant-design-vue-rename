@@ -32,7 +32,7 @@ export type TagProps = HTMLAttributes & Partial<ExtractPropTypes<ReturnType<type
 
 const Tag = defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'ATag',
+  name: 'BmaTag',
   props: tagProps(),
   // emits: ['update:visible', 'close'],
   slots: ['closeIcon', 'icon'],

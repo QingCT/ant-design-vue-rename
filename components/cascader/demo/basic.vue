@@ -16,11 +16,11 @@ Cascade selection box for selecting province/city/district.
 
 </docs>
 <template>
-  <a-cascader v-model:value="value" :options="options" placeholder="Please select" />
+  <bma-cascader v-model:value="value" :options="options" placeholder="Please select" />
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { CascaderProps } from 'ant-design-vue';
+import type { CascaderProps } from 'bmant-design-vue';
 const options: CascaderProps['options'] = [
   {
     value: 'zhejiang',

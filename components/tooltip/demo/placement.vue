@@ -19,84 +19,84 @@ There are 12 placement options available.
 <template>
   <div id="components-a-tooltip-demo-placement">
     <div :style="{ marginLeft: `${buttonWidth}px`, whiteSpace: 'nowrap' }">
-      <a-tooltip placement="topLeft">
+      <bma-tooltip placement="topLeft">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>TL</a-button>
-      </a-tooltip>
-      <a-tooltip placement="top">
+        <bma-button>TL</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="top">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>Top</a-button>
-      </a-tooltip>
-      <a-tooltip placement="topRight">
+        <bma-button>Top</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="topRight">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>TR</a-button>
-      </a-tooltip>
+        <bma-button>TR</bma-button>
+      </bma-tooltip>
     </div>
     <div :style="{ width: `${buttonWidth}px`, float: 'left' }">
-      <a-tooltip placement="leftTop">
+      <bma-tooltip placement="leftTop">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>LT</a-button>
-      </a-tooltip>
-      <a-tooltip placement="left">
+        <bma-button>LT</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="left">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>Left</a-button>
-      </a-tooltip>
-      <a-tooltip placement="leftBottom">
+        <bma-button>Left</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="leftBottom">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>LB</a-button>
-      </a-tooltip>
+        <bma-button>LB</bma-button>
+      </bma-tooltip>
     </div>
     <div :style="{ width: `${buttonWidth}px`, marginLeft: `${buttonWidth * 4 + 24}px` }">
-      <a-tooltip placement="rightTop">
+      <bma-tooltip placement="rightTop">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>RT</a-button>
-      </a-tooltip>
-      <a-tooltip placement="right">
+        <bma-button>RT</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="right">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>Right</a-button>
-      </a-tooltip>
-      <a-tooltip placement="rightBottom">
+        <bma-button>Right</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="rightBottom">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>RB</a-button>
-      </a-tooltip>
+        <bma-button>RB</bma-button>
+      </bma-tooltip>
     </div>
     <div :style="{ marginLeft: `${buttonWidth}px`, clear: 'both', whiteSpace: 'nowrap' }">
-      <a-tooltip placement="bottomLeft">
+      <bma-tooltip placement="bottomLeft">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>BL</a-button>
-      </a-tooltip>
-      <a-tooltip placement="bottom">
+        <bma-button>BL</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="bottom">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>Bottom</a-button>
-      </a-tooltip>
-      <a-tooltip placement="bottomRight">
+        <bma-button>Bottom</bma-button>
+      </bma-tooltip>
+      <bma-tooltip placement="bottomRight">
         <template #title>
           <span>prompt text</span>
         </template>
-        <a-button>BR</a-button>
-      </a-tooltip>
+        <bma-button>BR</bma-button>
+      </bma-tooltip>
     </div>
   </div>
 </template>
@@ -111,7 +111,7 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-#components-a-tooltip-demo-placement .ant-btn {
+#components-a-tooltip-demo-placement .bmant-btn {
   width: 70px;
   text-align: center;
   padding: 0;

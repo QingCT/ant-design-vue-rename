@@ -17,11 +17,11 @@ Radio unavailable.
 </docs>
 <template>
   <div>
-    <a-radio v-model:checked="checked1" :disabled="disabled">Disabled</a-radio>
+    <bma-radio v-model:checked="checked1" :disabled="disabled">Disabled</bma-radio>
     <br />
-    <a-radio v-model:checked="checked2" :disabled="disabled">Disabled</a-radio>
+    <bma-radio v-model:checked="checked2" :disabled="disabled">Disabled</bma-radio>
     <div :style="{ marginTop: 20 }">
-      <a-button type="primary" @click="toggleDisabled">Toggle disabled</a-button>
+      <bma-button type="primary" @click="toggleDisabled">Toggle disabled</bma-button>
     </div>
   </div>
 </template>

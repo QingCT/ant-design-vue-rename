@@ -17,7 +17,7 @@ The badge will display `title` when hovered over, instead of `count`.
 </docs>
 
 <template>
-  <a-badge :count="5" title="Custom hover text">
-    <a-avatar shape="square" size="large" />
-  </a-badge>
+  <bma-badge :count="5" title="Custom hover text">
+    <bma-avatar shape="square" size="large" />
+  </bma-badge>
 </template>

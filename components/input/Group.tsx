@@ -6,7 +6,7 @@ import useConfigInject from '../_util/hooks/useConfigInject';
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AInputGroup',
+  name: 'BmaInputGroup',
   props: {
     prefixCls: String,
     size: { type: String as PropType<SizeType> },

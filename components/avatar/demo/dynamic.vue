@@ -16,20 +16,20 @@ For letter type Avatar, when the letters are too long to display, the font size 
 </docs>
 
 <template>
-  <a-avatar
+  <bma-avatar
     shape="square"
     size="large"
     :style="{ backgroundColor: color, verticalAlign: 'middle' }"
   >
     {{ avatarValue }}
-  </a-avatar>
-  <a-button
+  </bma-avatar>
+  <bma-button
     size="small"
     :style="{ marginLeft: '16px', verticalAlign: 'middle' }"
     @click="changeValue"
   >
     改变
-  </a-button>
+  </bma-button>
 </template>
 
 <script lang="ts">

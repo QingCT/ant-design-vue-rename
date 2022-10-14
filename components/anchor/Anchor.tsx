@@ -74,7 +74,7 @@ export interface AnchorState {
 
 export default defineComponent({
   compatConfig: { MODE: 3 },
-  name: 'AAnchor',
+  name: 'BmaAnchor',
   inheritAttrs: false,
   props: anchorProps(),
   setup(props, { emit, attrs, slots, expose }) {

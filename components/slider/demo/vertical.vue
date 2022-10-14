@@ -18,13 +18,13 @@ The vertical Slider.
 <template>
   <div style="height: 300px">
     <div style="display: inline-block; height: 300px; margin-left: 70px">
-      <a-slider v-model:value="value1" vertical />
+      <bma-slider v-model:value="value1" vertical />
     </div>
     <div style="display: inline-block; height: 300px; margin-left: 70px">
-      <a-slider v-model:value="value2" vertical range :step="10" />
+      <bma-slider v-model:value="value2" vertical range :step="10" />
     </div>
     <div style="display: inline-block; height: 300px; margin-left: 70px">
-      <a-slider v-model:value="value3" vertical range :marks="marks" />
+      <bma-slider v-model:value="value3" vertical range :marks="marks" />
     </div>
   </div>
 </template>
@@ -57,7 +57,7 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.code-box-demo .ant-slider {
+.code-box-demo .bmant-slider {
   margin-bottom: 16px;
 }
 </style>

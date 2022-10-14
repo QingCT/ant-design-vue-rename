@@ -20,32 +20,32 @@ Top-bottom structure is conform with the top-bottom viewing habit, it's a classi
 
 </docs>
 <template>
-  <a-layout class="layout">
-    <a-layout-header>
+  <bma-layout class="layout">
+    <bma-layout-header>
       <div class="logo" />
-      <a-menu
+      <bma-menu
         v-model:selectedKeys="selectedKeys"
         theme="dark"
         mode="horizontal"
         :style="{ lineHeight: '64px' }"
       >
-        <a-menu-item key="1">nav 1</a-menu-item>
-        <a-menu-item key="2">nav 2</a-menu-item>
-        <a-menu-item key="3">nav 3</a-menu-item>
-      </a-menu>
-    </a-layout-header>
-    <a-layout-content style="padding: 0 50px">
-      <a-breadcrumb style="margin: 16px 0">
-        <a-breadcrumb-item>Home</a-breadcrumb-item>
-        <a-breadcrumb-item>List</a-breadcrumb-item>
-        <a-breadcrumb-item>App</a-breadcrumb-item>
-      </a-breadcrumb>
+        <bma-menu-item key="1">nav 1</bma-menu-item>
+        <bma-menu-item key="2">nav 2</bma-menu-item>
+        <bma-menu-item key="3">nav 3</bma-menu-item>
+      </bma-menu>
+    </bma-layout-header>
+    <bma-layout-content style="padding: 0 50px">
+      <bma-breadcrumb style="margin: 16px 0">
+        <bma-breadcrumb-item>Home</bma-breadcrumb-item>
+        <bma-breadcrumb-item>List</bma-breadcrumb-item>
+        <bma-breadcrumb-item>App</bma-breadcrumb-item>
+      </bma-breadcrumb>
       <div :style="{ background: '#fff', padding: '24px', minHeight: '280px' }">Content</div>
-    </a-layout-content>
-    <a-layout-footer style="text-align: center">
+    </bma-layout-content>
+    <bma-layout-footer style="text-align: center">
       Ant Design ©2018 Created by Ant UED
-    </a-layout-footer>
-  </a-layout>
+    </bma-layout-footer>
+  </bma-layout>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
@@ -70,7 +70,7 @@ export default defineComponent({
   margin: 16px 24px 16px 0;
   background: rgba(255, 255, 255, 0.3);
 }
-.ant-row-rtl #components-layout-demo-top .logo {
+.bmant-row-rtl #components-layout-demo-top .logo {
   float: right;
   margin: 16px 0 16px 24px;
 }

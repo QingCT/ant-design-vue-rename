@@ -16,7 +16,7 @@ For instance, add an external link after the selected value.
 
 </docs>
 <template>
-  <a-cascader
+  <bma-cascader
     v-model:value="value"
     placeholder="Please select"
     :options="options"
@@ -34,11 +34,11 @@ For instance, add an external link after the selected value.
         <span v-else>{{ label }} /</span>
       </span>
     </template>
-  </a-cascader>
+  </bma-cascader>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { CascaderProps } from 'ant-design-vue';
+import type { CascaderProps } from 'bmant-design-vue';
 const options: CascaderProps['options'] = [
   {
     value: 'zhejiang',
