@@ -11,7 +11,7 @@
               </a>
               <span></span>
               <span>
-                <i class="bmanticon anticon-github"></i>
+                <i class="anticon anticon-github"></i>
               </span>
             </div>
             <div>

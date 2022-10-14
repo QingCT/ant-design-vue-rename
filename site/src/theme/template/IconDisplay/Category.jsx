@@ -42,7 +42,7 @@ const Category = defineComponent({
         <h3 style="margin: 1.6em 0 .6em;">
           {this.$t(`app.docs.components.icon.category.${title}`)}
         </h3>
-        <ul class={'bmanticons-list'}>{items}</ul>
+        <ul class={'anticons-list'}>{items}</ul>
       </div>
     );
   },

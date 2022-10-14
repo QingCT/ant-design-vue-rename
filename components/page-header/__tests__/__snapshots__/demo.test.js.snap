@@ -26,7 +26,7 @@ exports[`renders ./components/page-header/demo/actions.vue correctly 1`] = `
 
             <span
               aria-label="arrow-left"
-              class="bmanticon anticon-arrow-left"
+              class="anticon anticon-arrow-left"
               role="img"
             >
               <svg
@@ -268,7 +268,7 @@ exports[`renders ./components/page-header/demo/actions.vue correctly 1`] = `
 
             <span
               aria-label="arrow-left"
-              class="bmanticon anticon-arrow-left"
+              class="anticon anticon-arrow-left"
               role="img"
             >
               <svg
@@ -499,7 +499,7 @@ exports[`renders ./components/page-header/demo/basic.vue correctly 1`] = `
 
           <span
             aria-label="arrow-left"
-            class="bmanticon anticon-arrow-left"
+            class="anticon anticon-arrow-left"
             role="img"
           >
             <svg
@@ -788,7 +788,7 @@ exports[`renders ./components/page-header/demo/content.vue correctly 1`] = `
 
           <span
             aria-label="ellipsis"
-            class="bmanticon anticon-ellipsis"
+            class="anticon anticon-ellipsis"
             role="img"
             style="font-size: 20px; vertical-align: top;"
           >
@@ -911,7 +911,7 @@ exports[`renders ./components/page-header/demo/ghost.vue correctly 1`] = `
 
             <span
               aria-label="arrow-left"
-              class="bmanticon anticon-arrow-left"
+              class="anticon anticon-arrow-left"
               role="img"
             >
               <svg
@@ -1160,7 +1160,7 @@ exports[`renders ./components/page-header/demo/responsive.vue correctly 1`] = `
 
             <span
               aria-label="arrow-left"
-              class="bmanticon anticon-arrow-left"
+              class="anticon anticon-arrow-left"
               role="img"
             >
               <svg
@@ -1534,7 +1534,7 @@ exports[`renders ./components/page-header/demo/responsive.vue correctly 1`] = `
             >
               <span
                 aria-label="ellipsis"
-                class="bmanticon anticon-ellipsis"
+                class="anticon anticon-ellipsis"
                 role="img"
               >
                 <svg

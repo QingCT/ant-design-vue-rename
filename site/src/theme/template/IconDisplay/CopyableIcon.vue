@@ -5,7 +5,7 @@
     :class="justCopied === type ? 'copied' : ''"
   >
     <component :is="allIcons[name]"></component>
-    <span class="bmanticon-class">
+    <span class="anticon-class">
       <bma-badge :dot="isNew">
         {{ kebabCasedType }}
       </bma-badge>

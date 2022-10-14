@@ -6,7 +6,7 @@
       class="prev-page"
       :to="getLocalizedPathname(prev.path, isZhCN)"
     >
-      <span role="img" aria-label="left" class="bmanticon anticon-left footer-nav-icon-before">
+      <span role="img" aria-label="left" class="anticon anticon-left footer-nav-icon-before">
         <svg
           viewBox="64 64 896 896"
           focusable="false"
@@ -32,7 +32,7 @@
     >
       <span>{{ next.title }}</span>
       <span v-if="isZhCN" class="chinese">{{ next.subtitle }}</span>
-      <span role="img" aria-label="right" class="bmanticon anticon-right footer-nav-icon-after">
+      <span role="img" aria-label="right" class="anticon anticon-right footer-nav-icon-after">
         <svg
           viewBox="64 64 896 896"
           focusable="false"
