@@ -19,116 +19,116 @@ Note: You don't need `Col` to control the width in the `compact` mode.
 </docs>
 <template>
   <div>
-    <a-input-group size="large">
-      <a-row :gutter="8">
-        <a-col :span="5">
-          <a-input v-model:value="value1" />
-        </a-col>
-        <a-col :span="8">
-          <a-input v-model:value="value2" />
-        </a-col>
-      </a-row>
-    </a-input-group>
+    <bma-input-group size="large">
+      <bma-row :gutter="8">
+        <bma-col :span="5">
+          <bma-input v-model:value="value1" />
+        </bma-col>
+        <bma-col :span="8">
+          <bma-input v-model:value="value2" />
+        </bma-col>
+      </bma-row>
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-input v-model:value="value1" style="width: 20%" />
-      <a-input v-model:value="value2" style="width: 30%" />
-    </a-input-group>
+    <bma-input-group compact>
+      <bma-input v-model:value="value1" style="width: 20%" />
+      <bma-input v-model:value="value2" style="width: 30%" />
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-select v-model:value="value3">
-        <a-select-option value="Zhejiang">Zhejiang</a-select-option>
-        <a-select-option value="Jiangsu">Jiangsu</a-select-option>
-      </a-select>
-      <a-input v-model:value="value4" style="width: 50%" />
-    </a-input-group>
+    <bma-input-group compact>
+      <bma-select v-model:value="value3">
+        <bma-select-option value="Zhejiang">Zhejiang</bma-select-option>
+        <bma-select-option value="Jiangsu">Jiangsu</bma-select-option>
+      </bma-select>
+      <bma-input v-model:value="value4" style="width: 50%" />
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-select v-model:value="value5">
-        <a-select-option value="Option1">Option1</a-select-option>
-        <a-select-option value="Option2">Option2</a-select-option>
-      </a-select>
-      <a-input v-model:value="value6" style="width: 50%" />
-    </a-input-group>
+    <bma-input-group compact>
+      <bma-select v-model:value="value5">
+        <bma-select-option value="Option1">Option1</bma-select-option>
+        <bma-select-option value="Option2">Option2</bma-select-option>
+      </bma-select>
+      <bma-input v-model:value="value6" style="width: 50%" />
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-input v-model:value="value7" style="width: 50%" />
-      <a-date-picker v-model:value="value8" style="width: 50%" />
-    </a-input-group>
+    <bma-input-group compact>
+      <bma-input v-model:value="value7" style="width: 50%" />
+      <bma-date-picker v-model:value="value8" style="width: 50%" />
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-select v-model:value="value9">
-        <a-select-option value="Option1-1">Option1-1</a-select-option>
-        <a-select-option value="Option1-2">Option1-2</a-select-option>
-      </a-select>
-      <a-select v-model:value="value10">
-        <a-select-option value="Option2-1">Option2-1</a-select-option>
-        <a-select-option value="Option2-2">Option2-2</a-select-option>
-      </a-select>
-    </a-input-group>
+    <bma-input-group compact>
+      <bma-select v-model:value="value9">
+        <bma-select-option value="Option1-1">Option1-1</bma-select-option>
+        <bma-select-option value="Option1-2">Option1-2</bma-select-option>
+      </bma-select>
+      <bma-select v-model:value="value10">
+        <bma-select-option value="Option2-1">Option2-1</bma-select-option>
+        <bma-select-option value="Option2-2">Option2-2</bma-select-option>
+      </bma-select>
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-select v-model:value="value11">
-        <a-select-option value="1">Between</a-select-option>
-        <a-select-option value="2">Except</a-select-option>
-      </a-select>
-      <a-input
+    <bma-input-group compact>
+      <bma-select v-model:value="value11">
+        <bma-select-option value="1">Between</bma-select-option>
+        <bma-select-option value="2">Except</bma-select-option>
+      </bma-select>
+      <bma-input
         v-model:value="value12"
         style="width: 100px; text-align: center"
         placeholder="Minimum"
       />
-      <a-input
+      <bma-input
         v-model:value="value13"
         style="width: 30px; border-left: 0; pointer-events: none; background-color: #fff"
         placeholder="~"
         disabled
       />
-      <a-input
+      <bma-input
         v-model:value="value14"
         style="width: 100px; text-align: center; border-left: 0"
         placeholder="Maximum"
       />
-    </a-input-group>
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-select v-model:value="value15">
-        <a-select-option value="Sign Up">Sign Up</a-select-option>
-        <a-select-option value="Sign In">Sign In</a-select-option>
-      </a-select>
-      <a-auto-complete
+    <bma-input-group compact>
+      <bma-select v-model:value="value15">
+        <bma-select-option value="Sign Up">Sign Up</bma-select-option>
+        <bma-select-option value="Sign In">Sign In</bma-select-option>
+      </bma-select>
+      <bma-auto-complete
         v-model:value="value16"
         :options="[{ value: 'text 1' }, { value: 'text 2' }]"
         style="width: 200px"
         placeholder="Email"
       />
-    </a-input-group>
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-select v-model:value="value17" style="width: 30%">
-        <a-select-option value="Home">Home</a-select-option>
-        <a-select-option value="Company">Company</a-select-option>
-      </a-select>
-      <a-cascader
+    <bma-input-group compact>
+      <bma-select v-model:value="value17" style="width: 30%">
+        <bma-select-option value="Home">Home</bma-select-option>
+        <bma-select-option value="Company">Company</bma-select-option>
+      </bma-select>
+      <bma-cascader
         v-model:value="value18"
         style="width: 70%"
         :options="options"
         placeholder="Select Address"
       />
-    </a-input-group>
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-input v-model:value="value19" style="width: calc(100% - 200px)" />
-      <a-button type="primary">Submit</a-button>
-    </a-input-group>
+    <bma-input-group compact>
+      <bma-input v-model:value="value19" style="width: calc(100% - 200px)" />
+      <bma-button type="primary">Submit</bma-button>
+    </bma-input-group>
     <br />
-    <a-input-group compact>
-      <a-input v-model:value="value20" style="width: calc(100% - 200px)" />
-      <a-tooltip title="copy git url">
-        <a-button>
+    <bma-input-group compact>
+      <bma-input v-model:value="value20" style="width: calc(100% - 200px)" />
+      <bma-tooltip title="copy git url">
+        <bma-button>
           <template #icon><CopyOutlined /></template>
-        </a-button>
-      </a-tooltip>
-    </a-input-group>
+        </bma-button>
+      </bma-tooltip>
+    </bma-input-group>
   </div>
 </template>
 <script lang="ts">

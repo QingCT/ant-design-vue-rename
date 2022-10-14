@@ -77,7 +77,7 @@ import { ListContextKey } from './contextKey';
 import type { RenderEmptyHandler } from '../config-provider/renderEmpty';
 
 const List = defineComponent({
-  name: 'AList',
+  name: 'BmaList',
   Item,
   props: initDefaultProps(listProps(), {
     dataSource: [],

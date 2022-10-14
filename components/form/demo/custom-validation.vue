@@ -19,7 +19,7 @@ See more advanced usage at [async-validator](https://github.com/yiminghe/async-v
 </docs>
 
 <template>
-  <a-form
+  <bma-form
     ref="formRef"
     name="custom-validation"
     :model="formState"
@@ -29,25 +29,25 @@ See more advanced usage at [async-validator](https://github.com/yiminghe/async-v
     @validate="handleValidate"
     @finishFailed="handleFinishFailed"
   >
-    <a-form-item has-feedback label="Password" name="pass">
-      <a-input v-model:value="formState.pass" type="password" autocomplete="off" />
-    </a-form-item>
-    <a-form-item has-feedback label="Confirm" name="checkPass">
-      <a-input v-model:value="formState.checkPass" type="password" autocomplete="off" />
-    </a-form-item>
-    <a-form-item has-feedback label="Age" name="age">
-      <a-input-number v-model:value="formState.age" />
-    </a-form-item>
-    <a-form-item :wrapper-col="{ span: 14, offset: 4 }">
-      <a-button type="primary" html-type="submit">Submit</a-button>
-      <a-button style="margin-left: 10px" @click="resetForm">Reset</a-button>
-    </a-form-item>
-  </a-form>
+    <bma-form-item has-feedback label="Password" name="pass">
+      <bma-input v-model:value="formState.pass" type="password" autocomplete="off" />
+    </bma-form-item>
+    <bma-form-item has-feedback label="Confirm" name="checkPass">
+      <bma-input v-model:value="formState.checkPass" type="password" autocomplete="off" />
+    </bma-form-item>
+    <bma-form-item has-feedback label="Age" name="age">
+      <bma-input-number v-model:value="formState.age" />
+    </bma-form-item>
+    <bma-form-item :wrapper-col="{ span: 14, offset: 4 }">
+      <bma-button type="primary" html-type="submit">Submit</bma-button>
+      <bma-button style="margin-left: 10px" @click="resetForm">Reset</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
-import type { Rule } from 'ant-design-vue/es/form';
+import type { Rule } from 'bmant-design-vue/es/form';
 import { defineComponent, reactive, ref } from 'vue';
-import type { FormInstance } from 'ant-design-vue';
+import type { FormInstance } from 'bmant-design-vue';
 interface FormState {
   pass: string;
   checkPass: string;

@@ -17,9 +17,9 @@ You can customize the style of the button, just note the size limit: no more tha
 
 <template>
   <div id="components-back-top-demo-custom">
-    <a-back-top>
-      <div class="ant-back-top-inner">UP</div>
-    </a-back-top>
+    <bma-back-top>
+      <div class="bmant-back-top-inner">UP</div>
+    </bma-back-top>
     Scroll down to see the bottom-right
     <strong style="color: #1088e9">blue</strong>
     button.
@@ -27,10 +27,10 @@ You can customize the style of the button, just note the size limit: no more tha
 </template>
 
 <style scoped>
-#components-back-top-demo-custom .ant-back-top {
+#components-back-top-demo-custom .bmant-back-top {
   bottom: 100px;
 }
-#components-back-top-demo-custom .ant-back-top-inner {
+#components-back-top-demo-custom .bmant-back-top-inner {
   height: 40px;
   width: 40px;
   line-height: 40px;

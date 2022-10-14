@@ -19,31 +19,31 @@ Under different screen sizes, there should be different performance
 
 <template>
   <div class="components-page-header-demo-responsive" style="border: 1px solid rgb(235, 237, 240)">
-    <a-page-header title="Title" sub-title="This is a subtitle" @back="() => $router.go(-1)">
+    <bma-page-header title="Title" sub-title="This is a subtitle" @back="() => $router.go(-1)">
       <template #extra>
-        <a-button key="3">Operation</a-button>
-        <a-button key="2">Operation</a-button>
-        <a-button key="1" type="primary">Primary</a-button>
+        <bma-button key="3">Operation</bma-button>
+        <bma-button key="2">Operation</bma-button>
+        <bma-button key="1" type="primary">Primary</bma-button>
       </template>
       <template #footer>
-        <a-tabs>
-          <a-tab-pane key="1" tab="Details" />
-          <a-tab-pane key="2" tab="Rule" />
-        </a-tabs>
+        <bma-tabs>
+          <bma-tab-pane key="1" tab="Details" />
+          <bma-tab-pane key="2" tab="Rule" />
+        </bma-tabs>
       </template>
       <div class="content">
         <div class="main">
-          <a-descriptions size="small" :column="2">
-            <a-descriptions-item label="Created">Lili Qu</a-descriptions-item>
-            <a-descriptions-item label="Association">
+          <bma-descriptions size="small" :column="2">
+            <bma-descriptions-item label="Created">Lili Qu</bma-descriptions-item>
+            <bma-descriptions-item label="Association">
               <a>421421</a>
-            </a-descriptions-item>
-            <a-descriptions-item label="Creation Time">2017-01-10</a-descriptions-item>
-            <a-descriptions-item label="Effective Time">2017-10-10</a-descriptions-item>
-            <a-descriptions-item label="Remarks">
+            </bma-descriptions-item>
+            <bma-descriptions-item label="Creation Time">2017-01-10</bma-descriptions-item>
+            <bma-descriptions-item label="Effective Time">2017-10-10</bma-descriptions-item>
+            <bma-descriptions-item label="Remarks">
               Gonghu Road, Xihu District, Hangzhou, Zhejiang, China
-            </a-descriptions-item>
-          </a-descriptions>
+            </bma-descriptions-item>
+          </bma-descriptions>
         </div>
         <div class="extra">
           <div
@@ -53,18 +53,18 @@ Under different screen sizes, there should be different performance
               justifyContent: 'flex-end',
             }"
           >
-            <a-statistic
+            <bma-statistic
               title="Status"
               value="Pending"
               :style="{
                 marginRight: '32px',
               }"
             />
-            <a-statistic title="Price" prefix="$" :value="568.08" />
+            <bma-statistic title="Price" prefix="$" :value="568.08" />
           </div>
         </div>
       </div>
-    </a-page-header>
+    </bma-page-header>
   </div>
 </template>
 <style>
@@ -77,7 +77,7 @@ Under different screen sizes, there should be different performance
 #components-page-header-demo-responsive .content {
   display: flex;
 }
-#components-page-header-demo-responsive .ant-statistic-content {
+#components-page-header-demo-responsive .bmant-statistic-content {
   font-size: 20px;
   line-height: 28px;
 }

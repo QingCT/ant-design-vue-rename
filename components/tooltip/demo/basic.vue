@@ -17,8 +17,8 @@ The simplest usage.
 </docs>
 
 <template>
-  <a-tooltip>
+  <bma-tooltip>
     <template #title>prompt text</template>
     Tooltip will show when mouse enter.
-  </a-tooltip>
+  </bma-tooltip>
 </template>

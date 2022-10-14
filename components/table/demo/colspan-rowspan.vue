@@ -19,17 +19,17 @@ Table cell supports `colSpan` and `rowSpan` that set in render return object. Wh
 </docs>
 
 <template>
-  <a-table :columns="columns" :data-source="data" bordered>
+  <bma-table :columns="columns" :data-source="data" bordered>
     <template #bodyCell="{ column, text }">
       <template v-if="column.dataIndex === 'name'">
         <a href="javascript:;">{{ text }}</a>
       </template>
     </template>
-  </a-table>
+  </bma-table>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import type { TableColumnType } from 'ant-design-vue';
+import type { TableColumnType } from 'bmant-design-vue';
 // In the fifth row, other columns are merged into first column
 // by setting it's colSpan to be 0
 const sharedOnCell = (_, index) => {

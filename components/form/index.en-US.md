@@ -23,7 +23,7 @@ You can align the controls of a `form` using the `layout` prop：
 
 ## Form Item Component
 
-A form consists of one or more form fields whose type includes input, textarea, checkbox, radio, select, tag, and more. A form field is defined using `<a-form-item />`.
+A form consists of one or more form fields whose type includes input, textarea, checkbox, radio, select, tag, and more. A form field is defined using `<bma-form-item />`.
 
 ## API
 
@@ -105,10 +105,10 @@ But it also has some disadvantages:
 2. A Form.Item can only collect the data of one form item. If there are multiple form items, it will cause collection confusion, for example,
 
 ```html
-<a-form-item>
-  <a-input name="a"></a-input>
-  <a-input name="b"></a-input>
-</a-form-item>
+<bma-form-item>
+  <bma-input name="a"></bma-input>
+  <bma-input name="b"></bma-input>
+</bma-form-item>
 ```
 
 As above Form.Item does not know whether to collect `name="a"` or `name="b"`, you can solve this kind of problem in the following two ways:
@@ -116,10 +116,10 @@ As above Form.Item does not know whether to collect `name="a"` or `name="b"`, yo
 The first is to use multiple `a-form-item`:
 
 ```html
-<a-form-item>
-  <a-input name="a"></a-input>
-  <a-form-item><a-input name="b"></a-input></a-form-item>
-</a-form-item>
+<bma-form-item>
+  <bma-input name="a"></bma-input>
+  <bma-form-item><bma-input name="b"></bma-input></bma-form-item>
+</bma-form-item>
 ```
 
 The second way is to wrap it with a custom component and call `useInjectFormItemContext` in the custom component, It is equivalent to merging multiple form items into one.
@@ -127,7 +127,7 @@ The second way is to wrap it with a custom component and call `useInjectFormItem
 ```html
 <script>
   // custom component
-  import { Form } from 'ant-design-vue';
+  import { Form } from 'bmant-design-vue';
   export default {
     name: 'custom-name',
     setup() {
@@ -138,21 +138,21 @@ The second way is to wrap it with a custom component and call `useInjectFormItem
 ```
 
 ```html
-<a-form-item>
+<bma-form-item>
   <custom-com>
-    <a-input name="a"></a-input>
-    <a-input name="b"></a-input>
+    <bma-input name="a"></bma-input>
+    <bma-input name="b"></bma-input>
   </custom-com>
-</a-form-item>
+</bma-form-item>
 ```
 
 Third, the component library provides an `a-form-item-rest` component, which will prevent data collection. You can put form items that do not need to be collected and verified into this component. It is the same as the first This method is very similar, but it does not generate additional dom nodes.
 
 ```html
-<a-form-item>
-  <a-input name="a"></a-input>
-  <a-form-item-rest><a-input name="b"></a-input></a-form-item-rest>
-</a-form-item>
+<bma-form-item>
+  <bma-input name="a"></bma-input>
+  <bma-form-item-rest><bma-input name="b"></bma-input></bma-form-item-rest>
+</bma-form-item>
 ```
 
 #### 2.x
@@ -162,17 +162,17 @@ Form.Item hijacks the only child element and listens to the `blur` and `change` 
 If the form field to be monitored does not meet the conditions of automatic monitoring, you can associate the form field as follows:
 
 ```html
-<a-form-item name="form.name" ref="name" :autoLink="false">
-  <a-input v-model:value="other" />
+<bma-form-item name="form.name" ref="name" :autoLink="false">
+  <bma-input v-model:value="other" />
   <span>hahha</span>
   <div>
-    <a-input
+    <bma-input
       v-model:value="form.name"
       @blur="() => {$refs.name.onFieldBlur()}"
       @change="() => {$refs.name.onFieldChange()}"
     />
   </div>
-</a-form-item>
+</bma-form-item>
 ```
 
 ### Validation Rules
@@ -201,7 +201,7 @@ See more advanced usage at [async-validator](https://github.com/yiminghe/async-v
 The following versions need to be provided separately by `@ant-design-vue/use` library, it is not recommended to continue to use, you should upgrade to version 2.2+ as soon as possible
 
 ```ts
-import { Form } from 'ant-design-vue';
+import { Form } from 'bmant-design-vue';
 const useForm = Form.useForm;
 
 useForm(modelRef, ruleRef, [options]);

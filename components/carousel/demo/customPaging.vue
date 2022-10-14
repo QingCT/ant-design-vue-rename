@@ -17,7 +17,7 @@ Custom paging display
 </docs>
 
 <template>
-  <a-carousel arrows dots-class="slick-dots slick-thumb">
+  <bma-carousel arrows dots-class="slick-dots slick-thumb">
     <template #customPaging="props">
       <a>
         <img :src="getImgUrl(props.i)" />
@@ -26,7 +26,7 @@ Custom paging display
     <div v-for="item in 4" :key="item">
       <img :src="getImgUrl(item - 1)" />
     </div>
-  </a-carousel>
+  </bma-carousel>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -46,33 +46,33 @@ export default defineComponent({
 </script>
 <style scoped>
 /* For demo */
-.ant-carousel :deep(.slick-dots) {
+.bmant-carousel :deep(.slick-dots) {
   position: relative;
   height: auto;
 }
-.ant-carousel :deep(.slick-slide img) {
+.bmant-carousel :deep(.slick-slide img) {
   border: 5px solid #fff;
   display: block;
   margin: auto;
   max-width: 80%;
 }
-.ant-carousel :deep(.slick-arrow) {
+.bmant-carousel :deep(.slick-arrow) {
   display: none !important;
 }
-.ant-carousel :deep(.slick-thumb) {
+.bmant-carousel :deep(.slick-thumb) {
   bottom: 0px;
 }
-.ant-carousel :deep(.slick-thumb li) {
+.bmant-carousel :deep(.slick-thumb li) {
   width: 60px;
   height: 45px;
 }
-.ant-carousel :deep(.slick-thumb li img) {
+.bmant-carousel :deep(.slick-thumb li img) {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
   display: block;
 }
-.ant-carousel :deep .slick-thumb li.slick-active img {
+.bmant-carousel :deep .slick-thumb li.slick-active img {
   filter: grayscale(0%);
 }
 </style>

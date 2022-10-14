@@ -18,10 +18,10 @@ danger is a property of button after antd 2.2.0.
 
 <template>
   <div>
-    <a-button type="primary" danger>Primary</a-button>
-    <a-button danger>Default</a-button>
-    <a-button type="dashed" danger>Dashed</a-button>
-    <a-button type="text" danger>Text</a-button>
-    <a-button type="link" danger>Link</a-button>
+    <bma-button type="primary" danger>Primary</bma-button>
+    <bma-button danger>Default</bma-button>
+    <bma-button type="dashed" danger>Dashed</bma-button>
+    <bma-button type="text" danger>Text</bma-button>
+    <bma-button type="link" danger>Link</bma-button>
   </div>
 </template>

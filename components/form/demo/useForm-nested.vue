@@ -16,22 +16,22 @@ title:
 </docs>
 
 <template>
-  <a-form :label-col="labelCol" :wrapper-col="wrapperCol">
-    <a-form-item label="Activity name" v-bind="validateInfos.name">
-      <a-input v-model:value="modelRef.name" />
-    </a-form-item>
-    <a-form-item label="Sub name" v-bind="validateInfos['sub.name']">
-      <a-input v-model:value="modelRef.sub.name" />
-    </a-form-item>
-    <a-form-item :wrapper-col="{ span: 14, offset: 4 }">
-      <a-button type="primary" @click.prevent="onSubmit">Create</a-button>
-      <a-button style="margin-left: 10px" @click="reset">Reset</a-button>
-    </a-form-item>
-  </a-form>
+  <bma-form :label-col="labelCol" :wrapper-col="wrapperCol">
+    <bma-form-item label="Activity name" v-bind="validateInfos.name">
+      <bma-input v-model:value="modelRef.name" />
+    </bma-form-item>
+    <bma-form-item label="Sub name" v-bind="validateInfos['sub.name']">
+      <bma-input v-model:value="modelRef.sub.name" />
+    </bma-form-item>
+    <bma-form-item :wrapper-col="{ span: 14, offset: 4 }">
+      <bma-button type="primary" @click.prevent="onSubmit">Create</bma-button>
+      <bma-button style="margin-left: 10px" @click="reset">Reset</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, toRaw } from 'vue';
-import { Form } from 'ant-design-vue';
+import { Form } from 'bmant-design-vue';
 
 const useForm = Form.useForm;
 export default defineComponent({

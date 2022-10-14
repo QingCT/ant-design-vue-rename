@@ -18,92 +18,92 @@ A button is on the left, and a related functional menu is on the right. You can 
 
 <template>
   <div class="demo-dropdown-wrap">
-    <a-dropdown-button @click="handleButtonClick">
+    <bma-dropdown-button @click="handleButtonClick">
       Dropdown
       <template #overlay>
-        <a-menu @click="handleMenuClick">
-          <a-menu-item key="1">
+        <bma-menu @click="handleMenuClick">
+          <bma-menu-item key="1">
             <UserOutlined />
             1st menu item
-          </a-menu-item>
-          <a-menu-item key="2">
+          </bma-menu-item>
+          <bma-menu-item key="2">
             <UserOutlined />
             2nd menu item
-          </a-menu-item>
-          <a-menu-item key="3">
+          </bma-menu-item>
+          <bma-menu-item key="3">
             <UserOutlined />
             3rd item
-          </a-menu-item>
-        </a-menu>
+          </bma-menu-item>
+        </bma-menu>
       </template>
-    </a-dropdown-button>
-    <a-dropdown-button>
+    </bma-dropdown-button>
+    <bma-dropdown-button>
       Dropdown
       <template #overlay>
-        <a-menu @click="handleMenuClick">
-          <a-menu-item key="1">
+        <bma-menu @click="handleMenuClick">
+          <bma-menu-item key="1">
             <UserOutlined />
             1st menu item
-          </a-menu-item>
-          <a-menu-item key="2">
+          </bma-menu-item>
+          <bma-menu-item key="2">
             <UserOutlined />
             2nd menu item
-          </a-menu-item>
-          <a-menu-item key="3">
+          </bma-menu-item>
+          <bma-menu-item key="3">
             <UserOutlined />
             3rd item
-          </a-menu-item>
-        </a-menu>
+          </bma-menu-item>
+        </bma-menu>
       </template>
       <template #icon><UserOutlined /></template>
-    </a-dropdown-button>
-    <a-dropdown-button disabled @click="handleButtonClick">
+    </bma-dropdown-button>
+    <bma-dropdown-button disabled @click="handleButtonClick">
       Dropdown
       <template #overlay>
-        <a-menu @click="handleMenuClick">
-          <a-menu-item key="1">
+        <bma-menu @click="handleMenuClick">
+          <bma-menu-item key="1">
             <UserOutlined />
             1st menu item
-          </a-menu-item>
-          <a-menu-item key="2">
+          </bma-menu-item>
+          <bma-menu-item key="2">
             <UserOutlined />
             2nd menu item
-          </a-menu-item>
-          <a-menu-item key="3">
+          </bma-menu-item>
+          <bma-menu-item key="3">
             <UserOutlined />
             3rd item
-          </a-menu-item>
-        </a-menu>
+          </bma-menu-item>
+        </bma-menu>
       </template>
-    </a-dropdown-button>
-    <a-dropdown>
+    </bma-dropdown-button>
+    <bma-dropdown>
       <template #overlay>
-        <a-menu @click="handleMenuClick">
-          <a-menu-item key="1">
+        <bma-menu @click="handleMenuClick">
+          <bma-menu-item key="1">
             <UserOutlined />
             1st menu item
-          </a-menu-item>
-          <a-menu-item key="2">
+          </bma-menu-item>
+          <bma-menu-item key="2">
             <UserOutlined />
             2nd menu item
-          </a-menu-item>
-          <a-menu-item key="3">
+          </bma-menu-item>
+          <bma-menu-item key="3">
             <UserOutlined />
             3rd item
-          </a-menu-item>
-        </a-menu>
+          </bma-menu-item>
+        </bma-menu>
       </template>
-      <a-button>
+      <bma-button>
         Button
         <DownOutlined />
-      </a-button>
-    </a-dropdown>
+      </bma-button>
+    </bma-dropdown>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { UserOutlined, DownOutlined } from '@ant-design/icons-vue';
-import type { MenuProps } from 'ant-design-vue';
+import type { MenuProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {
@@ -125,7 +125,7 @@ export default defineComponent({
 });
 </script>
 <style lang="less" scoped>
-.demo-dropdown-wrap :deep(.ant-dropdown-button) {
+.demo-dropdown-wrap :deep(.bmant-dropdown-button) {
   margin-right: 8px;
   margin-bottom: 8px;
 }

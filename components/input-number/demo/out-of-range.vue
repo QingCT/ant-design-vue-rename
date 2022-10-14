@@ -17,10 +17,10 @@ Show warning style when `value` is out of range by control.
 </docs>
 
 <template>
-  <a-space>
-    <a-input-number v-model:value="value" :min="1" :max="10" />
-    <a-button type="primary" @click="value = 99">Reset</a-button>
-  </a-space>
+  <bma-space>
+    <bma-input-number v-model:value="value" :min="1" :max="10" />
+    <bma-button type="primary" @click="value = 99">Reset</bma-button>
+  </bma-space>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

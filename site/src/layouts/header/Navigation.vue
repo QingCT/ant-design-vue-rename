@@ -1,22 +1,22 @@
 <template>
-  <a-menu
+  <bma-menu
     id="nav"
     class="menu-site"
     :mode="menuMode"
     :selected-keys="[activeMenuItem]"
     disabled-overflow
   >
-    <a-menu-item key="docs/vue">
+    <bma-menu-item key="docs/vue">
       <router-link :to="getLocalizedPathname('/docs/vue/introduce', isZhCN)">
         {{ $t('app.header.menu.documentation') }}
       </router-link>
-    </a-menu-item>
-    <a-menu-item key="components">
+    </bma-menu-item>
+    <bma-menu-item key="components">
       <router-link :to="getLocalizedPathname('/components/overview/', isZhCN)">
         {{ $t('app.header.menu.components') }}
       </router-link>
-    </a-menu-item>
-    <a-menu-item v-if="isZhCN" key="surely-vue">
+    </bma-menu-item>
+    <bma-menu-item v-if="isZhCN" key="surely-vue">
       <a
         href="https://www.surely.cool"
         target="_blank"
@@ -24,10 +24,10 @@
         style="position: relative"
       >
         高级组件
-        <a-badge color="red" style="position: absolute; top: -35px; right: -15px" />
+        <bma-badge color="red" style="position: absolute; top: -35px; right: -15px" />
       </a>
-    </a-menu-item>
-    <a-menu-item key="store">
+    </bma-menu-item>
+    <bma-menu-item key="store">
       <a
         href="https://store.antdv.com/pro/"
         target="_blank"
@@ -35,10 +35,10 @@
         style="position: relative"
       >
         {{ $t('app.header.menu.store') }}
-        <!-- <a-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
+        <!-- <bma-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
       </a>
-    </a-menu-item>
-    <a-menu-item v-if="isZhCN" key="geektime">
+    </bma-menu-item>
+    <bma-menu-item v-if="isZhCN" key="geektime">
       <a
         href="https://time.geekbang.org/course/intro/100024601?code=KHKYcoBU6vZa8nMglg7AWfDxxi3BWrz9INAzAY3umPk%3D"
         target="_blank"
@@ -46,14 +46,14 @@
         style="position: relative"
       >
         实战课程
-        <!-- <a-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
+        <!-- <bma-badge color="red" style="position: absolute; top: -35px; right: -15px" /> -->
       </a>
-    </a-menu-item>
+    </bma-menu-item>
     <template v-if="isMobile">
-      <a-menu-item key="switch-lang" @click="$emit('langChange')">
+      <bma-menu-item key="switch-lang" @click="$emit('langChange')">
         {{ $t('app.header.lang') }}
-      </a-menu-item>
-      <a-menu-item key="github">
+      </bma-menu-item>
+      <bma-menu-item key="github">
         <a
           href="https://github.com/vueComponent/ant-design-vue"
           target="_blank"
@@ -61,9 +61,9 @@
         >
           Github
         </a>
-      </a-menu-item>
+      </bma-menu-item>
     </template>
-  </a-menu>
+  </bma-menu>
 </template>
 <script lang="ts">
 import type { GlobalConfig } from '../../App.vue';
@@ -116,11 +116,11 @@ export default defineComponent({
   font-family: Avenir, @font-family, sans-serif;
   border: 0;
 
-  &.ant-menu-horizontal {
+  &.bmant-menu-horizontal {
     border-bottom: none;
 
-    & > .ant-menu-item,
-    & > .ant-menu-submenu {
+    & > .bmant-menu-item,
+    & > .bmant-menu-submenu {
       min-width: (40px + 12px * 2);
       height: @header-height;
       padding-right: 12px;
@@ -136,19 +136,19 @@ export default defineComponent({
       }
     }
 
-    & .ant-menu-submenu-title .anticon {
+    & .bmant-menu-submenu-title .anticon {
       margin: 0;
     }
 
-    & > .ant-menu-item-selected {
+    & > .bmant-menu-item-selected {
       a {
         color: @primary-color;
       }
     }
   }
 
-  & > .ant-menu-item,
-  & > .ant-menu-submenu {
+  & > .bmant-menu-item,
+  & > .bmant-menu-submenu {
     text-align: center;
   }
 }
@@ -157,7 +157,7 @@ export default defineComponent({
   color: @site-text-color;
 }
 
-.ant-menu-item-active .header-link {
+.bmant-menu-item-active .header-link {
   color: @primary-color;
 }
 
@@ -165,24 +165,24 @@ export default defineComponent({
 .popover-menu {
   width: 300px;
 
-  .ant-popover-inner-content {
+  .bmant-popover-inner-content {
     padding: 0;
 
     #nav {
-      .ant-menu-item,
-      .ant-menu-submenu {
+      .bmant-menu-item,
+      .bmant-menu-submenu {
         text-align: left;
       }
 
-      .ant-menu-item-group-title {
+      .bmant-menu-item-group-title {
         padding-left: 24px;
       }
 
-      .ant-menu-item-group-list {
+      .bmant-menu-item-group-list {
         padding: 0 16px;
       }
 
-      .ant-menu-item,
+      .bmant-menu-item,
       a {
         color: #333;
       }

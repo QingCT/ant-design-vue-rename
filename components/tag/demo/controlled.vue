@@ -17,9 +17,9 @@ By using the `visible` prop, you can control the close state of Tag.
 </docs>
 
 <template>
-  <a-tag v-model:visible="visible" closable>Movies</a-tag>
+  <bma-tag v-model:visible="visible" closable>Movies</bma-tag>
   <br />
-  <a-button size="small" @click="visible = !visible">Toggle</a-button>
+  <bma-button size="small" @click="visible = !visible">Toggle</bma-button>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

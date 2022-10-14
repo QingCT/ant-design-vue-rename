@@ -62,8 +62,8 @@ Modify `src/main.js`, import Button component from `antd`.
 
 ```jsx
 import Vue from 'vue';
-import Button from 'ant-design-vue/lib/button';
-import 'ant-design-vue/dist/antd.css';
+import Button from 'bmant-design-vue/lib/button';
+import 'bmant-design-vue/dist/antd.css';
 import App from './App';
 
 const app = createApp(App);
@@ -78,7 +78,7 @@ Modify `src/App.vue`。
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <a-button type="primary">Button></a-button>
+    <bma-button type="primary">Button></bma-button>
     <router-view/>
   </div>
 </template>
@@ -120,7 +120,7 @@ Modify `.babelrc`.
 +   "plugins": [
 +     "transform-vue-jsx",
 +     "transform-runtime",
-+     ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }]
++     ["import", { "libraryName": "bmant-design-vue", "libraryDirectory": "es", "style": "css" }]
 +   ]
   }
 ```
@@ -135,20 +135,20 @@ Modify `babel.config.js`
 + plugins: [
 +    [
 +      "import",
-+      { libraryName: "ant-design-vue", libraryDirectory: "es", style: true }
++      { libraryName: "bmant-design-vue", libraryDirectory: "es", style: true }
 +    ]
 +  ]
 };
 ```
 
-Remove the `import 'ant-design-vue/dist/antd.css';` statement added before because `babel-plugin-import` will import styles and import components like below:
+Remove the `import 'bmant-design-vue/dist/antd.css';` statement added before because `babel-plugin-import` will import styles and import components like below:
 
 ```diff
   // src/main.js
   import Vue from 'vue'
-- import Button from 'ant-design-vue/lib/button';
-+ import { Button } from 'ant-design-vue';
-- import 'ant-design-vue/dist/antd.css'
+- import Button from 'bmant-design-vue/lib/button';
++ import { Button } from 'bmant-design-vue';
+- import 'bmant-design-vue/dist/antd.css'
   import App from './App'
 
   Vue.component(Button.name, Button)

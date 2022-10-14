@@ -11,8 +11,8 @@
         }}
       </p>
     </section>
-    <a-divider></a-divider>
-    <a-input
+    <bma-divider></bma-divider>
+    <bma-input
       ref="inputRef"
       v-model:value="search"
       :placeholder="$t('app.components.overview.search')"
@@ -22,19 +22,19 @@
       <template #suffix>
         <SearchOutlined />
       </template>
-    </a-input>
-    <a-divider></a-divider>
+    </bma-input>
+    <bma-divider></bma-divider>
     <template v-for="group in menuItems" :key="group.title">
       <div class="components-overview">
-        <h2 class="ant-typography components-overview-group-title">
-          <a-space align="center">
+        <h2 class="bmant-typography components-overview-group-title">
+          <bma-space align="center">
             {{ isZhCN ? group.title : group.enTitle }}
-            <a-tag style="display: block">{{ group.children.length }}</a-tag>
-          </a-space>
+            <bma-tag style="display: block">{{ group.children.length }}</bma-tag>
+          </bma-space>
         </h2>
-        <a-row :gutter="[24, 24]">
+        <bma-row :gutter="[24, 24]">
           <template v-for="component in group.children" :key="component.title">
-            <a-col :xs="24" :sm="12" :lg="8" :xl="6">
+            <bma-col :xs="24" :sm="12" :lg="8" :xl="6">
               <component
                 :is="component.target ? 'a' : 'router-link'"
                 v-bind="
@@ -43,7 +43,7 @@
                     : { to: getLocalizedPathname(component.path, isZhCN) }
                 "
               >
-                <a-card size="small" class="components-overview-card">
+                <bma-card size="small" class="components-overview-card">
                   <template #title>
                     <div class="components-overview-title">
                       {{ component.title }}
@@ -53,11 +53,11 @@
                   <div class="components-overview-img">
                     <img :src="component.cover" :alt="component.title" />
                   </div>
-                </a-card>
+                </bma-card>
               </component>
-            </a-col>
+            </bma-col>
           </template>
-        </a-row>
+        </bma-row>
       </div>
     </template>
   </section>

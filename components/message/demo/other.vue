@@ -17,14 +17,14 @@ Messages of success, error and warning types.
 </docs>
 
 <template>
-  <a-space>
-    <a-button @click="success">Success</a-button>
-    <a-button @click="error">Error</a-button>
-    <a-button @click="warning">Warning</a-button>
-  </a-space>
+  <bma-space>
+    <bma-button @click="success">Success</bma-button>
+    <bma-button @click="error">Error</bma-button>
+    <bma-button @click="warning">Warning</bma-button>
+  </bma-space>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {

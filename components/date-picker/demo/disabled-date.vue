@@ -17,17 +17,17 @@ Disabled part of dates and time by `disabledDate` and `disabledTime` respectivel
 </docs>
 
 <template>
-  <a-space direction="vertical">
-    <a-date-picker
+  <bma-space direction="vertical">
+    <bma-date-picker
       v-model:value="value1"
       format="YYYY-MM-DD HH:mm:ss"
       :disabled-date="disabledDate"
       :disabled-time="disabledDateTime"
       :show-time="{ defaultValue: dayjs('00:00:00', 'HH:mm:ss') }"
     />
-    <a-date-picker v-model:value="value2" :disabled-date="disabledDate" picker="month" />
-    <a-range-picker v-model:value="value3" :disabled-date="disabledDate" />
-    <a-range-picker
+    <bma-date-picker v-model:value="value2" :disabled-date="disabledDate" picker="month" />
+    <bma-range-picker v-model:value="value3" :disabled-date="disabledDate" />
+    <bma-range-picker
       v-model:value="value4"
       style="width: 400px"
       :disabled-date="disabledDate"
@@ -38,7 +38,7 @@ Disabled part of dates and time by `disabledDate` and `disabledTime` respectivel
       }"
       format="YYYY-MM-DD HH:mm:ss"
     />
-  </a-space>
+  </bma-space>
 </template>
 <script lang="ts">
 import dayjs, { Dayjs } from 'dayjs';

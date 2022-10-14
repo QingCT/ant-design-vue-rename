@@ -16,7 +16,7 @@ Use virtual list through `height` prop.
 
 </docs>
 <template>
-  <a-tree
+  <bma-tree
     v-model:selectedKeys="selectedKeys"
     v-model:checkedKeys="checkedKeys"
     default-expand-all
@@ -28,10 +28,10 @@ Use virtual list through `height` prop.
       <span v-if="key === '0-0-1-0'" style="color: #1890ff">{{ title }}</span>
       <template v-else>{{ title }}</template>
     </template>
-  </a-tree>
+  </bma-tree>
 </template>
 <script lang="ts">
-import type { TreeProps } from 'ant-design-vue';
+import type { TreeProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
 
 function dig(path = '0', level = 3) {

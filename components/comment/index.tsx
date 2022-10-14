@@ -13,7 +13,7 @@ export const commentProps = () => ({
   avatar: PropTypes.any,
   /** The main content of the comment */
   content: PropTypes.any,
-  /** Comment prefix defaults to '.ant-comment' */
+  /** Comment prefix defaults to '.bmant-comment' */
   prefixCls: String,
   /** A datetime element containing the time to be displayed */
   datetime: PropTypes.any,
@@ -22,7 +22,7 @@ export const commentProps = () => ({
 export type CommentProps = Partial<ExtractPropTypes<ReturnType<typeof commentProps>>>;
 
 const Comment = defineComponent({
-  name: 'AComment',
+  name: 'BmaComment',
   props: commentProps(),
   slots: ['actions', 'author', 'avatar', 'content', 'datetime'],
   setup(props, { slots }) {

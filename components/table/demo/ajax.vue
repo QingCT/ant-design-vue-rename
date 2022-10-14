@@ -24,7 +24,7 @@ Setting `rowSelection.preserveSelectedRowKeys` to keep the `key` when enable sel
 </docs>
 
 <template>
-  <a-table
+  <bma-table
     :columns="columns"
     :row-key="record => record.login.uuid"
     :data-source="dataSource"
@@ -35,10 +35,10 @@ Setting `rowSelection.preserveSelectedRowKeys` to keep the `key` when enable sel
     <template #bodyCell="{ column, text }">
       <template v-if="column.dataIndex === 'name'">{{ text.first }} {{ text.last }}</template>
     </template>
-  </a-table>
+  </bma-table>
 </template>
 <script lang="ts">
-import type { TableProps } from 'ant-design-vue';
+import type { TableProps } from 'bmant-design-vue';
 import { usePagination } from 'vue-request';
 import { computed, defineComponent } from 'vue';
 import axios from 'axios';

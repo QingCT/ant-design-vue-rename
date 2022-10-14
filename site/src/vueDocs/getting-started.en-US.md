@@ -48,9 +48,9 @@ If you use Vue's default template syntax, you need to register components before
 
 ```jsx
 import { createApp } from 'vue';
-import Antd from 'ant-design-vue';
+import Antd from 'bmant-design-vue';
 import App from './App';
-import 'ant-design-vue/dist/antd.css';
+import 'bmant-design-vue/dist/antd.css';
 
 const app = createApp(App);
 
@@ -63,7 +63,7 @@ The above imports Antd entirely. Note that CSS file needs to be imported separat
 
 ```jsx
 import { createApp } from 'vue';
-import { Button, message } from 'ant-design-vue';
+import { Button, message } from 'bmant-design-vue';
 import App from './App';
 
 const app = createApp(App);
@@ -80,10 +80,10 @@ In this way, component sub-components, such as Button and ButtonGroup, need to b
 
 ```html
 <template>
-  <a-button>Add</a-button>
+  <bma-button>Add</bma-button>
 </template>
 <script>
-  import { Button } from 'ant-design-vue';
+  import { Button } from 'bmant-design-vue';
   const ButtonGroup = Button.Group;
 
   export default {
@@ -108,25 +108,25 @@ Ant Design Vue 2.x supports all the modern browsers. If you want to use IE9+, yo
 we can import individual components on demand:
 
 ```jsx
-import Button from 'ant-design-vue/lib/button';
-import 'ant-design-vue/lib/button/style'; // or ant-design-vue/lib/button/style/css for css format file
+import Button from 'bmant-design-vue/lib/button';
+import 'bmant-design-vue/lib/button/style'; // or ant-design-vue/lib/button/style/css for css format file
 ```
 
-We strongly recommend using [babel-plugin-import](https://github.com/ant-design/babel-plugin-import), which can convert the following code to the 'ant-design-vue/lib/xxx' way:
+We strongly recommend using [babel-plugin-import](https://github.com/ant-design/babel-plugin-import), which can convert the following code to the 'bmant-design-vue/lib/xxx' way:
 
 ```jsx
-import { Button } from 'ant-design-vue';
+import { Button } from 'bmant-design-vue';
 ```
 
 And this plugin can load styles too, read [usage](https://github.com/ant-design/babel-plugin-import#usage) for more details.
 
-> FYI, babel-plugin-import's `style` option will importing some global reset styles, don't use it if you don't need those styles. You can import styles manually via `import 'ant-design-vue/dist/antd.css'` and override the global reset styles.
+> FYI, babel-plugin-import's `style` option will importing some global reset styles, don't use it if you don't need those styles. You can import styles manually via `import 'bmant-design-vue/dist/antd.css'` and override the global reset styles.
 
 If you use Vite, you can use [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) to load on demand. However, this plugin can only deal with components. Others such as message should be loaded manually:
 
 ```ts
-import { message } from 'ant-design-vue';
-import 'ant-design-vue/es/message/style/css'; //use ant-design-vue/es instead of ant-design-vue/lib
+import { message } from 'bmant-design-vue';
+import 'bmant-design-vue/es/message/style/css'; //use ant-design-vue/es instead of ant-design-vue/lib
 ```
 
 ## Customization

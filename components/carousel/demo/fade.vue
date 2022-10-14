@@ -17,16 +17,16 @@ Slides use fade for transition.
 </docs>
 
 <template>
-  <a-carousel effect="fade">
+  <bma-carousel effect="fade">
     <div><h3>1</h3></div>
     <div><h3>2</h3></div>
     <div><h3>3</h3></div>
     <div><h3>4</h3></div>
-  </a-carousel>
+  </bma-carousel>
 </template>
 <style scoped>
 /* For demo */
-.ant-carousel :deep(.slick-slide) {
+.bmant-carousel :deep(.slick-slide) {
   text-align: center;
   height: 160px;
   line-height: 160px;
@@ -34,7 +34,7 @@ Slides use fade for transition.
   overflow: hidden;
 }
 
-.ant-carousel :deep(.slick-slide h3) {
+.bmant-carousel :deep(.slick-slide h3) {
   color: #fff;
 }
 </style>

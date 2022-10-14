@@ -22,18 +22,20 @@ You could set `footer` to `null` if you don't need default footer buttons.
 
 <template>
   <div>
-    <a-button type="primary" @click="showModal">Open Modal with customized footer</a-button>
-    <a-modal v-model:visible="visible" title="Title" @ok="handleOk">
+    <bma-button type="primary" @click="showModal">Open Modal with customized footer</bma-button>
+    <bma-modal v-model:visible="visible" title="Title" @ok="handleOk">
       <template #footer>
-        <a-button key="back" @click="handleCancel">Return</a-button>
-        <a-button key="submit" type="primary" :loading="loading" @click="handleOk">Submit</a-button>
+        <bma-button key="back" @click="handleCancel">Return</bma-button>
+        <bma-button key="submit" type="primary" :loading="loading" @click="handleOk">
+          Submit
+        </bma-button>
       </template>
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
-    </a-modal>
+    </bma-modal>
   </div>
 </template>
 <script lang="ts">

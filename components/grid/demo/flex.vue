@@ -21,49 +21,49 @@ Child elements depending on the value of the `start`,`center`, `end`,`space-betw
 <template>
   <div id="components-grid-demo-flex">
     <p>sub-element align left</p>
-    <a-row justify="start">
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-    </a-row>
+    <bma-row justify="start">
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+    </bma-row>
 
     <p>sub-element align center</p>
-    <a-row justify="center">
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-    </a-row>
+    <bma-row justify="center">
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+    </bma-row>
 
     <p>sub-element align right</p>
-    <a-row justify="end">
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-    </a-row>
+    <bma-row justify="end">
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+    </bma-row>
 
     <p>sub-element monospaced arrangement</p>
-    <a-row justify="space-between">
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-    </a-row>
+    <bma-row justify="space-between">
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+    </bma-row>
 
     <p>sub-element align full</p>
-    <a-row justify="space-around">
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-      <a-col :span="4">col-4</a-col>
-    </a-row>
+    <bma-row justify="space-around">
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+      <bma-col :span="4">col-4</bma-col>
+    </bma-row>
   </div>
 </template>
 
 <style lang="less" scoped>
-#components-grid-demo-flex :deep(.ant-row) {
+#components-grid-demo-flex :deep(.bmant-row) {
   background: rgba(128, 128, 128, 0.08);
 }
 </style>

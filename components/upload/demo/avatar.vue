@@ -20,7 +20,7 @@ Click to upload user's avatar, and validate size and format of picture with `bef
 </docs>
 
 <template>
-  <a-upload
+  <bma-upload
     v-model:file-list="fileList"
     name="avatar"
     list-type="picture-card"
@@ -34,15 +34,15 @@ Click to upload user's avatar, and validate size and format of picture with `bef
     <div v-else>
       <loading-outlined v-if="loading"></loading-outlined>
       <plus-outlined v-else></plus-outlined>
-      <div class="ant-upload-text">Upload</div>
+      <div class="bmant-upload-text">Upload</div>
     </div>
-  </a-upload>
+  </bma-upload>
 </template>
 <script lang="ts">
 import { PlusOutlined, LoadingOutlined } from '@ant-design/icons-vue';
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadChangeParam, UploadProps } from 'ant-design-vue';
+import type { UploadChangeParam, UploadProps } from 'bmant-design-vue';
 
 function getBase64(img: Blob, callback: (base64Url: string) => void) {
   const reader = new FileReader();
@@ -100,16 +100,16 @@ export default defineComponent({
 });
 </script>
 <style>
-.avatar-uploader > .ant-upload {
+.avatar-uploader > .bmant-upload {
   width: 128px;
   height: 128px;
 }
-.ant-upload-select-picture-card i {
+.bmant-upload-select-picture-card i {
   font-size: 32px;
   color: #999;
 }
 
-.ant-upload-select-picture-card .ant-upload-text {
+.bmant-upload-select-picture-card .bmant-upload-text {
   margin-top: 8px;
   color: #666;
 }

@@ -20,81 +20,81 @@ If you want specific control over the positioning and placement of the `Icon`, t
 </docs>
 
 <template>
-  <a-button type="primary" shape="circle">
+  <bma-button type="primary" shape="circle">
     <template #icon><SearchOutlined /></template>
-  </a-button>
-  <a-button type="primary" shape="circle">A</a-button>
-  <a-button type="primary">
-    <template #icon><SearchOutlined /></template>
-    Search
-  </a-button>
-  <a-button shape="circle">
-    <template #icon><SearchOutlined /></template>
-  </a-button>
-  <a-button>
+  </bma-button>
+  <bma-button type="primary" shape="circle">A</bma-button>
+  <bma-button type="primary">
     <template #icon><SearchOutlined /></template>
     Search
-  </a-button>
-  <a-button shape="circle">
+  </bma-button>
+  <bma-button shape="circle">
     <template #icon><SearchOutlined /></template>
-  </a-button>
-  <a-button>
-    <template #icon><SearchOutlined /></template>
-    Search
-  </a-button>
-  <a-button type="dashed" shape="circle">
-    <template #icon><SearchOutlined /></template>
-  </a-button>
-  <a-button type="dashed">
+  </bma-button>
+  <bma-button>
     <template #icon><SearchOutlined /></template>
     Search
-  </a-button>
-  <a-button href="https://www.google.com">
+  </bma-button>
+  <bma-button shape="circle">
     <template #icon><SearchOutlined /></template>
-  </a-button>
+  </bma-button>
+  <bma-button>
+    <template #icon><SearchOutlined /></template>
+    Search
+  </bma-button>
+  <bma-button type="dashed" shape="circle">
+    <template #icon><SearchOutlined /></template>
+  </bma-button>
+  <bma-button type="dashed">
+    <template #icon><SearchOutlined /></template>
+    Search
+  </bma-button>
+  <bma-button href="https://www.google.com">
+    <template #icon><SearchOutlined /></template>
+  </bma-button>
   <br />
   <br />
-  <a-tooltip title="search">
-    <a-button type="primary" shape="circle" size="large">
+  <bma-tooltip title="search">
+    <bma-button type="primary" shape="circle" size="large">
       <template #icon><SearchOutlined /></template>
-    </a-button>
-  </a-tooltip>
-  <a-button type="primary" shape="circle" size="large">A</a-button>
-  <a-button type="primary" size="large">
+    </bma-button>
+  </bma-tooltip>
+  <bma-button type="primary" shape="circle" size="large">A</bma-button>
+  <bma-button type="primary" size="large">
     <template #icon><SearchOutlined /></template>
     Search
-  </a-button>
-  <a-tooltip title="search">
-    <a-button shape="circle" size="large">
+  </bma-button>
+  <bma-tooltip title="search">
+    <bma-button shape="circle" size="large">
       <template #icon><SearchOutlined /></template>
-    </a-button>
-  </a-tooltip>
-  <a-button size="large">
+    </bma-button>
+  </bma-tooltip>
+  <bma-button size="large">
     <template #icon><SearchOutlined /></template>
     Search
-  </a-button>
+  </bma-button>
   <br />
-  <a-tooltip title="search">
-    <a-button shape="circle" size="large">
+  <bma-tooltip title="search">
+    <bma-button shape="circle" size="large">
       <template #icon><SearchOutlined /></template>
-    </a-button>
-  </a-tooltip>
-  <a-button size="large">
+    </bma-button>
+  </bma-tooltip>
+  <bma-button size="large">
     <template #icon><SearchOutlined /></template>
     Search
-  </a-button>
-  <a-tooltip title="search">
-    <a-button type="dashed" shape="circle" size="large">
+  </bma-button>
+  <bma-tooltip title="search">
+    <bma-button type="dashed" shape="circle" size="large">
       <template #icon><SearchOutlined /></template>
-    </a-button>
-  </a-tooltip>
-  <a-button type="dashed" size="large">
+    </bma-button>
+  </bma-tooltip>
+  <bma-button type="dashed" size="large">
     <template #icon><SearchOutlined /></template>
     Search
-  </a-button>
-  <a-button size="large" href="https://www.google.com">
+  </bma-button>
+  <bma-button size="large" href="https://www.google.com">
     <template #icon><SearchOutlined /></template>
-  </a-button>
+  </bma-button>
 </template>
 <script>
 import { SearchOutlined } from '@ant-design/icons-vue';

@@ -17,7 +17,7 @@ Replace the title,key and children fields in treeNode with the corresponding fie
 </docs>
 
 <template>
-  <a-tree-select
+  <bma-tree-select
     v-model:value="value"
     show-search
     style="width: 100%"
@@ -31,10 +31,10 @@ Replace the title,key and children fields in treeNode with the corresponding fie
       label: 'name',
       value: 'value',
     }"
-  ></a-tree-select>
+  ></bma-tree-select>
 </template>
 <script lang="ts">
-import type { TreeSelectProps } from 'ant-design-vue';
+import type { TreeSelectProps } from 'bmant-design-vue';
 import { defineComponent, ref, watch } from 'vue';
 export default defineComponent({
   setup() {

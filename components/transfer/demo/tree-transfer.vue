@@ -18,7 +18,7 @@ Customize render list with Tree component.
 
 <template>
   <div>
-    <a-transfer
+    <bma-transfer
       v-model:target-keys="targetKeys"
       class="tree-transfer"
       :data-source="dataSource"
@@ -26,7 +26,7 @@ Customize render list with Tree component.
       :show-select-all="false"
     >
       <template #children="{ direction, selectedKeys, onItemSelect }">
-        <a-tree
+        <bma-tree
           v-if="direction === 'left'"
           block-node
           checkable
@@ -46,12 +46,12 @@ Customize render list with Tree component.
           "
         />
       </template>
-    </a-transfer>
+    </bma-transfer>
   </div>
 </template>
 <script lang="ts">
 import { computed, defineComponent, ref } from 'vue';
-import type { TransferProps, TreeProps } from 'ant-design-vue';
+import type { TransferProps, TreeProps } from 'bmant-design-vue';
 const tData: TransferProps['dataSource'] = [
   { key: '0-0', title: '0-0' },
   {
@@ -116,7 +116,7 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.tree-transfer .ant-transfer-list:first-child {
+.tree-transfer .bmant-transfer-list:first-child {
   width: 50%;
   flex: none;
 }

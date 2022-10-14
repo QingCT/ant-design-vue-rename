@@ -49,7 +49,7 @@
   }
 }
 
-.ant-row-rtl {
+.bmant-row-rtl {
   #github-btn {
     .gh-count {
       display: none !important;

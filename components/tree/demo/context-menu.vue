@@ -17,20 +17,20 @@ Custom display the context menu
 </docs>
 
 <template>
-  <a-tree v-model:expandedKeys="expandedKeys" :tree-data="treeData">
+  <bma-tree v-model:expandedKeys="expandedKeys" :tree-data="treeData">
     <template #title="{ key: treeKey, title }">
-      <a-dropdown :trigger="['contextmenu']">
+      <bma-dropdown :trigger="['contextmenu']">
         <span>{{ title }}</span>
         <template #overlay>
-          <a-menu @click="({ key: menuKey }) => onContextMenuClick(treeKey, menuKey)">
-            <a-menu-item key="1">1st menu item</a-menu-item>
-            <a-menu-item key="2">2nd menu item</a-menu-item>
-            <a-menu-item key="3">3rd menu item</a-menu-item>
-          </a-menu>
+          <bma-menu @click="({ key: menuKey }) => onContextMenuClick(treeKey, menuKey)">
+            <bma-menu-item key="1">1st menu item</bma-menu-item>
+            <bma-menu-item key="2">2nd menu item</bma-menu-item>
+            <bma-menu-item key="3">3rd menu item</bma-menu-item>
+          </bma-menu>
         </template>
-      </a-dropdown>
+      </bma-dropdown>
     </template>
-  </a-tree>
+  </bma-tree>
 </template>
 
 <script lang="ts">

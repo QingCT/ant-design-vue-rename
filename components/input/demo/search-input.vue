@@ -16,37 +16,37 @@ Example of creating a search box by grouping a standard input with a search butt
 
 </docs>
 <template>
-  <a-space direction="vertical">
-    <a-input-search
+  <bma-space direction="vertical">
+    <bma-input-search
       v-model:value="value"
       placeholder="input search text"
       style="width: 200px"
       @search="onSearch"
     />
-    <a-input-search
+    <bma-input-search
       v-model:value="value"
       placeholder="input search text"
       enter-button
       @search="onSearch"
     />
-    <a-input-search
+    <bma-input-search
       v-model:value="value"
       placeholder="input search text"
       enter-button="Search"
       size="large"
       @search="onSearch"
     />
-    <a-input-search
+    <bma-input-search
       v-model:value="value"
       placeholder="input search text"
       size="large"
       @search="onSearch"
     >
       <template #enterButton>
-        <a-button>Custom</a-button>
+        <bma-button>Custom</bma-button>
       </template>
-    </a-input-search>
-  </a-space>
+    </bma-input-search>
+  </bma-space>
 </template>
 
 <script lang="ts">

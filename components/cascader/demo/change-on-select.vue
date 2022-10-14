@@ -16,7 +16,7 @@ Allow only select parent options.
 
 </docs>
 <template>
-  <a-cascader
+  <bma-cascader
     v-model:value="value"
     :options="options"
     placeholder="Please select"
@@ -25,7 +25,7 @@ Allow only select parent options.
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import type { CascaderProps } from 'ant-design-vue';
+import type { CascaderProps } from 'bmant-design-vue';
 const options: CascaderProps['options'] = [
   {
     value: 'zhejiang',

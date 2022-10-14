@@ -17,7 +17,7 @@ Load more list with `loadMore` property.
 </docs>
 
 <template>
-  <a-list
+  <bma-list
     class="demo-loadmore-list"
     :loading="initLoading"
     item-layout="horizontal"
@@ -28,31 +28,31 @@ Load more list with `loadMore` property.
         v-if="!initLoading && !loading"
         :style="{ textAlign: 'center', marginTop: '12px', height: '32px', lineHeight: '32px' }"
       >
-        <a-button @click="onLoadMore">loading more</a-button>
+        <bma-button @click="onLoadMore">loading more</bma-button>
       </div>
     </template>
     <template #renderItem="{ item }">
-      <a-list-item>
+      <bma-list-item>
         <template #actions>
           <a key="list-loadmore-edit">edit</a>
           <a key="list-loadmore-more">more</a>
         </template>
-        <a-skeleton avatar :title="false" :loading="!!item.loading" active>
-          <a-list-item-meta
+        <bma-skeleton avatar :title="false" :loading="!!item.loading" active>
+          <bma-list-item-meta
             description="Ant Design, a design language for background applications, is refined by Ant UED Team"
           >
             <template #title>
               <a href="https://www.antdv.com/">{{ item.name.last }}</a>
             </template>
             <template #avatar>
-              <a-avatar :src="item.picture.large" />
+              <bma-avatar :src="item.picture.large" />
             </template>
-          </a-list-item-meta>
+          </bma-list-item-meta>
           <div>content</div>
-        </a-skeleton>
-      </a-list-item>
+        </bma-skeleton>
+      </bma-list-item>
     </template>
-  </a-list>
+  </bma-list>
 </template>
 <script lang="ts">
 import { defineComponent, onMounted, ref, nextTick } from 'vue';

@@ -1,7 +1,7 @@
 <template>
   <span>
-    <a-input type="text" :value="value.number" style="width: 100px" @change="onNumberChange" />
-    <a-select
+    <bma-input type="text" :value="value.number" style="width: 100px" @change="onNumberChange" />
+    <bma-select
       :value="value.currency"
       style="width: 80px; margin: 0 8px"
       :options="[
@@ -9,14 +9,14 @@
         { value: 'dollar', label: 'Dollar' },
       ]"
       @change="onCurrencyChange"
-    ></a-select>
+    ></bma-select>
   </span>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import type { PropType } from 'vue';
-import { Form } from 'ant-design-vue';
+import { Form } from 'bmant-design-vue';
 
 export type Currency = 'rmb' | 'dollar';
 

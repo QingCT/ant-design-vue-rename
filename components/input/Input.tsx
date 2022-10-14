@@ -105,7 +105,7 @@ export function triggerFocus(
 }
 
 export default defineComponent({
-  name: 'AInput',
+  name: 'BmaInput',
   inheritAttrs: false,
   props: inputProps(),
   setup(props, { slots, attrs, expose, emit }) {
@@ -295,7 +295,7 @@ export default defineComponent({
           },
         ),
         ref: inputRef,
-        key: 'ant-input',
+        key: 'bmant-input',
         size: htmlSize,
         id: otherProps.id ?? formItemContext.id.value,
       };

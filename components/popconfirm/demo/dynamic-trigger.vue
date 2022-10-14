@@ -18,7 +18,7 @@ Make it pop up under some conditions.
 
 <template>
   <div>
-    <a-popconfirm
+    <bma-popconfirm
       title="Are you sure delete this task?"
       :visible="visible"
       ok-text="Yes"
@@ -28,15 +28,15 @@ Make it pop up under some conditions.
       @cancel="cancel"
     >
       <a href="#">Delete a task</a>
-    </a-popconfirm>
+    </bma-popconfirm>
     <br />
     <br />
     Whether directly execute：
-    <a-checkbox v-model:checked="condition" />
+    <bma-checkbox v-model:checked="condition" />
   </div>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { ref, defineComponent } from 'vue';
 export default defineComponent({
   setup() {

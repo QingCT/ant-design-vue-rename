@@ -17,23 +17,23 @@ Customize local preview. Can handle with non-image format files such as video.
 
 <template>
   <div>
-    <a-upload
+    <bma-upload
       v-model:file-list="fileList"
       list-type="picture"
       action="//jsonplaceholder.typicode.com/posts/"
       :preview-file="previewFile"
     >
-      <a-button>
+      <bma-button>
         <upload-outlined></upload-outlined>
         Upload
-      </a-button>
-    </a-upload>
+      </bma-button>
+    </bma-upload>
   </div>
 </template>
 <script lang="ts">
 import { UploadOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref } from 'vue';
-import type { UploadProps } from 'ant-design-vue';
+import type { UploadProps } from 'bmant-design-vue';
 
 export default defineComponent({
   components: {

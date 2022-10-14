@@ -17,9 +17,9 @@ A standard progress bar.
 </docs>
 
 <template>
-  <a-progress :percent="30" />
-  <a-progress :percent="50" status="active" />
-  <a-progress :percent="70" status="exception" />
-  <a-progress :percent="100" />
-  <a-progress :percent="50" :show-info="false" />
+  <bma-progress :percent="30" />
+  <bma-progress :percent="50" status="active" />
+  <bma-progress :percent="70" status="exception" />
+  <bma-progress :percent="100" />
+  <bma-progress :percent="50" :show-info="false" />
 </template>

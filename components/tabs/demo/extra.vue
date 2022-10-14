@@ -17,17 +17,17 @@ You can add extra actions to the right of Tabs.
 </docs>
 
 <template>
-  <a-tabs v-model:activeKey="activeKey">
-    <a-tab-pane key="1" tab="Tab 1">Content of tab 1</a-tab-pane>
-    <a-tab-pane key="2" tab="Tab 2">Content of tab 2</a-tab-pane>
-    <a-tab-pane key="3" tab="Tab 3">Content of tab 3</a-tab-pane>
+  <bma-tabs v-model:activeKey="activeKey">
+    <bma-tab-pane key="1" tab="Tab 1">Content of tab 1</bma-tab-pane>
+    <bma-tab-pane key="2" tab="Tab 2">Content of tab 2</bma-tab-pane>
+    <bma-tab-pane key="3" tab="Tab 3">Content of tab 3</bma-tab-pane>
     <template #leftExtra>
-      <a-button class="tabs-extra-demo-button">Left Extra Action</a-button>
+      <bma-button class="tabs-extra-demo-button">Left Extra Action</bma-button>
     </template>
     <template #rightExtra>
-      <a-button>Right Extra Action</a-button>
+      <bma-button>Right Extra Action</bma-button>
     </template>
-  </a-tabs>
+  </bma-tabs>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
@@ -45,7 +45,7 @@ export default defineComponent({
   margin-right: 16px;
 }
 
-.ant-row-rtl .tabs-extra-demo-button {
+.bmant-row-rtl .tabs-extra-demo-button {
   margin-right: 0;
   margin-left: 16px;
 }

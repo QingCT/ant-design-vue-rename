@@ -15,22 +15,22 @@ title:
 Switch in different types of pickers by Select.
 </docs>
 <template>
-  <a-space direction="vertical" :size="12">
-    <a-select v-model:value="type">
-      <a-select-option value="time">Time</a-select-option>
-      <a-select-option value="date">Date</a-select-option>
-      <a-select-option value="week">Week</a-select-option>
-      <a-select-option value="month">Month</a-select-option>
-      <a-select-option value="quarter">Quarter</a-select-option>
-      <a-select-option value="year">Year</a-select-option>
-    </a-select>
+  <bma-space direction="vertical" :size="12">
+    <bma-select v-model:value="type">
+      <bma-select-option value="time">Time</bma-select-option>
+      <bma-select-option value="date">Date</bma-select-option>
+      <bma-select-option value="week">Week</bma-select-option>
+      <bma-select-option value="month">Month</bma-select-option>
+      <bma-select-option value="quarter">Quarter</bma-select-option>
+      <bma-select-option value="year">Year</bma-select-option>
+    </bma-select>
     <template v-if="type === 'time'">
-      <a-time-picker />
+      <bma-time-picker />
     </template>
     <template v-else>
-      <a-date-picker :picker="type" />
+      <bma-date-picker :picker="type" />
     </template>
-  </a-space>
+  </bma-space>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';

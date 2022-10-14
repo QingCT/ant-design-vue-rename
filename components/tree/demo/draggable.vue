@@ -16,7 +16,7 @@ Drag treeNode to insert after the other treeNode or insert into the other parent
 
 </docs>
 <template>
-  <a-tree
+  <bma-tree
     class="draggable-tree"
     draggable
     block-node
@@ -31,7 +31,7 @@ import type {
   AntTreeNodeDragEnterEvent,
   AntTreeNodeDropEvent,
   TreeProps,
-} from 'ant-design-vue/es/tree';
+} from 'bmant-design-vue/es/tree';
 
 const x = 3;
 const y = 2;

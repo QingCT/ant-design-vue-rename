@@ -17,17 +17,17 @@ selection happens when clicking checkbox defaultly. You can see https://codesand
 </docs>
 
 <template>
-  <a-table :row-selection="rowSelection" :columns="columns" :data-source="data">
+  <bma-table :row-selection="rowSelection" :columns="columns" :data-source="data">
     <template #bodyCell="{ column, text }">
       <template v-if="column.dataIndex === 'name'">
         <a>{{ text }}</a>
       </template>
     </template>
-  </a-table>
+  </bma-table>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import type { TableProps, TableColumnType } from 'ant-design-vue';
+import type { TableProps, TableColumnType } from 'bmant-design-vue';
 
 interface DataType {
   key: string;

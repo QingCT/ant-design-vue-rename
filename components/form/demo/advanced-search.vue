@@ -21,30 +21,33 @@ Because the width of label is not fixed, you may need to adjust it by customizin
 </docs>
 <template>
   <div>
-    <a-form
+    <bma-form
       ref="formRef"
       name="advanced_search"
-      class="ant-advanced-search-form"
+      class="bmant-advanced-search-form"
       :model="formState"
       @finish="onFinish"
     >
-      <a-row :gutter="24">
+      <bma-row :gutter="24">
         <template v-for="i in 10" :key="i">
-          <a-col v-show="expand || i <= 6" :span="8">
-            <a-form-item
+          <bma-col v-show="expand || i <= 6" :span="8">
+            <bma-form-item
               :name="`field-${i}`"
               :label="`field-${i}`"
               :rules="[{ required: true, message: 'input something' }]"
             >
-              <a-input v-model:value="formState[`field-${i}`]" placeholder="placeholder"></a-input>
-            </a-form-item>
-          </a-col>
+              <bma-input
+                v-model:value="formState[`field-${i}`]"
+                placeholder="placeholder"
+              ></bma-input>
+            </bma-form-item>
+          </bma-col>
         </template>
-      </a-row>
-      <a-row>
-        <a-col :span="24" style="text-align: right">
-          <a-button type="primary" html-type="submit">Search</a-button>
-          <a-button style="margin: 0 8px" @click="() => formRef.resetFields()">Clear</a-button>
+      </bma-row>
+      <bma-row>
+        <bma-col :span="24" style="text-align: right">
+          <bma-button type="primary" html-type="submit">Search</bma-button>
+          <bma-button style="margin: 0 8px" @click="() => formRef.resetFields()">Clear</bma-button>
           <a style="font-size: 12px" @click="expand = !expand">
             <template v-if="expand">
               <UpOutlined />
@@ -54,16 +57,16 @@ Because the width of label is not fixed, you may need to adjust it by customizin
             </template>
             Collapse
           </a>
-        </a-col>
-      </a-row>
-    </a-form>
+        </bma-col>
+      </bma-row>
+    </bma-form>
     <div class="search-result-list">Search Result List</div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, ref } from 'vue';
 import { DownOutlined, UpOutlined } from '@ant-design/icons-vue';
-import type { FormInstance } from 'ant-design-vue';
+import type { FormInstance } from 'bmant-design-vue';
 export default defineComponent({
   components: {
     DownOutlined,
@@ -88,7 +91,7 @@ export default defineComponent({
 </script>
 
 <style>
-#components-form-demo-advanced-search .ant-form {
+#components-form-demo-advanced-search .bmant-form {
   max-width: none;
 }
 #components-form-demo-advanced-search .search-result-list {
@@ -100,7 +103,7 @@ export default defineComponent({
   text-align: center;
   padding-top: 80px;
 }
-[data-theme='dark'] .ant-advanced-search-form {
+[data-theme='dark'] .bmant-advanced-search-form {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid #434343;
   padding: 24px;

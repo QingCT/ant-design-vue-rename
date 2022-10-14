@@ -18,17 +18,17 @@ Supports two sizes: `default` and `small`.
 </docs>
 
 <template>
-  <a-card title="Default size card" style="width: 300px">
+  <bma-card title="Default size card" style="width: 300px">
     <template #extra><a href="#">more</a></template>
     <p>card content</p>
     <p>card content</p>
     <p>card content</p>
-  </a-card>
+  </bma-card>
   <br />
-  <a-card size="small" title="Small size card" style="width: 300px">
+  <bma-card size="small" title="Small size card" style="width: 300px">
     <template #extra><a href="#">more</a></template>
     <p>card content</p>
     <p>card content</p>
     <p>card content</p>
-  </a-card>
+  </bma-card>
 </template>

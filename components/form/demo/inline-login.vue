@@ -16,7 +16,7 @@ Inline login form is often used in navigation bar.
 
 </docs>
 <template>
-  <a-form
+  <bma-form
     :model="formState"
     name="horizontal_login"
     layout="inline"
@@ -24,34 +24,34 @@ Inline login form is often used in navigation bar.
     @finish="onFinish"
     @finishFailed="onFinishFailed"
   >
-    <a-form-item
+    <bma-form-item
       label="Username"
       name="username"
       :rules="[{ required: true, message: 'Please input your username!' }]"
     >
-      <a-input v-model:value="formState.username">
+      <bma-input v-model:value="formState.username">
         <template #prefix>
           <UserOutlined class="site-form-item-icon" />
         </template>
-      </a-input>
-    </a-form-item>
+      </bma-input>
+    </bma-form-item>
 
-    <a-form-item
+    <bma-form-item
       label="Password"
       name="password"
       :rules="[{ required: true, message: 'Please input your password!' }]"
     >
-      <a-input-password v-model:value="formState.password">
+      <bma-input-password v-model:value="formState.password">
         <template #prefix>
           <LockOutlined class="site-form-item-icon" />
         </template>
-      </a-input-password>
-    </a-form-item>
+      </bma-input-password>
+    </bma-form-item>
 
-    <a-form-item>
-      <a-button :disabled="disabled" type="primary" html-type="submit">Log in</a-button>
-    </a-form-item>
-  </a-form>
+    <bma-form-item>
+      <bma-button :disabled="disabled" type="primary" html-type="submit">Log in</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, computed } from 'vue';

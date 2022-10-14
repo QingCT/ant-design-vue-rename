@@ -37,7 +37,7 @@ export const avatarProps = () => ({
 export type AvatarProps = Partial<ExtractPropTypes<ReturnType<typeof avatarProps>>>;
 
 const Avatar = defineComponent({
-  name: 'AAvatar',
+  name: 'BmaAvatar',
   inheritAttrs: false,
   props: avatarProps(),
   slots: ['icon'],

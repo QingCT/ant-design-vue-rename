@@ -83,14 +83,14 @@ $ yarn add ant-design-vue
 ## 示例
 
 ```jsx
-import { DatePicker } from 'ant-design-vue';
+import { DatePicker } from 'bmant-design-vue';
 app.use(DatePicker);
 ```
 
 引入样式：
 
 ```jsx
-import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
+import 'bmant-design-vue/dist/antd.css'; // or 'bmant-design-vue/dist/antd.less'
 ```
 
 ### 按需加载
@@ -103,7 +103,7 @@ import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
   // .babelrc or babel-loader option
   {
     "plugins": [
-      ["import", { "libraryName": "ant-design-vue", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
+      ["import", { "libraryName": "bmant-design-vue", "libraryDirectory": "es", "style": "css" }] // `style: true` 会加载 less 文件
     ]
   }
   ```
@@ -114,15 +114,15 @@ import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
 
   ```jsx
   // babel-plugin-import 会帮助你加载 JS 和 CSS
-  import { DatePicker } from 'ant-design-vue';
+  import { DatePicker } from 'bmant-design-vue';
   ```
 
 - 手动引入
 
   ```jsx
-  import DatePicker from 'ant-design-vue/lib/date-picker'; // 加载 JS
-  import 'ant-design-vue/lib/date-picker/style/css'; // 加载 CSS
-  // import 'ant-design-vue/lib/date-picker/style';         // 加载 LESS
+  import DatePicker from 'bmant-design-vue/lib/date-picker'; // 加载 JS
+  import 'bmant-design-vue/lib/date-picker/style/css'; // 加载 CSS
+  // import 'bmant-design-vue/lib/date-picker/style';         // 加载 LESS
   ```
 
 - Vite 按需

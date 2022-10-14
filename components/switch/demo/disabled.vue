@@ -18,9 +18,9 @@ Disabled state of `Switch`.
 
 <template>
   <div>
-    <a-switch v-model:checked="checked" :disabled="disabled" style="margin-bottom: 5px" />
+    <bma-switch v-model:checked="checked" :disabled="disabled" style="margin-bottom: 5px" />
     <br />
-    <a-button type="primary" @click="onToggle">Toggle disabled</a-button>
+    <bma-button type="primary" @click="onToggle">Toggle disabled</bma-button>
   </div>
 </template>
 

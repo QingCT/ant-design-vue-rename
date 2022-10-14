@@ -17,7 +17,7 @@ A Card that supports `cover`, `avatar`, `title` and `description`.
 </docs>
 
 <template>
-  <a-card hoverable style="width: 300px">
+  <bma-card hoverable style="width: 300px">
     <template #cover>
       <img
         alt="example"
@@ -29,12 +29,12 @@ A Card that supports `cover`, `avatar`, `title` and `description`.
       <edit-outlined key="edit" />
       <ellipsis-outlined key="ellipsis" />
     </template>
-    <a-card-meta title="Card title" description="This is the description">
+    <bma-card-meta title="Card title" description="This is the description">
       <template #avatar>
-        <a-avatar src="https://joeschmoe.io/api/v1/random" />
+        <bma-avatar src="https://joeschmoe.io/api/v1/random" />
       </template>
-    </a-card-meta>
-  </a-card>
+    </bma-card-meta>
+  </bma-card>
 </template>
 
 <script lang="ts">

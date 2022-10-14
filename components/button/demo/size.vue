@@ -20,51 +20,51 @@ If a large or small button is desired, set the `size` property to either `large`
 </docs>
 
 <template>
-  <a-radio-group v-model:value="size">
-    <a-radio-button value="large">Large</a-radio-button>
-    <a-radio-button value="default">Default</a-radio-button>
-    <a-radio-button value="small">Small</a-radio-button>
-  </a-radio-group>
+  <bma-radio-group v-model:value="size">
+    <bma-radio-button value="large">Large</bma-radio-button>
+    <bma-radio-button value="default">Default</bma-radio-button>
+    <bma-radio-button value="small">Small</bma-radio-button>
+  </bma-radio-group>
   <br />
   <br />
-  <a-button type="primary" :size="size">Primary</a-button>
-  <a-button :size="size">Normal</a-button>
-  <a-button type="dashed" :size="size">Dashed</a-button>
-  <a-button danger :size="size">Danger</a-button>
-  <a-button type="link" :size="size">Link</a-button>
+  <bma-button type="primary" :size="size">Primary</bma-button>
+  <bma-button :size="size">Normal</bma-button>
+  <bma-button type="dashed" :size="size">Dashed</bma-button>
+  <bma-button danger :size="size">Danger</bma-button>
+  <bma-button type="link" :size="size">Link</bma-button>
   <br />
-  <a-button type="primary" :size="size">
+  <bma-button type="primary" :size="size">
     <template #icon>
       <DownloadOutlined />
     </template>
-  </a-button>
-  <a-button type="primary" shape="circle" :size="size">
+  </bma-button>
+  <bma-button type="primary" shape="circle" :size="size">
     <template #icon>
       <DownloadOutlined />
     </template>
-  </a-button>
-  <a-button type="primary" shape="round" :size="size">
+  </bma-button>
+  <bma-button type="primary" shape="round" :size="size">
     <template #icon>
       <DownloadOutlined />
     </template>
     Download
-  </a-button>
-  <a-button type="primary" shape="round" :size="size">
+  </bma-button>
+  <bma-button type="primary" shape="round" :size="size">
     <template #icon>
       <DownloadOutlined />
     </template>
-  </a-button>
-  <a-button type="primary" :size="size">
+  </bma-button>
+  <bma-button type="primary" :size="size">
     <template #icon>
       <DownloadOutlined />
     </template>
     Download
-  </a-button>
+  </bma-button>
   <br />
 </template>
 <script lang="ts">
 import { DownloadOutlined } from '@ant-design/icons-vue';
-import type { SizeType } from 'ant-design-vue/es/config-provider';
+import type { SizeType } from 'bmant-design-vue/es/config-provider';
 import { defineComponent, ref } from 'vue';
 export default defineComponent({
   components: {

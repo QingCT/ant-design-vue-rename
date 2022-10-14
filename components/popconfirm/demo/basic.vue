@@ -17,7 +17,7 @@ The basic example.
 </docs>
 
 <template>
-  <a-popconfirm
+  <bma-popconfirm
     title="Are you sure delete this task?"
     ok-text="Yes"
     cancel-text="No"
@@ -25,11 +25,11 @@ The basic example.
     @cancel="cancel"
   >
     <a href="#">Delete</a>
-  </a-popconfirm>
+  </bma-popconfirm>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const confirm = (e: MouseEvent) => {

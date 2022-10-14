@@ -15,15 +15,15 @@ Use `rowClassName` Customize the table with Striped.
 </docs>
 
 <template>
-  <a-table
-    class="ant-table-striped"
+  <bma-table
+    class="bmant-table-striped"
     size="middle"
     :columns="columns"
     :data-source="data"
     :row-class-name="(_record, index) => (index % 2 === 1 ? 'table-striped' : null)"
   />
-  <a-table
-    class="ant-table-striped"
+  <bma-table
+    class="bmant-table-striped"
     size="middle"
     :columns="columns"
     :data-source="data"
@@ -78,7 +78,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.ant-table-striped :deep(.table-striped) td {
+.bmant-table-striped :deep(.table-striped) td {
   background-color: #fafafa;
 }
 </style>

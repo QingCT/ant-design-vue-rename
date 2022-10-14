@@ -16,7 +16,7 @@ export const ribbonProps = () => ({
 export type RibbonProps = Partial<ExtractPropTypes<ReturnType<typeof ribbonProps>>>;
 
 export default defineComponent({
-  name: 'ABadgeRibbon',
+  name: 'BmaBadgeRibbon',
   inheritAttrs: false,
   props: ribbonProps(),
   slots: ['text'],

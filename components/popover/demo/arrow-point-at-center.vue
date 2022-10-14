@@ -16,8 +16,8 @@ The arrow points to the center of the target element, which set `arrowPointAtCen
 
 </docs>
 <template>
-  <a-space>
-    <a-popover placement="topLeft">
+  <bma-space>
+    <bma-popover placement="topLeft">
       <template #content>
         <p>Content</p>
         <p>Content</p>
@@ -25,9 +25,9 @@ The arrow points to the center of the target element, which set `arrowPointAtCen
       <template #title>
         <span>Title</span>
       </template>
-      <a-button>Align edge / 边缘对齐</a-button>
-    </a-popover>
-    <a-popover placement="topLeft" arrow-point-at-center>
+      <bma-button>Align edge / 边缘对齐</bma-button>
+    </bma-popover>
+    <bma-popover placement="topLeft" arrow-point-at-center>
       <template #content>
         <p>Content</p>
         <p>Content</p>
@@ -35,7 +35,7 @@ The arrow points to the center of the target element, which set `arrowPointAtCen
       <template #title>
         <span>Title</span>
       </template>
-      <a-button>Arrow points to center / 箭头指向中心</a-button>
-    </a-popover>
-  </a-space>
+      <bma-button>Arrow points to center / 箭头指向中心</bma-button>
+    </bma-popover>
+  </bma-space>
 </template>

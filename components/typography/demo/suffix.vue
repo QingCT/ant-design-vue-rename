@@ -15,12 +15,12 @@ title:
 add suffix ellipsis support.
 </docs>
 <template>
-  <a-slider v-model:value="rows" :min="1" :max="10" />
-  <a-typography-paragraph
+  <bma-slider v-model:value="rows" :min="1" :max="10" />
+  <bma-typography-paragraph
     :ellipsis="ellipsis"
     :title="`${article}--William Shakespeare`"
     :content="article"
-  ></a-typography-paragraph>
+  ></bma-typography-paragraph>
 </template>
 <script lang="ts">
 import { computed, defineComponent, ref } from 'vue';

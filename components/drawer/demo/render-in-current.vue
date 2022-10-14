@@ -32,9 +32,9 @@ Render in current dom. custom container, check `getContainer`.
   >
     Render in this
     <div style="margin-top: 16px">
-      <a-button type="primary" @click="showDrawer">Open</a-button>
+      <bma-button type="primary" @click="showDrawer">Open</bma-button>
     </div>
-    <a-drawer
+    <bma-drawer
       title="Basic Drawer"
       placement="right"
       :closable="false"
@@ -44,7 +44,7 @@ Render in current dom. custom container, check `getContainer`.
       @close="onClose"
     >
       <p>Some contents...</p>
-    </a-drawer>
+    </bma-drawer>
   </div>
 </template>
 <script lang="ts">

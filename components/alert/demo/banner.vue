@@ -17,15 +17,15 @@ Display Alert as a banner at top of page.
 </docs>
 
 <template>
-  <a-alert message="Warning text" banner />
+  <bma-alert message="Warning text" banner />
   <br />
-  <a-alert
+  <bma-alert
     message="Very long warning text warning text text text text text text text"
     banner
     closable
   />
   <br />
-  <a-alert :show-icon="false" message="Warning text without icon" banner />
+  <bma-alert :show-icon="false" message="Warning text without icon" banner />
   <br />
-  <a-alert type="error" message="Error text" banner />
+  <bma-alert type="error" message="Error text" banner />
 </template>

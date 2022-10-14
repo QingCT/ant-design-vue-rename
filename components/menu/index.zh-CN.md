@@ -25,12 +25,12 @@ cover: https://gw.alipayobjects.com/zos/alicdn/3XZcjGpvK/Menu.svg
 
 ```html
 <template>
-  <a-menu>
-    <a-menu-item>菜单项</a-menu-item>
-    <a-sub-menu key="sub1" title="子菜单">
-      <a-menu-item>子菜单项</a-menu-item>
-    </a-sub-menu>
-  </a-menu>
+  <bma-menu>
+    <bma-menu-item>菜单项</bma-menu-item>
+    <bma-sub-menu key="sub1" title="子菜单">
+      <bma-menu-item>子菜单项</bma-menu-item>
+    </bma-sub-menu>
+  </bma-menu>
 </template>
 ```
 

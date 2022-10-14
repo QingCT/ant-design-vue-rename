@@ -17,9 +17,9 @@ The server is wrong.
 </docs>
 
 <template>
-  <a-result status="500" title="500" sub-title="Sorry, the server is wrong.">
+  <bma-result status="500" title="500" sub-title="Sorry, the server is wrong.">
     <template #extra>
-      <a-button type="primary">Back Home</a-button>
+      <bma-button type="primary">Back Home</bma-button>
     </template>
-  </a-result>
+  </bma-result>
 </template>

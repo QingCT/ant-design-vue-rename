@@ -152,7 +152,7 @@ See an example of usage with gulp and [postcss-prefixwrap](https://github.com/db
 You must import styles as less format. A common mistake would be importing multiple copied of styles that some of them are css format to override the less styles.
 
 - If you import styles by specifying the `style` option of [babel-plugin-import](https://github.com/ant-design/babel-plugin-import), change it from `'css'` to `true`, which will import the `less` version of antd.
-- If you import styles from `'ant-design-vue/dist/antd.css'`, change it to `ant-design-vue/dist/antd.less`.
+- If you import styles from `'bmant-design-vue/dist/antd.css'`, change it to `ant-design-vue/dist/antd.less`.
 
 ## Use dark theme
 
@@ -173,7 +173,7 @@ If the project does not use Less, you can import [antd.dark.css](https://unpkg.c
 Method 3: using [less-loader](https://github.com/webpack-contrib/less-loader) in `webpack.config.js` to introduce as needed:
 
 ```diff
-const { getThemeVariables } = require('ant-design-vue/dist/theme');
+const { getThemeVariables } = require('bmant-design-vue/dist/theme');
 
 // webpack.config.js
 module.exports = {

@@ -18,12 +18,12 @@ Use `width` to set the width of the modal dialog
 
 <template>
   <div>
-    <a-button type="primary" @click="showModal">Open Modal of 1000px width</a-button>
-    <a-modal v-model:visible="visible" width="1000px" title="Basic Modal" @ok="handleOk">
+    <bma-button type="primary" @click="showModal">Open Modal of 1000px width</bma-button>
+    <bma-modal v-model:visible="visible" width="1000px" title="Basic Modal" @ok="handleOk">
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
-    </a-modal>
+    </bma-modal>
   </div>
 </template>
 <script lang="ts">

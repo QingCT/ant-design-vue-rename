@@ -18,9 +18,9 @@ To customize the text of the buttons, you need to set `okText` and `cancelText` 
 
 <template>
   <div>
-    <a-button type="primary" @click="showModal">Modal</a-button>
-    <a-button @click="confirm">Confirm</a-button>
-    <a-modal
+    <bma-button type="primary" @click="showModal">Modal</bma-button>
+    <bma-button @click="confirm">Confirm</bma-button>
+    <bma-modal
       v-model:visible="visible"
       title="Modal"
       ok-text="确认"
@@ -30,13 +30,13 @@ To customize the text of the buttons, you need to set `okText` and `cancelText` 
       <p>Bla bla ...</p>
       <p>Bla bla ...</p>
       <p>Bla bla ...</p>
-    </a-modal>
+    </bma-modal>
   </div>
 </template>
 <script lang="ts">
 import { ExclamationCircleOutlined } from '@ant-design/icons-vue';
 import { defineComponent, ref, createVNode } from 'vue';
-import { Modal } from 'ant-design-vue';
+import { Modal } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const visible = ref<boolean>(false);

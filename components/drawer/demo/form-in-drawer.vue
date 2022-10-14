@@ -17,11 +17,11 @@ Use form in drawer with submit button.
 </docs>
 
 <template>
-  <a-button type="primary" @click="showDrawer">
+  <bma-button type="primary" @click="showDrawer">
     <template #icon><PlusOutlined /></template>
     New account
-  </a-button>
-  <a-drawer
+  </bma-button>
+  <bma-drawer
     title="Create a new account"
     :width="720"
     :visible="visible"
@@ -29,86 +29,86 @@ Use form in drawer with submit button.
     :footer-style="{ textAlign: 'right' }"
     @close="onClose"
   >
-    <a-form :model="form" :rules="rules" layout="vertical">
-      <a-row :gutter="16">
-        <a-col :span="12">
-          <a-form-item label="Name" name="name">
-            <a-input v-model:value="form.name" placeholder="Please enter user name" />
-          </a-form-item>
-        </a-col>
-        <a-col :span="12">
-          <a-form-item label="Url" name="url">
-            <a-input
+    <bma-form :model="form" :rules="rules" layout="vertical">
+      <bma-row :gutter="16">
+        <bma-col :span="12">
+          <bma-form-item label="Name" name="name">
+            <bma-input v-model:value="form.name" placeholder="Please enter user name" />
+          </bma-form-item>
+        </bma-col>
+        <bma-col :span="12">
+          <bma-form-item label="Url" name="url">
+            <bma-input
               v-model:value="form.url"
               style="width: 100%"
               addon-before="http://"
               addon-after=".com"
               placeholder="please enter url"
             />
-          </a-form-item>
-        </a-col>
-      </a-row>
-      <a-row :gutter="16">
-        <a-col :span="12">
-          <a-form-item label="Owner" name="owner">
-            <a-select v-model:value="form.owner" placeholder="Please a-s an owner">
-              <a-select-option value="xiao">Xiaoxiao Fu</a-select-option>
-              <a-select-option value="mao">Maomao Zhou</a-select-option>
-            </a-select>
-          </a-form-item>
-        </a-col>
-        <a-col :span="12">
-          <a-form-item label="Type" name="type">
-            <a-select v-model:value="form.type" placeholder="Please choose the type">
-              <a-select-option value="private">Private</a-select-option>
-              <a-select-option value="public">Public</a-select-option>
-            </a-select>
-          </a-form-item>
-        </a-col>
-      </a-row>
-      <a-row :gutter="16">
-        <a-col :span="12">
-          <a-form-item label="Approver" name="approver">
-            <a-select v-model:value="form.approver" placeholder="Please choose the approver">
-              <a-select-option value="jack">Jack Ma</a-select-option>
-              <a-select-option value="tom">Tom Liu</a-select-option>
-            </a-select>
-          </a-form-item>
-        </a-col>
-        <a-col :span="12">
-          <a-form-item label="DateTime" name="dateTime">
-            <a-date-picker
+          </bma-form-item>
+        </bma-col>
+      </bma-row>
+      <bma-row :gutter="16">
+        <bma-col :span="12">
+          <bma-form-item label="Owner" name="owner">
+            <bma-select v-model:value="form.owner" placeholder="Please a-s an owner">
+              <bma-select-option value="xiao">Xiaoxiao Fu</bma-select-option>
+              <bma-select-option value="mao">Maomao Zhou</bma-select-option>
+            </bma-select>
+          </bma-form-item>
+        </bma-col>
+        <bma-col :span="12">
+          <bma-form-item label="Type" name="type">
+            <bma-select v-model:value="form.type" placeholder="Please choose the type">
+              <bma-select-option value="private">Private</bma-select-option>
+              <bma-select-option value="public">Public</bma-select-option>
+            </bma-select>
+          </bma-form-item>
+        </bma-col>
+      </bma-row>
+      <bma-row :gutter="16">
+        <bma-col :span="12">
+          <bma-form-item label="Approver" name="approver">
+            <bma-select v-model:value="form.approver" placeholder="Please choose the approver">
+              <bma-select-option value="jack">Jack Ma</bma-select-option>
+              <bma-select-option value="tom">Tom Liu</bma-select-option>
+            </bma-select>
+          </bma-form-item>
+        </bma-col>
+        <bma-col :span="12">
+          <bma-form-item label="DateTime" name="dateTime">
+            <bma-date-picker
               v-model:value="form.dateTime"
               style="width: 100%"
               :get-popup-container="trigger => trigger.parentElement"
             />
-          </a-form-item>
-        </a-col>
-      </a-row>
-      <a-row :gutter="16">
-        <a-col :span="24">
-          <a-form-item label="Description" name="description">
-            <a-textarea
+          </bma-form-item>
+        </bma-col>
+      </bma-row>
+      <bma-row :gutter="16">
+        <bma-col :span="24">
+          <bma-form-item label="Description" name="description">
+            <bma-textarea
               v-model:value="form.description"
               :rows="4"
               placeholder="please enter url description"
             />
-          </a-form-item>
-        </a-col>
-      </a-row>
-    </a-form>
+          </bma-form-item>
+        </bma-col>
+      </bma-row>
+    </bma-form>
     <template #extra>
-      <a-space>
-        <a-button @click="onClose">Cancel</a-button>
-        <a-button type="primary" @click="onClose">Submit</a-button>
-      </a-space>
+      <bma-space>
+        <bma-button @click="onClose">Cancel</bma-button>
+        <bma-button type="primary" @click="onClose">Submit</bma-button>
+      </bma-space>
     </template>
-  </a-drawer>
+  </bma-drawer>
 </template>
 <script lang="ts">
 import { PlusOutlined } from '@ant-design/icons-vue';
 import { defineComponent, reactive, ref } from 'vue';
-import type { Rule } from 'ant-design-vue/es/form';
+import type { Rule } from 'bmant-design-vue/es/form';
 export default defineComponent({
   components: {
     PlusOutlined,

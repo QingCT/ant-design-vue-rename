@@ -20,7 +20,7 @@ import { defineComponent, computed } from 'vue';
 import { useRoute } from 'vue-router';
 // import GoogleAds from '../components/rice/GoogleAds.vue';
 
-const showAd = location.host.indexOf('antdv.com') > -1;
+const showAd = location.host.indexOf('bmantdv.com') > -1;
 export default defineComponent({
   name: 'Demo',
   components: {

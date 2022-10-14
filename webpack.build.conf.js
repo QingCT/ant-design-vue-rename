@@ -32,8 +32,8 @@ function injectLessVariables(config, variables) {
 }
 
 function addLocales(webpackConfig) {
-  let packageName = 'antd-with-locales';
-  if (webpackConfig.entry['antd.min']) {
+  let packageName = 'bmantd-with-locales';
+  if (webpackConfig.entry['bmantd.min']) {
     packageName += '.min';
   }
   webpackConfig.entry[packageName] = './index-with-locales.js';
@@ -98,7 +98,7 @@ function processWebpackThemeConfig(themeConfig, theme, vars) {
         console.log(chalk.red('🆘 Seems entry has changed! It should be `./index`'));
       }
 
-      config.entry[entryName.replace('antd', `antd.${theme}`)] = replacedPath;
+      config.entry[entryName.replace('bmantd', `bmantd.${theme}`)] = replacedPath;
       delete config.entry[entryName];
     });
 

@@ -18,12 +18,12 @@ Basic modal.
 
 <template>
   <div>
-    <a-button type="primary" @click="showModal">Open Modal</a-button>
-    <a-modal v-model:visible="visible" title="Basic Modal" @ok="handleOk">
+    <bma-button type="primary" @click="showModal">Open Modal</bma-button>
+    <bma-modal v-model:visible="visible" title="Basic Modal" @ok="handleOk">
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
-    </a-modal>
+    </bma-modal>
   </div>
 </template>
 <script lang="ts">

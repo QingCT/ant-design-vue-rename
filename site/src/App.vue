@@ -1,7 +1,7 @@
 <template>
-  <a-config-provider :locale="locale">
+  <bma-config-provider :locale="locale">
     <router-view />
-  </a-config-provider>
+  </bma-config-provider>
 </template>
 
 <script lang="ts">

@@ -13,7 +13,7 @@ export const listItemMetaProps = () => ({
 export type ListItemMetaProps = Partial<ExtractPropTypes<ReturnType<typeof listItemMetaProps>>>;
 
 export default defineComponent({
-  name: 'AListItemMeta',
+  name: 'BmaListItemMeta',
   props: listItemMetaProps(),
   displayName: 'AListItemMeta', // 兼容历史函数式组件
   __ANT_LIST_ITEM_META: true,

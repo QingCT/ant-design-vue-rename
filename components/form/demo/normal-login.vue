@@ -16,52 +16,52 @@ Normal login form which can contain more elements.
 
 </docs>
 <template>
-  <a-form
+  <bma-form
     :model="formState"
     name="normal_login"
     class="login-form"
     @finish="onFinish"
     @finishFailed="onFinishFailed"
   >
-    <a-form-item
+    <bma-form-item
       label="Username"
       name="username"
       :rules="[{ required: true, message: 'Please input your username!' }]"
     >
-      <a-input v-model:value="formState.username">
+      <bma-input v-model:value="formState.username">
         <template #prefix>
           <UserOutlined class="site-form-item-icon" />
         </template>
-      </a-input>
-    </a-form-item>
+      </bma-input>
+    </bma-form-item>
 
-    <a-form-item
+    <bma-form-item
       label="Password"
       name="password"
       :rules="[{ required: true, message: 'Please input your password!' }]"
     >
-      <a-input-password v-model:value="formState.password">
+      <bma-input-password v-model:value="formState.password">
         <template #prefix>
           <LockOutlined class="site-form-item-icon" />
         </template>
-      </a-input-password>
-    </a-form-item>
+      </bma-input-password>
+    </bma-form-item>
 
-    <a-form-item>
-      <a-form-item name="remember" no-style>
-        <a-checkbox v-model:checked="formState.remember">Remember me</a-checkbox>
-      </a-form-item>
+    <bma-form-item>
+      <bma-form-item name="remember" no-style>
+        <bma-checkbox v-model:checked="formState.remember">Remember me</bma-checkbox>
+      </bma-form-item>
       <a class="login-form-forgot" href="">Forgot password</a>
-    </a-form-item>
+    </bma-form-item>
 
-    <a-form-item>
-      <a-button :disabled="disabled" type="primary" html-type="submit" class="login-form-button">
+    <bma-form-item>
+      <bma-button :disabled="disabled" type="primary" html-type="submit" class="login-form-button">
         Log in
-      </a-button>
+      </bma-button>
       Or
       <a href="">register now!</a>
-    </a-form-item>
-  </a-form>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { defineComponent, reactive, computed } from 'vue';

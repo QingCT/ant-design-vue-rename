@@ -59,6 +59,7 @@ jspm_packages/
 dist
 lib
 es
+bmantd
 _site
 yarn.lock
 package-lock.json

@@ -17,13 +17,13 @@ Creating a grid list by setting the `grid` property of List
 </docs>
 
 <template>
-  <a-list :grid="{ gutter: 16, column: 4 }" :data-source="data">
+  <bma-list :grid="{ gutter: 16, column: 4 }" :data-source="data">
     <template #renderItem="{ item }">
-      <a-list-item>
-        <a-card :title="item.title">Card content</a-card>
-      </a-list-item>
+      <bma-list-item>
+        <bma-card :title="item.title">Card content</bma-card>
+      </bma-list-item>
     </template>
-  </a-list>
+  </bma-list>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

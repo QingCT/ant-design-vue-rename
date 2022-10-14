@@ -17,52 +17,52 @@ We preset five different colors, you can set color property such as `success`,`p
 </docs>
 
 <template>
-  <a-divider orientation="left">Without icon</a-divider>
+  <bma-divider orientation="left">Without icon</bma-divider>
   <div>
-    <a-tag color="success">success</a-tag>
-    <a-tag color="processing">processing</a-tag>
-    <a-tag color="error">error</a-tag>
-    <a-tag color="warning">warning</a-tag>
-    <a-tag color="default">default</a-tag>
+    <bma-tag color="success">success</bma-tag>
+    <bma-tag color="processing">processing</bma-tag>
+    <bma-tag color="error">error</bma-tag>
+    <bma-tag color="warning">warning</bma-tag>
+    <bma-tag color="default">default</bma-tag>
   </div>
-  <a-divider orientation="left">With icon</a-divider>
+  <bma-divider orientation="left">With icon</bma-divider>
   <div>
-    <a-tag color="success">
+    <bma-tag color="success">
       <template #icon>
         <check-circle-outlined />
       </template>
       success
-    </a-tag>
-    <a-tag color="processing">
+    </bma-tag>
+    <bma-tag color="processing">
       <template #icon>
         <sync-outlined :spin="true" />
       </template>
       processing
-    </a-tag>
-    <a-tag color="error">
+    </bma-tag>
+    <bma-tag color="error">
       <template #icon>
         <close-circle-outlined />
       </template>
       error
-    </a-tag>
-    <a-tag color="warning">
+    </bma-tag>
+    <bma-tag color="warning">
       <template #icon>
         <exclamation-circle-outlined />
       </template>
       warning
-    </a-tag>
-    <a-tag color="default">
+    </bma-tag>
+    <bma-tag color="default">
       <template #icon>
         <clock-circle-outlined />
       </template>
       waiting
-    </a-tag>
-    <a-tag color="default">
+    </bma-tag>
+    <bma-tag color="default">
       <template #icon>
         <minus-circle-outlined />
       </template>
       stop
-    </a-tag>
+    </bma-tag>
   </div>
 </template>
 <script lang="ts">

@@ -17,10 +17,10 @@ title:
 </docs>
 
 <template>
-  <a-button @click="success">Display a sequence of message</a-button>
+  <bma-button @click="success">Display a sequence of message</bma-button>
 </template>
 <script lang="ts">
-import { message } from 'ant-design-vue';
+import { message } from 'bmant-design-vue';
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup() {

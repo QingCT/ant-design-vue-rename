@@ -20,14 +20,14 @@ Can set `width: 100%` to fill a row.
 </docs>
 
 <template>
-  <a-space direction="vertical">
-    <a-card title="Card" style="width: 300px">
+  <bma-space direction="vertical">
+    <bma-card title="Card" style="width: 300px">
       <p>Card content</p>
       <p>Card content</p>
-    </a-card>
-    <a-card title="Card" style="width: 300px">
+    </bma-card>
+    <bma-card title="Card" style="width: 300px">
       <p>Card content</p>
       <p>Card content</p>
-    </a-card>
-  </a-space>
+    </bma-card>
+  </bma-space>
 </template>

@@ -12,7 +12,7 @@ export const menuItemGroupProps = () => ({
 export type MenuItemGroupProps = Partial<ExtractPropTypes<ReturnType<typeof menuItemGroupProps>>>;
 
 export default defineComponent({
-  name: 'AMenuItemGroup',
+  name: 'BmaMenuItemGroup',
   inheritAttrs: false,
   props: menuItemGroupProps(),
   slots: ['title'],

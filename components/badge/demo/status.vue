@@ -1,7 +1,7 @@
 <docs>
 ---
 order: 4
-title: 
+title:
   zh-CN: 状态点
   en-US: Status
 ---
@@ -16,19 +16,19 @@ Standalone badge with status.
 </docs>
 
 <template>
-  <a-badge status="success" />
-  <a-badge status="error" />
-  <a-badge status="default" />
-  <a-badge status="processing" />
-  <a-badge status="warning" />
+  <bma-badge status="success" />
+  <bma-badge status="error" />
+  <bma-badge status="default" />
+  <bma-badge status="processing" />
+  <bma-badge status="warning" />
   <br />
-  <a-badge status="success" text="Success" />
+  <bma-badge status="success" text="Success" />
   <br />
-  <a-badge status="error" text="Error" />
+  <bma-badge status="error" text="Error" />
   <br />
-  <a-badge status="default" text="Default" />
+  <bma-badge status="default" text="Default" />
   <br />
-  <a-badge status="processing" text="Processing" />
+  <bma-badge status="processing" text="Processing" />
   <br />
-  <a-badge status="warning" text="warning" />
+  <bma-badge status="warning" text="warning" />
 </template>

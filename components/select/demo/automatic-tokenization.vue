@@ -17,7 +17,7 @@ Try to copy `Lucy,Jack` to the input. Only available in tags and multiple mode.
 </docs>
 
 <template>
-  <a-select
+  <bma-select
     v-model:value="value"
     mode="tags"
     style="width: 100%"
@@ -25,11 +25,11 @@ Try to copy `Lucy,Jack` to the input. Only available in tags and multiple mode.
     placeholder="Automatic tokenization"
     :options="options"
     @change="handleChange"
-  ></a-select>
+  ></bma-select>
 </template>
 <script lang="ts">
 import { defineComponent, ref, watch } from 'vue';
-import type { SelectProps } from 'ant-design-vue';
+import type { SelectProps } from 'bmant-design-vue';
 export default defineComponent({
   setup() {
     const options = ref<SelectProps['options']>([

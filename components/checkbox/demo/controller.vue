@@ -18,17 +18,17 @@ Communicated with other components
 
 <template>
   <p :style="{ marginBottom: '20px' }">
-    <a-checkbox v-model:checked="checked" :disabled="disabled">
+    <bma-checkbox v-model:checked="checked" :disabled="disabled">
       {{ label }}
-    </a-checkbox>
+    </bma-checkbox>
   </p>
   <p>
-    <a-button type="primary" size="small" @click="toggleChecked">
+    <bma-button type="primary" size="small" @click="toggleChecked">
       {{ !checked ? 'Check' : 'Uncheck' }}
-    </a-button>
-    <a-button :style="{ marginLeft: '10px' }" type="primary" size="small" @click="toggleDisable">
+    </bma-button>
+    <bma-button :style="{ marginLeft: '10px' }" type="primary" size="small" @click="toggleDisable">
       {{ !disabled ? 'Disable' : 'Enable' }}
-    </a-button>
+    </bma-button>
   </p>
 </template>
 <script lang="ts">

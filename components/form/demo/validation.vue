@@ -16,61 +16,61 @@ Just add the `rules` attribute for `Form` component, pass validation rules, and 
 </docs>
 
 <template>
-  <a-form
+  <bma-form
     ref="formRef"
     :model="formState"
     :rules="rules"
     :label-col="labelCol"
     :wrapper-col="wrapperCol"
   >
-    <a-form-item ref="name" label="Activity name" name="name">
-      <a-input v-model:value="formState.name" />
-    </a-form-item>
-    <a-form-item label="Activity zone" name="region">
-      <a-select v-model:value="formState.region" placeholder="please select your zone">
-        <a-select-option value="shanghai">Zone one</a-select-option>
-        <a-select-option value="beijing">Zone two</a-select-option>
-      </a-select>
-    </a-form-item>
-    <a-form-item label="Activity time" required name="date1">
-      <a-date-picker
+    <bma-form-item ref="name" label="Activity name" name="name">
+      <bma-input v-model:value="formState.name" />
+    </bma-form-item>
+    <bma-form-item label="Activity zone" name="region">
+      <bma-select v-model:value="formState.region" placeholder="please select your zone">
+        <bma-select-option value="shanghai">Zone one</bma-select-option>
+        <bma-select-option value="beijing">Zone two</bma-select-option>
+      </bma-select>
+    </bma-form-item>
+    <bma-form-item label="Activity time" required name="date1">
+      <bma-date-picker
         v-model:value="formState.date1"
         show-time
         type="date"
         placeholder="Pick a date"
         style="width: 100%"
       />
-    </a-form-item>
-    <a-form-item label="Instant delivery" name="delivery">
-      <a-switch v-model:checked="formState.delivery" />
-    </a-form-item>
-    <a-form-item label="Activity type" name="type">
-      <a-checkbox-group v-model:value="formState.type">
-        <a-checkbox value="1" name="type">Online</a-checkbox>
-        <a-checkbox value="2" name="type">Promotion</a-checkbox>
-        <a-checkbox value="3" name="type">Offline</a-checkbox>
-      </a-checkbox-group>
-    </a-form-item>
-    <a-form-item label="Resources" name="resource">
-      <a-radio-group v-model:value="formState.resource">
-        <a-radio value="1">Sponsor</a-radio>
-        <a-radio value="2">Venue</a-radio>
-      </a-radio-group>
-    </a-form-item>
-    <a-form-item label="Activity form" name="desc">
-      <a-textarea v-model:value="formState.desc" />
-    </a-form-item>
-    <a-form-item :wrapper-col="{ span: 14, offset: 4 }">
-      <a-button type="primary" @click="onSubmit">Create</a-button>
-      <a-button style="margin-left: 10px" @click="resetForm">Reset</a-button>
-    </a-form-item>
-  </a-form>
+    </bma-form-item>
+    <bma-form-item label="Instant delivery" name="delivery">
+      <bma-switch v-model:checked="formState.delivery" />
+    </bma-form-item>
+    <bma-form-item label="Activity type" name="type">
+      <bma-checkbox-group v-model:value="formState.type">
+        <bma-checkbox value="1" name="type">Online</bma-checkbox>
+        <bma-checkbox value="2" name="type">Promotion</bma-checkbox>
+        <bma-checkbox value="3" name="type">Offline</bma-checkbox>
+      </bma-checkbox-group>
+    </bma-form-item>
+    <bma-form-item label="Resources" name="resource">
+      <bma-radio-group v-model:value="formState.resource">
+        <bma-radio value="1">Sponsor</bma-radio>
+        <bma-radio value="2">Venue</bma-radio>
+      </bma-radio-group>
+    </bma-form-item>
+    <bma-form-item label="Activity form" name="desc">
+      <bma-textarea v-model:value="formState.desc" />
+    </bma-form-item>
+    <bma-form-item :wrapper-col="{ span: 14, offset: 4 }">
+      <bma-button type="primary" @click="onSubmit">Create</bma-button>
+      <bma-button style="margin-left: 10px" @click="resetForm">Reset</bma-button>
+    </bma-form-item>
+  </bma-form>
 </template>
 <script lang="ts">
 import { Dayjs } from 'dayjs';
 import { defineComponent, reactive, ref, toRaw } from 'vue';
 import type { UnwrapRef } from 'vue';
-import type { Rule } from 'ant-design-vue/es/form';
+import type { Rule } from 'bmant-design-vue/es/form';
 
 interface FormState {
   name: string;
