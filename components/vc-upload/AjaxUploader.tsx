@@ -21,7 +21,7 @@ interface ParsedFileInfo {
   parsedFile: RcFile;
 }
 export default defineComponent({
-  name: 'BmajaxUploader',
+  name: 'AjaxUploader',
   inheritAttrs: false,
   props: uploadProps(),
   setup(props, { slots, attrs, expose }) {
